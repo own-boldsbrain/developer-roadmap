@@ -39,7 +39,7 @@
     "@nanostores/react": "^1.0.0",
     "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
-    "@roadmapsh/editor": "workspace:*",
+    "@roadmapsh/editor": "npm:@roadmapsh/dummy-editor@^0.0.12",
     "@tailwindcss/vite": "^4.1.4",
     "@tanstack/react-query": "^5.74.4",
     "@types/react": "^19.1.2",

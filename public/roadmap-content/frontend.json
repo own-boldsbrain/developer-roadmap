@@ -17,7 +17,7 @@
   },
   "yCnn-NfSxIybUQ2iTuUGq": {
     "title": "How does the internet work?",
-    "description": "The Internet works through a global network of interconnected computers and servers, communicating via standardized protocols. Data is broken into packets and routed through various network nodes using the Internet Protocol (IP). These packets travel across different physical infrastructures, including fiber optic cables, satellites, and wireless networks. The Transmission Control Protocol (TCP) ensures reliable delivery and reassembly of packets at their destination. Domain Name System (DNS) servers translate human-readable website names into IP addresses. When you access a website, your device sends a request to the appropriate server, which responds with the requested data. This process, facilitated by routers, switches, and other networking equipment, enables the seamless exchange of information across vast distances, forming the backbone of our digital communications.\n\nVisit the following resources to learn more:",
+    "description": "The internet is a global network that connects computers and devices so they can share information with each other. It’s how you browse websites, send emails, watch videos, and use apps. Think of it like a giant web that links everything together.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Introduction to Internet",
@@ -214,32 +214,6 @@
       {
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE",
-        "type": "video"
-      }
-    ]
-  },
-  "z8-556o-PaHXjlytrawaF": {
-    "title": "Writing Semantic HTML",
-    "description": "Semantic HTML refers to the use of HTML markup to reinforce the meaning of web content, rather than merely defining its appearance. It involves using HTML elements that clearly describe their purpose and content. Semantic HTML improves accessibility, SEO, and code readability. Key elements include `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, and `<footer>`. It also encompasses using appropriate heading levels (`<h1>` to `<h6>`), lists (`<ul>`, `<ol>`,`<li>`), and data tables (`<table>`, `<th>`, `<td>`). Semantic HTML helps screen readers interpret page content, enables better browser rendering, and provides clearer structure for developers. By using semantically correct elements, developers create more meaningful, accessible, and maintainable web documents that are easier for both humans and machines to understand and process.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Guide to Writing Semantic HTML",
-        "url": "https://cs.fyi/guide/writing-semantic-html",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools: Semantic HTML",
-        "url": "https://www.w3schools.com/html/html5_semantic_elements.asp",
-        "type": "article"
-      },
-      {
-        "title": "Semantic HTML - web.dev",
-        "url": "https://web.dev/learn/html/semantic-html/",
-        "type": "article"
-      },
-      {
-        "title": "Why & When to Use Semantic HTML Elements over Div(s)",
-        "url": "https://www.youtube.com/watch?v=bOUhq46fd5g",
         "type": "video"
       }
     ]

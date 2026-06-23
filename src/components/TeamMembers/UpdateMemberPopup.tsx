@@ -29,7 +29,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-update-member-role/${teamId}/${
         member._id
       }`,
-      { role: selectedRole }
+      { role: selectedRole },
     );
 
     if (error || !response) {
@@ -52,7 +52,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+    <div className="popup fixed top-0 right-0 left-0 z-50 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50">
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
@@ -80,7 +80,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
               </div>
 
               {error && (
-                <p className=" rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-700">
+                <p className="rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-700">
                   {error}
                 </p>
               )}

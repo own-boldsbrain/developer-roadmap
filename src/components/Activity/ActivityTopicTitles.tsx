@@ -33,7 +33,7 @@ export function ActivityTopicTitles(props: ActivityTopicTitlesProps) {
       {shouldShowButton && !showAll && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="bg-white border border-black text-black rounded-md px-1.5 hover:bg-black text-xs h-[20px] hover:text-white"
+          className="h-[20px] rounded-md border border-black bg-white px-1.5 text-xs text-black hover:bg-black hover:text-white"
         >
           {showAll ? '- Show less' : `+${topicTitles.length - 3}`}
         </button>

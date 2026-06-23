@@ -30,12 +30,12 @@ You are required to complete the following tasks:
 - Create an AWS account if you don't have one already.
 - Familiarize yourself with the AWS Management Console.
 - Launch an EC2 instance with the following specifications:
-   - Use Ubuntu Server AMI.
-   - Choose a `t2.micro` instance type (eligible for AWS Free Tier).
-   - Use the default VPC and subnet for your region.
-   - Configure the security group to allow inbound traffic on ports `22` (SSH) and `80` (HTTP).
-   - Create a new key pair or use an existing one for SSH access.
-   - Assign a public IP address to your instance.
+  - Use Ubuntu Server AMI.
+  - Choose a `t2.micro` instance type (eligible for AWS Free Tier).
+  - Use the default VPC and subnet for your region.
+  - Configure the security group to allow inbound traffic on ports `22` (SSH) and `80` (HTTP).
+  - Create a new key pair or use an existing one for SSH access.
+  - Assign a public IP address to your instance.
 - Connect to your EC2 instance using SSH and the private key.
 - Update the system packages and install a web server (e.g., Nginx).
 - Create a simple HTML file for your static website.
@@ -60,7 +60,6 @@ After completing this project, you will have gained practical experience in:
 - Connecting to Linux servers using SSH
 - Basic server administration and web server setup
 - Deploying static websites to cloud infrastructure
-
 
 <hr />
 

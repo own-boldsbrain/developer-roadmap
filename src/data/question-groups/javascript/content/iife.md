@@ -4,13 +4,14 @@ Immediately invoked function expressions, or IIFEs, run as soon as they're creat
 // Syntax
 
 (function () {
-        // write your code here
-}());
+  // write your code here
+})();
 
 // Example
 
 (function () {
   console.log(
-    "roadmap.sh helps prepare for  JavaScript job interview questions"
+    'roadmap.sh helps prepare for  JavaScript job interview questions',
   );
-})(); 
+})();
+```

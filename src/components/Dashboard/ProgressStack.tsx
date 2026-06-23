@@ -78,7 +78,7 @@ function ProgressLane(props: ProgressLaneProps) {
       )}
       {!isLoading && !isEmpty && (
         <div className="flex items-center justify-between gap-2">
-          <h3 className="text-xs uppercase text-gray-500">{title}</h3>
+          <h3 className="text-xs text-gray-500 uppercase">{title}</h3>
 
           {linkText && linkHref && (
             <a
@@ -242,7 +242,7 @@ export function ProgressStack(props: ProgressStackProps) {
 
             <a
               href={'/home'}
-              className="flex w-full flex-row items-center justify-center gap-2 rounded-md bg-gray-200 py-2 text-sm text-gray-700 hover:bg-gray-300 hover:text-black transition-colors"
+              className="flex w-full flex-row items-center justify-center gap-2 rounded-md bg-gray-200 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-300 hover:text-black"
             >
               <Map size={16} />
               View All Roadmaps
@@ -290,7 +290,7 @@ export function ProgressStack(props: ProgressStackProps) {
                 setShowAll={setShowAllProjects}
                 count={projects.length}
                 maxCount={MAX_PROJECTS_TO_SHOW}
-                className="mb-0.5 mt-3"
+                className="mt-3 mb-0.5"
               />
             )}
           </ProgressLane>
@@ -352,7 +352,7 @@ function StatsCard(props: StatsCardProps) {
 
   return (
     <div className="flex flex-col gap-1 rounded-md border bg-white p-4 shadow-xs">
-      <h3 className="mb-1 text-xs uppercase text-gray-500">{title}</h3>
+      <h3 className="mb-1 text-xs text-gray-500 uppercase">{title}</h3>
       {isLoading ? (
         <CardSkeleton className="h-8" />
       ) : (

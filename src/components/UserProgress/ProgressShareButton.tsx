@@ -29,7 +29,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
   function handleCopyLink() {
     const isDev = import.meta.env.DEV;
     const newUrl = new URL(
-      isDev ? 'http://localhost:3000' : 'https://roadmap.sh'
+      isDev ? 'http://localhost:3000' : 'https://roadmap.sh',
     );
 
     if (resourceType === 'roadmap' && !isCustomResource) {
@@ -52,9 +52,9 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
   return (
     <button
       className={cn(
-        'flex items-center gap-1 text-xs sm:text-sm font-medium disabled:cursor-not-allowed disabled:opacity-70',
+        'flex items-center gap-1 text-xs font-medium disabled:cursor-not-allowed disabled:opacity-70 sm:text-sm',
         isCopied ? 'text-green-500' : 'text-gray-500 hover:text-black',
-        className
+        className,
       )}
       onClick={handleCopyLink}
     >

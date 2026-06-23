@@ -110,19 +110,19 @@ export function ReviewsSection() {
   return (
     <div className="relative max-w-5xl">
       <div
-        className={cn('rounded-2xl pb-0 pt-24', {
+        className={cn('rounded-2xl pt-24 pb-0', {
           'pb-8': isExpanded,
         })}
       >
         {/* Prominent Reviews */}
         <div className="mb-4 md:mb-6">
-          <div className="grid grid-cols-1 gap-4 md:gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
             {prominentReviews.map((review, index) => (
               <div
                 key={index}
                 className="review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70"
               >
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-yellow-500/5" />
+                <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
                 <div className="flex items-center gap-4">
                   {review.avatarUrl && (
                     <img
@@ -225,7 +225,7 @@ export function ReviewsSection() {
 
           <div
             className={cn(
-              'absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-[#121212] via-[#121212]/80 to-transparent',
+              'absolute right-0 bottom-0 left-0 h-40 bg-linear-to-t from-[#121212] via-[#121212]/80 to-transparent',
               isExpanded ? 'opacity-0' : 'opacity-100',
             )}
           />
@@ -233,7 +233,7 @@ export function ReviewsSection() {
       </div>
 
       <div
-        className={cn('absolute left-1/2 top-full -translate-x-1/2', {
+        className={cn('absolute top-full left-1/2 -translate-x-1/2', {
           '-translate-y-1/2': !isExpanded,
         })}
       >

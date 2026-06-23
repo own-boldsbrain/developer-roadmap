@@ -2,9 +2,9 @@
 title: 'DevOps Project Ideas, Team Dashboard, Redis Content'
 description: 'New Project Ideas for DevOps, Team Dashboard, Redis Content'
 images:
-  "DevOps Project Ideas": "https://assets.roadmap.sh/guest/devops-project-ideas.png"
-  "Redis Resources": "https://assets.roadmap.sh/guest/redis-resources.png"
-  "Team Dashboard": "https://assets.roadmap.sh/guest/team-dashboard.png"
+  'DevOps Project Ideas': 'https://assets.roadmap.sh/guest/devops-project-ideas.png'
+  'Redis Resources': 'https://assets.roadmap.sh/guest/redis-resources.png'
+  'Team Dashboard': 'https://assets.roadmap.sh/guest/team-dashboard.png'
 seo:
   title: 'DevOps Project Ideas, Team Dashboard, Redis Content'
   description: ''

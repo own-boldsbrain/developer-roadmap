@@ -1,7 +1,7 @@
 ---
 import AccountLayout from '../layouts/AccountLayout.astro';
 import { Befriend } from '../components/Befriend';
-import LoginPopup from "../components/AuthenticationFlow/LoginPopup.astro";
+import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 ---
 
 <AccountLayout
@@ -10,5 +10,5 @@ import LoginPopup from "../components/AuthenticationFlow/LoginPopup.astro";
   initialLoadingMessage={'Loading invite'}
 >
   <LoginPopup />
-  <Befriend client:only="react" />
+  <Befriend client:only='react' />
 </AccountLayout>

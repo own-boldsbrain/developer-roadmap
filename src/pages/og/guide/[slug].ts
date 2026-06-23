@@ -3,7 +3,7 @@ import {
   getDefaultOpenGraphImageBuffer,
   getResourceOpenGraph,
 } from '../../../lib/open-graph';
-import {Transformer} from "@napi-rs/image";
+import { Transformer } from '@napi-rs/image';
 
 export const prerender = false;
 

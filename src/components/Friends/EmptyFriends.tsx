@@ -15,7 +15,7 @@ export function EmptyFriends(props: EmptyFriendsProps) {
         <UserPlus2 className="mb-2 h-[60px] w-[60px] opacity-10 sm:h-[120px] sm:w-[120px]" />
 
         <h2 className="text-lg font-bold sm:text-xl">Invite your Friends</h2>
-        <p className="mb-4 mt-1 max-w-[400px] text-sm leading-relaxed text-gray-500">
+        <p className="mt-1 mb-4 max-w-[400px] text-sm leading-relaxed text-gray-500">
           Share the unique link below with your friends to track their skills
           and progress.
         </p>

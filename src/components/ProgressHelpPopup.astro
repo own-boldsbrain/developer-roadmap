@@ -5,7 +5,7 @@ import Popup from './Popup/Popup.astro';
 
 <Popup id='progress-help' title='' subtitle=''>
   <div class='-mt-2.5'>
-    <p class='mb-3 text-2xl font-semibold leading-5 text-gray-900'>
+    <p class='mb-3 text-2xl leading-5 font-semibold text-gray-900'>
       Track your Progress
     </p>
     <p class='text-sm leading-4 text-gray-600'>
@@ -14,7 +14,7 @@ import Popup from './Popup/Popup.astro';
 
     <div class='mt-4 flex flex-col gap-1.5'>
       <div class='rounded-md border px-3 py-3 text-gray-500'>
-        <span class='mb-1.5 block text-xs font-medium uppercase text-green-600'
+        <span class='mb-1.5 block text-xs font-medium text-green-600 uppercase'
           >Option 1</span
         >
         <p class='text-sm'>
@@ -24,21 +24,35 @@ import Popup from './Popup/Popup.astro';
         </p>
       </div>
 
-      <div class='rounded-md border border-yellow-300 bg-yellow-50 px-3 py-3 text-gray-500'>
-        <span class='mb-1.5 block text-xs font-medium uppercase text-green-600'
+      <div
+        class='rounded-md border border-yellow-300 bg-yellow-50 px-3 py-3 text-gray-500'
+      >
+        <span class='mb-1.5 block text-xs font-medium text-green-600 uppercase'
           >Option 2</span
         >
         <p class='text-sm'>Use the keyboard shortcuts listed below.</p>
 
-        <ul class="flex flex-col gap-1 mt-3 mb-1.5">
+        <ul class='mt-3 mb-1.5 flex flex-col gap-1'>
           <li class='text-sm leading-loose'>
-            <kbd class="px-2 py-1.5 text-xs text-white bg-gray-900 rounded-md">Right Mouse Click</kbd> to mark as Done.
+            <kbd class='rounded-md bg-gray-900 px-2 py-1.5 text-xs text-white'
+              >Right Mouse Click</kbd
+            > to mark as Done.
           </li>
           <li class='text-sm leading-loose'>
-            <kbd class="px-2 py-1.5 text-xs text-white bg-gray-900 rounded-md">Shift</kbd> + <kbd class="px-2 py-1.5 text-xs text-white bg-gray-900 rounded-md">Click</kbd> to mark as in progress.
+            <kbd class='rounded-md bg-gray-900 px-2 py-1.5 text-xs text-white'
+              >Shift</kbd
+            > + <kbd
+              class='rounded-md bg-gray-900 px-2 py-1.5 text-xs text-white'
+              >Click</kbd
+            > to mark as in progress.
           </li>
           <li class='text-sm leading-loose'>
-            <kbd class="px-2 py-1.5 text-xs text-white bg-gray-900 rounded-md">Option / Alt</kbd> + <kbd class="px-2 py-1.5 text-xs text-white bg-gray-900 rounded-md">Click</kbd> to mark as skipped.
+            <kbd class='rounded-md bg-gray-900 px-2 py-1.5 text-xs text-white'
+              >Option / Alt</kbd
+            > + <kbd
+              class='rounded-md bg-gray-900 px-2 py-1.5 text-xs text-white'
+              >Click</kbd
+            > to mark as skipped.
           </li>
         </ul>
       </div>

@@ -35,7 +35,8 @@ export function TeamMemberItem(props: TeamMemberProps) {
 
   const currentTeam = useStore($currentTeam);
   const canManageTeam = useStore($canManageCurrentTeam);
-  const showNoProgressBadge = canViewProgress && !member.hasProgress && member.status === 'joined';
+  const showNoProgressBadge =
+    canViewProgress && !member.hasProgress && member.status === 'joined';
   const allowProgressReminder =
     canManageTeam &&
     !member.hasProgress &&

@@ -7,7 +7,7 @@ seo:
   title: 'How to become a Front-End Developer in 7 Steps'
   description: 'Learn how to become a front-end developer in 7 clear steps. Start your coding journey with practical tips and resources today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/how-to-become-frontend-developer-i23nx.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -76,6 +76,7 @@ Front-end development provides a financially rewarding career path with competit
 However, how much you earn can depend on your experience, the size of the company, and where you're looking for a job.
 
 ## Become a front-end developer in 7 steps
+
 ![How to become a frontend developer in 7 steps](https://assets.roadmap.sh/guest/how-to-become-frontend-developer-in-7-steps-2gigl.jpeg)
 
 The number of online resources available to learn front-end development can be overwhelming. It's hard for aspiring front-end developers to know where to start. However, roadmap.sh provides a clear step-by-step [front-end roadmap](https://roadmap.sh/frontend) to help you learn.
@@ -230,12 +231,13 @@ Front-end developers are responsible for implementing website functionality and 
 It involves several steps, like:
 
 - Writing JavaScript code to create interactive features. These interactive features include:
-    - Form validation - To check if the web user fills the form fields correctly.
-    - Interactive elements like image sliders, clickable buttons, and dropdown menus.
+
+  - Form validation - To check if the web user fills the form fields correctly.
+  - Interactive elements like image sliders, clickable buttons, and dropdown menus.
 
 - Using CSS animations or JavaScript transitions for interactive responses. These transitions and animations include:
-    - Smooth scrolling animations for a better browsing experience.
-    - Animated dropdown menus for easy-to-use web navigation.
+  - Smooth scrolling animations for a better browsing experience.
+  - Animated dropdown menus for easy-to-use web navigation.
 
 ## Frequently asked questions (FAQ): Becoming a front-end developer
 

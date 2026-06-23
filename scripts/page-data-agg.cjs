@@ -33,7 +33,7 @@ fs.createReadStream(csvFilePath)
 
         return value;
       },
-    })
+    }),
   )
   .on('data', (data) => {
     const { page, month_of_year, unique_pageviews, users } = data;
@@ -87,8 +87,11 @@ fs.createReadStream(csvFilePath)
     ];
 
     const csvRows = Object.keys(pageSummary)
-      .filter(pageUrl => pageSummary[pageUrl].views > 10)
-      .filter(pageUrl => !['/upcoming', '/pdfs', '/signup', '/login', '/@'].includes(pageUrl))
+      .filter((pageUrl) => pageSummary[pageUrl].views > 10)
+      .filter(
+        (pageUrl) =>
+          !['/upcoming', '/pdfs', '/signup', '/login', '/@'].includes(pageUrl),
+      )
       .sort((pageA, pageB) => {
         const aViews = pageSummary[pageA].views;
         const bViews = pageSummary[pageB].views;

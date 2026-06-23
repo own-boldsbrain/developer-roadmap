@@ -4,11 +4,11 @@ The events such as `onClick`, `onSubmit`, `onFocus`, etc. are all camel-cased to
 
 ```javascript
 function activateLasers(e) {
-    e.preventDefault();
-    console.log('The button was clicked.');
+  e.preventDefault();
+  console.log('The button was clicked.');
 }
 
-<button onClick={activateLasers}>Activate Lasers</button>
+<button onClick={activateLasers}>Activate Lasers</button>;
 ```
 
 In this case `activateLasers` is the event handler which will receive a React event object which, also known as a "synthetic event". It conforms to the same standard as the underlying DOM events, but fixes some browser inconsistencies.

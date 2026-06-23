@@ -32,7 +32,7 @@ rm -i [filename]
 
 ```bash
 # Removes an empty directory
-rmdir [directory] 
+rmdir [directory]
 ```
 
 Learn more from the following resources:

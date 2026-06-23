@@ -70,8 +70,6 @@ Feel free to use any programming language or framework of your choice to impleme
 - Implement proper error handling and logging mechanisms to track backup activities.
 - Ensure compatibility with different operating systems (Windows, Linux, macOS).
 
-
 <hr />
 
 Working on this project will help you gain a deeper understanding of database management systems, backup strategies, command-line interface development, and error handling. You will also learn about cloud storage integration and logging mechanisms. This project will enhance your skills in programming, database management, and system administration.
-

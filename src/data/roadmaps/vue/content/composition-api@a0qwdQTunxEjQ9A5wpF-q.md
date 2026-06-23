@@ -1,6 +1,6 @@
 # Composition API
 
-Vue offers many approaches for how to write components, including the "Composition API", which is most commonly used via "Script Setup". This approach is based around pulling in low level atomic functions used by Vue's reactivity engine. By composing these low level functions together, you can craft your own system for writing components. One feature this allows for is extending reactivity outside of components. This means you can extract your custom functions for reuse in multiple components. When reusing reactive logic, your functions are called "composables". 
+Vue offers many approaches for how to write components, including the "Composition API", which is most commonly used via "Script Setup". This approach is based around pulling in low level atomic functions used by Vue's reactivity engine. By composing these low level functions together, you can craft your own system for writing components. One feature this allows for is extending reactivity outside of components. This means you can extract your custom functions for reuse in multiple components. When reusing reactive logic, your functions are called "composables".
 
 Visit the following resources to learn more:
 

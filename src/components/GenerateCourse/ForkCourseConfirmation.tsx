@@ -77,7 +77,7 @@ export function ForkCourseConfirmation(props: ForkCourseConfirmationProps) {
 
           <button
             disabled={isPending}
-            className="flex hover:opacity-80 items-center justify-center gap-2 rounded-lg bg-black px-4 py-2.5 font-medium text-white transition-all hover:bg-gray-900 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex items-center justify-center gap-2 rounded-lg bg-black px-4 py-2.5 font-medium text-white transition-all hover:bg-gray-900 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
             onClick={() => forkCourse()}
           >
             {isPending ? (

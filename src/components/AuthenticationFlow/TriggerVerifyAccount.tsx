@@ -66,7 +66,7 @@ export function TriggerVerifyAccount() {
       <div className="mx-auto max-w-md text-center">
         {isLoading && <Spinner className="mx-auto h-16 w-16" />}
         {error && <ErrorIcon2 className="mx-auto h-16 w-16" />}
-        <h2 className="mb-1 mt-4 text-center text-xl font-semibold sm:mb-3 sm:mt-4 sm:text-2xl">
+        <h2 className="mt-4 mb-1 text-center text-xl font-semibold sm:mt-4 sm:mb-3 sm:text-2xl">
           Verifying your account
         </h2>
         <div className="text-sm sm:text-base">

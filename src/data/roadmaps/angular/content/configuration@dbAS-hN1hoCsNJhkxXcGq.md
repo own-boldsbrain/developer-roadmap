@@ -3,12 +3,17 @@
 The configuration of routes in an Angular application involves defining route mappings in an array and providing these routes to the Angular router.
 
 ### Example routes:
+
 ```typescript
 const appRoutes: Routes = [
   { path: 'custom-path', component: CustomComponet },
-  { path: 'custom-path/:id', component: CustomDetailComponet, data: { title: 'Details component' } },
-  { path: '', redirectTo: '/heroes', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent }
+  {
+    path: 'custom-path/:id',
+    component: CustomDetailComponet,
+    data: { title: 'Details component' },
+  },
+  { path: '', redirectTo: '/heroes', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 ```
 

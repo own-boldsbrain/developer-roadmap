@@ -62,4 +62,3 @@ Here are some constraints that you should follow:
 <hr />
 
 This is the last "beginner" project in the backend roadmap. If you have completed all the projects in the backend roadmap, you should have a good understanding of how to build a backend application. You can now move on to the "intermediate" projects in the backend roadmap.
-

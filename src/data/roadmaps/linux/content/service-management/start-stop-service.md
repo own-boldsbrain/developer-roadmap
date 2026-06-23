@@ -8,13 +8,13 @@ Here is a simple example:
 
 ```bash
 # To start a service
-sudo systemctl start service_name   
+sudo systemctl start service_name
 
 # To stop a service
-sudo systemctl stop service_name   
+sudo systemctl stop service_name
 
 # To restart a service
-sudo systemctl restart service_name   
+sudo systemctl restart service_name
 ```
 
 Replace `service_name` with the name of the service you want to start, stop or restart. Always make sure to use sudo to execute these commands as they require root permissions.

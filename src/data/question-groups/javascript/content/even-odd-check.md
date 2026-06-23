@@ -4,7 +4,6 @@ In the example below, the number used for the division is "2", which is already 
 
 ```javascript
 function EvenOrOddNum(num) {
-
   if (num % 2 === 0) {
     return `${num} is even`;
   } else {
@@ -15,4 +14,4 @@ function EvenOrOddNum(num) {
 console.log(EvenOrOddNum(30)); // 30 is even
 
 console.log(EvenOrOddNum(31)); // 31 is odd
-``` 
+```

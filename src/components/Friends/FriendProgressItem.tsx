@@ -185,10 +185,8 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
 
         {friend.status === 'rejected' && (
           <>
-            <div
-              className={'flex w-full grow items-center justify-center'}
-            >
-              <span className=" flex flex-col items-center text-red-500">
+            <div className={'flex w-full grow items-center justify-center'}>
+              <span className="flex flex-col items-center text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Rejected
               </span>
@@ -213,10 +211,8 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
 
         {friend.status === 'got_rejected' && (
           <>
-            <div
-              className={'flex w-full grow items-center justify-center'}
-            >
-              <span className=" flex flex-col items-center text-sm text-red-500">
+            <div className={'flex w-full grow items-center justify-center'}>
+              <span className="flex flex-col items-center text-sm text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Rejected
               </span>
@@ -241,10 +237,8 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
 
         {friend.status === 'sent' && (
           <>
-            <div
-              className={'flex w-full grow items-center justify-center'}
-            >
-              <span className=" flex flex-col items-center text-green-500">
+            <div className={'flex w-full grow items-center justify-center'}>
+              <span className="flex flex-col items-center text-green-500">
                 <AddedUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Sent
               </span>

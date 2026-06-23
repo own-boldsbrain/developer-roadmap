@@ -8,7 +8,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
-import {replaceChildren} from "../../lib/dom.ts";
+import { replaceChildren } from '../../lib/dom.ts';
 
 export type ProgressMapProps = {
   teamId: string;
@@ -51,7 +51,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
       const normalizedGroupId = groupId.replace(/^\d+-/, '');
       if (removedItems.includes(normalizedGroupId)) {
         setRemovedItems((prev) =>
-          prev.filter((id) => id !== normalizedGroupId)
+          prev.filter((id) => id !== normalizedGroupId),
         );
         renderTopicProgress(normalizedGroupId, 'reset' as any);
       } else {
@@ -114,7 +114,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
         resourceId: resourceId,
         resourceType: resourceType,
         removed: removedItems,
-      }
+      },
     );
 
     if (error || !response) {
@@ -148,7 +148,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
   }, []);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed top-0 right-0 left-0 z-100 h-full items-center justify-center overflow-x-hidden overflow-y-auto overscroll-contain bg-black/50">
       <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
           id={'customized-roadmap'}
@@ -200,7 +200,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
             <div className="flex w-full justify-center">
               <Spinner
                 isDualRing={false}
-                className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
+                className="mt-2 mb-4 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
               />
             </div>
           )}

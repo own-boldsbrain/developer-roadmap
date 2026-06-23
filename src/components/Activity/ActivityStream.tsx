@@ -57,7 +57,7 @@ export function ActivityStream(props: ActivityStreamProps) {
   return (
     <div className={cn('mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8', className)}>
       {activities.length > 0 && (
-        <h2 className="mb-3 text-xs uppercase text-gray-400">
+        <h2 className="mb-3 text-xs text-gray-400 uppercase">
           Learning Activity
         </h2>
       )}
@@ -172,7 +172,7 @@ export function ActivityStream(props: ActivityStreamProps) {
 
       {activities.length > 10 && (
         <button
-          className="mt-3 flex items-center gap-2 rounded-md border border-black py-1 pl-1.5 pr-2 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+          className="mt-3 flex items-center gap-2 rounded-md border border-black py-1 pr-2 pl-1.5 text-xs tracking-wide text-black uppercase transition-colors hover:border-black hover:bg-black hover:text-white"
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? (

@@ -7,12 +7,12 @@ import { AdvertiseForm } from '../components/AdvertiseForm';
 <BaseLayout title='Advertise with roadmap.sh' permalink={'/advertise'}>
   <div class='bg-white py-8 sm:py-20'>
     <div class='container'>
-      <div class='mb-2 sm:mb-8 flex items-center'>
+      <div class='mb-2 flex items-center sm:mb-8'>
         <div>
-          <h1 class='mb-0 sm:mb-3 text-2xl font-bold sm:text-4xl'>
+          <h1 class='mb-0 text-2xl font-bold sm:mb-3 sm:text-4xl'>
             Advertise with roadmap.sh
           </h1>
-          <p class='text-lg sm:text-xl text-gray-500'>
+          <p class='text-lg text-gray-500 sm:text-xl'>
             The best way to reach developers
           </p>
         </div>
@@ -36,5 +36,5 @@ import { AdvertiseForm } from '../components/AdvertiseForm';
       <AdvertiseForm client:load />
     </div>
   </div>
-  <div slot="changelog-banner" />
+  <div slot='changelog-banner'></div>
 </BaseLayout>

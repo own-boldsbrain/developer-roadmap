@@ -109,7 +109,7 @@ export function TeamVersions(props: TeamVersionsProps) {
     if (!selectedTeamVersion) {
       return;
     }
-    
+
     clearResourceProgress();
 
     // teams have customizations. Assigning #customized-roadmap to roadmapSvgWrap
@@ -186,7 +186,7 @@ export function TeamVersions(props: TeamVersionsProps) {
           />
           <div
             ref={teamDropdownRef}
-            className="fixed bottom-0 left-0 z-50 mt-1 h-fit w-full overflow-hidden rounded-md bg-white py-0.5 shadow-md sm:absolute sm:left-0 sm:right-0 sm:top-full sm:border"
+            className="fixed bottom-0 left-0 z-50 mt-1 h-fit w-full overflow-hidden rounded-md bg-white py-0.5 shadow-md sm:absolute sm:top-full sm:right-0 sm:left-0 sm:border"
           >
             <button
               className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${

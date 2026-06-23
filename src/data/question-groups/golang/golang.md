@@ -165,7 +165,7 @@ questions:
     answer: garbage-collection-effects.md
     topics:
       - Intermediate
-  - question: "Discuss how Go handles memory leaks and the strategies you might use to identify bottlenecks."
+  - question: 'Discuss how Go handles memory leaks and the strategies you might use to identify bottlenecks.'
     answer: memory-leak-strategies.md
     topics:
       - Advanced
@@ -221,7 +221,6 @@ questions:
     answer: code-analysis.md
     topics:
       - Advanced
-
 ---
 
 ![Top golang interview questions](https://assets.roadmap.sh/guest/golang-interviews-questions-m4vuw.jpg)
@@ -230,12 +229,12 @@ questions:
 
 Ever since Golang (also known as "Go") was released in 2012, developers have been taking advantage of its many pros around its concurrent programming model, and the language's simplicity.
 
-If you're looking to become a Go developer,  this list of Golang interview questions will help you prepare for the role. From basic types and variable declaration in Go to advanced allocation techniques in the memory space and error-handling strategies, we've got you covered. 
+If you're looking to become a Go developer, this list of Golang interview questions will help you prepare for the role. From basic types and variable declaration in Go to advanced allocation techniques in the memory space and error-handling strategies, we've got you covered.
 
 So sit back and relax, because the preparation process is going to take a while, but the results are going to be great!
 
 ## Getting ready for your next interview
 
-Preparing for a Golang interview involves more than just memorizing the words "main import" and "func main". You need to understand how calling functions work, how variables receive their zero value, and how types and composite types work together. 
+Preparing for a Golang interview involves more than just memorizing the words "main import" and "func main". You need to understand how calling functions work, how variables receive their zero value, and how types and composite types work together.
 
 As a good rule of thumb, you'd want to practice writing unit tests using the built-in testing package, and don't forget to focus on properly managing your errors, defining your own error types (when it makes sense), and carefully managing your dependencies. Those are all details that tend to get ignored or trivialized by inexperienced developers (and you don't want to look like one!).

@@ -41,7 +41,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
       )}
       <div
         className={
-          'fixed bottom-5 left-1/2 -translate-x-1/4 z-30 hidden transform animate-fade-slide-up flex-row gap-1.5 transition-all duration-300 lg:flex'
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-30 hidden -translate-x-1/4 transform flex-row gap-1.5 transition-all duration-300 lg:flex'
         }
       >
         <div
@@ -54,7 +54,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
               hidden: hasProgress,
             })}
           >
-            <span className="mr-2 text-sm font-semibold uppercase text-yellow-400">
+            <span className="mr-2 text-sm font-semibold text-yellow-400 uppercase">
               Tip
             </span>
             <span className="text-sm text-gray-200">
@@ -66,7 +66,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
               hidden: !hasProgress,
             })}
           >
-            <span className="relative -top-[0.45px] mr-2 text-xs font-medium uppercase text-yellow-400">
+            <span className="relative -top-[0.45px] mr-2 text-xs font-medium text-yellow-400 uppercase">
               Progress
             </span>
             <span>{done > $totalRoadmapNodes ? $totalRoadmapNodes : done}</span>{' '}
@@ -74,7 +74,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
           </span>
 
           <span
-            className="absolute bottom-0 left-0 top-0 z-10 bg-stone-700"
+            className="absolute top-0 bottom-0 left-0 z-10 bg-stone-700"
             style={{
               width: `${(done / $totalRoadmapNodes) * 100}%`,
             }}

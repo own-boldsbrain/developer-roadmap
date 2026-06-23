@@ -39,7 +39,7 @@ Let’s look at these points in detail:
 
 ### Goals
 
-DevOps engineers' primary focus is to improve the (SDLC) through process automation, enhance collaboration, and promote continuous improvement. Site Reliability Engineers aims to create easily maintained systems by automating processes,  manual and repetitive tasks, implementing monitoring and alerting systems, and designing for scale and resilience.
+DevOps engineers' primary focus is to improve the (SDLC) through process automation, enhance collaboration, and promote continuous improvement. Site Reliability Engineers aims to create easily maintained systems by automating processes, manual and repetitive tasks, implementing monitoring and alerting systems, and designing for scale and resilience.
 
 ### Roles and ownership
 
@@ -47,7 +47,7 @@ In DevOps culture, developers, and other related stakeholders are often involved
 
 In contrast, the SRE model promotes a clear separation between development and operations. The development team is focused on building and maintaining features, while the SRE team is responsible for the reliability and availability of services.
 
-### Scope and mindset 
+### Scope and mindset
 
 DevOps is typically applied to self-contained applications or services, encouraging experimentation and innovation with opportunities to learn from failures. In contrast, SRE is applied to entire systems and platforms, primarily focusing on minimizing human error and downtime for the operations teams.
 
@@ -131,9 +131,10 @@ SRE teams define clear processes for detecting, diagnosing, and resolving incide
 
 Site Reliability Engineering aims to deliver higher availability percentages, uptime, and other metrics such as error rates and response time to system customers or users.
 
-These processes help software developers build and deliver software more efficiently. 
+These processes help software developers build and deliver software more efficiently.
 
 ## Similarities between DevOps and SRE
+
 ![Similarities](https://assets.roadmap.sh/guest/similarities-devops-sre-eqa7p.jpeg)
 
 DevOps and SRE principles have become popular and widely adopted by organizations because they create robust and bug-free systems with continuous improvement in mind. Below are some key similarities between DevOps and SRE:
@@ -146,7 +147,7 @@ DevOps and SRE principles have become popular and widely adopted by organization
 
 ## What is the role of a DevOps engineer?
 
-[DevOps engineers](https://roadmap.sh/devops) are integral to any organization looking to bridge the gap between development and operations teams. They collaborate closely with software engineers,  quality assurance teams, and other stakeholders to achieve this goal.  Here are some key responsibilities of a DevOps engineer:
+[DevOps engineers](https://roadmap.sh/devops) are integral to any organization looking to bridge the gap between development and operations teams. They collaborate closely with software engineers, quality assurance teams, and other stakeholders to achieve this goal. Here are some key responsibilities of a DevOps engineer:
 
 - Adopts the agile methodology and automation to remove bottlenecks in the SDLC.
 - Set up monitoring and logging mechanisms to track the performance, availability, and health of systems.
@@ -180,7 +181,7 @@ To perform these responsibilities, the SRE team uses various tools to tackle inf
 
 - **Kibana**: Kibana is an open-source data visualization platform for monitoring metrics and events
 - **Datadog**: Datadog is a cloud monitoring tool for events, infrastructure hosts, and much more
-- **NetApp Cloud Insights**: NetApp Cloud Insights is a tool used to monitor IT infrastructure 
+- **NetApp Cloud Insights**: NetApp Cloud Insights is a tool used to monitor IT infrastructure
 - **Terraform**: Terraform is an infrastructure as code tool used to automate infrastructure tasks
 - **Ansible**: Ansible is an open-source engine for automating resource provision, configuration management, application deployment, and other IT-related tasks
 - **New Relic**: New Relic is a cloud-based full-stack observability platform for monitoring and analyzing metrics

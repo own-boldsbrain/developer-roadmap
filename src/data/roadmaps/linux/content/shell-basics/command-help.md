@@ -14,8 +14,9 @@ For built-in shell functions, use:
 help [command]
 ```
 
-Moreover, you can add the *--help* flag to almost any command to get more information about it.
+Moreover, you can add the _--help_ flag to almost any command to get more information about it.
 For example:
+
 ```bash
 date --help
 ```

@@ -41,24 +41,24 @@ db.courseRecords.find({
     {
       grades: {
         $elemMatch: {
-          subject: "Math",
+          subject: 'Math',
           score: {
-            $gte: 80
-          }
-        }
-      }
+            $gte: 80,
+          },
+        },
+      },
     },
     {
       grades: {
         $elemMatch: {
-          subject: "English",
+          subject: 'English',
           score: {
-            $gte: 70
-          }
-        }
-      }
-    }
-  ]
+            $gte: 70,
+          },
+        },
+      },
+    },
+  ],
 });
 ```
 

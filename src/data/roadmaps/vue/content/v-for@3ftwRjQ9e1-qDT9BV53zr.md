@@ -9,9 +9,9 @@ When using this directive it is important to assign a unique key to each item to
 <script setup>
   import { ref } from 'vue';
   const foods = ref([
-    {id: 1, name: "apple"},
-    {id: 2, name: "pear"},
-    {id: 3, name: "pizza"}
+    { id: 1, name: 'apple' },
+    { id: 2, name: 'pear' },
+    { id: 3, name: 'pizza' },
   ]);
 </script>
 

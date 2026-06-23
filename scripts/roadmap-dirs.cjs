@@ -32,7 +32,7 @@ const roadmapDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName);
 const roadmapContentDirPath = path.join(
   ROADMAP_CONTENT_DIR,
   roadmapDirName,
-  'content'
+  'content',
 );
 
 // If roadmap content already exists do not proceed as it would override the files
@@ -58,7 +58,9 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
   }
 
   // e.g. testing-your-apps:other-options
-  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '').replace(/^check:/, '');
+  const controlNameWithoutSortOrder = controlName
+    .replace(/^\d+-/, '')
+    .replace(/^check:/, '');
   // e.g. ['testing-your-apps', 'other-options']
   const dirParts = controlNameWithoutSortOrder.split(':');
 
@@ -82,10 +84,9 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
   return { dirTree, dirSortOrders };
 }
 
-const roadmap = require(path.join(
-  __dirname,
-  `../src/data/roadmaps/${roadmapId}/${roadmapId}`
-));
+const roadmap = require(
+  path.join(__dirname, `../src/data/roadmaps/${roadmapId}/${roadmapId}`),
+);
 
 const controls = roadmap.mockup.controls.control;
 
@@ -155,7 +156,7 @@ function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
       path.join(parentDir, dirName),
       dirTree[dirName],
       dirSortOrders,
-      filePaths
+      filePaths,
     );
   });
 

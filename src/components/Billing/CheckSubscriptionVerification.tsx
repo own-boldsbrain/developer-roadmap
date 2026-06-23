@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
-import { VerifyUpgrade } from "./VerifyUpgrade";
+import { VerifyUpgrade } from './VerifyUpgrade';
 
 export function CheckSubscriptionVerification() {
   const [shouldVerifyUpgrade, setShouldVerifyUpgrade] = useState(false);

@@ -11,7 +11,7 @@ type MemberProgressModalHeaderProps = {
 };
 
 export function MemberProgressModalHeader(
-  props: MemberProgressModalHeaderProps
+  props: MemberProgressModalHeaderProps,
 ) {
   const {
     progress: memberProgress,
@@ -41,7 +41,7 @@ export function MemberProgressModalHeader(
   return (
     <>
       {isCurrentUser && (
-        <div className="sticky top-1 z-50 mx-1 mb-0 mt-1 rounded-xl bg-gray-900 p-4 text-gray-300">
+        <div className="sticky top-1 z-50 mx-1 mt-1 mb-0 rounded-xl bg-gray-900 p-4 text-gray-300">
           <h2 className={'mb-1.5 text-base'}>
             Follow the Instructions below to update your progress
           </h2>
@@ -70,7 +70,7 @@ export function MemberProgressModalHeader(
 
       <div className="p-4">
         {!isCurrentUser && (
-          <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
+          <div className="mt-0 mb-5 text-left md:mt-4 md:text-center">
             <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
               {member.name}'s Progress
             </h2>
@@ -99,11 +99,11 @@ export function MemberProgressModalHeader(
           </div>
         )}
         <p
-          className={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
+          className={`-mx-4 mb-3 flex items-center justify-start border-t border-b px-4 py-2 text-sm sm:hidden ${
             isLoading ? 'striped-loader' : ''
           }`}
         >
-          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium text-yellow-900 uppercase">
             <span>{progressPercentage}</span>% Done
           </span>
 
@@ -112,11 +112,11 @@ export function MemberProgressModalHeader(
           </span>
         </p>
         <p
-          className={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+          className={`-mx-4 mb-3 hidden items-center justify-center border-t border-b py-2 text-sm sm:flex ${
             isLoading ? 'striped-loader' : ''
           }`}
         >
-          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium text-yellow-900 uppercase">
             <span>{progressPercentage}</span>% Done
           </span>
 

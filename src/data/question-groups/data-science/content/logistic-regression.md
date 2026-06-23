@@ -2,4 +2,4 @@ Logistic regression is a supervised machine learning algorithm commonly used for
 
 For example, 0 represents a negative class, and 1 represents a positive class. Logistic regression is commonly used in binary classification problems where the outcome variable reveals either of the two categories (0 and 1).
 
-**Common pitfall:** Misunderstanding that logistic regression is not a classification algorithm but a probability estimator. 
+**Common pitfall:** Misunderstanding that logistic regression is not a classification algorithm but a probability estimator.

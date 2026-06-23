@@ -18,5 +18,6 @@ bash -x script.sh
 
 These debugging tools and options can drastically help you in making your scripts more error-proof and efficient.
 
-Visit the following sources to learn more: 
+Visit the following sources to learn more:
+
 - [@official@Official Bashdb Documentation](https://bashdb.readthedocs.io/en/latest/)

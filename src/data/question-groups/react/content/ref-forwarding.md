@@ -52,4 +52,3 @@ function Form() {
 ```
 
 This Form component passes a ref to `MyInput`. The `MyInput` component forwards that ref to the `<input>` browser tag. As a result, the `Form` component can access that `<input>` DOM node and call `focus()` on it.
-

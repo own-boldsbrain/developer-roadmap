@@ -5,4 +5,4 @@ Angular velocity, denoted by the symbol 'ω', is a measure of the rate of change
 Visit the following resources to learn more:
 
 - [@article@Angular Velocity](https://allenchou.net/2013/12/game-physics-motion-dynamics-fundamentals/)
-- [@article@Understanding Angular Velocity](https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Trigonometry_(Sundstrom_and_Schlicker)/01%3A_The_Trigonometric_Functions/1.04%3A_Velocity_and_Angular_Velocity)
+- [@article@Understanding Angular Velocity](<https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Trigonometry_(Sundstrom_and_Schlicker)/01%3A_The_Trigonometric_Functions/1.04%3A_Velocity_and_Angular_Velocity>)

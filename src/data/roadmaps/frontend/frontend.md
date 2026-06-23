@@ -9,9 +9,9 @@ title: 'Frontend Developer'
 description: 'Step by step guide to becoming a modern frontend developer in 2025'
 hasTopics: true
 partner:
-  description: "Get the latest Frontend news from our sister site"
-  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
-  linkText: "TheNewStack.io"
+  description: 'Get the latest Frontend news from our sister site'
+  link: 'https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+  linkText: 'TheNewStack.io'
 question:
   title: 'What is a Frontend Developer?'
   description: |

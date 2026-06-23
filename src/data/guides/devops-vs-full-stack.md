@@ -35,14 +35,14 @@ This guide explains what each role entails, addresses the motivations behind cho
 
 The key differences between DevOps engineers and full stack developers are summarized in the table below.
 
-| DevOps engineer | Full stack developer |
-|-----------------|----------------------|
-| Responsible for the smooth flow of code changes from development to production. | Focuses on end-to-end application development (both frontend and backend) |
+| DevOps engineer                                                                                                                         | Full stack developer                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Responsible for the smooth flow of code changes from development to production.                                                         | Focuses on end-to-end application development (both frontend and backend)                                   |
 | Uses monitoring tools to track the performance of deployed software and also identify issues and bottlenecks in the deployment process. | Writes unit, integration, and end-to-end tests for the application code and fixes bugs related to the code. |
-| Focuses on automating processes and ensuring a software application runs reliably and flawlessly. | Handles the development of web applications or a software program (frontend and backend) |
-| Familiar with [tools that aid task automation](https://roadmap.sh/devops/automation-tools), code testing and deployments. | Has expertise in various frontend and backend programming languages |
-| Focuses more on the infrastructure management side of the whole development life-cycle, which includes managing networks and servers. | Could either focus on the frontend and backend web architectures. |
-| Has an in-depth understanding of operations to ensure optimal software delivery. | Possess a basic knowledge of operations. |
+| Focuses on automating processes and ensuring a software application runs reliably and flawlessly.                                       | Handles the development of web applications or a software program (frontend and backend)                    |
+| Familiar with [tools that aid task automation](https://roadmap.sh/devops/automation-tools), code testing and deployments.               | Has expertise in various frontend and backend programming languages                                         |
+| Focuses more on the infrastructure management side of the whole development life-cycle, which includes managing networks and servers.   | Could either focus on the frontend and backend web architectures.                                           |
+| Has an in-depth understanding of operations to ensure optimal software delivery.                                                        | Possess a basic knowledge of operations.                                                                    |
 
 ## DevOps engineer or full stack developer
 
@@ -52,7 +52,7 @@ Both roles offer great career opportunities. DevOps engineers can work in differ
 
 Some DevOps specializations include code release manager, automation architect, DevSecOps engineer, etc. The same applies to a full stack engineer. As a full stack developer, you can work as a [frontend](https://roadmap.sh/frontend?r=frontend-beginner) or [backend](https://roadmap.sh/frontend?r=frontend-beginner) developer.
 
-DevOps developers and full stack developers are also in high demand. According to [Statista](https://www.statista.com/statistics/1367003/in-demand-it-roles/), full stack developers and DevOps developers are among the top technical positions demanded by recruiters worldwide in 2023. Indeed reported that the average salary of a  [DevOps engineer](https://www.indeed.com/career/development-operations-engineer/salaries?from=top_sb) in the USA is $124,392, and that of a [full](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb) [](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb)[stack software developer](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb) is $124,120.
+DevOps developers and full stack developers are also in high demand. According to [Statista](https://www.statista.com/statistics/1367003/in-demand-it-roles/), full stack developers and DevOps developers are among the top technical positions demanded by recruiters worldwide in 2023. Indeed reported that the average salary of a [DevOps engineer](https://www.indeed.com/career/development-operations-engineer/salaries?from=top_sb) in the USA is $124,392, and that of a [full](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb) [](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb)[stack software developer](https://www.indeed.com/career/full-stack-developer/salaries?from=top_sb) is $124,120.
 
 Before deciding which path to follow, some introspection is encouraged, and some factors are to be considered. Some of the things to consider include:
 
@@ -84,7 +84,7 @@ Here is each role in detail to help you make a deeper consideration.
 
 ## Who is a DevOps engineer?
 
-A [DevOps](https://roadmap.sh/devops) engineer who can also be referred to as a DevOps developer  is an IT professional with knowledge of development and operations. The development part involves writing codes and scripts, while the operations part includes managing on-premises and/or cloud infrastructure and system infrastructure.
+A [DevOps](https://roadmap.sh/devops) engineer who can also be referred to as a DevOps developer is an IT professional with knowledge of development and operations. The development part involves writing codes and scripts, while the operations part includes managing on-premises and/or cloud infrastructure and system infrastructure.
 
 In traditional software development, there is the challenge of having different teams working in silos. This siloed team structure makes it challenging to collaborate amongst teams, and the priorities and timelines of each team don't align with other teams.
 
@@ -149,11 +149,11 @@ DevOps engineers should have solid cloud computing skills. Recently, many applic
 
 ## Who is a full stack developer?
 
-[Full stack developers](https://roadmap.sh/full-stack) are software developers with extensive frontend and backend development knowledge. Their role is to handle the complete web development process, from designing the user interface to building the server-side logic. 
+[Full stack developers](https://roadmap.sh/full-stack) are software developers with extensive frontend and backend development knowledge. Their role is to handle the complete web development process, from designing the user interface to building the server-side logic.
 
 The frontend of an application includes everything the user can see and interact with, i.e., the user interface. The backend consists of the things the user doesn’t see. These include the server-side and systems supporting the business logic.
 
-Full stack coders also use [DevOps tools](https://roadmap.sh/devops/tools). Depending on the project, a full stack developer may use DevOps technologies like GitHub and mongoDB to create software applications. 
+Full stack coders also use [DevOps tools](https://roadmap.sh/devops/tools). Depending on the project, a full stack developer may use DevOps technologies like GitHub and mongoDB to create software applications.
 
 Let's take a look at frontend and backend development in greater detail.
 
@@ -167,7 +167,7 @@ There are quite a few frontend frameworks out there. Some of the common ones are
 
 ### Backend development
 
-It focuses on the application's functionality and *business logic*. Examples of backend components include data storage, security, and handling of business logic.
+It focuses on the application's functionality and _business logic_. Examples of backend components include data storage, security, and handling of business logic.
 
 Backend development mainly involves creating API endpoints consumed by the application's front end. Some common backend programming languages include C#, [Java](https://roadmap.sh/java), [Rust](https://roadmap.sh/rust), [Golang](https://roadmap.sh/golang), and [Python](https://roadmap.sh/python). Check out the [backend developer](https://roadmap.sh/backend) roadmap.
 
@@ -186,7 +186,7 @@ The necessary technical skills to required by full stack engineers include:
 
 ## How to transition to DevOps
 
-Some fundamental knowledge and skills are required for DevOps that will certainly be helpful in the transition.  Here is a step-by-step guide for you:
+Some fundamental knowledge and skills are required for DevOps that will certainly be helpful in the transition. Here is a step-by-step guide for you:
 
 - If you do not already know a programming language, learn one. Some languages used in DevOps include [Python](https://roadmap.sh/python) and [Golang](https://roadmap.sh/golang). [Bash](https://www.gnu.org/software/bash/) is commonly used for scripting.
 - Learn about file systems and how to use bash to navigate through files. Also, learn to use Command-Line Interfaces (CLIs).
@@ -207,9 +207,9 @@ Are you looking to transition into full stack development? Here is a handy guide
 
 You can refer to roadmap.sh's [full stack development roadmap](https://roadmap.sh/full-stack) for a more detailed guideline.
 
-As you've seen, becoming a DevOps engineer and full stack web developer requires several skill sets.  Full stack developers and DevOps engineers have important roles in software development but have different areas of expertise and responsibilities.
+As you've seen, becoming a DevOps engineer and full stack web developer requires several skill sets. Full stack developers and DevOps engineers have important roles in software development but have different areas of expertise and responsibilities.
 
-Ultimately, the right choice depends on the specific needs and goals of the **software development project**.  roadmap.sh offers step-by-step guidance on how to become a [DevOps engineer](https://roadmap.sh/devops?r=devops) and a [full stack developer](https://roadmap.sh/full-stack), and by signing up, you will be able to:
+Ultimately, the right choice depends on the specific needs and goals of the **software development project**. roadmap.sh offers step-by-step guidance on how to become a [DevOps engineer](https://roadmap.sh/devops?r=devops) and a [full stack developer](https://roadmap.sh/full-stack), and by signing up, you will be able to:
 
 - Keep track of your progress and also share it on your roadmap.sh profile.
 - Collaborate on other official roadmaps.

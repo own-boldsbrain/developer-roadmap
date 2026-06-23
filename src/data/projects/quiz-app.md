@@ -26,7 +26,7 @@ In this project, we will be making a browser based quiz. The app will present us
 
 ## Requirements
 
-As a developer, feel free to come up with a JSON based quiz the questions as you see fit. 
+As a developer, feel free to come up with a JSON based quiz the questions as you see fit.
 
 - The user will be initially presented with a "start" button and some detail about the quiz
 - When the user presses start they're presented with the first multiple choice question.

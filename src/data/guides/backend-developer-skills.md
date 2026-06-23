@@ -7,7 +7,7 @@ seo:
   title: '8 In-Demand Backend Developer Skills to Master'
   description: 'Learn what the essential backend developer skills are that you should learn and master to advance in your career.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-skills-ece68.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: backend
 isNew: false
 type: 'textual'

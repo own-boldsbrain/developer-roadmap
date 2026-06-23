@@ -4,4 +4,4 @@ The DOM is a structured representation of a webpage's elements **(HTML or XML pa
 
 The DOM represents the web page as a tree-like structure of objects. Each web page element, like paragraphs and images, becomes an object in this tree. JavaScript uses the DOM to manipulate these objects and make the webpage interactive.
 
-For example, imagine you're watching a JavaScript tutorial on YouTube that you enjoy and decide to click the "like" button. When you click the "like" button, the text changes to "unlike," and the like counter goes up. JavaScript accesses and changes the DOM to update the button's text from "like" to "unlike." 
+For example, imagine you're watching a JavaScript tutorial on YouTube that you enjoy and decide to click the "like" button. When you click the "like" button, the text changes to "unlike," and the like counter goes up. JavaScript accesses and changes the DOM to update the button's text from "like" to "unlike."

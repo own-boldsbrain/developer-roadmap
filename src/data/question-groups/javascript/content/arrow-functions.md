@@ -6,13 +6,13 @@ Regular functions, on the other hand, bind the "this" keyword to the function it
 // arrow function with this
 
 function personName(name) {
-  this.name = name; 
+  this.name = name;
   this.sayName = () => {
-  console.log(this.name); // 'this' is inherited from the surrounding context (constructor function: personName)
+    console.log(this.name); // 'this' is inherited from the surrounding context (constructor function: personName)
   };
 }
 
-const cess = new personName("cess");
+const cess = new personName('cess');
 
 cess.sayName(); // cess
 
@@ -22,12 +22,11 @@ function Person(name) {
   this.name = name; // Assigns the "name" parameter as the "name" property of the object you created.
 
   this.sayName = function () {
-
-console.log(this.name); // Refers to the "name" property of the object that calls this function.
+    console.log(this.name); // Refers to the "name" property of the object that calls this function.
   };
 }
 
-const cess = new Person("cess");
+const cess = new Person('cess');
 
 cess.sayName(); // cess
 ```
@@ -37,13 +36,13 @@ In arrow functions, if there is only one expression, you can skip the curly brac
 ```javascript
 // regular function
 
-function doMath(a,b) {
-    return a + b;
+function doMath(a, b) {
+  return a + b;
 }
 
 console.log(doMath(200, 500)); // 700
 
-// arrow function 
+// arrow function
 
 const doMath = (a, b) => a + b; // single expression
 
@@ -57,4 +56,4 @@ let doMath = (a, b) => {
 };
 
 console.log(doMath(200, 500)); // 100,000
-``` 
+```

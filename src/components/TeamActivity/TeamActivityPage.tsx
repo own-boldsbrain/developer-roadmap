@@ -190,7 +190,7 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
   }, [users, activities]);
 
   const sectionHeading = (
-    <h3 className="mb-3 flex h-[20px] w-full items-center justify-between text-xs uppercase text-gray-400">
+    <h3 className="mb-3 flex h-[20px] w-full items-center justify-between text-xs text-gray-400 uppercase">
       Team Activity
       <span className="mx-3 h-[1px] grow bg-gray-200" />
       {canManageCurrentTeam && (
@@ -241,7 +241,7 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
       {usersWithActivities.length > 0 ? (
         <>
           {sectionHeading}
-          <ul className="mb-4 mt-2 flex flex-col gap-3">
+          <ul className="mt-2 mb-4 flex flex-col gap-3">
             {usersWithActivities.map((user, index) => {
               return (
                 <TeamActivityItem

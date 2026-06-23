@@ -28,7 +28,7 @@ export function TeamPricing() {
 
         <div className="flex flex-col gap-6 sm:flex-row sm:gap-4">
           <div className="relative flex flex-col items-center justify-center gap-2 overflow-hidden rounded-xl border border-purple-500">
-            <div className="px-8 pb-2 pt-5 text-center sm:pt-4">
+            <div className="px-8 pt-5 pb-2 text-center sm:pt-4">
               <h3 className="mb-1 text-2xl font-bold">Free</h3>
               <p className="text-sm text-gray-500">No credit card required</p>
               <p className="flex items-start justify-center gap-1 py-6 text-3xl">
@@ -46,7 +46,7 @@ export function TeamPricing() {
                   localStorage.setItem('redirect', '/team/new');
                 }}
                 href={isAuthenticated ? '/team/new' : '/signup'}
-                className="block rounded-md bg-purple-600 px-6 py-2 text-center text-sm font-medium leading-6 text-white shadow-sm transition hover:bg-gray-700 hover:shadow-lg focus:outline-hidden"
+                className="block rounded-md bg-purple-600 px-6 py-2 text-center text-sm leading-6 font-medium text-white shadow-sm transition hover:bg-gray-700 hover:shadow-lg focus:outline-hidden"
               >
                 {isAuthenticated ? 'Create your Team' : 'Sign up for free'}
               </a>
@@ -87,7 +87,7 @@ export function TeamPricing() {
 
                 <span
                   className={cn(
-                    'absolute bottom-0 left-0 right-0 flex items-center justify-center bg-black text-white transition-all',
+                    'absolute right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white transition-all',
                     {
                       'top-full': !isCopied,
                       'top-0': isCopied,

@@ -36,7 +36,7 @@ export function TeamHeroBanner() {
               Train, plan and track your team's skills and career growth.
             </p>
 
-            <ul className="mb-4 mt-0 hidden text-sm leading-7 sm:mb-4 sm:mt-4 sm:flex sm:flex-col lg:mb-6 lg:mt-6 lg:text-base lg:leading-8">
+            <ul className="mt-0 mb-4 hidden text-sm leading-7 sm:mt-4 sm:mb-4 sm:flex sm:flex-col lg:mt-6 lg:mb-6 lg:text-base lg:leading-8">
               {featureList.map((feature, index) => (
                 <li key={feature}>
                   <CheckCircle className="hidden h-6 w-6 text-green-500 sm:inline-block" />
@@ -65,7 +65,7 @@ export function TeamHeroBanner() {
                         fireTeamCreationClick();
                         localStorage.setItem('authRedirect', '/team/new');
                       }}
-                      className="text-purple-600 underline  hover:text-purple-700"
+                      className="text-purple-600 underline hover:text-purple-700"
                     >
                       Login to your account
                     </a>

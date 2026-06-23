@@ -7,11 +7,11 @@ The `v-pre` directive makes an element render its content as-is, skipping its co
 ```html
 <script setup>
   import { ref } from 'vue';
-  const text = ref("Some Text")
+  const text = ref('Some Text');
 </script>
 
 <template>
-  <p v-pre >{{ text }}</p>
+  <p v-pre>{{ text }}</p>
 </template>
 ```
 

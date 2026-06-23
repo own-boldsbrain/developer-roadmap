@@ -1,4 +1,4 @@
-# Short Term  Memory
+# Short Term Memory
 
 Short term memory are the facts which are passed as a part of the prompt to the LLM e.g. there might be a prompt like below:
 
@@ -20,8 +20,8 @@ Notice how we injected the user's profile, current topic and goals in the prompt
 
 Visit the following resources to learn more:
 
-- [@article@Memory Management in AI Agents](https://python.langchain.com/docs/how_to/chatbots_memory/)  
+- [@article@Memory Management in AI Agents](https://python.langchain.com/docs/how_to/chatbots_memory/)
 - [@article@Build Smarter AI Agents: Manage Short-term and Long-term Memory](https://redis.io/blog/build-smarter-ai-agents-manage-short-term-and-long-term-memory-with-redis/)
-- [@article@Storing and Retrieving Knowledge for Agents](https://www.pinecone.io/learn/langchain-retrieval-augmentation/)  
+- [@article@Storing and Retrieving Knowledge for Agents](https://www.pinecone.io/learn/langchain-retrieval-augmentation/)
 - [@article@Short-Term vs Long-Term Memory in AI Agents](https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/)
-- [@video@Building Brain-Like Memory for AI Agents](https://www.youtube.com/watch?v=VKPngyO0iKg)  
+- [@video@Building Brain-Like Memory for AI Agents](https://www.youtube.com/watch?v=VKPngyO0iKg)

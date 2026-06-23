@@ -12,8 +12,8 @@ export function RecommendedRoadmaps(props: RecommendedRoadmapsProps) {
 
   return (
     <>
-      <div className="mb-2 mt-8 flex items-center justify-between gap-2">
-        <h2 className="text-xs uppercase text-gray-400">
+      <div className="mt-8 mb-2 flex items-center justify-between gap-2">
+        <h2 className="text-xs text-gray-400 uppercase">
           Recommended Roadmaps
         </h2>
 
@@ -40,7 +40,11 @@ export function RecommendedRoadmaps(props: RecommendedRoadmapsProps) {
       )}
 
       <div className="mt-6 text-sm text-gray-500">
-        Need some help getting started? Check out our{' '}<a href="/get-started" className="text-blue-600 underline">Getting Started Guide</a>.
+        Need some help getting started? Check out our{' '}
+        <a href="/get-started" className="text-blue-600 underline">
+          Getting Started Guide
+        </a>
+        .
       </div>
     </>
   );
@@ -57,9 +61,13 @@ export function RecommendedRoadmapCard(props: RecommendedRoadmapCardProps) {
   return (
     <a
       href={url}
-      className="font-regular text-sm sm:text-sm group relative block rounded-lg border border-gray-200 bg-white px-2.5 py-2 text-black no-underline hover:border-gray-400 hover:bg-gray-50"
+      className="font-regular group relative block rounded-lg border border-gray-200 bg-white px-2.5 py-2 text-sm text-black no-underline hover:border-gray-400 hover:bg-gray-50 sm:text-sm"
     >
-      <MarkFavorite className={'opacity-30'} resourceType={'roadmap'} resourceId={roadmap.id} />
+      <MarkFavorite
+        className={'opacity-30'}
+        resourceType={'roadmap'}
+        resourceId={roadmap.id}
+      />
       {title}
     </a>
   );

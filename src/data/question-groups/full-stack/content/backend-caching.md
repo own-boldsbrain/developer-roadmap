@@ -10,4 +10,4 @@
 
 6. **Testing**: Monitor cache hit rates and ensure no stale data is served.
 
-**Browser Caching**: While not strictly server-side, take advantage of browser caching to store static resources client-side, reducing backend requests. 
+**Browser Caching**: While not strictly server-side, take advantage of browser caching to store static resources client-side, reducing backend requests.

@@ -1,4 +1,4 @@
-import TurndownService from "turndown";
+import TurndownService from 'turndown';
 const turndown = new TurndownService();
 
 export function htmlToMarkdown(html: string) {

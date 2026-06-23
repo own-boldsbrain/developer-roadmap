@@ -97,7 +97,7 @@ export function TeamDemo() {
             return (
               <span
                 key={item.title}
-                className=" rounded-full bg-black px-3 py-0.5 text-sm text-white"
+                className="rounded-full bg-black px-3 py-0.5 text-sm text-white"
               >
                 {activeItem.title}
               </span>
@@ -148,7 +148,7 @@ export function TeamDemo() {
                         localStorage.setItem('authRedirect', '/team/new');
                       }}
                       href="/login"
-                      className="text-purple-600 underline  hover:text-purple-700"
+                      className="text-purple-600 underline hover:text-purple-700"
                     >
                       Login to your account
                     </a>

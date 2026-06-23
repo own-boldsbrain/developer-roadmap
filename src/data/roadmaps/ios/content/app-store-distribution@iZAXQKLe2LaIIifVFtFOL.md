@@ -1,6 +1,6 @@
 # App Store Distribution
 
-App Store distribution is the process of preparing and submitting an iOS application for release on Apple's App Store. This involves several key steps: 
+App Store distribution is the process of preparing and submitting an iOS application for release on Apple's App Store. This involves several key steps:
 
 1. App Store Connect Setup: Registering your app in App Store Connect, including adding app metadata, screenshots, and descriptions.
 2. Certificates and Provisioning Profiles: Creating the necessary certificates and provisioning profiles in the Apple Developer portal to sign your app for distribution.

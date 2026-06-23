@@ -61,7 +61,7 @@ const videos = await getVideosByAuthor(authorId);
     },
   ]}
 >
-  <div class='container pb-0 pt-4 md:pb-16 md:pt-8'>
+  <div class='container pt-4 pb-0 md:pt-8 md:pb-16'>
     <div class=''>
       <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
         <div class='grow'>
@@ -69,7 +69,7 @@ const videos = await getVideosByAuthor(authorId);
             {authorFrontmatter.name}
           </h1>
           <div
-            class='mb-4 mt-1 flex flex-col gap-3 leading-normal text-gray-800 md:mb-6 md:mt-4 [&>p>a]:font-semibold [&>p>a]:underline'
+            class='mt-1 mb-4 flex flex-col gap-3 leading-normal text-gray-800 md:mt-4 md:mb-6 [&>p>a]:font-semibold [&>p>a]:underline'
           >
             <author.Content />
           </div>

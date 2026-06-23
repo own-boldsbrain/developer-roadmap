@@ -14,4 +14,4 @@ df.apply(lambda x: x.max() - x.min())
 
 # applymap - element-wise operation on entire DataFrame
 df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else x)
-``` 
+```

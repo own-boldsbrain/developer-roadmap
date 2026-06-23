@@ -23,4 +23,3 @@ When we talk about differences in the context of cybersecurity, they can refer t
 - **Threat Differences**: Various types of cyber threats exist (e.g., malware, phishing, denial-of-service attacks), and it is crucial to understand their differences in order to implement the most effective countermeasures.
 
 Learn more from the following resources:
-

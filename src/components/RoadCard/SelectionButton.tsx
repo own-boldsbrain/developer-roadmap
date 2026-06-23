@@ -25,7 +25,7 @@ export function SelectionButton(props: SelectionButtonProps) {
     <button
       {...rest}
       className={cn(
-        'rounded-md flex items-center border p-1 px-2 text-sm',
+        'flex items-center rounded-md border p-1 px-2 text-sm',
         isSelected ? 'border-gray-500 bg-gray-300' : '',
         !isDisabled ? 'cursor-pointer' : 'cursor-not-allowed opacity-40',
         className,

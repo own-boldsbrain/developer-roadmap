@@ -7,7 +7,7 @@ description: 'Test, Rate and Improve your Frontend knowledge with these question
 authorId: 'fernando'
 isNew: false
 date: 2024-05-24
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: 'frontend'
 seo:
   title: 'Top 30 Popular Front End Developer Interview Questions'

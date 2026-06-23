@@ -738,7 +738,7 @@ Then, use the generated token to make a request.
 ```bash
 curl --location 'localhost:8080/books' \
      --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzM3MDU3Njl9.ULspm6GR9Q0zqZWHifdFEeLZqgtw7k2FDDhSOpwcw4U'
-``` 
+```
 
 ![](https://assets.roadmap.sh/guest/postman-listing-books-aukjh.png)
 
@@ -862,6 +862,7 @@ To get started, first update the [Go version](https://go.dev/dl/) based on your 
 ```bash
 go get golang.org/x/tools/cmd/godoc
 ```
+
 Next, modify the `handlers.rs` file and add comments to describe what each helper function and handlers do.
 
 ```go

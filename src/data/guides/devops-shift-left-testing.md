@@ -57,9 +57,9 @@ Let’s explore some of the reasons why Shift-Left is important in your DevOps p
 
 ![Benefits of Shift-Left](https://assets.roadmap.sh/guest/shift-left-testing-devops-benefits-celh5.png)
 
-1. **Reduced cost**: A goal of every organization is to reduce its *operating expenses* and maximize profit. When Shift-Left testing is factored into your development process, bugs are identified and fixed early, which is far less expensive than when you address them after deployment. This approach saves you both time and resources as reworks are minimal.
+1. **Reduced cost**: A goal of every organization is to reduce its _operating expenses_ and maximize profit. When Shift-Left testing is factored into your development process, bugs are identified and fixed early, which is far less expensive than when you address them after deployment. This approach saves you both time and resources as reworks are minimal.
 2. **Faster feedback and early detection**: Shift-Left testing provides faster feedback on the quality of your code because you’re testing early in the development process. This means you and your team can catch bugs and detect issues before they escalate. Additionally, it reduces the likelihood of finding and fixing defects later in development or in production.
-3. **Improved quality**:  The overall experience of your application becomes more reliable and stable because you'll likely find and fix bugs earlier before they impact your users' experience.
+3. **Improved quality**: The overall experience of your application becomes more reliable and stable because you'll likely find and fix bugs earlier before they impact your users' experience.
 4. **Faster time to market:** Because defects are reduced and the development process is optimized, you can iterate faster and continuously release software.
 5. **Improved collaboration and continuous learning:** Shift-Left testing follows the DevOps principle of collaboration between developers, testers, and other stakeholders. This means the team has a sense of responsibility and ownership, and they’ll learn more from one another.
 

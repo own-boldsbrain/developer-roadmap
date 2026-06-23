@@ -221,7 +221,6 @@ questions:
     answer: advanced-profiling.md
     topics:
       - 'Advanced'
-
 ---
 
 ![Top data analyst interview questions](https://assets.roadmap.sh/guest/data-analyst-interview-questions-ontjt.jpg)
@@ -232,9 +231,8 @@ In this guide, we're breaking down common interview questions across beginner, i
 
 ## Getting ready for your next interview
 
-Before we dive into the data analyst interview questions, remember: interviewers are not only testing your technical knowledge; they're also looking at your problem-solving skills, communication skills, and ability to work with others. 
+Before we dive into the data analyst interview questions, remember: interviewers are not only testing your technical knowledge; they're also looking at your problem-solving skills, communication skills, and ability to work with others.
 
-They want to see how you think, how you approach challenges, and whether you can explain complex ideas in a clear and logical way. 
+They want to see how you think, how you approach challenges, and whether you can explain complex ideas in a clear and logical way.
 
 It's okay to pause and think or to ask clarifying questions if something isn't clear (this is actually highly recommended). Stay confident, and don't be afraid to talk through your thought process. Demonstrating a structured approach, even if you don't have the perfect answer, can go a long way.
-

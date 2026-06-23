@@ -54,7 +54,7 @@ In DevOps workflows, security testing typically occurs near the end of the devel
 
 ![Role of security in DevOps and DevSecOps](https://assets.roadmap.sh/guest/role-of-security-rj7j1.png)
 
-DevSecOps, on the other hand, focuses on strengthening deployment security and maintaining data protection and compliance by tracking issues as they arise. This approach uses both shift-left and shift-right security testing strategies. Shift-left testing involves identifying security vulnerabilities early in the development process, even before code is merged. 
+DevSecOps, on the other hand, focuses on strengthening deployment security and maintaining data protection and compliance by tracking issues as they arise. This approach uses both shift-left and shift-right security testing strategies. Shift-left testing involves identifying security vulnerabilities early in the development process, even before code is merged.
 
 Tools like static application security testing (SAST), dynamic application security testing (DAST), and dependency checkers are embedded into CI/CD pipelines to catch publicly disclosed vulnerabilities. Additionally, automated scanners and code analyzers ensure that potential risks are flagged before reaching production.
 
@@ -68,7 +68,7 @@ A real-world example of the consequences of delayed security integration is the 
 
 Shift-right testing is equally important as it helps developers detect security threats and fix issues in real time. Delays in security threat detection can impact product integrity and customer trust.
 
-For instance, imagine your organization is working on financial application design and creation, in which security processes and tests are supposed to run during the final phase. 
+For instance, imagine your organization is working on financial application design and creation, in which security processes and tests are supposed to run during the final phase.
 
 In such a case, issue detection at the final phase can result in a product launch delay. This might also result in higher costs. And if, to avoid a launch delay, you introduce the product, the unresolved vulnerabilities can hamper your reputation and erode customer trust.
 
@@ -98,7 +98,7 @@ DevOps allows for faster iterations and deployments which can introduce risks if
 
 To accelerate the software development lifecycle, DevOps gives more attention to automation and collaboration. Monitoring in DevOps primarily focuses on performance, availability, and system uptime. Metrics like CPU utilization, application response times, and log aggregation form the foundation of DevOps monitoring strategies. Incident response, while essential, is reactive in nature—triggered only after an issue, such as a system crash or performance degradation, arises.
 
-DevSecOps runs security tests in all stages, thus adopting a more proactive approach. Continuous monitoring in DevSecOps goes beyond traditional metrics to include threat detection, vulnerability scanning, and compliance checks, focusing more on reducing risk and cost. They even use tools like SIEM (Security Information and Event Management) systems and cloud-native security platforms to detect threats in real time. Incident response in DevSecOps involves automated playbooks and AI-driven analysis to address vulnerabilities, often before they can escalate rapidly. 
+DevSecOps runs security tests in all stages, thus adopting a more proactive approach. Continuous monitoring in DevSecOps goes beyond traditional metrics to include threat detection, vulnerability scanning, and compliance checks, focusing more on reducing risk and cost. They even use tools like SIEM (Security Information and Event Management) systems and cloud-native security platforms to detect threats in real time. Incident response in DevSecOps involves automated playbooks and AI-driven analysis to address vulnerabilities, often before they can escalate rapidly.
 
 In fact, DevSecOps even employs SAST and DAST strategies that help identify security vulnerabilities faster. Under SAST, professionals scans source code early to prevent vulnerabilities from entering production. Some of the common SAST tools are [SonarQube](https://www.sonarsource.com/products/sonarqube/) and [Checkmarx](https://checkmarx.com/).
 
@@ -178,7 +178,7 @@ Further, let's have a look at how tools and processes can facilitate this transi
 
 ### Prioritize security-first CI/CD configurations
 
-CI/CD pipelines are the backbone of modern DevOps workflows. Embedding security into these pipelines guarantees vulnerabilities are identified and mitigated at every stage. So, incorporate Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) tools. 
+CI/CD pipelines are the backbone of modern DevOps workflows. Embedding security into these pipelines guarantees vulnerabilities are identified and mitigated at every stage. So, incorporate Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) tools.
 
 Further, you can use HashiCorp Vault or AWS Secrets Manager to manage sensitive information securely. Also, you can set policies to prevent critical vulnerabilities using tools such as Jenkins, GitHub Actions, or GitLab CI/CD.
 

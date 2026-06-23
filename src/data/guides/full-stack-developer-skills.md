@@ -110,7 +110,7 @@ For those who don’t yet know, [npm](https://www.npmjs.com/) is a critical tool
 
 Build tools and bundlers to automate many repetitive tasks, optimize performance, and ensure code is production-ready. Let’s take a look at some key tools:
 
-- **Webpack**: [Webpack](https://webpack.js.org/) is a robust module bundler that processes and bundles JavaScript files along with assets like images and stylesheets. It has an ecosystem of plugins and loaders, making it highly configurable and suitable for complex applications. 
+- **Webpack**: [Webpack](https://webpack.js.org/) is a robust module bundler that processes and bundles JavaScript files along with assets like images and stylesheets. It has an ecosystem of plugins and loaders, making it highly configurable and suitable for complex applications.
 - **Parcel 2**: [Parcel](https://parceljs.org/) simplifies the bundling process with zero configuration out of the box. It automatically handles code splitting hot module replacement and supports a variety of file types.
 - **Vite**: [Vite](https://vitejs.dev/) is designed for speed, leveraging native ES modules to deliver lightning-fast development builds and optimized production builds using Rollup. It’s particularly ideal for modern frameworks like Vue, React, and Svelte. Vite’s configuration is straightforward, and it supports an extensive plugin system for additional functionality.
 
@@ -120,7 +120,7 @@ Build tools and bundlers to automate many repetitive tasks, optimize performance
 
 Although HTML, CSS, and JavaScript form the core of front-end development, there are many frameworks and libraries that can significantly enhance your development workflow. Among the most popular front-end frameworks and libraries are React, Vue, and Angular.
 
-Mind you, there are quite a lot of other options out there. However, React, Vue, and Angular remain the primary choices for most developers due to their widespread use and strong community support. 
+Mind you, there are quite a lot of other options out there. However, React, Vue, and Angular remain the primary choices for most developers due to their widespread use and strong community support.
 
 ### React
 
@@ -224,7 +224,7 @@ For full stack developers, understanding hosting and infrastructure is essential
 Cloud hosting providers offer scalable and flexible solutions for hosting web applications. They provide various services including virtual machines, storage, databases, and more. Some of the most popular providers are:
 
 - **Amazon Web Services (AWS)**: AWS offers a comprehensive suite of cloud services, including EC2 for virtual servers, S3 for storage, and RDS for managed databases. Its scalability and range of services make it a go-to choice for many developers.
-- **Google Cloud Platform (GCP)**: GCP provides robust cloud computing services, including Compute Engine for virtual machines, Cloud Storage, and Cloud SQL for managed databases. 
+- **Google Cloud Platform (GCP)**: GCP provides robust cloud computing services, including Compute Engine for virtual machines, Cloud Storage, and Cloud SQL for managed databases.
 - **Microsoft Azure**: Azure offers a wide range of cloud services similar to AWS and GCP. It includes Azure Virtual Machines, Blob Storage, and Azure SQL Database. Azure integrates well with Microsoft’s other products, making it ideal for enterprise applications.
 
 ### Web Hosting Services
@@ -259,7 +259,7 @@ IaC allows developers to manage and provision computing infrastructure through m
 - **Terraform**: Terraform is an IaC tool that allows you to define and provision data center infrastructure using a high-level configuration language. It supports multiple cloud providers, making it a versatile choice for managing infrastructure. While not fully open-source, Terraform offers a paid version called Terraform Cloud. If you’re looking for a fully open-source version, you can look into OpenTofu, which is an open-source fork from Terraform under the Mozilla Public License 2.0.
 - **Ansible**: Ansible is an open-source automation tool for configuration management, application deployment, and task automation. It uses YAML and doesn’t require agent software on the target nodes, making it easy to use and manage.
 
-##Conclusion 
+##Conclusion
 Keeping up-to-date with the full set of skills any full stack web developer will need for their job is not easy, given how varied their work might be. That said, the 8 full stack developer skills listed here are more than enough to get you started, and you can keep adding more as you see the need for them.
 
 Remember that if you want more details about the roadmap to become a great full stack developer, you have a great resource here: [Full stack developer roadmap](https://roadmap.sh/full-stack).

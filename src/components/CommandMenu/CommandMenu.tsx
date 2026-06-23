@@ -192,7 +192,7 @@ export function CommandMenu() {
   }
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-50 flex h-full justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+    <div className="fixed top-0 right-0 left-0 z-50 flex h-full justify-center overflow-x-hidden overflow-y-auto bg-black/50">
       <div className="relative top-0 h-full w-full max-w-lg p-2 sm:mt-20 md:h-auto">
         <div className="relative rounded-lg bg-white shadow-sm" ref={modalRef}>
           <input
@@ -243,7 +243,7 @@ export function CommandMenu() {
                 const groupChanged = prevPage && prevPage.group !== page.group;
 
                 return (
-                  <Fragment key={page.group+'/'+page.id}>
+                  <Fragment key={page.group + '/' + page.id}>
                     {groupChanged && (
                       <div className="border-b border-gray-100"></div>
                     )}

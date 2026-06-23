@@ -1,6 +1,6 @@
 # Columns in PostgreSQL
 
-Columns are a fundamental component of PostgreSQL's object model. They are used to store the actual data within a table and define their attributes such as data type, constraints, and other properties. 
+Columns are a fundamental component of PostgreSQL's object model. They are used to store the actual data within a table and define their attributes such as data type, constraints, and other properties.
 
 Learn more from the following resources:
 

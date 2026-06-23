@@ -7,4 +7,4 @@ Once a machine learning model has been created, it is important to evaluate and 
 - **F1 Score:** F1 Score combines Recall and Precision into one performance metric. The F1 Score is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account. F1 is usually more useful than Accuracy, especially if you have an uneven class distribution.
 - **AUC-ROC:** The AUC-ROC curve is a tool for evaluating the performance of binary classification models. It plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at different thresholds, showing how well a model can distinguish between two classes, such as positive and negative outcomes. It provides a graphical representation of the model's ability to distinguish between two classes, like a positive class for the presence of a disease and a negative class for the absence of a disease.
 
-**Key:** TP = True Positive, FP = False Positive, FN = False Negative. 
+**Key:** TP = True Positive, FP = False Positive, FN = False Negative.

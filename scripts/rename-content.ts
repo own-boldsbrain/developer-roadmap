@@ -29,7 +29,7 @@ roadmapDirs.forEach((roadmapDir) => {
 
     if (contentStats.isDirectory()) {
       const contentDirContent = fs.readdirSync(contentPath);
-      
+
       contentDirContent.forEach((contentDir) => {
         const contentDirPath = path.join(contentPath, contentDir);
         const contentDirStats = fs.statSync(contentDirPath);

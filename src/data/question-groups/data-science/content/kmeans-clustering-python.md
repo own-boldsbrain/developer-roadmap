@@ -1,7 +1,7 @@
 **Basic usage:**
 
 ```python
-from sklearn.cluster import KMeans  
+from sklearn.cluster import KMeans
 kmeans = KMeans(n_clusters=3).fit(X)
 labels = kmeans.labels_
 ```
@@ -27,4 +27,4 @@ plt.plot(K_range, distortions)
 plt.xlabel('k')
 plt.ylabel('Distortion')
 plt.title('Elbow Method For Optimal k')
-``` 
+```

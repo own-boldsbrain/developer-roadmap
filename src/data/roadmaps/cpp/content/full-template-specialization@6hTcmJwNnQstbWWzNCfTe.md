@@ -3,6 +3,7 @@
 Full template specialization allows you to provide a specific implementation, or behavior, for a template when used with a certain set of type parameters. It is useful when you want to handle special cases or optimize your code for specific types.
 
 ## Syntax
+
 To create a full specialization of a template, you need to define the specific type for which the specialization should happen. The syntax looks as follows:
 
 ```cpp
@@ -11,6 +12,7 @@ className<specificType> //The specialized class for the specific type
 ```
 
 ## Example
+
 Consider the following example to demonstrate full template specialization:
 
 ```cpp

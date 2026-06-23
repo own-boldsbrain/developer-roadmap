@@ -173,7 +173,7 @@ export function ProjectsList(props: ProjectsListProps) {
                 userCount={count}
                 status={
                   projectStatuses
-                    ? (projectStatuses?.[matchingProject.id] || 'none')
+                    ? projectStatuses?.[matchingProject.id] || 'none'
                     : undefined
                 }
               />

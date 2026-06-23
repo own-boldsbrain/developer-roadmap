@@ -1,9 +1,9 @@
 ---
-title: "Our first paid course about SQL is live"
+title: 'Our first paid course about SQL is live'
 description: 'We just launched our first paid SQL course'
 images:
-  "SQL Course": "https://assets.roadmap.sh/guest/course-environment-87jg8.png"
-  "Course Creator Platform": "https://assets.roadmap.sh/guest/course-creator-platform.png"
+  'SQL Course': 'https://assets.roadmap.sh/guest/course-environment-87jg8.png'
+  'Course Creator Platform': 'https://assets.roadmap.sh/guest/course-creator-platform.png'
 seo:
   title: 'SQL Course is Live'
   description: ''

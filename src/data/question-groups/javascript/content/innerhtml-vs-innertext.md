@@ -4,14 +4,12 @@ innerHTML is what you use to get or change the HTML content of an element. It sh
 
 ```html
 <p id="text">
-  <em>
-      JavaScript interview questions
- </em>
+  <em> JavaScript interview questions </em>
 </p>
 ```
 
 ```javascript
-let textOne = document.getElementById("text");
+let textOne = document.getElementById('text');
 
 console.log(textOne.innerHTML); // <em>JavaScript interview questions</em>
 ```
@@ -20,14 +18,12 @@ On the other hand, innerText gets or changes the plain text inside an element. I
 
 ```html
 <p id="text">
-  <em>
-      JavaScript interview questions
- </em>
+  <em> JavaScript interview questions </em>
 </p>
 ```
 
 ```javascript
-let textOne = document.getElementById("text");
+let textOne = document.getElementById('text');
 
 console.log(textOne.innerText); // JavaScript interview questions
-``` 
+```

@@ -48,7 +48,7 @@ export function CreateCourseModal(props: CreateCourseModalProps) {
 
           <button
             disabled={!subject.trim()}
-            className="flex h-full disabled:opacity-40 items-center justify-center gap-2 rounded-md bg-black px-3 py-1 text-sm text-white hover:opacity-80"
+            className="flex h-full items-center justify-center gap-2 rounded-md bg-black px-3 py-1 text-sm text-white hover:opacity-80 disabled:opacity-40"
           >
             Generate
             <WandSparkles className="size-4" />

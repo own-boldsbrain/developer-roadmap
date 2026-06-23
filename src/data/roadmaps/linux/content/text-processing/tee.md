@@ -1,4 +1,4 @@
-# Tee in Text Processing 
+# Tee in Text Processing
 
 `tee` is a widely used command in Linux systems, falling under the category of text processing tools. It performs a dual function: the command reads from the standard input and writes to standard output and files. This operation gets its name from the T-splitter in plumbing, which splits the flow into two directions, paralleling the function of the `tee` command.
 

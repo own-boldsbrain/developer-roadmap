@@ -50,7 +50,7 @@ export function UserPublicProgressStats(props: UserPublicProgressStats) {
       </h3>
       <div className="relative mt-5 h-1 w-full overflow-hidden rounded-full bg-black/5">
         <div
-          className={`absolute left-0 top-0 h-full bg-black/40`}
+          className={`absolute top-0 left-0 h-full bg-black/40`}
           style={{
             width: `${progressPercentage}%`,
           }}

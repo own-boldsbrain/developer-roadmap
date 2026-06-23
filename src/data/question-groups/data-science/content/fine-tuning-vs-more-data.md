@@ -13,4 +13,4 @@ Choosing whether to generalize with more data or fine-tune to achieve your goal 
 **For generalization with more data:**
 
 - It is better for models that need to handle a wide range of tasks.
-- It is great for situations where overfitting will be a problem. 
+- It is great for situations where overfitting will be a problem.

@@ -63,7 +63,7 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
 
     setIsLoading(true);
     const { response, error } = await httpGet<TeamMemberList[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`,
     );
 
     if (error || !response) {
@@ -129,7 +129,7 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
         <ul className="mt-2 grid grid-cols-3 gap-2.5">
           {members?.map((member) => {
             const isSelected = sharedTeamMemberIds?.includes(
-              member._id?.toString()!
+              member._id?.toString()!,
             );
             return (
               <li key={member.userId}>
@@ -144,8 +144,8 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
                     if (isSelected) {
                       setSharedTeamMemberIds(
                         sharedTeamMemberIds.filter(
-                          (id) => id !== member._id?.toString()!
-                        )
+                          (id) => id !== member._id?.toString()!,
+                        ),
                       );
                     } else {
                       setSharedTeamMemberIds([

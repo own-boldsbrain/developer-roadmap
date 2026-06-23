@@ -1,8 +1,8 @@
 import {
-    BadgeCheck,
-    HeartHandshake,
-    Telescope,
-    type LucideIcon,
+  BadgeCheck,
+  HeartHandshake,
+  Telescope,
+  type LucideIcon,
 } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { cn } from '../lib/classname';
@@ -34,13 +34,13 @@ export function RoadmapAlert(props: RoadmapAlertProps) {
       <h2 className="flex items-center text-base font-semibold text-yellow-800 sm:text-lg">
         {title}{' '}
         {badgeText && (
-          <span className="ml-1.5 rounded-md border border-yellow-500 bg-yellow-200 px-1.5 text-xs uppercase tracking-wide text-yellow-800">
+          <span className="ml-1.5 rounded-md border border-yellow-500 bg-yellow-200 px-1.5 text-xs tracking-wide text-yellow-800 uppercase">
             {badgeText}
           </span>
         )}
       </h2>
-      <p className="mb-2 mt-1 text-balance">{description}</p>
-      <p className="mb-1.5 mt-2 flex flex-col gap-2 text-sm md:flex-row">
+      <p className="mt-1 mb-2 text-balance">{description}</p>
+      <p className="mt-2 mb-1.5 flex flex-col gap-2 text-sm md:flex-row">
         <a
           href="/roadmaps"
           className="flex items-center gap-1.5 rounded-md border border-yellow-600 bg-yellow-200 px-2 py-1 text-yellow-800 transition-colors hover:bg-yellow-300"
@@ -64,7 +64,7 @@ export function RoadmapAlert(props: RoadmapAlertProps) {
         </a>
       </p>
 
-      <FloatingIcon className="pointer-events-none absolute right-2 top-2 hidden h-12 w-12 text-yellow-500 opacity-50 sm:block md:bottom-2 md:top-auto" />
+      <FloatingIcon className="pointer-events-none absolute top-2 right-2 hidden h-12 w-12 text-yellow-500 opacity-50 sm:block md:top-auto md:bottom-2" />
     </div>
   );
 }

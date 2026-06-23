@@ -7,7 +7,7 @@ seo:
   title: '20 Backend Project Ideas to take you from Beginner to Pro'
   description: 'Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: backend
 isNew: false
 type: 'textual'
@@ -120,13 +120,13 @@ Let’s now add some constraints:
 
 - You’ll be using [JWT](https://itnext.io/demystifying-jwt-a-guide-for-front-end-developers-ead6574531c3) (JSON Web Token) to protect the endpoints and to identify the requester.
 - For the different expense categories, you can use the following list (feel free to decide how to implement this as part of your data model):
-    - Groceries
-    - Leisure
-    - Electronics
-    - Utilities
-    - Clothing
-    - Health
-    - Others.
+  - Groceries
+  - Leisure
+  - Electronics
+  - Utilities
+  - Clothing
+  - Health
+  - Others.
 
 As a recommendation, you can use MongoDB or an ORM for this project, such as [Mongoose](https://mongoosejs.com/) (if you’re using JavaScript/Node for this).
 

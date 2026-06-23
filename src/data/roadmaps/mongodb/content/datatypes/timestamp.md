@@ -21,7 +21,7 @@ For example, to create a Timestamp for the current time:
 ```javascript
 var currentTimestamp = new Timestamp(
   Math.floor(new Date().getTime() / 1000),
-  1
+  1,
 );
 ```
 

@@ -10,4 +10,4 @@ In long format, data is stacked in rows. One column stores the values, and anoth
 
 **Use case:** Wide format is useful for reporting and making data visualizations. Long format is preferred for time series, grouped summaries, and plotting tools like Seaborn or ggplot.
 
-**Common pitfall:** Trying to perform group-level analysis on wide-format data without reshaping it first. 
+**Common pitfall:** Trying to perform group-level analysis on wide-format data without reshaping it first.

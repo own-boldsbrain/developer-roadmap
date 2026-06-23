@@ -102,7 +102,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
           </div>
           <div className="-mx-4 mt-4 flex items-center gap-1.5">
             <span className="h-px grow bg-gray-300" />
-            <span className="px-2 text-xs uppercase text-gray-400">Or</span>
+            <span className="px-2 text-xs text-gray-400 uppercase">Or</span>
             <span className="h-px grow bg-gray-300" />
           </div>
 

@@ -7,11 +7,11 @@ The `v-once` directive makes an HTML element render only once, skipping every fu
 ```html
 <script setup>
   import { ref } from 'vue';
-  const input = ref("Some Text");
+  const input = ref('Some Text');
 </script>
 
 <template>
-  <input v-model="input">
+  <input v-model="input" />
   <p v-once>{{ input }}</p>
 </template>
 ```

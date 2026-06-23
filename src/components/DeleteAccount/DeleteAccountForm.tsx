@@ -24,7 +24,7 @@ export function DeleteAccountForm() {
     }
 
     const { response, error } = await httpDelete(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-account`
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-account`,
     );
 
     if (error || !response) {

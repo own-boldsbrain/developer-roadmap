@@ -8,4 +8,3 @@ Learn more from the following resources:
 
 - [@article@Developer Relations History & Mission Structure](https://lmcdunna.medium.com/developer-relations-history-mission-structure-5fcad869deac)
 - [@video@History of Developer Evangelism](https://www.youtube.com/watch?v=ieiQmyrmakI)
-

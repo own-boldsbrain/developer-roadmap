@@ -60,20 +60,20 @@ Some of the key features of JavaScript include:
 1. **Dynamic typing**: In JavaScript, you do not have to declare variables with any type. The types can also change during runtime.
 
 ```javascript
-let programmingLanguage = "JavaScript";
+let programmingLanguage = 'JavaScript';
 console.log(typeof programmingLanguage); // "string"
 
 programmingLanguage = 12;
 console.log(typeof programmingLanguage); // "number"
 ```
 
-From the code snippet above, you see that the variable `programmingLanguage` was initially assigned a string value and later assigned to a number. 
+From the code snippet above, you see that the variable `programmingLanguage` was initially assigned a string value and later assigned to a number.
 
 2. **Interaction with the Document Object Model (DOM)**: With JavaScript, you can manipulate the DOM of any webpage by changing its content, structure, and style.
 
 ```javascript
-const element = document.getElementById("demo");
-element.style.color = "red";
+const element = document.getElementById('demo');
+element.style.color = 'red';
 ```
 
 The code snippet selects an HTML element by its Id `demo` and then changes its color.
@@ -81,8 +81,8 @@ The code snippet selects an HTML element by its Id `demo` and then changes its c
 3. **Event handling**: In JavaScript, event listeners allow you to respond to user actions such as clicks, keyboard input, and mouse events.
 
 ```javascript
-document.getElementById("demo").addEventListener("click", () => {
-  console.log("I was clicked");
+document.getElementById('demo').addEventListener('click', () => {
+  console.log('I was clicked');
 });
 ```
 
@@ -91,19 +91,18 @@ The code adds a click event listener to the element, and when the element is cli
 4. **Asynchronous programming**: JavaScript supports asynchronous programming using callbacks, promises, and async/await for non-blocking operations like reading and writing data to a database, fetching data from a server, etc.
 
 ```javascript
-const data = async() => {
-  try{
-    const response = await fetch("http://api.com/data");
-    if(!response.ok){
-      throw new Error("Error while fetching data");
+const data = async () => {
+  try {
+    const response = await fetch('http://api.com/data');
+    if (!response.ok) {
+      throw new Error('Error while fetching data');
     }
     const data = await response.json();
     console.log(data);
-  }
-  catch(error){
+  } catch (error) {
     console.log(error);
   }
-}
+};
 ```
 
 The code uses async/await to fetch data from an endpoint. If successful, the data returned will be logged into the console.
@@ -114,11 +113,11 @@ The code uses async/await to fetch data from an endpoint. If successful, the dat
 
 Some of the key features of TypeScript include:
 
-1. **Static typing**: Unlike JavaScript, TypeScript supports static typing. When defining a variable or object, you can specify the type you want it to have. This helps you catch errors at compile time rather than run time. 
+1. **Static typing**: Unlike JavaScript, TypeScript supports static typing. When defining a variable or object, you can specify the type you want it to have. This helps you catch errors at compile time rather than run time.
 
 ```typescript
-let programmingLanguage: string = "TypeScript";
-programmingLanguage = 23 // this will show a compile error
+let programmingLanguage: string = 'TypeScript';
+programmingLanguage = 23; // this will show a compile error
 ```
 
 The code snippet demonstrates how to define a variable in TypeScript. You can also do this without explicitly specifying the type string; TypeScript will infer the type implicitly. You can notice the effect of the static type on the following line, where a number is assigned to the variable. This will show a compile error because the variable was initialized as a string.
@@ -126,13 +125,13 @@ The code snippet demonstrates how to define a variable in TypeScript. You can al
 2. **Interfaces**: Interfaces allow you to define an object's structure and ensure that the structure is respected wherever you use that object. The code below defines an interface and creates an object based on the interface structure.
 
 ```typescript
-interface IStudent{
+interface IStudent {
   firstName: string;
   lastName: string;
   age: number;
 }
 
-const student: IStudent = {firstName: "John", lastName: "Doe", age: 30};
+const student: IStudent = { firstName: 'John', lastName: 'Doe', age: 30 };
 ```
 
 3. **Generics**: TypeScript allows you to create reusable and flexible components that can work with multiple data types instead of one.
@@ -146,15 +145,15 @@ returnValue(43); // 43
 returnValue(true); // true
 ```
 
-The code above demonstrates how to use generics in TypeScript. A function `returnValue` is declared to accept arguments of any data type and logs them to the console. 
+The code above demonstrates how to use generics in TypeScript. A function `returnValue` is declared to accept arguments of any data type and logs them to the console.
 
 4. **Enums**: This is a feature added in TypeScript and is not native to JavaScript. It allows you to define a set of constants and helps to improve code readability and maintainability.
 
 ```typescript
-enum Level{
+enum Level {
   Low,
   Medium,
-  High
+  High,
 }
 
 const level: Level = Level.Low;
@@ -184,7 +183,7 @@ In a project where speed and simplicity were the goals, TypeScript started to fe
 
 **When TypeScript is a great fit**
 
-1. **Large projects with multiple developers**: TypeScript is a great fit for large projects with multiple developers. Its typing system helps you write code that is easier to read, manage, and debug. 
+1. **Large projects with multiple developers**: TypeScript is a great fit for large projects with multiple developers. Its typing system helps you write code that is easier to read, manage, and debug.
 
 I worked on a project where built a fairly large and growing codebase entirely in JavaScript. At first, everything seemed to move quickly, and we could iterate fast. But as the project scaled, we started having problems.
 
@@ -192,7 +191,7 @@ One of the most frustrating issues we ran into was type-related bugs. Debugging 
 
 2. **When code maintainability is a priority**: Applications where code maintainability is crucial benefit from TypeScript type checking. You can detect errors during compile time instead of during run time. Many IDEs like Visual Studio Code support type checking and will notify you of any type mismatch while coding.
 
-3. **When dealing with strict API contracts**: If you are making requests to an API endpoint with a strict structure, TypeScript's type system helps to model the return of the endpoint using an Interface or Type and avoids throwing exceptions. 
+3. **When dealing with strict API contracts**: If you are making requests to an API endpoint with a strict structure, TypeScript's type system helps to model the return of the endpoint using an Interface or Type and avoids throwing exceptions.
 
 In my early career days, I had the task to implement a feature to fetch the price of some vehicles using the vehicleIds. It involved calling the price REST endpoint. I used JavaScript's fetch to do this. Everything looked right - the request went out, the response came back, and I tried working with the data. But then, it threw an exception at runtime.
 
@@ -206,7 +205,7 @@ Later, when I was faced with the same kind of problem using TypeScript, it was a
 
 ## Is TypeScript hard to learn if you know JavaScript?
 
-If you already know JavaScript, it's not hard to learn TypeScript. As explained in the previous section, TypeScript is JavaScript with static typing, so most of your JavaScript knowledge still applies. It was relatively easy for me to pick up TypeScript because I had been using JavaScript for a long time. 
+If you already know JavaScript, it's not hard to learn TypeScript. As explained in the previous section, TypeScript is JavaScript with static typing, so most of your JavaScript knowledge still applies. It was relatively easy for me to pick up TypeScript because I had been using JavaScript for a long time.
 
 The typical learning curve challenges include:
 
@@ -219,8 +218,8 @@ The typical learning curve challenges include:
 ```typescript
 const generic = <T>(arg: T): T => console.log(arg);
 
-generic("string") // "string"
-generic(34) // 34
+generic('string'); // "string"
+generic(34); // 34
 ```
 
 The code snippet shows a function that takes arguments of different types and logs the argument to the console. This is the power of generics.
@@ -231,7 +230,7 @@ The code snippet shows a function that takes arguments of different types and lo
 
 ## TypeScript vs. JavaScript for frontend and backend
 
-Are you caught in between choosing either TypeScript or JavaScript for either backend or frontend development? You can use TypeScript and JavaScript for both frontend and backend development. However, as you have seen in the previous sections, TypeScript is suitable for large-scale applications, while JavaScript is suitable for small projects. 
+Are you caught in between choosing either TypeScript or JavaScript for either backend or frontend development? You can use TypeScript and JavaScript for both frontend and backend development. However, as you have seen in the previous sections, TypeScript is suitable for large-scale applications, while JavaScript is suitable for small projects.
 
 Let's have a look at frontend and backend development using JavaScript and TypeScript.
 
@@ -277,7 +276,6 @@ Despite the popularity of TypeScript, JavaScript will still be the foundation an
 
 In this guide, we've seen the difference between JavaScript and TypeScript. For many developers, JavaScript is their go-to language because of its simplicity and low entry barrier. It is ideal for building small and responsive web and mobile apps, building prototypes, or experimenting with new programming concepts. JavaScript has a large ecosystem. With so many libraties and frameworks, it's easy to find tools that suit your needs.
 
-On the other hand, TypeScript is an excellent choice if you are working on a large-scale project with multiple developers. As your project grows, having a strong type system provides huge benefits such as catching errors early, enforcing consistent data structures, and reduce runtime bugs. TypeScript provides developers with great tooling such as code completion, navigation and refactoring suggestions. 
+On the other hand, TypeScript is an excellent choice if you are working on a large-scale project with multiple developers. As your project grows, having a strong type system provides huge benefits such as catching errors early, enforcing consistent data structures, and reduce runtime bugs. TypeScript provides developers with great tooling such as code completion, navigation and refactoring suggestions.
 
 However, I recommend you learn both JavaScript and TypeScript and use them based on the project you are working on. roadmap.sh offers structured [JavaScript](https://roadmap.sh/javascript) and [TypeScript](https://roadmap.sh/typescript) roadmaps where you can track and share your progress on your profile. You can also customize your roadmap based on your learning needs.
-

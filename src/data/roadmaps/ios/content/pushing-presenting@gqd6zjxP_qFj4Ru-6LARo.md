@@ -1,8 +1,8 @@
 # Pushing Presenting
 
-Pushing adds a new view controller to the top of the navigation stack, ideal for hierarchical navigation. It's done using navigationController?.pushViewController(_:animated:), which slides the new view in from the right and adds a back button.
+Pushing adds a new view controller to the top of the navigation stack, ideal for hierarchical navigation. It's done using navigationController?.pushViewController(\_:animated:), which slides the new view in from the right and adds a back button.
 
-Presenting displays a view controller modally, often covering the entire screen or as a sheet. It's achieved using present(_:animated:completion:), suitable for temporary or standalone content.
+Presenting displays a view controller modally, often covering the entire screen or as a sheet. It's achieved using present(\_:animated:completion:), suitable for temporary or standalone content.
 
 Learn more from the following resources:
 

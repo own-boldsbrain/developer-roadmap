@@ -1,4 +1,4 @@
-# IP Routing 
+# IP Routing
 
 IP Routing in Linux refers to the process of setting up routing tables and configuring network routes for networking interfaces within the Linux operating system. It is the kernel’s responsibility to handle this task which involves the selection of pathways for sending network packets across to their intended destinations on a network.
 

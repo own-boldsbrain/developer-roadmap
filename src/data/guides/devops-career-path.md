@@ -59,7 +59,7 @@ These are some factors to consider before choosing the DevOps engineer career pa
 
 ### Interest in automation
 
-[Automation](https://roadmap.sh/devops/automation) is an integral part of the DevOps career path. It involves writing scripts and code to automate repetitive tasks and enhance software delivery processes.  By automating repetitive tasks and workflows, DevOps teams can increase efficiency, reduce errors, and accelerate time to market for software releases.
+[Automation](https://roadmap.sh/devops/automation) is an integral part of the DevOps career path. It involves writing scripts and code to automate repetitive tasks and enhance software delivery processes. By automating repetitive tasks and workflows, DevOps teams can increase efficiency, reduce errors, and accelerate time to market for software releases.
 
 ### Enjoy collaborating
 

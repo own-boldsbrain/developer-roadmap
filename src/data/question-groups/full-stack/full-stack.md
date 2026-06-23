@@ -222,16 +222,15 @@ questions:
     answer: common-challenges.md
     topics:
       - 'Advanced'
-
 ---
 
 ![Top full-stack developer interview questions](https://assets.roadmap.sh/guest/full-stack-developer-interview-questions-baq90.jpg)
 
 Full-stack developers are the backbone of modern software teams, bravely connecting the dots between what users see and the powerful systems working behind the scenes. They're not "just" frontend developers, nor they're "just" backend devs, instead, they tackle the full spectrum. From designing intuitive interfaces to crafting efficient web server logic, they juggle multiple responsibilities, making their role one of the most versatile—and critical—in the tech industry.
 
-If you're aiming for a full-stack role, you'll need to prove you've got the skills to handle it all. That's why we've put together this guide to the **most common full-stack developer interview questions**. 
+If you're aiming for a full-stack role, you'll need to prove you've got the skills to handle it all. That's why we've put together this guide to the **most common full-stack developer interview questions**.
 
-And if this is not enough, we also have a full [full-stack roadmap](https://roadmap.sh/full-stack) for you to follow. 
+And if this is not enough, we also have a full [full-stack roadmap](https://roadmap.sh/full-stack) for you to follow.
 
 So get comfortable, and let's begin.
 
@@ -239,9 +238,9 @@ So get comfortable, and let's begin.
 
 Before jumping right into your full-stack developer interview, remember the following points:
 
-1. **Understand the Core Concepts**: Familiarize yourself with the foundations of full-stack development, including frontend frameworks (like React or Angular), back-end technologies (such as Node.js or Django), RESTful APIs, and databases. Understanding how these pieces work together is key to unlocking the role of full-stack developer.  
-2. **Practice Hands-On Skills**: Full-stack development is all about practical knowledge, so put your skills to the test. Build a small project or refine an existing one. Practice creating REST APIs, styling responsive UIs, or integrating a database. The more you practice, the more comfortable you'll feel in solving real-world problems.  
-3. **Study Software Architecture**: While you may not be a system architect, a solid understanding of software architecture principles—such as MVC, microservices, and event-driven designs—can be a huge advantage. Being able to discuss how these concepts apply to modern web apps can make you stand out.  
+1. **Understand the Core Concepts**: Familiarize yourself with the foundations of full-stack development, including frontend frameworks (like React or Angular), back-end technologies (such as Node.js or Django), RESTful APIs, and databases. Understanding how these pieces work together is key to unlocking the role of full-stack developer.
+2. **Practice Hands-On Skills**: Full-stack development is all about practical knowledge, so put your skills to the test. Build a small project or refine an existing one. Practice creating REST APIs, styling responsive UIs, or integrating a database. The more you practice, the more comfortable you'll feel in solving real-world problems.
+3. **Study Software Architecture**: While you may not be a system architect, a solid understanding of software architecture principles—such as MVC, microservices, and event-driven designs—can be a huge advantage. Being able to discuss how these concepts apply to modern web apps can make you stand out.
 4. **Research the Company**: Always research the company you're interviewing with. Investigate the tools and technologies they use for any type of software development (regardless if it's backend or frontend), their overall tech stack, and their approach to building software. This will show genuine interest and help you ask insightful questions during the interview.
 
 We're now ready to get started, so let's dive into some of the most common full-stack developer interview questions to help you prepare\!

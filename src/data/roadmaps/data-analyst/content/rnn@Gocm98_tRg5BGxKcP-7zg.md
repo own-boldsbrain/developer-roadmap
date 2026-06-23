@@ -1,4 +1,4 @@
-# Understanding RNNs 
+# Understanding RNNs
 
 Recurrent Neural Networks(RNNs) are a type of Artificial Neural Networks(ANNs) which introduces us to the realm of Deep Learning, an aspect that has been significantly contributing to the evolution of Data Analysis. RNNs are specifically designed to recognize patterns in sequences of data, such as text, genomes, handwriting, or the spoken word. This inherent feature of RNNs makes them extremely useful and versatile for a data analyst.
 

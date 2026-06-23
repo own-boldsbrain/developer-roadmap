@@ -85,7 +85,7 @@ export function MemberActionDropdown({
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-0 top-full z-50 mt-1 w-[200px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+          className="align-right absolute top-full right-0 z-50 mt-1 w-[200px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
         >
           <ul>
             {actions.map((action, index) => {

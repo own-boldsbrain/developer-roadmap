@@ -236,7 +236,7 @@ export function TeamMembersPage() {
 
         {invitedMembers.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-xs uppercase text-gray-400">Invited Members</h3>
+            <h3 className="text-xs text-gray-400 uppercase">Invited Members</h3>
             <div className="mt-2 rounded-md border">
               {invitedMembers.map((member, index) => {
                 return (
@@ -275,10 +275,10 @@ export function TeamMembersPage() {
 
         {rejectedMembers.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-xs uppercase text-gray-400">
+            <h3 className="text-xs text-gray-400 uppercase">
               Rejected Invites
             </h3>
-            <div className="mt-2 rounded-b-sm rounded-t-md border">
+            <div className="mt-2 rounded-t-md rounded-b-sm border">
               {rejectedMembers.map((member, index) => {
                 return (
                   <TeamMemberItem

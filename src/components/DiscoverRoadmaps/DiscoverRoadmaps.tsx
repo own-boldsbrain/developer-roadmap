@@ -131,7 +131,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
               A selected list of community-created roadmaps
             </p>
             <div className="relative">
-              <div className="flex flex-col sm:flex-row items-center gap-1.5">
+              <div className="flex flex-col items-center gap-1.5 sm:flex-row">
                 <span className="group relative normal-case">
                   <button
                     className="rounded-md bg-black px-3.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-black"
@@ -205,7 +205,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
                         target={'_blank'}
                       >
                         <div className="grow">
-                          <h2 className="text-balance text-base font-bold leading-tight">
+                          <h2 className="text-base leading-tight font-bold text-balance">
                             {roadmap.title}
                           </h2>
                           <p className="mt-2 text-sm text-gray-500">

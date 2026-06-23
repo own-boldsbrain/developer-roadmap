@@ -11,7 +11,7 @@ You should be able to build a CLI application that can:
 - Use a third-party library (e.g. a library for parsing CSV files)
 - Use a third-party API
 
-Here are some ideas for CLI applications you can build: 
+Here are some ideas for CLI applications you can build:
 
 - Create a CLI application that takes a URL and a CSS selector arguments and prints the text content of the element that matches the selector. **Hint** you can use [cheerio](https://github.com/cheeriojs/cheerio)
 - An application that optionally takes two dates and prints the most starred GitHub projects in that date range. **Hint** you can use [GitHub's search API](https://developer.github.com/v3/search/#search-repositories)

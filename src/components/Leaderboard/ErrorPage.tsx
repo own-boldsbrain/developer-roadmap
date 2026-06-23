@@ -16,7 +16,7 @@ export function ErrorPage(props: ErrorPageProps) {
           <h2 className="mb-1 text-lg font-semibold sm:text-xl">
             Oops! Something went wrong
           </h2>
-          <p className="mb-3 text-balance text-center text-xs text-gray-800 sm:text-sm">
+          <p className="mb-3 text-center text-xs text-balance text-gray-800 sm:text-sm">
             {error?.message || 'An error occurred while fetching'}
           </p>
         </div>

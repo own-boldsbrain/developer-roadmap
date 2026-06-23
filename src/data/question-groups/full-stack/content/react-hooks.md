@@ -4,6 +4,6 @@ With hooks you can simplify state and lifecycle management without needing class
 
 **Examples of different hooks**:
 
-* `useState` for managing state.  
-* `useEffect` for handling side effects (e.g., fetching data).  
-* `useContext` for global state.
+- `useState` for managing state.
+- `useEffect` for handling side effects (e.g., fetching data).
+- `useContext` for global state.

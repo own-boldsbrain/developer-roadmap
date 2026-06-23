@@ -8,4 +8,4 @@ The role of statistics in data science is to help data scientists understand and
 - Regression analysis predicts relationships between variables.
 - Bayesian inference updates beliefs as new data comes in.
 
-**Use case**: A marketing team runs an A/B test to compare two email campaigns. Statistical methods help determine whether the difference in click-through rates is real or just a coincidence. 
+**Use case**: A marketing team runs an A/B test to compare two email campaigns. Statistical methods help determine whether the difference in click-through rates is real or just a coincidence.

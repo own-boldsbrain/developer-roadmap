@@ -35,7 +35,7 @@ db.collection.mapReduce(
   {
     query: { status: 'A' },
     out: 'order_totals',
-  }
+  },
 );
 ```
 

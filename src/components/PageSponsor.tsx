@@ -145,7 +145,7 @@ export function PageSponsor(props: PageSponsorProps) {
       href={url}
       target="_blank"
       rel="noopener sponsored nofollow"
-      className="fixed bottom-0 left-0 right-0 z-50 flex bg-white shadow-lg outline-0 outline-transparent sm:bottom-[15px] sm:left-auto sm:right-[15px] sm:max-w-[350px]"
+      className="fixed right-0 bottom-0 left-0 z-50 flex bg-white shadow-lg outline-0 outline-transparent sm:right-[15px] sm:bottom-[15px] sm:left-auto sm:max-w-[350px]"
       onClick={async () => {
         const labelValue = gaLabel || `${gaPageIdentifier} / ${company} Link`;
 
@@ -159,7 +159,7 @@ export function PageSponsor(props: PageSponsorProps) {
       }}
     >
       <span
-        className="absolute right-1 top-1 text-gray-400 hover:text-gray-800 sm:right-1.5 sm:top-1.5 sm:text-gray-300"
+        className="absolute top-1 right-1 text-gray-400 hover:text-gray-800 sm:top-1.5 sm:right-1.5 sm:text-gray-300"
         aria-label="Close"
         onClick={(e) => {
           e.preventDefault();
@@ -188,7 +188,7 @@ export function PageSponsor(props: PageSponsorProps) {
             <span className="sponsor-footer hidden sm:block">
               Partner Content
             </span>
-            <span className="block pb-1 text-center text-[10px] uppercase text-gray-400 sm:hidden">
+            <span className="block pb-1 text-center text-[10px] text-gray-400 uppercase sm:hidden">
               Partner Content
             </span>
           </>

@@ -24,8 +24,8 @@ To start using MongoDB Analyzer for Visual Studio, follow these steps:
 
 - Download and install the [MongoDB Analyzer as a NuGet package](https://www.nuget.org/packages/MongoDB.Analyzer/1.0.0) in Visual Studio from:
 
-  - **Package Manager**: Click `Tools` > `NuGet Package Manager` > `Package Manager Console` and then execute this command: ```Install-Package MongoDB.Analyzer -Version 1.0.0```
-  - **.NET CLI**: Click `View` > `Terminal` and then execute this command: ```dotnet add package MongoDB.Analyzer --version 1.0.0```
+  - **Package Manager**: Click `Tools` > `NuGet Package Manager` > `Package Manager Console` and then execute this command: `Install-Package MongoDB.Analyzer -Version 1.0.0`
+  - **.NET CLI**: Click `View` > `Terminal` and then execute this command: `dotnet add package MongoDB.Analyzer --version 1.0.0`
 
 - Once installed, it will be added to your project’s Dependencies list, under Analyzers.
 

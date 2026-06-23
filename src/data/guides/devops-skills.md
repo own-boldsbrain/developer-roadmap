@@ -74,10 +74,10 @@ On the other hand, Continuous Deployment (CD) takes this a step further by autom
 
 To effectively implement CI/CD pipelines, you'll need to be proficient with the tools that make it possible. There are tons of them out there; some of the most common (and arguably, best ones) are:
 
-* **Jenkins**: An open-source automation server, Jenkins is highly customizable and supports a huge number of integration plugins.
-* **GitLab CI**: Part of the larger GitLab platform, GitLab CI is tightly integrated with GitLab's version control and issue-tracking features.
-* **CircleCI**: Known for its speed and simplicity, CircleCI is perfect for environments that prioritize cloud-native solutions. It provides a user-friendly interface and integrates well with popular tools like Docker, AWS, and Kubernetes.
-* **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with [other DevOps tools](https://roadmap.sh/devops/tools), and provides flexibility to run complex automation tasks across multiple environments.
+- **Jenkins**: An open-source automation server, Jenkins is highly customizable and supports a huge number of integration plugins.
+- **GitLab CI**: Part of the larger GitLab platform, GitLab CI is tightly integrated with GitLab's version control and issue-tracking features.
+- **CircleCI**: Known for its speed and simplicity, CircleCI is perfect for environments that prioritize cloud-native solutions. It provides a user-friendly interface and integrates well with popular tools like Docker, AWS, and Kubernetes.
+- **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with [other DevOps tools](https://roadmap.sh/devops/tools), and provides flexibility to run complex automation tasks across multiple environments.
 
 ### Best Practices for Setting Up and Managing CI/CD Pipelines
 
@@ -104,10 +104,10 @@ This makes containers not only lightweight but also faster to start, and more re
 
 There are many benefits to this technology, as you can probably glean by now, but the primary benefits include:
 
-* **Portability**: Containers encapsulate everything an application needs to run, making it easy to move them across different environments. As long as there is a way to run containers in an OS, then your code can run on it.
-* **Scalability**: Containers can be easily scaled up or down based on demand. This flexibility is crucial when you need to handle dynamic workloads.
-* **Consistency**: By using containers, you can ensure that your applications run the same way across different environments, reducing the infamous "it works on my machine" problem.
-* **Isolation**: With container applications, don’t use resources outside of the ones defined for them. This means each application is isolated from others running on the same host server, avoiding interference.
+- **Portability**: Containers encapsulate everything an application needs to run, making it easy to move them across different environments. As long as there is a way to run containers in an OS, then your code can run on it.
+- **Scalability**: Containers can be easily scaled up or down based on demand. This flexibility is crucial when you need to handle dynamic workloads.
+- **Consistency**: By using containers, you can ensure that your applications run the same way across different environments, reducing the infamous "it works on my machine" problem.
+- **Isolation**: With container applications, don’t use resources outside of the ones defined for them. This means each application is isolated from others running on the same host server, avoiding interference.
 
 ### Key Containerization Tools
 
@@ -121,8 +121,8 @@ While containerization simplifies application deployment, managing containers at
 
 Orchestration tools like Kubernetes and Docker Swarm automate the deployment, scaling, and management of containerized applications, ensuring that they run efficiently and reliably across distributed environments.
 
-* **Kubernetes**: Kubernetes is the de facto standard for container orchestration. Kubernetes provides a comprehensive platform for automating the deployment, scaling, and operation of containerized applications by managing clusters of containers.
-* **Docker Swarm**: Docker Swarm is Docker’s native clustering and orchestration tool. It’s simpler to set up and use compared to Kubernetes, making it a good choice for smaller teams or less complex projects.
+- **Kubernetes**: Kubernetes is the de facto standard for container orchestration. Kubernetes provides a comprehensive platform for automating the deployment, scaling, and operation of containerized applications by managing clusters of containers.
+- **Docker Swarm**: Docker Swarm is Docker’s native clustering and orchestration tool. It’s simpler to set up and use compared to Kubernetes, making it a good choice for smaller teams or less complex projects.
 
 ## 4\. Infrastructure as Code (IaC)
 
@@ -136,10 +136,10 @@ IaC allows teams to define their infrastructure in code, which can be versioned,
 
 Nowadays, IaC is not just a “best practice” but rather, an indispensable part of a DevOps engineer’s workflow, and here is why:
 
-* **Consistency Across Environments**: As we’ve already mentioned, with IaC, you can ensure that your environments are all configured exactly the same way.
-* **Scalability**: Whether you need to add more servers, databases, or other resources, you can do it quickly and reliably by updating your code and reapplying it.
-* **Version Control and Collaboration**: By storing your infrastructure configurations in a version control system like Git, you enable better collaboration and control.
-* **Automation and Efficiency**: Once your infrastructure is defined in code, you can automate the provisioning, updating, and teardown of resources, allowing your team to focus on higher-value tasks.
+- **Consistency Across Environments**: As we’ve already mentioned, with IaC, you can ensure that your environments are all configured exactly the same way.
+- **Scalability**: Whether you need to add more servers, databases, or other resources, you can do it quickly and reliably by updating your code and reapplying it.
+- **Version Control and Collaboration**: By storing your infrastructure configurations in a version control system like Git, you enable better collaboration and control.
+- **Automation and Efficiency**: Once your infrastructure is defined in code, you can automate the provisioning, updating, and teardown of resources, allowing your team to focus on higher-value tasks.
 
 ### Key IaC Tools: Terraform, Ansible, Chef, Puppet
 
@@ -147,10 +147,10 @@ Several tools have become go-to solutions for IaC, each offering unique strength
 
 Here are some of the most popular ones; however, feel free to pick others if they fit better in your particular use case/context:
 
-* **Terraform**: Terraform is one of the most widely used IaC tools. It’s cloud-agnostic, meaning you can use it to manage infrastructure across different cloud providers like AWS, Azure, and Google Cloud.
-* **Ansible**: While Ansible’s main focus is automating configuration tasks across multiple servers, it is capable of also working as an IaC tool by providing support for infrastructure provisioning, application deployment, and orchestration.
-* **Chef**: Chef is another strong player in the configuration management space. It uses a Ruby-based language to create "recipes" that automate the deployment and management of infrastructure.
-* **Puppet**: Puppet offers a solid solution for configuration management, using its own declarative language to define the state of your infrastructure.
+- **Terraform**: Terraform is one of the most widely used IaC tools. It’s cloud-agnostic, meaning you can use it to manage infrastructure across different cloud providers like AWS, Azure, and Google Cloud.
+- **Ansible**: While Ansible’s main focus is automating configuration tasks across multiple servers, it is capable of also working as an IaC tool by providing support for infrastructure provisioning, application deployment, and orchestration.
+- **Chef**: Chef is another strong player in the configuration management space. It uses a Ruby-based language to create "recipes" that automate the deployment and management of infrastructure.
+- **Puppet**: Puppet offers a solid solution for configuration management, using its own declarative language to define the state of your infrastructure.
 
 ### Best Practices for Writing and Managing Infrastructure Code
 
@@ -180,11 +180,11 @@ Cloud platforms have revolutionized the way software is developed, deployed, and
 
 Specifically for DevOps teams, cloud platforms offer several key benefits:
 
-* **Scalability**: One of the most significant advantages of cloud computing is its ability to scale resources up or down based on demand. This elasticity is crucial for handling varying workloads, ensuring that applications remain responsive and, most importantly (as some would argue), cost-effective.
-* **Speed and Agility**: Provisioning of resources can be done with just a few clicks, allowing DevOps teams to spin up development, testing, and production environments in minutes. This speed accelerates the software development lifecycle, enabling faster releases and more frequent updates.
-* **Global Reach**: Cloud providers operate data centers around the world, making it easier for organizations to deploy applications closer to their users, reducing latency and improving performance.
-* **Cost Efficiency**: This is a recurring topic when discussing cloud platforms, as they help reduce the need for large upfront capital investments in hardware. Instead, organizations can pay for the resources they use, optimizing costs and reducing waste.
-* **Automation**: Cloud environments are highly automatable, allowing DevOps teams to automate infrastructure provisioning, scaling, and management.
+- **Scalability**: One of the most significant advantages of cloud computing is its ability to scale resources up or down based on demand. This elasticity is crucial for handling varying workloads, ensuring that applications remain responsive and, most importantly (as some would argue), cost-effective.
+- **Speed and Agility**: Provisioning of resources can be done with just a few clicks, allowing DevOps teams to spin up development, testing, and production environments in minutes. This speed accelerates the software development lifecycle, enabling faster releases and more frequent updates.
+- **Global Reach**: Cloud providers operate data centers around the world, making it easier for organizations to deploy applications closer to their users, reducing latency and improving performance.
+- **Cost Efficiency**: This is a recurring topic when discussing cloud platforms, as they help reduce the need for large upfront capital investments in hardware. Instead, organizations can pay for the resources they use, optimizing costs and reducing waste.
+- **Automation**: Cloud environments are highly automatable, allowing DevOps teams to automate infrastructure provisioning, scaling, and management.
 
 ### Key Cloud Providers: AWS, Azure, Google Cloud Platform (GCP)
 
@@ -192,9 +192,9 @@ When it comes to cloud providers, three providers dominate the market: Amazon We
 
 Each of them offers a vast array of services and tools that cater to different needs, making them the go-to choices for DevOps professionals.
 
-* **Amazon Web Services (AWS)**: AWS is the largest and most mature of the three, offering an extensive range of services, including computing power (EC2), storage (S3), databases (RDS), and more. AWS is known for its large number of features, including advanced networking, security, and analytics tools. For DevOps engineers, AWS provides powerful services like AWS Lambda (serverless computing), AWS CodePipeline (CI/CD), and CloudFormation (IaC), which are essential for building and managing cloud-native applications.
-* **Microsoft Azure**: Azure is a close competitor to AWS, particularly strong in enterprise environments where Microsoft technologies like Windows Server, SQL Server, and .NET are prevalent. Azure offers a very rich list of cloud services, including, like the other two, virtual machines, AI, and machine learning tools. Azure also offers DevOps-specific services like Azure DevOps, which integrates CI/CD, version control, and agile planning into a single platform. Azure's hybrid cloud capabilities also make it a popular choice for organizations that need to integrate on-premises infrastructure with cloud resources.
-* **Google Cloud Platform (GCP)**: GCP, while newer to the cloud market compared to AWS and Azure, has quickly gained a reputation for its data analytics, machine learning, and container orchestration services. Google’s Kubernetes Engine (GKE), for instance, is quite liked by the DevOps community for managing containerized applications at scale. GCP is also known for its strong support of open-source technologies, making it a favorite among developers who prioritize flexibility and innovation.
+- **Amazon Web Services (AWS)**: AWS is the largest and most mature of the three, offering an extensive range of services, including computing power (EC2), storage (S3), databases (RDS), and more. AWS is known for its large number of features, including advanced networking, security, and analytics tools. For DevOps engineers, AWS provides powerful services like AWS Lambda (serverless computing), AWS CodePipeline (CI/CD), and CloudFormation (IaC), which are essential for building and managing cloud-native applications.
+- **Microsoft Azure**: Azure is a close competitor to AWS, particularly strong in enterprise environments where Microsoft technologies like Windows Server, SQL Server, and .NET are prevalent. Azure offers a very rich list of cloud services, including, like the other two, virtual machines, AI, and machine learning tools. Azure also offers DevOps-specific services like Azure DevOps, which integrates CI/CD, version control, and agile planning into a single platform. Azure's hybrid cloud capabilities also make it a popular choice for organizations that need to integrate on-premises infrastructure with cloud resources.
+- **Google Cloud Platform (GCP)**: GCP, while newer to the cloud market compared to AWS and Azure, has quickly gained a reputation for its data analytics, machine learning, and container orchestration services. Google’s Kubernetes Engine (GKE), for instance, is quite liked by the DevOps community for managing containerized applications at scale. GCP is also known for its strong support of open-source technologies, making it a favorite among developers who prioritize flexibility and innovation.
 
 ### Understanding Cloud-Native Tools, Services, and Architectural Patterns
 
@@ -202,10 +202,10 @@ Another key technical skill for DevOps engineers is to understand not only cloud
 
 These patterns define how applications are structured and interact with cloud infrastructure, directly affecting areas such as scalability, resilience, and maintainability.
 
-* **Microservices Architecture**: In a microservices architecture, applications are composed of small, independent services that communicate over APIs. Key tools to understand by DevOps engineers include **API gateways** (like AWS API Gateway), **service meshes** (such as Istio), and **message queues** (like Amazon SQS or Google Pub/Sub).
-* **Service-Oriented Architecture (SOA)**: SOA is a broader (and older) architectural style where services are designed to provide specific business functionalities and can communicate with each other over a network. Tools like **Enterprise Service Buses (ESBs)** and **message brokers** (such as RabbitMQ) are often used to facilitate SOA architectures.
-* **Serverless Architecture**: Serverless computing allows developers to build and deploy applications without managing the underlying infrastructure. In a serverless architecture, code is executed in response to events, such as HTTP requests or changes in data, using services like **AWS Lambda**, **Azure Functions**, or **Google Cloud Functions**.
-* **Event-Driven Architecture**: In an event-driven architecture, applications respond to events in real-time, often using tools like **event streams** (e.g., Apache Kafka) and **message queues**.
+- **Microservices Architecture**: In a microservices architecture, applications are composed of small, independent services that communicate over APIs. Key tools to understand by DevOps engineers include **API gateways** (like AWS API Gateway), **service meshes** (such as Istio), and **message queues** (like Amazon SQS or Google Pub/Sub).
+- **Service-Oriented Architecture (SOA)**: SOA is a broader (and older) architectural style where services are designed to provide specific business functionalities and can communicate with each other over a network. Tools like **Enterprise Service Buses (ESBs)** and **message brokers** (such as RabbitMQ) are often used to facilitate SOA architectures.
+- **Serverless Architecture**: Serverless computing allows developers to build and deploy applications without managing the underlying infrastructure. In a serverless architecture, code is executed in response to events, such as HTTP requests or changes in data, using services like **AWS Lambda**, **Azure Functions**, or **Google Cloud Functions**.
+- **Event-Driven Architecture**: In an event-driven architecture, applications respond to events in real-time, often using tools like **event streams** (e.g., Apache Kafka) and **message queues**.
 
 ## 6\. Monitoring and Logging
 
@@ -225,18 +225,18 @@ Logging, on the other hand, captures detailed records of system events and user 
 
 The reasons why you want to have effective monitoring and logging, are:
 
-* **Proactive Issue Detection**: By continuously monitoring system metrics, you can detect issues before they escalate into critical problems, reducing downtime and improving overall system reliability.
-* **Troubleshooting and Root Cause Analysis**: Logs provide detailed information about system events, making it easier to pinpoint the root cause of issues. This speeds up the resolution process and minimizes the impact on users.
-* **Performance Optimization**: Monitoring allows you to track key performance indicators (KPIs) and identify areas where your systems can be optimized, leading to better resource utilization and cost savings.
-* **Compliance and Auditing**: Logging is essential for maintaining compliance with regulatory requirements. Logs can be used to audit system access, track changes, and ensure that your systems meet security and operational standards.
+- **Proactive Issue Detection**: By continuously monitoring system metrics, you can detect issues before they escalate into critical problems, reducing downtime and improving overall system reliability.
+- **Troubleshooting and Root Cause Analysis**: Logs provide detailed information about system events, making it easier to pinpoint the root cause of issues. This speeds up the resolution process and minimizes the impact on users.
+- **Performance Optimization**: Monitoring allows you to track key performance indicators (KPIs) and identify areas where your systems can be optimized, leading to better resource utilization and cost savings.
+- **Compliance and Auditing**: Logging is essential for maintaining compliance with regulatory requirements. Logs can be used to audit system access, track changes, and ensure that your systems meet security and operational standards.
 
 ### Key Tools for Monitoring: Prometheus, Grafana, Nagios
 
 Several tools have become essential for monitoring systems in DevOps environments. Each offers unique features tailored to different needs, from real-time metrics collection to visual dashboards and alerting.
 
-* **Prometheus**: Prometheus is an open-source monitoring tool designed for reliability and scalability. It collects real-time metrics from your systems and applications, stores them in a time-series database, and supports powerful query languages for analysis.
-* **Grafana**: Grafana is a popular open-source platform for visualizing monitoring data. It integrates with Prometheus and other data sources, allowing you to create interactive, customizable dashboards that provide insights into system performance at a glance.
-* **Nagios**: Nagios is one of the oldest and most widely used monitoring tools. It provides comprehensive monitoring of network services, host resources, and infrastructure components.
+- **Prometheus**: Prometheus is an open-source monitoring tool designed for reliability and scalability. It collects real-time metrics from your systems and applications, stores them in a time-series database, and supports powerful query languages for analysis.
+- **Grafana**: Grafana is a popular open-source platform for visualizing monitoring data. It integrates with Prometheus and other data sources, allowing you to create interactive, customizable dashboards that provide insights into system performance at a glance.
+- **Nagios**: Nagios is one of the oldest and most widely used monitoring tools. It provides comprehensive monitoring of network services, host resources, and infrastructure components.
 
 ### Logging Tools: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
 
@@ -244,8 +244,8 @@ Effective logging requires tools that can collect, store, and analyze large volu
 
 The following tools are among the most widely used in the industry:
 
-* **ELK Stack**: The ELK Stack is a powerful open-source solution for managing logs. It consists of **Elastic** for storing and searching logs, **Logstash** to act as a data processing/ingestion pipeline, and **Kibana** for data visualization.
-* **Splunk**: Splunk is a commercial tool that offers advanced log management and analysis capabilities. It can ingest data from a wide variety of sources, index it in real time, and provide powerful search and reporting features.
+- **ELK Stack**: The ELK Stack is a powerful open-source solution for managing logs. It consists of **Elastic** for storing and searching logs, **Logstash** to act as a data processing/ingestion pipeline, and **Kibana** for data visualization.
+- **Splunk**: Splunk is a commercial tool that offers advanced log management and analysis capabilities. It can ingest data from a wide variety of sources, index it in real time, and provide powerful search and reporting features.
 
 ### Best Practices for Setting Up Effective Monitoring and Logging Systems
 
@@ -269,17 +269,17 @@ As DevOps has transformed software development by integrating development and op
 
 DevSecOps shifts the classical paradigm (having security reviews happen at the end of the development lifecycle) by integrating security into every phase of the DevOps pipeline—from code development to deployment and beyond. That, in turn, involves the following:
 
-* **Shift-Left Security**: This principle involves moving security practices earlier in the SDLC, such as during the coding and design phases.
-* **Continuous Security**: Security checks should be continuous and automated throughout the pipeline. This ensures that each code change, build, and deployment is evaluated for security risks.
-* **Collaboration and Culture**: DevSecOps is as much about culture as it is about tools. Developers, operations, and security teams must collaborate closely, sharing responsibility for security.
+- **Shift-Left Security**: This principle involves moving security practices earlier in the SDLC, such as during the coding and design phases.
+- **Continuous Security**: Security checks should be continuous and automated throughout the pipeline. This ensures that each code change, build, and deployment is evaluated for security risks.
+- **Collaboration and Culture**: DevSecOps is as much about culture as it is about tools. Developers, operations, and security teams must collaborate closely, sharing responsibility for security.
 
 ### Key Security Practices
 
 To effectively integrate security into the DevOps pipeline, certain practices are essential:
 
-* **Automated Security Testing**: Automation is key to scaling security practices within a rapidly growing DevOps environment. Automated security testing involves integrating security checks into your CI/CD pipelines. This can include static application security testing (SAST) to analyze source code for security flaws, dynamic application security testing (DAST) to evaluate running applications, and interactive application security testing (IAST) that combines both approaches.
-* **Vulnerability Scanning**: Regular vulnerability scanning is crucial for identifying and mitigating risks across your infrastructure and applications. Scanning tools can detect known vulnerabilities in code, dependencies, container images, and cloud configurations.
-* **Security as Code**: Just as Infrastructure as Code (IaC) treats infrastructure configuration as code, Security as Code applies the same principles to security configurations. This involves automating the provisioning and management of security controls, policies, and compliance checks.
+- **Automated Security Testing**: Automation is key to scaling security practices within a rapidly growing DevOps environment. Automated security testing involves integrating security checks into your CI/CD pipelines. This can include static application security testing (SAST) to analyze source code for security flaws, dynamic application security testing (DAST) to evaluate running applications, and interactive application security testing (IAST) that combines both approaches.
+- **Vulnerability Scanning**: Regular vulnerability scanning is crucial for identifying and mitigating risks across your infrastructure and applications. Scanning tools can detect known vulnerabilities in code, dependencies, container images, and cloud configurations.
+- **Security as Code**: Just as Infrastructure as Code (IaC) treats infrastructure configuration as code, Security as Code applies the same principles to security configurations. This involves automating the provisioning and management of security controls, policies, and compliance checks.
 
 ### Tools for DevSecOps
 
@@ -287,9 +287,9 @@ Several tools have emerged to support the integration of security into the DevOp
 
 Some examples are:
 
-* **Aqua Security**: Aqua Security specializes in securing cloud-native applications, particularly those that run in containers. Aqua provides a comprehensive platform for securing the entire container lifecycle, from development to runtime.
-* **Snyk**: Snyk is a developer-friendly security platform that helps identify and fix vulnerabilities in open-source libraries, container images, and infrastructure as code. Snyk integrates with CI/CD pipelines, providing automated security testing and real-time feedback.
-* **Trivy**: Trivy is an open-source vulnerability scanner that is particularly well-suited for container environments. It scans container images, file systems, and Git repositories for known vulnerabilities, misconfigurations, and secrets.
+- **Aqua Security**: Aqua Security specializes in securing cloud-native applications, particularly those that run in containers. Aqua provides a comprehensive platform for securing the entire container lifecycle, from development to runtime.
+- **Snyk**: Snyk is a developer-friendly security platform that helps identify and fix vulnerabilities in open-source libraries, container images, and infrastructure as code. Snyk integrates with CI/CD pipelines, providing automated security testing and real-time feedback.
+- **Trivy**: Trivy is an open-source vulnerability scanner that is particularly well-suited for container environments. It scans container images, file systems, and Git repositories for known vulnerabilities, misconfigurations, and secrets.
 
 ## 8\. Networking and System Administration
 
@@ -303,12 +303,12 @@ Networking is the backbone of any IT infrastructure, connecting systems, applica
 
 Some of the most important concepts include:
 
-* **TCP/IP Networking**: TCP/IP (Transmission Control Protocol/Internet Protocol) is the fundamental protocol suite for the Internet and most private networks. Understanding how TCP/IP works is essential.
-* **Network Topologies**: Network topology refers to the arrangement of different elements (links, nodes, etc.) in a computer network. Common topologies include star, mesh, and hybrid configurations.
-* **Load Balancing**: Load balancing is the process of distributing network or application traffic across multiple servers to ensure no single server becomes overwhelmed. DevOps engineers need to understand different load balancing algorithms (round-robin, least connections, IP hash) and how to implement load balancers (like NGINX, HAProxy, or cloud-native solutions).
-* **Firewalls and Security Groups**: Firewalls are essential for controlling incoming and outgoing network traffic based on predetermined security rules. In cloud environments, security groups serve a similar function by acting as virtual firewalls for instances.
-* **DNS (Domain Name System)**: DNS is the system that translates human-readable domain names (like [www.example.com](http://www.example.com)) into IP addresses that computers use to identify each other on the network.
-* **VPNs and Secure Communication**: Virtual Private Networks (VPNs) allow secure communication over public networks by encrypting data between remote devices and the network.
+- **TCP/IP Networking**: TCP/IP (Transmission Control Protocol/Internet Protocol) is the fundamental protocol suite for the Internet and most private networks. Understanding how TCP/IP works is essential.
+- **Network Topologies**: Network topology refers to the arrangement of different elements (links, nodes, etc.) in a computer network. Common topologies include star, mesh, and hybrid configurations.
+- **Load Balancing**: Load balancing is the process of distributing network or application traffic across multiple servers to ensure no single server becomes overwhelmed. DevOps engineers need to understand different load balancing algorithms (round-robin, least connections, IP hash) and how to implement load balancers (like NGINX, HAProxy, or cloud-native solutions).
+- **Firewalls and Security Groups**: Firewalls are essential for controlling incoming and outgoing network traffic based on predetermined security rules. In cloud environments, security groups serve a similar function by acting as virtual firewalls for instances.
+- **DNS (Domain Name System)**: DNS is the system that translates human-readable domain names (like [www.example.com](http://www.example.com)) into IP addresses that computers use to identify each other on the network.
+- **VPNs and Secure Communication**: Virtual Private Networks (VPNs) allow secure communication over public networks by encrypting data between remote devices and the network.
 
 ### System Administration Tasks and Best Practices
 
@@ -316,13 +316,13 @@ System administration involves the management of computer systems, including ser
 
 Some of these tasks include:
 
-* **User and Permission Management**: Managing user accounts, groups, and permissions is fundamental to system security.
-* **Server Configuration and Management**: Configuring servers to meet the needs of applications and ensuring they run efficiently is a core task.
-* **System Monitoring and Maintenance**: As we’ve already mentioned,  regular monitoring of system performance metrics is essential for proactive maintenance.
-* **Backup and Recovery**: Regular backups of data and configurations are crucial for disaster recovery.
-* **Patch Management**: Keeping systems up to date with the latest security patches and software updates is critical for maintaining your infrastructure secure.
-* **Security Hardening**: Security hardening involves reducing the attack surface of a system by configuring systems securely, removing unnecessary services, and applying best practices.
-* **Script Automation**: Developing your automation skills is key, as you’ll be automating routine tasks with scripts every day. Common scripting languages include Bash for Linux and PowerShell for Windows.
+- **User and Permission Management**: Managing user accounts, groups, and permissions is fundamental to system security.
+- **Server Configuration and Management**: Configuring servers to meet the needs of applications and ensuring they run efficiently is a core task.
+- **System Monitoring and Maintenance**: As we’ve already mentioned, regular monitoring of system performance metrics is essential for proactive maintenance.
+- **Backup and Recovery**: Regular backups of data and configurations are crucial for disaster recovery.
+- **Patch Management**: Keeping systems up to date with the latest security patches and software updates is critical for maintaining your infrastructure secure.
+- **Security Hardening**: Security hardening involves reducing the attack surface of a system by configuring systems securely, removing unnecessary services, and applying best practices.
+- **Script Automation**: Developing your automation skills is key, as you’ll be automating routine tasks with scripts every day. Common scripting languages include Bash for Linux and PowerShell for Windows.
 
 ### Best Practices for Networking and System Administration
 
@@ -343,11 +343,11 @@ In a DevOps environment, where continuous integration and continuous deployment 
 
 Version control is crucial in DevOps for several reasons:
 
-* **Collaboration**: Version control systems allow multiple developers to work on the same codebase simultaneously without overwriting each other's changes.
-* **Change Tracking**: Every change to the codebase is tracked, with a history of who made the change, when, and why.
-* **Branching and Merging**: Version control systems enable the creation of branches, allowing developers to work on new features, bug fixes, or experiments in isolation.
-* **Continuous Integration/Continuous Deployment (CI/CD)**: Version control is crucial to CI/CD pipelines, where code changes are automatically tested, integrated, and deployed.
-* **Disaster Recovery**: In case of errors or issues, version control allows you to revert to previous stable versions of the codebase, minimizing downtime and disruption.
+- **Collaboration**: Version control systems allow multiple developers to work on the same codebase simultaneously without overwriting each other's changes.
+- **Change Tracking**: Every change to the codebase is tracked, with a history of who made the change, when, and why.
+- **Branching and Merging**: Version control systems enable the creation of branches, allowing developers to work on new features, bug fixes, or experiments in isolation.
+- **Continuous Integration/Continuous Deployment (CI/CD)**: Version control is crucial to CI/CD pipelines, where code changes are automatically tested, integrated, and deployed.
+- **Disaster Recovery**: In case of errors or issues, version control allows you to revert to previous stable versions of the codebase, minimizing downtime and disruption.
 
 ### Mastering Git: Key Commands, Workflows, and Best Practices
 
@@ -359,25 +359,25 @@ The key commands you should try to master first are `init`, `clone`, `commit`, `
 
 Git can be used as the driving force for your development workflow. However, there are many ways to use it. Some of the most common ones are:
 
-* **Feature Branch Workflow**: Developers create a new branch for each feature or bug fix. Once complete, the branch is merged back into the main branch, often through a pull request, where code reviews and automated tests are conducted.
-* **Gitflow Workflow**: A more structured workflow that uses feature branches, a develop branch for integration, and a master branch for production-ready code. It also includes hotfix branches for urgent bug fixes in production.
-* **Forking Workflow**: Common in open-source projects, this workflow involves forking a repository, making changes in the fork, and then submitting a pull request to the original repository for review and integration.
+- **Feature Branch Workflow**: Developers create a new branch for each feature or bug fix. Once complete, the branch is merged back into the main branch, often through a pull request, where code reviews and automated tests are conducted.
+- **Gitflow Workflow**: A more structured workflow that uses feature branches, a develop branch for integration, and a master branch for production-ready code. It also includes hotfix branches for urgent bug fixes in production.
+- **Forking Workflow**: Common in open-source projects, this workflow involves forking a repository, making changes in the fork, and then submitting a pull request to the original repository for review and integration.
 
 #### Best practices when using Git
 
-* **Commit Often, Commit Early**: Make small, frequent commits with clear, descriptive messages. This practice makes it easier to track changes and revert specific parts of the codebase if needed.
-* **Use Meaningful Branch Names**: Name branches based on the work they are doing, such as `feature/user-authentication` or `bugfix/login-issue`.
-* **Perform Code Reviews**: Use pull requests and code reviews as part of the merge process.
-* **Keep a Clean Commit History**: Use tools like `git rebase` to clean up your commit history before merging branches. A clean commit history makes it easier to understand the evolution of the project and debug issues.
-* **Resolve Conflicts Early**: When working on shared branches, regularly pull changes from the remote repository to minimize and resolve merge conflicts as early as possible.
+- **Commit Often, Commit Early**: Make small, frequent commits with clear, descriptive messages. This practice makes it easier to track changes and revert specific parts of the codebase if needed.
+- **Use Meaningful Branch Names**: Name branches based on the work they are doing, such as `feature/user-authentication` or `bugfix/login-issue`.
+- **Perform Code Reviews**: Use pull requests and code reviews as part of the merge process.
+- **Keep a Clean Commit History**: Use tools like `git rebase` to clean up your commit history before merging branches. A clean commit history makes it easier to understand the evolution of the project and debug issues.
+- **Resolve Conflicts Early**: When working on shared branches, regularly pull changes from the remote repository to minimize and resolve merge conflicts as early as possible.
 
 ### Tools for Managing Version Control: GitHub, GitLab, Bitbucket
 
 While Git itself is a command-line tool, various platforms provide user-friendly interfaces and additional features to manage Git repositories effectively.
 
-* **GitHub**: GitHub is the most popular platform for hosting Git repositories. It offers many collaboration features and on top of them, GitHub Actions integrates CI/CD directly into the platform, automating workflows from development to deployment.
-* **GitLab**: GitLab is a complete DevOps platform that includes Git repository management, CI/CD, issue tracking, and more. GitLab can be hosted on-premises, which is a significant advantage for organizations with strict data security requirements.
-* **Bitbucket**: Bitbucket, developed by Atlassian, integrates tightly with other Atlassian tools like Jira and Confluence. It supports Git and Mercurial and offers features like pull requests, code reviews, and CI/CD pipelines through Bitbucket Pipelines.
+- **GitHub**: GitHub is the most popular platform for hosting Git repositories. It offers many collaboration features and on top of them, GitHub Actions integrates CI/CD directly into the platform, automating workflows from development to deployment.
+- **GitLab**: GitLab is a complete DevOps platform that includes Git repository management, CI/CD, issue tracking, and more. GitLab can be hosted on-premises, which is a significant advantage for organizations with strict data security requirements.
+- **Bitbucket**: Bitbucket, developed by Atlassian, integrates tightly with other Atlassian tools like Jira and Confluence. It supports Git and Mercurial and offers features like pull requests, code reviews, and CI/CD pipelines through Bitbucket Pipelines.
 
 As usual, the right set of DevOps tools will drastically depend on your specific context and needs.
 
@@ -395,19 +395,19 @@ Configure once and deploy endless times; that’s the DevOps way.
 
 The main reasons why this is such an important practice in DevOps are:
 
-* **Automation tools**: These tools automate the process of setting up and maintaining infrastructure, reducing manual effort and minimizing the risk of human error.
-* **Consistency Across Environments**: By defining configurations as code, conf. management ensures that all environments are configured identically.
-* **Scalability**: As systems scale, manually managing configurations becomes impractical. Configuration management allows you to scale infrastructure and applications, ensuring that new instances are configured correctly from the start.
-* **Compliance and Auditing**: These tools provide a clear and auditable record of system configurations. This is essential for compliance with industry standards and regulations.
-* **Disaster Recovery**: In the event of a system failure, configuration management tools can quickly restore systems to their desired state, reducing downtime and minimizing the impact on business operations.
+- **Automation tools**: These tools automate the process of setting up and maintaining infrastructure, reducing manual effort and minimizing the risk of human error.
+- **Consistency Across Environments**: By defining configurations as code, conf. management ensures that all environments are configured identically.
+- **Scalability**: As systems scale, manually managing configurations becomes impractical. Configuration management allows you to scale infrastructure and applications, ensuring that new instances are configured correctly from the start.
+- **Compliance and Auditing**: These tools provide a clear and auditable record of system configurations. This is essential for compliance with industry standards and regulations.
+- **Disaster Recovery**: In the event of a system failure, configuration management tools can quickly restore systems to their desired state, reducing downtime and minimizing the impact on business operations.
 
 ### DevOps Configuration Management Tools to Master
 
 Several tools have become staples in this landscape, each offering unique features and strengths. For example:
 
-* **Ansible**: Ansible, developed by Red Hat, is an open-source tool known for its simplicity and ease of use. It uses YAML for configuration files, known as playbooks, which are easy to read and write. Ansible is ideal for automating tasks like software installation, service management, and configuration updates across multiple servers.
-* **Puppet**: Puppet is a powerful tool that uses a declarative language to define system configurations. Puppet’s strength lies in its scalability and ability to manage large, complex environments.
-* **Chef**: Chef is another popular tool that uses a Ruby-based DSL (Domain-Specific Language) to write recipes and cookbooks, which define how systems should be configured and managed.
+- **Ansible**: Ansible, developed by Red Hat, is an open-source tool known for its simplicity and ease of use. It uses YAML for configuration files, known as playbooks, which are easy to read and write. Ansible is ideal for automating tasks like software installation, service management, and configuration updates across multiple servers.
+- **Puppet**: Puppet is a powerful tool that uses a declarative language to define system configurations. Puppet’s strength lies in its scalability and ability to manage large, complex environments.
+- **Chef**: Chef is another popular tool that uses a Ruby-based DSL (Domain-Specific Language) to write recipes and cookbooks, which define how systems should be configured and managed.
 
 ### Best Practices for Managing Configurations Across Environments
 
@@ -434,9 +434,9 @@ DevOps is not just about tools and processes; it's also about people and how the
 
 Key reasons why soft skills are crucial in a DevOps environment:
 
-* **Cross-Functional Collaboration**: DevOps brings together diverse teams with different expertise—developers, operations, QA, security, and more.
-* **Problem Solving and Conflict Resolution**: In software development in general, issues and conflicts are inevitable. Strong communication skills help teams navigate these challenges, finding quick resolutions and keeping the focus on delivering value to the customer.
-* **Agility and Adaptability**: DevOps teams often need to adapt to changing requirements and priorities. Effective communication ensures that these changes are understood and implemented without issues.
+- **Cross-Functional Collaboration**: DevOps brings together diverse teams with different expertise—developers, operations, QA, security, and more.
+- **Problem Solving and Conflict Resolution**: In software development in general, issues and conflicts are inevitable. Strong communication skills help teams navigate these challenges, finding quick resolutions and keeping the focus on delivering value to the customer.
+- **Agility and Adaptability**: DevOps teams often need to adapt to changing requirements and priorities. Effective communication ensures that these changes are understood and implemented without issues.
 
 ### Tools for Effective Collaboration: Slack, Microsoft Teams, Jira
 
@@ -444,9 +444,9 @@ Several tools are essential for facilitating communication and collaboration in 
 
 Is there an absolute best one? The answer to that question is “no.”, the best option depends on your needs and preferences, so study the list and figure out yourself which software (or combination of) helps your specific teams.
 
-* **Slack**: Slack is a popular communication platform designed for team collaboration. It offers integration with other DevOps tools like GitHub, Jenkins, and Jira.
-* **Microsoft Teams**: Microsoft Teams is another powerful collaboration tool, especially popular in organizations using the Microsoft ecosystem.
-* **Jira**: Jira, developed by Atlassian, is a robust project management tool that helps teams track work, manage backlogs, and plan sprints. It’s particularly useful in Agile and DevOps environments where transparency and continuous improvement are key.
+- **Slack**: Slack is a popular communication platform designed for team collaboration. It offers integration with other DevOps tools like GitHub, Jenkins, and Jira.
+- **Microsoft Teams**: Microsoft Teams is another powerful collaboration tool, especially popular in organizations using the Microsoft ecosystem.
+- **Jira**: Jira, developed by Atlassian, is a robust project management tool that helps teams track work, manage backlogs, and plan sprints. It’s particularly useful in Agile and DevOps environments where transparency and continuous improvement are key.
 
 ### Best Practices for Fostering a Collaborative Culture
 
@@ -466,9 +466,9 @@ In the world of DevOps, mastering a diverse set of skills is not an option but r
 
 For those looking to deepen their understanding or get started on their DevOps journey, here are some valuable resources:
 
-* [**Expanded DevOps Roadmap**](https://roadmap.sh/devops): A comprehensive guide that details the full range of DevOps skills, tools, and technologies you need to master as a DevOps engineer.
-* [**Simplified DevOps Roadmap**](https://roadmap.sh/devops?r=devops-beginner): A more streamlined version that highlights the core components of a DevOps career, making it easier for beginners to navigate the field.
-* [**DevOps interview questions**](https://roadmap.sh/questions/devops): Test your knowledge of DevOps by answering popular interview questions, and challenge yourself to level up and ace your next job interview.
+- [**Expanded DevOps Roadmap**](https://roadmap.sh/devops): A comprehensive guide that details the full range of DevOps skills, tools, and technologies you need to master as a DevOps engineer.
+- [**Simplified DevOps Roadmap**](https://roadmap.sh/devops?r=devops-beginner): A more streamlined version that highlights the core components of a DevOps career, making it easier for beginners to navigate the field.
+- [**DevOps interview questions**](https://roadmap.sh/questions/devops): Test your knowledge of DevOps by answering popular interview questions, and challenge yourself to level up and ace your next job interview.
 
 Success in DevOps is about cultivating a well-rounded skill set that combines technical expertise with strong collaboration, communication, and problem-solving abilities.
 

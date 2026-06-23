@@ -21,7 +21,9 @@ export function AITutorHeader(props: AITutorHeaderProps) {
   return (
     <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
       <div className="flex items-center gap-2">
-        <h2 className="relative flex-shrink-0 top-0 lg:top-1 text-lg font-semibold">{title}</h2>
+        <h2 className="relative top-0 flex-shrink-0 text-lg font-semibold lg:top-1">
+          {title}
+        </h2>
       </div>
 
       <div className="flex items-center gap-2">

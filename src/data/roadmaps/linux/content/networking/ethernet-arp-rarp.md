@@ -1,6 +1,6 @@
-# Ethernet, ARP and RARP 
+# Ethernet, ARP and RARP
 
-Linux serves as a prevalent OS choice for networking due to its robust, customizable, and open-source nature. Understanding networking in Linux involves comprehending various protocols and tools. Three crucial components of this landscape include Ethernet, ARP (Address Resolution Protocol), and RARP (Reverse Address Resolution Protocol). 
+Linux serves as a prevalent OS choice for networking due to its robust, customizable, and open-source nature. Understanding networking in Linux involves comprehending various protocols and tools. Three crucial components of this landscape include Ethernet, ARP (Address Resolution Protocol), and RARP (Reverse Address Resolution Protocol).
 
 - Ethernet: It's the most widely installed LAN (Local Area Network) technology, allowing devices to communicate within a local area network.
 - ARP: As per its name, it provides address resolution, translating IP addresses into MAC (Media Access Control) addresses, facilitating more direct network communication.

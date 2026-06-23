@@ -31,15 +31,15 @@ This guide provides an in-depth discussion of the key differences between [full 
 
 The table below summarizes the major differences:
 
-| Full stack Development | Back end Development |
-|------------------------|----------------------|
-| Build both the client-side (frontend) and server-side (backend) of the application. | Specializes only on the server-side of the application. |
-| Uses frontend and backend languages such as HTML, CSS, JavaScript, Java, PHP, etc. | Proficient only in backend programming languages like Python, C++, Java, etc. |
+| Full stack Development                                                                                                                                                                                                                                                 | Back end Development                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Build both the client-side (frontend) and server-side (backend) of the application.                                                                                                                                                                                    | Specializes only on the server-side of the application.                                                 |
+| Uses frontend and backend languages such as HTML, CSS, JavaScript, Java, PHP, etc.                                                                                                                                                                                     | Proficient only in backend programming languages like Python, C++, Java, etc.                           |
 | Responsible for frontend web development tasks such as crafting responsive web design, enhancing user experience, and ensuring accessibility, as well as backend development tasks like managing databases, implementing security measures, caching, and writing APIs. | Responsible for only the server-side logic like managing database, security, caching, and writing APIs. |
-| Have the highest earning potential. | Lower earning potential as compared to full stack development. |
-| Uses libraries and frameworks that work on the client or server, or both. | Uses libraries and frameworks that work only on the server. |
-| Most challenging to learn as it involves combining frontend and backend development | Relatively easier to learn as compared to Full stack as it focuses only on the backend development |
-| Highest number of jobs available | Lower number of jobs as compared to full stack development |
+| Have the highest earning potential.                                                                                                                                                                                                                                    | Lower earning potential as compared to full stack development.                                          |
+| Uses libraries and frameworks that work on the client or server, or both.                                                                                                                                                                                              | Uses libraries and frameworks that work only on the server.                                             |
+| Most challenging to learn as it involves combining frontend and backend development                                                                                                                                                                                    | Relatively easier to learn as compared to Full stack as it focuses only on the backend development      |
+| Highest number of jobs available                                                                                                                                                                                                                                       | Lower number of jobs as compared to full stack development                                              |
 
 Let's look at the differences in detail.
 
@@ -80,7 +80,7 @@ Based on reviews of popular job posting platforms like LinkedIn, Indeed, and Gla
 
 ## Learning curve
 
-Backend development is relatively easier to learn because its core focus is on backend languages, libraries, frameworks, and other server-side development. In contrast,  full stack development combines both frontend and backend development, making it more challenging to learn.
+Backend development is relatively easier to learn because its core focus is on backend languages, libraries, frameworks, and other server-side development. In contrast, full stack development combines both frontend and backend development, making it more challenging to learn.
 
 While the points above cover the fundamental differences between full stack and backend development, it's worth noting that their roles and responsibilities can also vary depending on factors such as the organization, industry, and project scope.
 

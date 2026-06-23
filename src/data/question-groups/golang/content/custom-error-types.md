@@ -1,4 +1,4 @@
-Custom error types in Go are typically designed by creating a struct to encapsulate error details and implementing the Error() method to satisfy the error interface. 
+Custom error types in Go are typically designed by creating a struct to encapsulate error details and implementing the Error() method to satisfy the error interface.
 
 This, in turn, gives developers the tools to perform type assertions and the use of errors.Is or errors.As for effective error management. The following is an example of how to create your own custom error in Go:
 
@@ -37,4 +37,4 @@ func main() {
         }
     }
 }
-``` 
+```

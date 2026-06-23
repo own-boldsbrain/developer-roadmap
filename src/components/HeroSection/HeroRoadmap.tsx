@@ -47,7 +47,7 @@ export function HeroRoadmap(props: ProgressRoadmapProps) {
 
       {isTrackable && (
         <span
-          className="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
+          className="absolute top-0 bottom-0 left-0 z-10 bg-[#172a3a]"
           style={{ width: `${percentageDone}%` }}
         ></span>
       )}
@@ -61,7 +61,7 @@ export function HeroRoadmap(props: ProgressRoadmapProps) {
       )}
 
       {isNew && (
-        <span className="absolute bottom-1.5 right-2 flex items-center rounded-br rounded-tl text-xs font-medium text-purple-300">
+        <span className="absolute right-2 bottom-1.5 flex items-center rounded-tl rounded-br text-xs font-medium text-purple-300">
           <span className="mr-1.5 flex h-2 w-2">
             <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-purple-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-purple-500" />
@@ -71,4 +71,4 @@ export function HeroRoadmap(props: ProgressRoadmapProps) {
       )}
     </a>
   );
-} 
+}

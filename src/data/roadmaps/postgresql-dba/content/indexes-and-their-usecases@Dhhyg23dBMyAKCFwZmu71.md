@@ -7,6 +7,6 @@ Indexes in PostgreSQL improve query performance by allowing faster data retrieva
 - Search Queries: Optimize searches on large text fields with full-text search indexes.
 - Range Queries: Improve performance for range-based queries on date, time, or numerical fields.
 - Partial Indexes: Create indexes on a subset of data, useful for frequently queried columns with specific conditions.
--	Expression Indexes: Index expressions or functions, enhancing performance for queries involving complex calculations.
+- Expression Indexes: Index expressions or functions, enhancing performance for queries involving complex calculations.
 - Composite Indexes: Optimize multi-column searches by indexing multiple fields together.
 - GIN and GiST Indexes: Enhance performance for array, JSONB, and geometric data types.

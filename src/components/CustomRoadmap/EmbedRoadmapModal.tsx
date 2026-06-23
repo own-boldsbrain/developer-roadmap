@@ -29,7 +29,7 @@ export function EmbedRoadmapModal(props: ShareRoadmapModalProps) {
   return (
     <Modal onClose={onClose} wrapperClassName={'max-w-[500px]'}>
       <div className="p-4 pb-0">
-        <h1 className="text-xl font-semibold leading-5 text-gray-900">
+        <h1 className="text-xl leading-5 font-semibold text-gray-900">
           Embed Roadmap
         </h1>
       </div>
@@ -50,7 +50,7 @@ export function EmbedRoadmapModal(props: ShareRoadmapModalProps) {
         />
       </div>
 
-      <div className="flex items-center justify-between px-4 pb-4 pt-2">
+      <div className="flex items-center justify-between px-4 pt-2 pb-4">
         <button
           className={cn(
             'flex h-9 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white outline-hidden',

@@ -10,4 +10,4 @@ LIMIT 5;
 
 To add customer names, just join with the customers' table.
 
-**Common pitfall:** Not grouping properly before ordering can result in incorrect aggregates. 
+**Common pitfall:** Not grouping properly before ordering can result in incorrect aggregates.

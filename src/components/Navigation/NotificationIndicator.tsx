@@ -9,7 +9,7 @@ export function NotificationIndicator(props: NotificationIndicatorProps) {
   return (
     <span
       className={cn(
-        'absolute -top-1 right-0 h-3 w-3 text-xs uppercase tracking-wider',
+        'absolute -top-1 right-0 h-3 w-3 text-xs tracking-wider uppercase',
         className,
       )}
     >

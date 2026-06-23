@@ -73,7 +73,7 @@ export function CourseFeature(props: CourseFeatureProps) {
           )}
         </button>
         {isExpanded && (
-          <div className="absolute left-0 top-full z-20 translate-y-2 rounded-lg border border-zinc-800 bg-zinc-800 p-4">
+          <div className="absolute top-full left-0 z-20 translate-y-2 rounded-lg border border-zinc-800 bg-zinc-800 p-4">
             <p>{description}</p>
             {imgUrl && (
               <img
@@ -83,7 +83,7 @@ export function CourseFeature(props: CourseFeatureProps) {
                 }}
                 src={imgUrl}
                 alt={title}
-                className="mt-4 h-auto pointer-events-none md:pointer-events-auto w-full cursor-zoom-in rounded-lg object-right-top"
+                className="pointer-events-none mt-4 h-auto w-full cursor-zoom-in rounded-lg object-right-top md:pointer-events-auto"
               />
             )}
           </div>

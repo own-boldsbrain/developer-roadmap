@@ -43,7 +43,7 @@ export function PersonalRoadmapActionDropdown(
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-auto top-full z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md sm:right-0"
+          className="align-right absolute top-full right-auto z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md sm:right-0"
         >
           <ul>
             {onUpdateSharing && (

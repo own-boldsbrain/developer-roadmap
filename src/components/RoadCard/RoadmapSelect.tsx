@@ -44,7 +44,7 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
   return (
     <div className="flex flex-wrap gap-1">
       {allProgress?.length === 0 && (
-        <p className="text-sm italic text-gray-400">
+        <p className="text-sm text-gray-400 italic">
           No progress tracked so far.
         </p>
       )}

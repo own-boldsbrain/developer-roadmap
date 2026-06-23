@@ -4,9 +4,10 @@ Snap is a modern approach to package management in Linux systems promoted by Can
 
 Snaps are installed from a Snapcraft store and are automatically updated in the background. The Snap update process is transactional, meaning if something goes wrong during an update, Snap can automatically revert to the previous working version.
 
-Here is a simple example of a snap command: 
+Here is a simple example of a snap command:
 
 ```sh
 sudo snap install [package-name]
 ```
+
 In the command above, `[package-name]` is the name of the snap package you want to install. You must run this command as the superuser (sudo), as root privileges are needed to install packages.

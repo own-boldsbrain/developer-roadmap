@@ -1,7 +1,9 @@
 To remove duplicates from a DataFrame:
+
 ```python
 df = df.drop_duplicates()
 ```
+
 You can also refine this by specifying columns:
 
 ```python
@@ -14,4 +16,4 @@ Control which duplicates to keep:
 ```python
 # Keep first or last occurrence
 df = df.drop_duplicates(keep='last')  # or 'first'
-``` 
+```

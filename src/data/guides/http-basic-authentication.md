@@ -103,7 +103,7 @@ function decodeCredentials(authHeader) {
 module.exports = function (req, res, next) {
   // Take the header and decode credentials
   const [username, password] = decodeCredentials(
-    req.headers.authorization || ''
+    req.headers.authorization || '',
   );
 
   // Verify the credentials

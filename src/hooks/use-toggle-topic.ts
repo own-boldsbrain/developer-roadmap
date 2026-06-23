@@ -24,7 +24,7 @@ export function useToggleTopic(callback: CallbackType) {
     return () => {
       window.removeEventListener(
         `best-practice.topic.toggle`,
-        handleToggleTopic
+        handleToggleTopic,
       );
     };
   }, []);

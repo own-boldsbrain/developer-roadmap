@@ -30,7 +30,7 @@ You are required to build a CLI tool that starts a caching proxy server, it will
 
 ## Requirements
 
-User should be able to start the caching proxy server by running a command like following: 
+User should be able to start the caching proxy server by running a command like following:
 
 ```shell
 caching-proxy --port <number> --origin <url>

@@ -12,6 +12,7 @@ Header inclusion involves including header files using the preprocessor directiv
 - Angle brackets `<>`: Used for including standard library headers, like `iostream`, `vector`, or `algorithm`.
 
 Example:
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -20,6 +21,7 @@ Example:
 - Double quotes `""`: Used for including user-defined headers or headers provided by third-party libraries.
 
 Example:
+
 ```cpp
 #include "myHeader.h"
 #include "thirdPartyLibrary.h"
@@ -30,6 +32,7 @@ Example:
 Source inclusion refers to including the content of a source file directly in another source file. This approach is generally not recommended as it can lead to multiple definitions and increased compile times but it can occasionally be useful for certain tasks (e.g., templates or simple small programs). To include a source file, you can use the `#include` directive with double quotes, just like with header files:
 
 Example:
+
 ```cpp
 #include "mySourceFile.cpp"
 ```

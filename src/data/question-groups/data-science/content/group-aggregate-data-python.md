@@ -18,4 +18,4 @@ df.groupby('category')['sales'].agg(lambda x: x.max() - x.min())
 
 # Reset index to convert back to a regular DataFrame
 df.groupby('category')['sales'].sum().reset_index()
-``` 
+```

@@ -81,7 +81,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
           <ShowcaseAlert currentRoadmap={$currentRoadmap} />
         )}
 
-        <div className="container relative py-5 sm:py-12">
+        <div className="relative container py-5 sm:py-12">
           {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
 
           {creator?.name && (
@@ -107,7 +107,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               </span>
             </div>
           )}
-          <div className="mb-3 mt-4 sm:mb-4">
+          <div className="mt-4 mb-3 sm:mb-4">
             <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
             <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
               {description}
@@ -194,10 +194,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             </div>
           </div>
 
-          <RoadmapHint
-            roadmapTitle={title!}
-            roadmapId={roadmapId!}
-          />
+          <RoadmapHint roadmapTitle={title!} roadmapId={roadmapId!} />
         </div>
       </div>
     </>

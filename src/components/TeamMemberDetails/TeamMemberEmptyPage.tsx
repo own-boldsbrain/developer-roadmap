@@ -13,7 +13,7 @@ export function TeamMemberEmptyPage(props: TeamMemberEmptyPageProps) {
         <RoadmapIcon className="mb-2 h-14 w-14 opacity-10" />
 
         <h2 className="text-lg font-bold sm:text-xl">No Progress</h2>
-        <p className="my-1 max-w-[400px] text-balance text-sm text-gray-500 sm:my-2 sm:text-base">
+        <p className="my-1 max-w-[400px] text-sm text-balance text-gray-500 sm:my-2 sm:text-base">
           Progress will appear here as they start tracking their roadmaps.
         </p>
       </div>

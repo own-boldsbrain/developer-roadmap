@@ -71,7 +71,7 @@ export function ShareIcons(props: ShareIconsProps) {
 
   return (
     <div
-      className="absolute left-[-18px] top-[110px] hidden h-full"
+      className="absolute top-[110px] left-[-18px] hidden h-full"
       ref={shareIconsRef}
     >
       <div className="sticky top-[100px] flex flex-col items-center gap-1.5">

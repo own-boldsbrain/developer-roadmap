@@ -40,7 +40,7 @@ export function ProjectProgressActions(props: ProjectProgressActionsType) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-8 z-10 w-48 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
+        <div className="absolute top-8 right-0 z-10 w-48 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
           <button
             className={cn(
               'flex w-full items-center gap-1.5 p-2 text-xs font-medium hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-70 sm:text-sm',

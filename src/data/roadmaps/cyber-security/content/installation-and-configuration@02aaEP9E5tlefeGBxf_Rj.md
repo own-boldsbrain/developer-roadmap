@@ -33,4 +33,3 @@ While software configurations will vary depending on the specific application or
 - **Disable Unnecessary Services**: Disable any unused or unnecessary services on your systems. Unnecessary services can contribute to an increased attack surface and potential vulnerabilities.
 
 Learn more from the following resources
-

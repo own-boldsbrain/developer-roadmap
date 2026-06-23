@@ -41,7 +41,9 @@ export function DashboardProjectCard(props: DashboardProjectCardProps) {
           />
         )}
       </span>
-      <span className="grow truncate group-hover:underline">{title.replace(/(System)|(Service)/, '')}</span>
+      <span className="grow truncate group-hover:underline">
+        {title.replace(/(System)|(Service)/, '')}
+      </span>
       <span className="shrink-0 bg-transparent text-xs text-gray-400 no-underline">
         {!!startedAt &&
           status === 'started' &&

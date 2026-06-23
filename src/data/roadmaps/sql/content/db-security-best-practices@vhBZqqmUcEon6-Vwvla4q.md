@@ -20,7 +20,7 @@ If remote connections to the SQL server are not necessary, it is best to disable
 
 ## 5. Avoid Using SQL Server Admin Account
 
-You should avoid using the SQL Server admin account for regular database operations to limit security risk. 
+You should avoid using the SQL Server admin account for regular database operations to limit security risk.
 
 ## 6. Encrypt Communication
 
@@ -28,11 +28,11 @@ To protect against data sniffing, all communication between SQL Server and appli
 
 ## 7. Database Backups
 
-Regular database backups are crucial for data integrity if there happens to be a data loss. 
+Regular database backups are crucial for data integrity if there happens to be a data loss.
 
 ## 8. Monitoring and Auditing
 
-Regularly monitor and audit your database operations to keep track of who does what in your database. 
+Regularly monitor and audit your database operations to keep track of who does what in your database.
 
 ## 9. Regular Vulnerability Scanning
 

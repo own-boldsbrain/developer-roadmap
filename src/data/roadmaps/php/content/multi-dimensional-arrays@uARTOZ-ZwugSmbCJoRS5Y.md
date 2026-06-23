@@ -1,6 +1,6 @@
 # Multi-dimensional Arrays
 
-Multi-dimensional arrays in PHP are a type of array that contains one or more arrays. Essentially, it's an array of arrays. This allows you to store data in a structured manner, much like a table or a matrix. The fundamental idea is that each array value can, in turn, be another array. For instance, you can store information about various users, where each user (a primary array element) contains several details about them (in a secondary array like email, username etc.). 
+Multi-dimensional arrays in PHP are a type of array that contains one or more arrays. Essentially, it's an array of arrays. This allows you to store data in a structured manner, much like a table or a matrix. The fundamental idea is that each array value can, in turn, be another array. For instance, you can store information about various users, where each user (a primary array element) contains several details about them (in a secondary array like email, username etc.).
 
 Here's an example:
 

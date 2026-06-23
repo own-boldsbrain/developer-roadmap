@@ -1,11 +1,11 @@
 ---
-title: "Data Science vs Software Engineering: Which to Choose?"
-description: "Both software engineering and data science offer exciting opportunities, but they require different skill sets. This breakdown helps you find your ideal fit."
+title: 'Data Science vs Software Engineering: Which to Choose?'
+description: 'Both software engineering and data science offer exciting opportunities, but they require different skill sets. This breakdown helps you find your ideal fit.'
 authorId: william
 excludedBySlug: '/ai-data-scientist/vs-software-engineering'
 seo:
-  title: "Data Science vs Software Engineering: Which to Choose?"
-  description: "Both software engineering and data science offer exciting opportunities, but they require different skill sets. This breakdown helps you find your ideal fit."
+  title: 'Data Science vs Software Engineering: Which to Choose?'
+  description: 'Both software engineering and data science offer exciting opportunities, but they require different skill sets. This breakdown helps you find your ideal fit.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-software-engineering-t7okw.jpg'
 isNew: true
 type: 'textual'
@@ -60,12 +60,12 @@ The key aspects of software engineering involve the following:
 ![Key components of software engineering](https://assets.roadmap.sh/guest/key-components-of-software-engineering-pll8t.png)
 
 1. **Software development lifecycle (SDLC)**: Every application goes through several stages before it's ready for use:
-    1. **Planning and requirements**: Define what the software should do and identify the necessary tools.
-    2. **Design**: Outline how the software will function and how different parts will interact.
-    3. **Coding**: Write the actual program using languages like [Java](https://roadmap.sh/java), [Python](https://roadmap.sh/python), or [JavaScript](https://roadmap.sh/javascript).
-    4. **Testing**: Find and fix bugs before launching.
-    5. **Deployment**: Release the software for users.
-    6. **Maintenance**: Update and improve the software by adding features or fixing issues.
+   1. **Planning and requirements**: Define what the software should do and identify the necessary tools.
+   2. **Design**: Outline how the software will function and how different parts will interact.
+   3. **Coding**: Write the actual program using languages like [Java](https://roadmap.sh/java), [Python](https://roadmap.sh/python), or [JavaScript](https://roadmap.sh/javascript).
+   4. **Testing**: Find and fix bugs before launching.
+   5. **Deployment**: Release the software for users.
+   6. **Maintenance**: Update and improve the software by adding features or fixing issues.
 2. **Software design and architecture**: This involves structuring the software and deciding how different components work together. It's like designing a building. You need a solid foundation and a layout that's organized and easy to navigate.
 3. **Programming and Development**: Writing code is a major part of software engineering. You'll use languages like Python, JavaScript, or Java to develop web, mobile, and backend applications.
 4. **Testing and Quality Assurance**: Before releasing software, testing helps identify and fix bugs so users don't run into problems.
@@ -176,4 +176,3 @@ Ultimately, both software engineering and data science are rewarding careers. To
 - Analyze a dataset with Python, create visualizations, and experiment with basic machine learning to see if data science excites you.
 
 If you're leaning toward software engineering, check out our software development roadmaps for [frontend](https://roadmap.sh/frontend), [backend](https://roadmap.sh/backend), or [full stack](https://roadmap.sh/full-stack) development. If data science resonates with you, explore our [data science roadmap](https://roadmap.sh/ai-data-scientist) to get started.
-

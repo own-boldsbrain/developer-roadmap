@@ -19,7 +19,7 @@ Given below is the sample `tsconfig.json` file:
     "module": "commonjs",
     "strict": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "./src"
   },
   "exclude": ["node_modules"],
   "include": ["src"]

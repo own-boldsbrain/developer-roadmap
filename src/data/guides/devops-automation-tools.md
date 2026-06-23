@@ -89,7 +89,7 @@ Let’s now take a closer look at all the tools, and let you decide which ones a
 
 ## Top 6 DevOps Automation Tools
 
-Now that we've covered the criteria for selecting the best DevOps automation tools, let's dive into our top picks. Each tool is evaluated based on key features from the previous point:  integration capabilities, scalability, user-friendliness, community support, and security features.
+Now that we've covered the criteria for selecting the best DevOps automation tools, let's dive into our top picks. Each tool is evaluated based on key features from the previous point: integration capabilities, scalability, user-friendliness, community support, and security features.
 
 Get comfortable, because it’s going to be a long read.
 
@@ -99,7 +99,7 @@ Get comfortable, because it’s going to be a long read.
 
 #### Overview
 
-**GitHub Actions** is GitHub's native continuous integration & continuous deployment (CI/CD)  tool, designed to automate your software workflows directly within your GitHub repositories. No matter where in the SDLC (Software Development Lifecycle) you are, GitHub Actions provides a seamless way to integrate these processes into your workflow.
+**GitHub Actions** is GitHub's native continuous integration & continuous deployment (CI/CD) tool, designed to automate your software workflows directly within your GitHub repositories. No matter where in the SDLC (Software Development Lifecycle) you are, GitHub Actions provides a seamless way to integrate these processes into your workflow.
 
 #### Integration Capabilities 5/5 ★★★★★
 

@@ -163,7 +163,7 @@ export function BuyButton(props: BuyButtonProps) {
 
     const encodedCourseSlug = encodeURIComponent(`/courses/${SQL_COURSE_SLUG}`);
     const successUrl = `/thank-you?next=${encodedCourseSlug}`;
-    
+
     createCheckoutSession({
       courseId: SQL_COURSE_SLUG,
       success: successUrl,

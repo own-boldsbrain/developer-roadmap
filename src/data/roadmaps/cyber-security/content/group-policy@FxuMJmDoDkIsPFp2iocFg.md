@@ -8,5 +8,5 @@ When a user logs in or a computer starts up, the relevant GPOs from the AD struc
 
 Learn more from the following resources:
 
-- [@official@Group Policy overview](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11))
+- [@official@Group Policy overview](<https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)>)
 - [@video@Learn Windows Group Policy the easy way!](https://www.youtube.com/watch?v=rEhTzP-ScBo)

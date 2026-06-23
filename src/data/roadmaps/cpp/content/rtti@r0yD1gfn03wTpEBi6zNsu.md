@@ -7,11 +7,12 @@ There are two main mechanisms for RTTI in C++:
 - `typeid` operator
 - `dynamic_cast` operator
 
-##  typeid operator
+## typeid operator
 
 `typeid` is an operator that returns a reference to an object of type `std::type_info`, which contains information about the type of the object. The header file `<typeinfo>` should be included to use `typeid`.
 
 Here is an example:
+
 ```cpp
 #include <iostream>
 #include <typeinfo>
@@ -30,11 +31,12 @@ int main() {
 }
 ```
 
-##  dynamic_cast operator
+## dynamic_cast operator
 
 `dynamic_cast` is a type-casting operator that performs a runtime type check and safely downcasts a base pointer or reference to a derived pointer or reference. It returns null or throws a bad_cast exception (if casting references) when the casting fails.
 
 Here is an example:
+
 ```cpp
 #include <iostream>
 

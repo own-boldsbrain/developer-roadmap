@@ -1,4 +1,4 @@
-To find your top customers *who also bought across multiple categories*, filter purchases within 3 months, group by customer, and apply category constraints with HAVING:
+To find your top customers _who also bought across multiple categories_, filter purchases within 3 months, group by customer, and apply category constraints with HAVING:
 
 ```sql
 SELECT customer_id, SUM(amount) AS total_spent
@@ -10,4 +10,4 @@ ORDER BY total_spent DESC
 LIMIT 5;
 ```
 
-This makes sure each customer bought from **at least 3 categories**. WHERE filters rows **before** grouping, while HAVING filters groups **after**. 
+This makes sure each customer bought from **at least 3 categories**. WHERE filters rows **before** grouping, while HAVING filters groups **after**.

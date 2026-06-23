@@ -4,11 +4,11 @@ The `TCP/IP model` defines how devices should transmit data between them and ena
 
 - **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.
 
-- **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination. 
+- **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination.
 
-- **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination. 
+- **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination.
 
-- **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other. 
+- **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other.
 
 Visit the following resources to learn more:
 

@@ -54,7 +54,7 @@ export function TriggerVerifyEmail() {
     return (
       <div className="mx-auto flex max-w-md flex-col items-center pt-0 sm:pt-12">
         <CheckIcon additionalClasses={'h-16 w-16 opacity-100'} />
-        <h2 className="mb-1 mt-4 text-center text-xl font-semibold sm:mb-3 sm:mt-4 sm:text-2xl">
+        <h2 className="mt-4 mb-1 text-center text-xl font-semibold sm:mt-4 sm:mb-3 sm:text-2xl">
           Email Update Successful
         </h2>
         <p className="text-sm sm:text-base">
@@ -69,7 +69,7 @@ export function TriggerVerifyEmail() {
       <div className="mx-auto max-w-md text-center">
         {isLoading && <Spinner className="mx-auto h-16 w-16" />}
         {error && <ErrorIcon2 className="mx-auto h-16 w-16" />}
-        <h2 className="mb-1 mt-4 text-center text-xl font-semibold sm:mb-3 sm:mt-4 sm:text-2xl">
+        <h2 className="mt-4 mb-1 text-center text-xl font-semibold sm:mt-4 sm:mb-3 sm:text-2xl">
           Verifying your new Email
         </h2>
         <div className="text-sm sm:text-base">

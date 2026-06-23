@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { test, expect } from '@playwright/test';
 
 const roadmapIds = fs.readdirSync(
-  path.join(process.cwd(), 'src/data/roadmaps')
+  path.join(process.cwd(), 'src/data/roadmaps'),
 );
 
 test(`roadmaps`, async ({ page }) => {

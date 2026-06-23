@@ -52,7 +52,7 @@ export function ReferYourFriend(props: ReferYourFriendProps) {
             'flex h-10 items-center justify-center gap-1.5 rounded-md p-2 px-2.5 text-sm',
             {
               'bg-green-500 text-black transition-colors': isCopied,
-              'bg-black text-white rounded-md': !isCopied,
+              'rounded-md bg-black text-white': !isCopied,
             },
           )}
           onClick={handleCopy}

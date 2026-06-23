@@ -6,7 +6,7 @@ Composer is a fundamental tool in modern PHP development. It simplifies the mana
 composer require vendor/package
 ```
 
-This command adds the `vendor/package` dependency to your project. The same goes for removing dependencies, updating them, and more. 
+This command adds the `vendor/package` dependency to your project. The same goes for removing dependencies, updating them, and more.
 
 Visit the following resources to learn more:
 

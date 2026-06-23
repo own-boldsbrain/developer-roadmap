@@ -277,11 +277,11 @@ questions:
 
 ![Top data science interview questions](https://assets.roadmap.sh/guest/data-science-interview-questions-and-answers-400hl.jpg)
 
-Data science interviews are in a league of their own. You're expected to juggle statistics, programming, and business thinking, all at once. Even seasoned professionals need tailored preparation, as these interviews assess more than domain knowledge. They test how you think, solve problems, keep up with trends, and communicate your results on the spot. 
+Data science interviews are in a league of their own. You're expected to juggle statistics, programming, and business thinking, all at once. Even seasoned professionals need tailored preparation, as these interviews assess more than domain knowledge. They test how you think, solve problems, keep up with trends, and communicate your results on the spot.
 
 This guide is comprehensive, with 60+ common data science interview questions and answers, and some common missteps that trip up experienced candidates. These questions are categorized into three key areas: conceptual knowledge (statistics, machine learning, data wrangling), coding skills (Python and SQL), and business communication (process explanation and solution alignment).
 
-To help you practice smarter, I've included flashcards for active recall and self-testing. Want to go deeper? Check out the [data science roadmap](https://roadmap.sh/ai-data-scientist) to strengthen the foundations behind your answers. Let's start with the core data science concepts. 
+To help you practice smarter, I've included flashcards for active recall and self-testing. Want to go deeper? Check out the [data science roadmap](https://roadmap.sh/ai-data-scientist) to strengthen the foundations behind your answers. Let's start with the core data science concepts.
 
 ## Preparing for your Data Science interview
 

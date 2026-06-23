@@ -6,6 +6,6 @@ This is a very common problem to solve when your microservice-based architecture
 
 While teams can definitely come up with solutions to this problem, using a ready-made solution is also a great alternative.
 
-A service mesh manages tasks like load balancing, service discovery, encryption, authentication, authorization, and observability,  without requiring changes to the application code (so it can easily be added once the problem presents, instead of planning for it from the start).
+A service mesh manages tasks like load balancing, service discovery, encryption, authentication, authorization, and observability, without requiring changes to the application code (so it can easily be added once the problem presents, instead of planning for it from the start).
 
 There are many products out there that provide this functionality, but some examples are Istio, Linkerd, and Consul.

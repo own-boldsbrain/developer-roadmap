@@ -46,7 +46,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
     }
 
     const { response, error } = await httpDelete<TeamDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team/${teamId}`,
     );
 
     if (error || !response) {
@@ -69,7 +69,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
 
   return (
     <>
-      <div className="fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+      <div className="fixed top-0 right-0 left-0 z-50 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50">
         <div className="relative h-full w-full max-w-md p-4 md:h-auto">
           <div
             ref={popupBodyEl}
@@ -80,7 +80,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
               This will permanently delete your team and all associated data.
             </p>
 
-            <p className="-mb-2 mt-3 text-base font-medium text-black">
+            <p className="mt-3 -mb-2 text-base font-medium text-black">
               Please type "delete" to confirm.
             </p>
             <form onSubmit={handleSubmit}>

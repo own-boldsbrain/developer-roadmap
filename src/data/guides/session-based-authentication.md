@@ -80,7 +80,7 @@ app.use(
     },
     resave: true,
     saveUninitialized: false,
-  })
+  }),
 );
 
 app.use(express.json());
@@ -179,7 +179,7 @@ module.exports = function processLogin(req, res) {
   req.session.userid = req.body.username;
 
   res.redirect('/');
-}
+};
 ```
 
 As you can see, we are simply checking that the username and password should both be `admin` and `admin` for a user to authenticate successfully. Upon finding valid credentials, we set the `userid` in the session by updating `req.session.userid`. Similarly, you can set any data in the session. For example, if we wanted to store the user role, we would do the following:

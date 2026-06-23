@@ -43,7 +43,7 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
           <a
             href={pageUrl}
             target="_blank"
-            className="flex items-center gap-1 rounded-md border border-transparent py-0.5 pl-2 pr-1 text-sm font-normal text-gray-400 transition-colors hover:border-black hover:bg-black hover:text-white"
+            className="flex items-center gap-1 rounded-md border border-transparent py-0.5 pr-1 pl-2 text-sm font-normal text-gray-400 transition-colors hover:border-black hover:bg-black hover:text-white"
           >
             Visit Page{' '}
             <ArrowUpRight

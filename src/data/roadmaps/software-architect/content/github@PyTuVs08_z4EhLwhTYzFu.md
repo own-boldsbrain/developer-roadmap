@@ -11,4 +11,3 @@ Visit the following resources to learn more:
 - [@official@Learn GitHub by doing](https://skills.github.com/)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)
-

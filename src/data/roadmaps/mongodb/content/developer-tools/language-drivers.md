@@ -4,13 +4,13 @@ Language drivers are essential tools for developers to interface with MongoDB. T
 
 MongoDB supports a wide range of languages, and some of the most popular drivers are:
 
-- MongoDB Node.js Driver (`mongodb` for Node.js)  
-- PyMongo (Python)  
-- MongoDB Java Driver (`mongodb-driver-sync` for Java)  
-- MongoDB C#/.NET Driver 
-- MongoDB Go Driver (`mongo-go-driver`)  
-- MongoDB Ruby Driver  
-- MongoDB PHP Library 
+- MongoDB Node.js Driver (`mongodb` for Node.js)
+- PyMongo (Python)
+- MongoDB Java Driver (`mongodb-driver-sync` for Java)
+- MongoDB C#/.NET Driver
+- MongoDB Go Driver (`mongo-go-driver`)
+- MongoDB Ruby Driver
+- MongoDB PHP Library
 - MongoDB Swift Driver
 
 With a suitable driver installed, you can interact with MongoDB using the idiomatic style of your programming language. The driver simplifies your code and boosts productivity, as it handles the communication between your application and the MongoDB server.

@@ -110,7 +110,7 @@ export function NavigationDropdown() {
       </button>
       <div
         className={cn(
-          'pointer-events-none invisible absolute left-0 top-full z-90 mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          'pointer-events-none invisible absolute top-full left-0 z-90 mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
           {
             'pointer-events-auto visible translate-y-2.5 opacity-100':
               $navigationDropdownOpen,
@@ -138,7 +138,12 @@ export function NavigationDropdown() {
             </span>
             <span className="flex flex-col">
               <span className="font-medium text-slate-300 transition-colors group-hover:text-slate-100">
-                {link.label} {link.isNew && <span className="text-[10px] font-bold text-black py-0.5 uppercase tracking-wider bg-yellow-400 rounded-full px-1.5 relative -top-0.5">New</span>}
+                {link.label}{' '}
+                {link.isNew && (
+                  <span className="relative -top-0.5 rounded-full bg-yellow-400 px-1.5 py-0.5 text-[10px] font-bold tracking-wider text-black uppercase">
+                    New
+                  </span>
+                )}
               </span>
               <span className="text-sm">{link.description}</span>
             </span>

@@ -1,6 +1,6 @@
 # Schemas
 
-Schemas are an essential part of PostgreSQL's object model, and they help provide structure, organization, and namespacing for your database objects. A schema is a collection of database objects, such as tables, views, indexes, and functions, that are organized within a specific namespace. 
+Schemas are an essential part of PostgreSQL's object model, and they help provide structure, organization, and namespacing for your database objects. A schema is a collection of database objects, such as tables, views, indexes, and functions, that are organized within a specific namespace.
 
 Learn more from the following resources:
 

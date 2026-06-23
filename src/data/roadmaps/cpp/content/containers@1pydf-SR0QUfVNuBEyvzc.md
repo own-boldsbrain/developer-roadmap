@@ -39,7 +39,7 @@ int main() {
     std::list<int> lst = {1, 2, 3, 4, 5};
 
     lst.push_back(6); // Add an element to the end
-    
+
     std::cout << "List contains:";
     for (int x : lst) {
         std::cout << ' ' << x;

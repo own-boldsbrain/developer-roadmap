@@ -4,4 +4,4 @@ You use array literals with square brackets [] to create JavaScript arrays.
 
 ```javascript
 let myArray = [firstArr, secondArr, thirdArr];
-``` 
+```

@@ -14,15 +14,13 @@ export function TipItem(props: TipItemProps) {
       {!isToggled && (
         <div
           onClick={() => setIsToggled(true)}
-          className="cursor-pointer rounded-lg sm:rounded-xl bg-black px-3 py-2 text-sm sm:text-base text-white"
+          className="cursor-pointer rounded-lg bg-black px-3 py-2 text-sm text-white sm:rounded-xl sm:text-base"
         >
           {title}
         </div>
       )}
       {isToggled && (
-        <p
-          className="rounded-lg sm:rounded-xl bg-gray-200 px-3 py-2 text-black text-sm sm:text-base"
-        >
+        <p className="rounded-lg bg-gray-200 px-3 py-2 text-sm text-black sm:rounded-xl sm:text-base">
           {description}
         </p>
       )}

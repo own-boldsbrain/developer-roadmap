@@ -7,7 +7,7 @@ seo:
   title: 'Top 12 Frontend Technologies to Use in @currentYear@: Expert Advice'
   description: 'Master the frontend landscape with our curated list of 12 essential technologies. Expert tips on selecting the best tools for your web projects.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-technologies-fan67.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -31,10 +31,10 @@ So to stay updated, let's dive into the top frontend technologies you should con
 
 The frontend technologies we’ll be covering are:
 
-* **Core Frontend technologies**: HTML/CSS and JavaScript
-* [**Frontend frameworks**](https://roadmap.sh/frontend/frameworks): React, Vue, Angular, Svelte
-* **Emerging & Specialized technologies**: Web Components, Astro, htmx
-* **Mobile-focused frontend technologies**: Flutter, React Native
+- **Core Frontend technologies**: HTML/CSS and JavaScript
+- [**Frontend frameworks**](https://roadmap.sh/frontend/frameworks): React, Vue, Angular, Svelte
+- **Emerging & Specialized technologies**: Web Components, Astro, htmx
+- **Mobile-focused frontend technologies**: Flutter, React Native
 
 ## Evaluation criteria
 
@@ -42,10 +42,10 @@ While I can give you some indicators and point to some interesting technology ch
 
 Here are the key metrics I’ll use to evaluate each technology:
 
-* **Performance**: Optimized for handling complex animations, data processing, and real-time updates efficiently.
-* **Scalability**: Designed to support large codebases, high traffic, and seamless feature integration.
-* **Community and Ecosystem**: Backed by an active community, rich third-party libraries, and abundant resources.
-* **Learning Curve**: Features intuitive syntax, thorough documentation, and resources for quick developer onboarding.
+- **Performance**: Optimized for handling complex animations, data processing, and real-time updates efficiently.
+- **Scalability**: Designed to support large codebases, high traffic, and seamless feature integration.
+- **Community and Ecosystem**: Backed by an active community, rich third-party libraries, and abundant resources.
+- **Learning Curve**: Features intuitive syntax, thorough documentation, and resources for quick developer onboarding.
 
 The following tables summarize the article and the ratings provided for each technology. Since there are so many different technologies covered, let’s split the tables into different categories:
 
@@ -79,13 +79,13 @@ HTML (or Hypertext Markup Language) is the backbone of web development in the se
 
 Evaluation:
 
-* **Performance**: HTML5 is lightweight and fast when it comes to structuring content. It doesn't bog down performance, making it the perfect base layer for building web pages.  
+- **Performance**: HTML5 is lightweight and fast when it comes to structuring content. It doesn't bog down performance, making it the perfect base layer for building web pages.  
   **Rating**: 5/5 ⭐
-* **Scalability**: HTML5 is foundational for all web projects. With proper planning and structuring, it scales effectively from small personal blogs to large enterprise web applications.  
+- **Scalability**: HTML5 is foundational for all web projects. With proper planning and structuring, it scales effectively from small personal blogs to large enterprise web applications.  
   **Rating**: 5/5 ⭐
-* **Community and Ecosystem**: HTML5 has one of the largest communities, given its universal use. You’ll find endless tutorials, frameworks, and tools that support HTML5, and it’s fully compatible with all frontend technologies.  
+- **Community and Ecosystem**: HTML5 has one of the largest communities, given its universal use. You’ll find endless tutorials, frameworks, and tools that support HTML5, and it’s fully compatible with all frontend technologies.  
   **Rating**: 5/5 ⭐
-* **Learning Curve**: The basics of HTML5 are incredibly easy to learn, making it beginner-friendly. However, mastering advanced HTML5 features like multimedia APIs can take some time.  
+- **Learning Curve**: The basics of HTML5 are incredibly easy to learn, making it beginner-friendly. However, mastering advanced HTML5 features like multimedia APIs can take some time.  
   **Rating**: 4/5 ⭐
 
 ### **CSS**
@@ -96,13 +96,13 @@ CSS (Cascading Style Sheets) is what makes the web beautiful. It's responsible f
 
 Evaluation:
 
-* **Performance**: Modern CSS techniques like Flexbox and Grid layout have made styling more efficient and less reliant on hacky workarounds, which in turn enhances its performance.  
+- **Performance**: Modern CSS techniques like Flexbox and Grid layout have made styling more efficient and less reliant on hacky workarounds, which in turn enhances its performance.  
   **Rating**: 4/5 ⭐
-* **Scalability**: With methodologies like BEM (Block Element Modifier) or SMACSS (Scalable and Modular Architecture for CSS), CSS can scale gracefully, even in large applications.  
+- **Scalability**: With methodologies like BEM (Block Element Modifier) or SMACSS (Scalable and Modular Architecture for CSS), CSS can scale gracefully, even in large applications.  
   **Rating**: 4/5 ⭐
-* **Community and Ecosystem**: CSS enjoys a vast ecosystem of frameworks like Bootstrap and Tailwind, as well as preprocessors like Sass and LESS that make writing CSS faster and more maintainable.  
+- **Community and Ecosystem**: CSS enjoys a vast ecosystem of frameworks like Bootstrap and Tailwind, as well as preprocessors like Sass and LESS that make writing CSS faster and more maintainable.  
   **Rating**: 5/5 ⭐
-* **Learning Curve**: While learning basic CSS is straightforward, mastering it—especially when it comes to advanced layout techniques, animations, and responsive design—takes time and practice (there is a reason why the “how to center a div” joke is still being used around).  
+- **Learning Curve**: While learning basic CSS is straightforward, mastering it—especially when it comes to advanced layout techniques, animations, and responsive design—takes time and practice (there is a reason why the “how to center a div” joke is still being used around).  
   **Rating**: 3/5 ⭐
 
 ### **JavaScript**
@@ -113,13 +113,13 @@ JavaScript brings interactivity to the web. From simple event handling to full-b
 
 Evaluation:
 
-* **Performance**: Thanks to modern JavaScript engines like V8 and optimizations in browsers, JavaScript is highly performant, capable of handling heavy computational tasks and real-time updates without breaking a sweat.  
+- **Performance**: Thanks to modern JavaScript engines like V8 and optimizations in browsers, JavaScript is highly performant, capable of handling heavy computational tasks and real-time updates without breaking a sweat.  
   **Rating**: 5/5 ⭐
-* **Scalability**: JavaScript is perfect for both small and large-scale applications. With the help of frameworks like React or Angular, JavaScript can handle the needs of enterprise-grade applications while still being accessible for small projects.  
+- **Scalability**: JavaScript is perfect for both small and large-scale applications. With the help of frameworks like React or Angular, JavaScript can handle the needs of enterprise-grade applications while still being accessible for small projects.  
   **Rating**: 5/5 ⭐
-* **Community and Ecosystem**: JavaScript boasts the largest ecosystem of libraries, frameworks, and tools. With resources like npm and open-source contributions, the possibilities with JavaScript are endless.  
+- **Community and Ecosystem**: JavaScript boasts the largest ecosystem of libraries, frameworks, and tools. With resources like npm and open-source contributions, the possibilities with JavaScript are endless.  
   **Rating**: 5/5 ⭐
-* **Learning Curve**: JavaScript itself is relatively easy to learn, but mastering it can take some time. Understanding how to use JavaScript in the context of frameworks like React or Vue adds complexity.  
+- **Learning Curve**: JavaScript itself is relatively easy to learn, but mastering it can take some time. Understanding how to use JavaScript in the context of frameworks like React or Vue adds complexity.  
   **Rating**: 4/5 ⭐
 
 ## Frontend Frameworks and Libraries
@@ -136,13 +136,13 @@ React remains a powerhouse in the frontend development world. Its flexibility an
 
 Evaluation:
 
-* **Performance**: React's efficient virtual DOM ensures fast rendering and updates, minimizing unnecessary re-renders and enhancing overall application performance.  
+- **Performance**: React's efficient virtual DOM ensures fast rendering and updates, minimizing unnecessary re-renders and enhancing overall application performance.  
   **Rating**: 5/5 ⭐
-* **Scalability**: With its component-based architecture, React is highly scalable. It allows developers to build reusable components, making it easier to manage and scale large applications.  
+- **Scalability**: With its component-based architecture, React is highly scalable. It allows developers to build reusable components, making it easier to manage and scale large applications.  
   **Rating**: 5/5 ⭐
-* **Community and Ecosystem**: React boasts a massive ecosystem with tons of libraries. The extensive community support means abundant resources, tutorials, and third-party tools are available.  
+- **Community and Ecosystem**: React boasts a massive ecosystem with tons of libraries. The extensive community support means abundant resources, tutorials, and third-party tools are available.  
   **Rating**: 5/5 ⭐
-* **Learning Curve**: React has a moderate learning curve. The basic concepts are straightforward, however, like with any other good piece of tech, mastering advanced topics like hooks, context API, and state management requires a solid understanding of JavaScript and React itself.  
+- **Learning Curve**: React has a moderate learning curve. The basic concepts are straightforward, however, like with any other good piece of tech, mastering advanced topics like hooks, context API, and state management requires a solid understanding of JavaScript and React itself.  
   **Rating**: 4/5 ⭐
 
 ### VueJS
@@ -153,13 +153,13 @@ VueJS has steadily gained popularity due to its simplicity and powerful features
 
 Evaluation:
 
-* **Performance**: Vue is lightweight and highly performant, thanks to its optimized virtual DOM implementation. It efficiently handles rendering and updates, ensuring smooth user experiences.  
+- **Performance**: Vue is lightweight and highly performant, thanks to its optimized virtual DOM implementation. It efficiently handles rendering and updates, ensuring smooth user experiences.  
   **Rating**: 4.5/5 ⭐
-* **Scalability**: Vue is suitable for both small projects and large-scale applications. Its flexible architecture allows for incremental adoption, making it easy to scale as project requirements grow.  
+- **Scalability**: Vue is suitable for both small projects and large-scale applications. Its flexible architecture allows for incremental adoption, making it easy to scale as project requirements grow.  
   **Rating**: 4.5/5 ⭐
-* **Community and Ecosystem:** Vue has a growing ecosystem with essential tools like Vuex for state management and Nuxt.js for server-side rendering. The supportive community continues to expand, providing valuable resources and plugins.  
+- **Community and Ecosystem:** Vue has a growing ecosystem with essential tools like Vuex for state management and Nuxt.js for server-side rendering. The supportive community continues to expand, providing valuable resources and plugins.  
   **Rating**: 4.5/5 ⭐
-* **Learning Curve**: Vue offers a gentle learning curve with excellent documentation. Its straightforward syntax and clear separation of concerns make it accessible for beginners and efficient for experienced frontend developers.  
+- **Learning Curve**: Vue offers a gentle learning curve with excellent documentation. Its straightforward syntax and clear separation of concerns make it accessible for beginners and efficient for experienced frontend developers.  
   **Rating**: 5/5 ⭐
 
 ### Angular
@@ -170,13 +170,13 @@ Angular is a comprehensive framework maintained by Google, designed for building
 
 Evaluation:
 
-* **Performance**: Angular delivers great performance with Ahead-of-Time (AOT) compilation, which optimizes the application by compiling it during the build process. This results in faster load times and improved runtime performance.  
+- **Performance**: Angular delivers great performance with Ahead-of-Time (AOT) compilation, which optimizes the application by compiling it during the build process. This results in faster load times and improved runtime performance.  
   **Rating**: 4.5/5 ⭐
-* **Scalability**: Ideal for large-scale, enterprise-level applications, Angular's structured framework supports complex and extensive codebases. Its modular architecture and dependency injection system facilitate scalability and maintainability.  
+- **Scalability**: Ideal for large-scale, enterprise-level applications, Angular's structured framework supports complex and extensive codebases. Its modular architecture and dependency injection system facilitate scalability and maintainability.  
   **Rating**: 5/5 ⭐
-* **Community and Ecosystem**: Angular has a comprehensive ecosystem with built-in tools like Angular CLI, Angular Material, and strong community support. The framework is backed by Google, ensuring continuous development.  
+- **Community and Ecosystem**: Angular has a comprehensive ecosystem with built-in tools like Angular CLI, Angular Material, and strong community support. The framework is backed by Google, ensuring continuous development.  
   **Rating**: 4.5/5 ⭐
-* **Learning Curve**: Angular has a steep learning curve due to its complexity and extensive use of TypeScript. Understanding concepts like decorators, dependency injection, and RxJS can be challenging for newcomers who usually prefer the likes of React or Vue.  
+- **Learning Curve**: Angular has a steep learning curve due to its complexity and extensive use of TypeScript. Understanding concepts like decorators, dependency injection, and RxJS can be challenging for newcomers who usually prefer the likes of React or Vue.  
   **Rating**: 3.5/5 ⭐
 
 ### Svelte
@@ -187,13 +187,13 @@ Svelte is an emerging frontend framework that takes a unique approach by shiftin
 
 Evaluation:
 
-* **Performance**: Svelte offers exceptional performance through compile-time optimizations. By converting components into highly efficient imperative code, it minimizes runtime overhead and ensures fast load times.  
+- **Performance**: Svelte offers exceptional performance through compile-time optimizations. By converting components into highly efficient imperative code, it minimizes runtime overhead and ensures fast load times.  
   **Rating**: 5/5 ⭐
-* **Scalability**: Suitable for both small and medium-sized projects, Svelte's simplicity and efficient code generation make it easy to scale applications without the complexity often associated with larger frameworks.  
+- **Scalability**: Suitable for both small and medium-sized projects, Svelte's simplicity and efficient code generation make it easy to scale applications without the complexity often associated with larger frameworks.  
   **Rating**: 4/5 ⭐
-* **Community and Ecosystem**: Svelte has an emerging ecosystem with growing community. Tools like SvelteKit enhance its capabilities, and the community is actively contributing to its expansion with plugins and integrations.  
+- **Community and Ecosystem**: Svelte has an emerging ecosystem with growing community. Tools like SvelteKit enhance its capabilities, and the community is actively contributing to its expansion with plugins and integrations.  
   **Rating**: 3.5/5 ⭐
-* **Learning Curve**: One of the goals of Svelte is to provide the dynamic behavior added by JS without so much boilerplate around the core technologies. Developers already familiar with HTML, CSS, and JavaScript can quickly get up to speed and start building applications.  
+- **Learning Curve**: One of the goals of Svelte is to provide the dynamic behavior added by JS without so much boilerplate around the core technologies. Developers already familiar with HTML, CSS, and JavaScript can quickly get up to speed and start building applications.  
   **Rating**: 5/5 ⭐
 
 ## Emerging and Specialized Frontend Technologies
@@ -210,13 +210,13 @@ Web Components provide a standardized way to create reusable and encapsulated cu
 
 Evaluation:
 
-* **Performance**: Native browser support ensures high performance by reducing the need for additional libraries and minimizing runtime overhead.  
+- **Performance**: Native browser support ensures high performance by reducing the need for additional libraries and minimizing runtime overhead.  
   **Rating**: 4.5/5 ⭐
-* **Scalability**: Highly scalable due to their reusable and encapsulated nature. Web Components can be easily integrated into large applications without causing conflicts or redundancy.  
+- **Scalability**: Highly scalable due to their reusable and encapsulated nature. Web Components can be easily integrated into large applications without causing conflicts or redundancy.  
   **Rating**: 4.5/5 ⭐
-* **Community and Ecosystem**: While still growing, the ecosystem is expanding with frameworks like Lit enhancing Web Components. Support from major browsers and increasing adoption contribute to a robust community.  
+- **Community and Ecosystem**: While still growing, the ecosystem is expanding with frameworks like Lit enhancing Web Components. Support from major browsers and increasing adoption contribute to a robust community.  
   **Rating**: 4/5 ⭐
-* **Learning Curve**: Moderate; developers need to understand custom elements, shadow DOM, and the lifecycle of Web Components. Familiarity with modern JavaScript is essential.  
+- **Learning Curve**: Moderate; developers need to understand custom elements, shadow DOM, and the lifecycle of Web Components. Familiarity with modern JavaScript is essential.  
   **Rating**: 3.5/5 ⭐
 
 ### Astro
@@ -227,13 +227,13 @@ Astro is a modern site builder that focuses on optimizing performance by deliver
 
 Evaluation:
 
-* **Performance**: Astro has an incredible performance with features like partial hydration and server-side rendering. Astro minimizes JavaScript payloads, resulting in faster load times and improved user experiences.  
+- **Performance**: Astro has an incredible performance with features like partial hydration and server-side rendering. Astro minimizes JavaScript payloads, resulting in faster load times and improved user experiences.  
   **Rating**: 5/5 ⭐
-* **Scalability**: Ideal for content-heavy and performance-critical websites. Astro's architecture supports scaling by efficiently managing resources and optimizing build processes.  
+- **Scalability**: Ideal for content-heavy and performance-critical websites. Astro's architecture supports scaling by efficiently managing resources and optimizing build processes.  
   **Rating**: 4.5/5 ⭐
-* **Community and Ecosystem**: As a newer technology, Astro's ecosystem is still developing. However, it supports multiple frameworks (React, Vue, Svelte), and its flexibility attracts a growing community of frontend developers.  
+- **Community and Ecosystem**: As a newer technology, Astro's ecosystem is still developing. However, it supports multiple frameworks (React, Vue, Svelte), and its flexibility attracts a growing community of frontend developers.  
   **Rating**: 4/5 ⭐
-* **Learning Curve**: Moderate; familiarity with multiple frontend frameworks can be beneficial. Developers need to understand Astro's unique concepts and how it integrates with existing tools.  
+- **Learning Curve**: Moderate; familiarity with multiple frontend frameworks can be beneficial. Developers need to understand Astro's unique concepts and how it integrates with existing tools.  
   **Rating**: 4/5 ⭐
 
 ### HTMX
@@ -244,13 +244,13 @@ HTMX is a lightweight library that allows frontend developers to add dynamic beh
 
 Evaluation:
 
-* **Performance**: Offers excellent performance by minimizing JavaScript overhead. htmx leverages server-side rendering for fast interactions, reducing the need for complex client-side logic.  
+- **Performance**: Offers excellent performance by minimizing JavaScript overhead. htmx leverages server-side rendering for fast interactions, reducing the need for complex client-side logic.  
   **Rating**: 4.5/5 ⭐
-* **Scalability**: Best suited for projects prioritizing simplicity and minimal client-side logic. While it can handle moderately complex applications, extremely large-scale projects might require additional tooling.  
+- **Scalability**: Best suited for projects prioritizing simplicity and minimal client-side logic. While it can handle moderately complex applications, extremely large-scale projects might require additional tooling.  
   **Rating**: 4/5 ⭐
-* **Community and Ecosystem**: htmx has a growing community with increasing adoption. It complements existing frontend technologies by enhancing HTML with dynamic capabilities without introducing significant complexity.  
+- **Community and Ecosystem**: htmx has a growing community with increasing adoption. It complements existing frontend technologies by enhancing HTML with dynamic capabilities without introducing significant complexity.  
   **Rating**: 4/5 ⭐
-* **Learning Curve**: Low; htmx is easy to integrate into existing HTML without extensive JavaScript knowledge. Developers familiar with HTML and server-side rendering can quickly adopt htmx.  
+- **Learning Curve**: Low; htmx is easy to integrate into existing HTML without extensive JavaScript knowledge. Developers familiar with HTML and server-side rendering can quickly adopt htmx.  
   **Rating**: 5/5 ⭐
 
 ## Mobile-Focused Frontend Technologies
@@ -267,13 +267,13 @@ Flutter, developed by Google, has quickly become a favorite for building cross-p
 
 Evaluation:
 
-* **Performance**: Flutter achieves high performance through native compilation and its own rendering engine, Skia. This allows for smooth animations and quick load times, providing a user experience that rivals native apps.  
+- **Performance**: Flutter achieves high performance through native compilation and its own rendering engine, Skia. This allows for smooth animations and quick load times, providing a user experience that rivals native apps.  
   **Rating**: 5/5 ⭐
-* **Scalability**: Flutter is highly scalable, making it suitable for both mobile and web applications. Its single codebase approach simplifies the development workflow, allowing teams to maintain and expand applications efficiently as user demands grow.  
+- **Scalability**: Flutter is highly scalable, making it suitable for both mobile and web applications. Its single codebase approach simplifies the development workflow, allowing teams to maintain and expand applications efficiently as user demands grow.  
   **Rating**: 4.5/5 ⭐
-* **Community and Ecosystem**: The Flutter ecosystem is rapidly growing, supported by a rich set of widgets and plugins that extend its functionality. The community contributes to an ever-growing repository of packages and tools, enabling faster development and problem-solving.  
+- **Community and Ecosystem**: The Flutter ecosystem is rapidly growing, supported by a rich set of widgets and plugins that extend its functionality. The community contributes to an ever-growing repository of packages and tools, enabling faster development and problem-solving.  
   **Rating**: 4.5/5 ⭐
-* **Learning Curve**: Flutter uses the Dart programming language, which may require developers to learn new syntax and concepts. However, Flutter's comprehensive documentation and the growing number of learning resources help mitigate the learning curve, making it accessible to developers with a background in object-oriented programming.  
+- **Learning Curve**: Flutter uses the Dart programming language, which may require developers to learn new syntax and concepts. However, Flutter's comprehensive documentation and the growing number of learning resources help mitigate the learning curve, making it accessible to developers with a background in object-oriented programming.  
   **Rating**: 3.5/5 ⭐
 
 ### React Native
@@ -284,13 +284,13 @@ Originally backed by Facebook, allows developers to build mobile applications us
 
 Evaluation:
 
-* **Performance**: This framework delivers near-native performance by leveraging a bridge between JavaScript and native modules. While it may not match the raw performance of fully native apps, it offers a balance between performance and development efficiency, suitable for most applications.  
+- **Performance**: This framework delivers near-native performance by leveraging a bridge between JavaScript and native modules. While it may not match the raw performance of fully native apps, it offers a balance between performance and development efficiency, suitable for most applications.  
   **Rating**: 4.5/5 ⭐
-* **Scalability**: React Native is well-suited for large-scale mobile applications. Its modular architecture allows for the development of complex applications that can be easily maintained and scaled. Additionally, the ability to reuse code across different platforms enhances scalability.  
+- **Scalability**: React Native is well-suited for large-scale mobile applications. Its modular architecture allows for the development of complex applications that can be easily maintained and scaled. Additionally, the ability to reuse code across different platforms enhances scalability.  
   **Rating**: 5/5 ⭐
-* **Community and Ecosystem**: It has a vast ecosystem with numerous libraries and tools that streamline development. The strong community ensures that developers have access to extensive resources, third-party plugins, and continuous updates, making it easier to find solutions and integrate new features.  
+- **Community and Ecosystem**: It has a vast ecosystem with numerous libraries and tools that streamline development. The strong community ensures that developers have access to extensive resources, third-party plugins, and continuous updates, making it easier to find solutions and integrate new features.  
   **Rating**: 5/5 ⭐
-* **Learning Curve**: For developers already familiar with React, the learning curve is relatively moderate. Understanding the bridge architecture and native modules may require additional learning, but the foundational knowledge of React significantly eases the transition. If on the other hand, you’re not already familiar with React, then the learning curve will be a bit more steep.  
+- **Learning Curve**: For developers already familiar with React, the learning curve is relatively moderate. Understanding the bridge architecture and native modules may require additional learning, but the foundational knowledge of React significantly eases the transition. If on the other hand, you’re not already familiar with React, then the learning curve will be a bit more steep.  
   **Rating**: 4/5 ⭐
 
 ## Expert Recommendations
@@ -311,10 +311,10 @@ Here are our top picks for various scenarios in 2025:
 
 Vue.js stands out as the ideal choice for beginners thanks to its gentle learning curve and excellent documentation. Its intuitive syntax and clear separation of concerns make it accessible for those new to frontend development.
 
-* **Performance:** 4.5/5 ⭐
-* **Scalability:** 4.5/5 ⭐
-* **Community and Ecosystem:** 4.5/5 ⭐
-* **Learning Curve:** 5/5 ⭐
+- **Performance:** 4.5/5 ⭐
+- **Scalability:** 4.5/5 ⭐
+- **Community and Ecosystem:** 4.5/5 ⭐
+- **Learning Curve:** 5/5 ⭐
 
 ### Best for Large-Scale Applications
 
@@ -326,25 +326,25 @@ Vue.js stands out as the ideal choice for beginners thanks to its gentle learnin
 
 Angular is the heavyweight champion when it comes to building large-scale, enterprise-level applications. Its comprehensive framework includes everything you need out of the box, from robust state management to powerful CLI tools.
 
-* **Performance:** 4.5/5 ⭐
-* **Scalability:** 5/5 ⭐
-* **Community and Ecosystem:** 4.5/5 ⭐
-* **Learning Curve:** 3.5/5 ⭐
+- **Performance:** 4.5/5 ⭐
+- **Scalability:** 5/5 ⭐
+- **Community and Ecosystem:** 4.5/5 ⭐
+- **Learning Curve:** 3.5/5 ⭐
 
 ### Best for High-Performance Needs
 
 ![Scala - Best for High Performance](https://assets.roadmap.sh/guest/best-performance-felipe-12yzc.png)
 
-**Recommendation**:  Svelte
+**Recommendation**: Svelte
 
 **Why Svelte?**
 
 If performance is your top priority, Svelte is the way to go. By shifting much of the work to compile time, Svelte generates highly efficient imperative code that ensures exceptional runtime performance.
 
-* **Performance:** 5/5 ⭐
-* **Scalability:** 4/5 ⭐
-* **Community and Ecosystem:** 3.5/5 ⭐
-* **Learning Curve:** 5/5 ⭐
+- **Performance:** 5/5 ⭐
+- **Scalability:** 4/5 ⭐
+- **Community and Ecosystem:** 3.5/5 ⭐
+- **Learning Curve:** 5/5 ⭐
 
 ### Best for Mobile Integration
 
@@ -356,16 +356,16 @@ If performance is your top priority, Svelte is the way to go. By shifting much o
 
 Flutter is the perfect choice for developers looking to build cross-platform mobile apps without having to duplicate their source code.
 
-* **Performance:** 5/5 ⭐
-* **Scalability:** 4.5/5 ⭐
-* **Community and Ecosystem:** 4.5/5 ⭐
-* **Learning Curve:** 4/5 ⭐
+- **Performance:** 5/5 ⭐
+- **Scalability:** 4.5/5 ⭐
+- **Community and Ecosystem:** 4.5/5 ⭐
+- **Learning Curve:** 4/5 ⭐
 
 ### Best for Static Site Generation
 
 ![Astro - Best Static Site Generator](https://assets.roadmap.sh/guest/astro-best-static-site-generator-hpn65.png)
 
-**Recommendation**:  Astro
+**Recommendation**: Astro
 
 **Why Astro?**
 
@@ -373,10 +373,10 @@ Astro is a cutting-edge static site generator that excels in optimizing performa
 
 If you haven’t yet, you gotta try it\!.
 
-* **Performance:** 5/5 ⭐.
-* **Scalability:** 4.5/5 ⭐
-* **Community and Ecosystem:** 4/5 ⭐
-* **Learning Curve:** 4/5 ⭐
+- **Performance:** 5/5 ⭐.
+- **Scalability:** 4.5/5 ⭐
+- **Community and Ecosystem:** 4/5 ⭐
+- **Learning Curve:** 4/5 ⭐
 
 ### Best for Flexibility and Framework-Agnostic Projects
 
@@ -390,25 +390,25 @@ For projects that demand flexibility and the ability to work seamlessly across d
 
 They provide a standardized way to create reusable and encapsulated custom HTML elements for your web application.
 
-* **Performance:** 4.5/5 ⭐
-* **Scalability:** 4.5/5 ⭐
-* **Community and Ecosystem:** 4/5 ⭐
-* **Learning Curve:** 3.5/5 ⭐
+- **Performance:** 4.5/5 ⭐
+- **Scalability:** 4.5/5 ⭐
+- **Community and Ecosystem:** 4/5 ⭐
+- **Learning Curve:** 3.5/5 ⭐
 
 ### Best for Minimal JavaScript and Server-Driven UI
 
 ![htmx - Most Minimalistic](https://assets.roadmap.sh/guest/htmx-most-minimalistic-qu73o.png)
 
-**Recommendation**:  htmx
+**Recommendation**: htmx
 
 **Why htmx?**
 
 If your project prioritizes simplicity and minimal client-side JavaScript, htmx is the perfect fit. It allows you to add dynamic behavior to your web pages using simple HTML attributes, leveraging server-side rendering for fast and responsive interactions.
 
-* **Performance:** 4.5/5 ⭐
-* **Scalability:** 4/5 ⭐
-* **Community and Ecosystem:** 4/5 ⭐
-* **Learning Curve:** 5/5 ⭐
+- **Performance:** 4.5/5 ⭐
+- **Scalability:** 4/5 ⭐
+- **Community and Ecosystem:** 4/5 ⭐
+- **Learning Curve:** 5/5 ⭐
 
 ## Conclusion
 

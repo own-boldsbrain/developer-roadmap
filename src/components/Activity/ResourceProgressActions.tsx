@@ -78,7 +78,7 @@ export function ResourceProgressActions(props: ResourceProgressActionsType) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-8 z-10 w-48 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
+        <div className="absolute top-8 right-0 z-10 w-48 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
           <ProgressShareButton
             resourceType={resourceType}
             resourceId={resourceId}

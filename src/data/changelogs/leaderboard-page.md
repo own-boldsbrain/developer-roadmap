@@ -2,9 +2,9 @@
 title: 'New Dashboard, Leaderboards and Projects'
 description: 'New leaderboard page showing the most active users'
 images:
-  "Personal Dashboard": "https://assets.roadmap.sh/guest/personal-dashboard.png"
-  "Projects Page": "https://assets.roadmap.sh/guest/projects-page.png"
-  "Leaderboard": "https://assets.roadmap.sh/guest/leaderboard.png"
+  'Personal Dashboard': 'https://assets.roadmap.sh/guest/personal-dashboard.png'
+  'Projects Page': 'https://assets.roadmap.sh/guest/projects-page.png'
+  'Leaderboard': 'https://assets.roadmap.sh/guest/leaderboard.png'
 seo:
   title: 'Leaderboard Page - roadmap.sh'
   description: ''

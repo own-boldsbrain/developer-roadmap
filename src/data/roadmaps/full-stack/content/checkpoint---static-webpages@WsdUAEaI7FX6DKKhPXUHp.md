@@ -1,6 +1,6 @@
 # Checkpoint
 
-Now that you have learnt HTML and CSS, you should be able to build static webpages. I recommend you to build as many test projects at each yellow step of the roadmap as possible to solidify what you learn. 
+Now that you have learnt HTML and CSS, you should be able to build static webpages. I recommend you to build as many test projects at each yellow step of the roadmap as possible to solidify what you learn.
 
 The practice that I used to follow when I was learning was this:
 
@@ -13,7 +13,7 @@ The practice that I used to follow when I was learning was this:
 
 Now that you have learnt HTML and CSS, here are a few ideas for you to build:
 
-- Try to copy the design of a website that you like. 
+- Try to copy the design of a website that you like.
   - Here is a [simple blog design in figma](https://www.figma.com/file/nh0V05z3NB87ue9v5PcO3R/writings.dev?type=design&node-id=0%3A1&t=2iQplaIojU3ydAfW-1) that you can try to copy.
   - Or try to rebuild the [webpages of this website](https://cs.fyi/).
 - Take some inspiration from [personal portfolios of others](https://astro.build/showcase/) and build your own personal portfolio

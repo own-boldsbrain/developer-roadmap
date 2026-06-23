@@ -227,7 +227,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
       />
 
       {isLoading && (
-        <div className="absolute right-3 top-0 flex h-full items-center">
+        <div className="absolute top-0 right-3 flex h-full items-center">
           <Spinner
             isDualRing={false}
             className="h-5 w-5 animate-spin stroke-[2.5]"
@@ -268,7 +268,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
                   >
                     <span
                       className={cn(
-                        'mr-2 whitespace-nowrap rounded-full p-1 px-1.5 text-xs leading-none',
+                        'mr-2 rounded-full p-1 px-1.5 text-xs leading-none whitespace-nowrap',
                         result.isOfficial
                           ? 'bg-green-500 text-green-50'
                           : 'bg-blue-400 text-blue-50',

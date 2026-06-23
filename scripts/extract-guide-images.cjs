@@ -27,7 +27,9 @@ if (!fs.existsSync(guideTempDir)) {
 const { data, content } = matter(guideContent);
 
 // Find all base64 image references in the content
-const images = content.match(/\[(.+?)\]:\s+?<data:image\/([^;]+);base64,([^\s]+)/g);
+const images = content.match(
+  /\[(.+?)\]:\s+?<data:image\/([^;]+);base64,([^\s]+)/g,
+);
 
 if (images) {
   images.forEach((image) => {
@@ -38,7 +40,7 @@ if (images) {
     // Write file using Buffer to properly decode base64
     fs.writeFileSync(
       path.join(guideTempDir, `${imageName}.${imageExtension}`),
-      Buffer.from(imageData, 'base64')
+      Buffer.from(imageData, 'base64'),
     );
   });
 }

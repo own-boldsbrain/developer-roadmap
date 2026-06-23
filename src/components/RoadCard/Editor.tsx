@@ -15,7 +15,7 @@ export function Editor(props: EditorProps) {
   return (
     <div className="flex w-full grow flex-col overflow-hidden rounded-sm border border-gray-300 bg-gray-50">
       <div className="flex items-center justify-between gap-2 border-b border-gray-300 px-3 py-2">
-        <span className="text-xs uppercase leading-none text-gray-400">
+        <span className="text-xs leading-none text-gray-400 uppercase">
           {title}
         </span>
         <button
@@ -35,7 +35,7 @@ export function Editor(props: EditorProps) {
         </button>
       </div>
       <textarea
-        className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-sm text-gray-900 focus:bg-gray-50 focus:outline-0"
+        className="no-scrollbar block h-12 w-full overflow-x-auto bg-gray-200/70 p-3 text-sm whitespace-nowrap text-gray-900 focus:bg-gray-50 focus:outline-0"
         readOnly
         onClick={(e: any) => {
           e.target.select();

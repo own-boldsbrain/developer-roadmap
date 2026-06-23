@@ -1,4 +1,4 @@
-Go simplifies processing json data with the encoding/json package. 
+Go simplifies processing json data with the encoding/json package.
 
 This example shows how to unmarshal some JSON into a struct:
 
@@ -25,4 +25,4 @@ func main() {
 }
 ```
 
-The JSON data, which is just a string at the beginning of this example gets parsed and turned into an actual complex variable that you can refer to and use in your code later on. 
+The JSON data, which is just a string at the beginning of this example gets parsed and turned into an actual complex variable that you can refer to and use in your code later on.

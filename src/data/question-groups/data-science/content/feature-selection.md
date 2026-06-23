@@ -13,4 +13,4 @@ When building a predictive model, I like to combine practical steps and proven t
 - If a feature is highly correlated with another, I drop the weaker or noisier one.
 - If it has low variance and no predictive power, it goes.
 - If it helps interpretability or improves metrics on validation data, I keep it.
-- If it harms generalization or adds complexity, I drop it. 
+- If it harms generalization or adds complexity, I drop it.

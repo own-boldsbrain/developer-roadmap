@@ -41,7 +41,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div
-            className="duration-400 absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800 transition-[width]"
+            className="absolute top-0 bottom-0 left-0 rounded-xl bg-slate-800 transition-[width] duration-400"
             style={{
               width: `${donePercentage}%`,
             }}
@@ -103,13 +103,13 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
       </div>
 
       {showLoginAlert && (
-        <p className="-mx-6 -mb-6 mt-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
+        <p className="-mx-6 mt-6 -mb-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
           You progress is not saved. Please{' '}
           <button
             onClick={() => {
               showLoginPopup();
             }}
-            className="underline-offset-3 font-medium underline hover:text-black"
+            className="font-medium underline underline-offset-3 hover:text-black"
           >
             login to save your progress.
           </button>

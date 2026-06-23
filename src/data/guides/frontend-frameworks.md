@@ -7,7 +7,7 @@ seo:
   title: 'Top 7 Frontend Frameworks to Use in 2025: Pro Advice'
   description: 'Get expert advice on frontend frameworks for 2024. Elevate your web development process with these top picks.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/top-frontend-frameworks-wmqwc.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -31,13 +31,13 @@ Picking the right frontend framework isn't just about what's popular—it's abou
 
 The top frontend frameworks for web development that I’ll cover as part of this article are:
 
-* React
-* VueJS
-* Angular
-* Svelte
-* Solid.js
-* Qwik
-* Astro
+- React
+- VueJS
+- Angular
+- Svelte
+- Solid.js
+- Qwik
+- Astro
 
 ## Criteria for Evaluating Frontend Frameworks
 
@@ -366,12 +366,12 @@ Astro is rapidly growing in popularity, especially for static site generation, a
 
 The space of frontend development continues to evolve with an impressive list of frameworks and [languages](https://roadmap.sh/frontend/languages) to choose from. Whether you're aiming for performance, scalability, ease of use, or future-proofing, each frontend framework brings something unique to the table.
 
-* **React** remains a reliable choice for large-scale applications.
-* **Vue.js** offers a perfect balance of simplicity and scalability.
-* **Angular** is the go-to for enterprise-level projects.
-* **Svelte** and **Solid.js** are great options for developers who prioritize performance and simplicity.
-* **Qwik** is an exciting new contender focused on instant loading and performance.
-* **Astro** shines in static site generation, combining a modern approach with the ability to integrate multiple frameworks for highly flexible, content-heavy sites.
+- **React** remains a reliable choice for large-scale applications.
+- **Vue.js** offers a perfect balance of simplicity and scalability.
+- **Angular** is the go-to for enterprise-level projects.
+- **Svelte** and **Solid.js** are great options for developers who prioritize performance and simplicity.
+- **Qwik** is an exciting new contender focused on instant loading and performance.
+- **Astro** shines in static site generation, combining a modern approach with the ability to integrate multiple frameworks for highly flexible, content-heavy sites.
 
 In the end, the choice comes down to your specific project needs. Whatever you’re building, there's a framework here that can help you succeed.
 

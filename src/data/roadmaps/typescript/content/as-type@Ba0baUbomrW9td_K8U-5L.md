@@ -5,7 +5,7 @@ In TypeScript, the as keyword is used for type assertions, allowing you to expli
 Here's a simple example:
 
 ```typescript
-let someValue: any = "Hello, TypeScript!";
+let someValue: any = 'Hello, TypeScript!';
 let strLength: number = (someValue as string).length;
 
 console.log(strLength); // Outputs: 18

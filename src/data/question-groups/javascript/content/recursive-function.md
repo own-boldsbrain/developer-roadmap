@@ -2,19 +2,17 @@ A recursive function is a function that calls itself to solve a particular probl
 
 ```javascript
 function myArray(arrOld) {
+  // Base case: empty array
 
-// Base case: empty array 
-
-if (arrOld.length === 0) {
-        return 0;
-    }
-    else {
-        // Recursive case: Add the first element + sum of the rest arrays
-                return arrOld[0] + myArray(arrOld.slice(1));
-        }
+  if (arrOld.length === 0) {
+    return 0;
+  } else {
+    // Recursive case: Add the first element + sum of the rest arrays
+    return arrOld[0] + myArray(arrOld.slice(1));
+  }
 }
 
-let newArray = [20, 30, 40, 50]; 
+let newArray = [20, 30, 40, 50];
 
 console.log(myArray(newArray)); // 140
-``` 
+```

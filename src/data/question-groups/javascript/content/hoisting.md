@@ -3,7 +3,7 @@ Hoisting is when a variable or function declaration gets moved to the top of its
 ```javascript
 console.log(hoistedVariable); // undefined
 
-var hoistedVariable = "initialized var hoistedVariable";
+var hoistedVariable = 'initialized var hoistedVariable';
 
 console.log(hoistedVariable); // correct value
 ```
@@ -12,4 +12,4 @@ In the example above, I used the variable **"hoistedVariable"** in the first con
 
 ![JavaScript interview questions: Hoisting](https://assets.roadmap.sh/guest/hoisting-in-javascript-7nbhj.png)
 
-The **"let"** and **"const"** keywords don't work well with hoisting. Even though they're moved to the top of their scope, they don't get a value right away. It creates a **"temporal dead zone"** where you can't access the variables until they're declared (created). If you try to use **"let"** or **"const"** variables before declaring them, you'll get a "ReferenceError." 
+The **"let"** and **"const"** keywords don't work well with hoisting. Even though they're moved to the top of their scope, they don't get a value right away. It creates a **"temporal dead zone"** where you can't access the variables until they're declared (created). If you try to use **"let"** or **"const"** variables before declaring them, you'll get a "ReferenceError."

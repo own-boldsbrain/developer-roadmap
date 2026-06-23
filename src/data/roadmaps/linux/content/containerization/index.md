@@ -1,8 +1,8 @@
-# Containerization 
+# Containerization
 
 Containerization is a virtualization method that involves encapsulating an application in a container with its own isolated operating environment. This advanced method allows apps to run reliably and quickly when moved from one computing environment to another. In Linux, this technology can be utilized using various open-source platforms like Docker and Kubernetes.
 
-Containers are often compared with virtual machines (VMs). However, unlike VMs which need an entire operating system to run an application, a container shares the host system’s user space. That’s why they are lightweight and faster. 
+Containers are often compared with virtual machines (VMs). However, unlike VMs which need an entire operating system to run an application, a container shares the host system’s user space. That’s why they are lightweight and faster.
 
 In Linux, Docker is a popular tool used for containerization. Below is a basic example of how you would run a container in Docker:
 

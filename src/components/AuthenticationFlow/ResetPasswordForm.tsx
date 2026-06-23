@@ -61,7 +61,7 @@ export function ResetPasswordForm() {
     <form className="mx-auto w-full" onSubmit={handleSubmit}>
       <input
         type="password"
-        className="mb-2 mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+        className="mt-2 mb-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         required
         minLength={6}
         placeholder="New Password"

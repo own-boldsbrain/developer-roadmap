@@ -25,7 +25,7 @@ db.collection('orders').countDocuments(
   { status: 'completed' },
   (err, count) => {
     console.log('Number of completed orders: ', count);
-  }
+  },
 );
 ```
 

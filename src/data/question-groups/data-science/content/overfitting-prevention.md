@@ -6,4 +6,4 @@ Overfitting in machine learning happens when the model learns from the training 
 - **Cross-validation:** This helps test the model on different slices of data to make sure it generalizes well.
 - **Pruning (for tree models):** Cuts back unnecessary branches that overcomplicate the model.
 - **Early stopping:** Stops training when performance stops improving on the validation set.
-- **Dropout (for neural nets):** This method randomly drops neurons during training so the network doesn't become too dependent on specific paths. 
+- **Dropout (for neural nets):** This method randomly drops neurons during training so the network doesn't become too dependent on specific paths.

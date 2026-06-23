@@ -201,7 +201,7 @@ export function UpdateTeamForm() {
         <div className="mt-4 flex w-full flex-col">
           <label
             htmlFor="type"
-            className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'
+            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Type
           </label>

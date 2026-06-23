@@ -8,4 +8,4 @@ To check the quality of a random dataset, I'll:
 
 - **Assess practical utility:** The dataset has to be big enough for what you need it to do. For traditional machine learning, the dataset should be more than 10 times greater than the number of features per class. For deep learning, you should aim for 100 features per class to help avoid overfitting.
 
-A dataset is only useful when it aligns with the problem's context and goals. It must pass accuracy, completeness, and balance checks. Finally, it must meet size and representative requirements. 
+A dataset is only useful when it aligns with the problem's context and goals. It must pass accuracy, completeness, and balance checks. Finally, it must meet size and representative requirements.

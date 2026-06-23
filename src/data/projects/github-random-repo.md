@@ -1,26 +1,25 @@
 ---
-title: 'GitHub Random Repository'  
-description: 'Create a GitHub random repository finder using GitHub API.'  
-isNew: false  
-sort: 25  
-difficulty: 'intermediate'  
-nature: 'API Integration'  
-skills:  
-  - 'HTML'  
-  - 'CSS'  
-  - 'JavaScript'  
-  - 'API Integration'  
-  - 'DOM Manipulation'  
-seo:  
-  title: 'Build a GitHub Repository Finder with JavaScript and GitHub API'  
-  description: 'Learn how to create a dynamic application that fetches random GitHub repositories based on a chosen language and displays key information like stars, forks, and issues.'  
-  keywords:  
+title: 'GitHub Random Repository'
+description: 'Create a GitHub random repository finder using GitHub API.'
+isNew: false
+sort: 25
+difficulty: 'intermediate'
+nature: 'API Integration'
+skills:
+  - 'HTML'
+  - 'CSS'
+  - 'JavaScript'
+  - 'API Integration'
+  - 'DOM Manipulation'
+seo:
+  title: 'Build a GitHub Repository Finder with JavaScript and GitHub API'
+  description: 'Learn how to create a dynamic application that fetches random GitHub repositories based on a chosen language and displays key information like stars, forks, and issues.'
+  keywords:
     - 'github api'
     - 'repository finder'
-    - 'javascript project'  
-roadmapIds:  
-  - 'frontend'  
-
+    - 'javascript project'
+roadmapIds:
+  - 'frontend'
 ---
 
 This project is designed to introduce you to working with external APIs, handling asynchronous requests, and managing different UI states with JavaScript.

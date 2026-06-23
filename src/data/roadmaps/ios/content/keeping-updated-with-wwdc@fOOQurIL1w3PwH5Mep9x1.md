@@ -13,4 +13,4 @@ Visit the following resources to learn more:
 - [@official@Worldwide Developers Conference](https://developer.apple.com/wwdc)
 - [@official@Apple Developer YouTube channel](https://www.youtube.com/@AppleDeveloper)
 - [@official@WWDC videos collection by year](https://developer.apple.com/videos/)
-- 
+-

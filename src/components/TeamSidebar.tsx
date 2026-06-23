@@ -77,7 +77,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
         {menuShown && (
           <ul
             id="settings-menu-dropdown"
-            className="absolute left-0 right-0 z-50 mt-1 space-y-1.5 bg-white p-2 shadow-lg"
+            className="absolute right-0 left-0 z-50 mt-1 space-y-1.5 bg-white p-2 shadow-lg"
           >
             <li>
               <a
@@ -156,7 +156,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                         {sidebarLink.hasWarning && (
                           <span className="relative mr-1 flex items-center">
                             <span className="relative rounded-full bg-red-200 p-1 text-xs" />
-                            <span className="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-red-400 p-1 text-xs" />
+                            <span className="absolute top-0 right-0 bottom-0 left-0 animate-ping rounded-full bg-red-400 p-1 text-xs" />
                           </span>
                         )}
                       </span>
@@ -167,7 +167,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
             </ul>
 
             <button
-              className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-sm text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-black"
+              className="mt-4 mr-3 flex items-center justify-center rounded-md border p-2 text-sm text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-black"
               onClick={() => setShowFeedbackPopup(true)}
             >
               <MessageCircle className="mr-2 h-4 w-4" />

@@ -1,6 +1,6 @@
 # GoF Design Patterns
 
-The Gang of Four (GoF) Design Patterns are a collection of 23 foundational software design patterns that provide solutions to common object-oriented design problems. These patterns are grouped into three categories: *Creational* (focused on object creation like Singleton and Factory), *Structural* (focused on class and object composition like Adapter and Composite), and *Behavioral* (focused on communication between objects like Observer and Strategy). Each pattern offers a proven template for addressing specific design challenges, promoting code reusability, flexibility, and maintainability across software systems.
+The Gang of Four (GoF) Design Patterns are a collection of 23 foundational software design patterns that provide solutions to common object-oriented design problems. These patterns are grouped into three categories: _Creational_ (focused on object creation like Singleton and Factory), _Structural_ (focused on class and object composition like Adapter and Composite), and _Behavioral_ (focused on communication between objects like Observer and Strategy). Each pattern offers a proven template for addressing specific design challenges, promoting code reusability, flexibility, and maintainability across software systems.
 
 Learn more from the following links:
 

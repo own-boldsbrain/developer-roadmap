@@ -12,7 +12,7 @@ And then you can retrieve the value with `getenv()` like:
 echo getenv("FOO"); // returns "bar"
 ```
 
-Keep in mind that environment variables set using `putenv()` are only available for the duration of the current request. If you want them to persist for future requests, you'll need to set them using your system's method for setting environment variables. 
+Keep in mind that environment variables set using `putenv()` are only available for the duration of the current request. If you want them to persist for future requests, you'll need to set them using your system's method for setting environment variables.
 
 Visit the following resources to learn more:
 

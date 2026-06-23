@@ -320,7 +320,7 @@ export function TeamRoadmaps() {
 
         {canManageCurrentTeam && (
           <button
-            className="mt-3 rounded-md bg-black px-3 py-1.5 font-medium text-white hover:bg-gray-900 text-sm"
+            className="mt-3 rounded-md bg-black px-3 py-1.5 text-sm font-medium text-white hover:bg-gray-900"
             onClick={() => setIsPickingOptions(true)}
           >
             Add roadmap
@@ -382,7 +382,7 @@ export function TeamRoadmaps() {
       {canManageCurrentTeam && placeholderRoadmaps.length > 0 && (
         <div className="mb-5">
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+            <h3 className="flex w-full items-center justify-between text-xs text-gray-400 uppercase">
               <span className="flex">Placeholder Roadmaps</span>
               <span className="normal-case">
                 Total {placeholderRoadmaps.length} roadmap(s)
@@ -398,10 +398,10 @@ export function TeamRoadmaps() {
                     key={resourceConfig.resourceId}
                   >
                     <div className="mb-3 grid sm:mb-0">
-                      <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
+                      <p className="mb-1.5 truncate text-base leading-tight font-medium text-black">
                         {resourceConfig.title}
                       </p>
-                      <span className="text-xs italic leading-none text-gray-400/60">
+                      <span className="text-xs leading-none text-gray-400/60 italic">
                         Placeholder roadmap
                       </span>
                     </div>
@@ -449,7 +449,7 @@ export function TeamRoadmaps() {
       {customRoadmaps.length > 0 && (
         <div className="mb-5">
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+            <h3 className="flex w-full items-center justify-between text-xs text-gray-400 uppercase">
               <span className="flex">Custom Roadmaps</span>
               <span className="normal-case">
                 Total {customRoadmaps.length} roadmap(s)
@@ -473,7 +473,7 @@ export function TeamRoadmaps() {
                   key={resourceConfig.resourceId}
                 >
                   <div className="mb-3 grid grid-cols-1 sm:mb-0">
-                    <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
+                    <p className="mb-1.5 truncate text-base leading-tight font-medium text-black">
                       {resourceConfig.title}
                     </p>
                     <span className="flex items-center text-xs leading-none text-gray-400">
@@ -543,7 +543,7 @@ export function TeamRoadmaps() {
       {defaultRoadmaps.length > 0 && (
         <div>
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+            <h3 className="flex w-full items-center justify-between text-xs text-gray-400 uppercase">
               <span className="flex">Default Roadmaps</span>
               <span className="normal-case">
                 Total {defaultRoadmaps.length} roadmap(s)
@@ -558,7 +558,7 @@ export function TeamRoadmaps() {
                   key={resourceConfig.resourceId}
                 >
                   <div className="mb-3 grid grid-cols-1 sm:mb-0">
-                    <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
+                    <p className="mb-1.5 truncate text-base leading-tight font-medium text-black">
                       {resourceConfig.title}
                     </p>
                     <span className="flex items-center text-xs leading-none text-gray-400">
@@ -673,7 +673,7 @@ export function VisibilityBadge(props: VisibilityLabelProps) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-normal`}
+      className={`inline-flex items-center gap-1.5 text-xs font-normal whitespace-nowrap`}
     >
       <Icon className="inline-block h-3 w-3" />
       <div className="flex items-center">

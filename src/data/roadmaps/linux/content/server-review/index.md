@@ -1,4 +1,4 @@
-# Server Review 
+# Server Review
 
 The process of reviewing a server in Linux involves assessing the server's performance, security, and configuration to identify areas of improvement or any potential issues. The scope of the review can include checking security enhancements, examining log files, reviewing user accounts, analyzing the server’s network configuration, and checking its software versions.
 

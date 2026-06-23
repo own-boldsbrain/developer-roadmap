@@ -56,7 +56,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
       }`,
       {
         visibility: newVisibility,
-      }
+      },
     );
 
     if (error) {
@@ -78,7 +78,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
   function handleCopy() {
     const isDev = import.meta.env.DEV;
     const url = new URL(
-      isDev ? 'http://localhost:3000/r' : 'https://roadmap.sh/r'
+      isDev ? 'http://localhost:3000/r' : 'https://roadmap.sh/r',
     );
     url.searchParams.set('id', roadmapId);
     copyText(url.toString());
@@ -87,7 +87,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
   return (
     <Modal onClose={onClose}>
       <div className="p-4 pb-0">
-        <h1 className="text-lg font-medium leading-5 text-gray-900">
+        <h1 className="text-lg leading-5 font-medium text-gray-900">
           Updating {$currentRoadmap?.title}
         </h1>
       </div>
@@ -108,14 +108,14 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
                 className={cn(
                   'relative flex w-full items-center border-b p-2.5 px-4 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900 disabled:cursor-not-allowed',
                   v.id === visibility &&
-                    'bg-gray-900 text-white hover:bg-gray-900 hover:text-white'
+                    'bg-gray-900 text-white hover:bg-gray-900 hover:text-white',
                 )}
                 onClick={() => updateVisibility(v.id)}
               >
                 {v.label}
 
                 {v.id === visibility && (
-                  <span className="absolute bottom-0 right-0 top-0 flex w-8 items-center justify-center">
+                  <span className="absolute top-0 right-0 bottom-0 flex w-8 items-center justify-center">
                     <span className="h-2 w-2 rounded-full bg-green-500" />
                   </span>
                 )}

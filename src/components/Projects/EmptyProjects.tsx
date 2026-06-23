@@ -16,11 +16,11 @@ export function EmptyProjects() {
   return (
     <div className="relative mt-2.5 mb-5 flex min-h-[400px] flex-col items-center justify-center rounded-lg border bg-white">
       <FolderKanbanIcon className="h-14 w-14 text-gray-300" strokeWidth={1.5} />
-      <h2 className="mb-0.5 mt-2 text-center text-base font-medium text-gray-900 sm:text-xl">
+      <h2 className="mt-2 mb-0.5 text-center text-base font-medium text-gray-900 sm:text-xl">
         <span className="hidden sm:inline">Projects are coming soon!</span>
         <span className="inline sm:hidden">Coming soon!</span>
       </h2>
-      <p className="mb-3 text-balance text-center text-sm text-gray-500 sm:text-base">
+      <p className="mb-3 text-center text-sm text-balance text-gray-500 sm:text-base">
         Sign up to get notified when projects are available.
       </p>
 
@@ -33,7 +33,7 @@ export function EmptyProjects() {
           showLoginPopup();
         }}
         className={cn(
-          'flex items-center rounded-md bg-gray-800 py-1.5 pl-3 pr-4 text-xs text-white opacity-0 transition-opacity duration-500 hover:bg-black sm:text-sm',
+          'flex items-center rounded-md bg-gray-800 py-1.5 pr-4 pl-3 text-xs text-white opacity-0 transition-opacity duration-500 hover:bg-black sm:text-sm',
           {
             'cursor-default bg-gray-300 text-black hover:bg-gray-300':
               isSubscribed,

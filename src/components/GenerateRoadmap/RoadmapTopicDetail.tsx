@@ -132,14 +132,14 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className="fixed top-0 right-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoggedIn() && (
           <div className="flex flex-col items-start gap-2 sm:flex-row">
             <span>
               <span
                 className={cn(
-                  'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                  'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm text-gray-800 tabular-nums',
                   {
                     'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                       !topicLimit,
@@ -191,7 +191,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               <button
                 type="button"
                 id="close-topic"
-                className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
                 onClick={onClose}
               >
                 <X className="h-5 w-5" />
@@ -209,7 +209,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
                   <div className="mt-4">
                     <a
                       href="/ai"
-                      className="mb-1 mt-2 inline-flex items-center rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-800 no-underline hover:bg-yellow-500"
+                      className="mt-2 mb-1 inline-flex items-center rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-800 no-underline hover:bg-yellow-500"
                     >
                       Dive deeper using AI Tutor
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -234,7 +234,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
             <button
               type="button"
               id="close-topic"
-              className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+              className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
               onClick={onClose}
             >
               <X className="h-5 w-5" />

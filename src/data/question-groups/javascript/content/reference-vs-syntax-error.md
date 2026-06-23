@@ -10,4 +10,4 @@ A reference error occurs when you try to use a variable or a function that doesn
 
 ```javascript
 console.log(myStudy);
-``` 
+```

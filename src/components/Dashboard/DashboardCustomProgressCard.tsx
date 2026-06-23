@@ -6,7 +6,9 @@ type DashboardCustomProgressCardProps = {
   progress: UserProgress;
 };
 
-export function DashboardCustomProgressCard(props: DashboardCustomProgressCardProps) {
+export function DashboardCustomProgressCard(
+  props: DashboardCustomProgressCardProps,
+) {
   const { progress } = props;
 
   const {

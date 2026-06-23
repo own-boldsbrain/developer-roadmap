@@ -25,7 +25,8 @@ export function ProjectCard(props: ProjectCardProps) {
   const { frontmatter, id } = project;
 
   const isLoadingStatus = status === undefined;
-  const userStartedCount = status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
+  const userStartedCount =
+    status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
 
   return (
     <a

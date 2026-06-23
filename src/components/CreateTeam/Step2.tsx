@@ -16,7 +16,7 @@ export function Step2(props: Step2Props) {
   return (
     <>
       <div className="mt-4 flex w-full flex-col">
-        <div className="mb-1 mt-2">
+        <div className="mt-2 mb-1">
           <h2 className="mb-1 text-lg font-bold md:mb-1.5 md:text-2xl">
             Select Roadmaps
           </h2>
@@ -50,7 +50,7 @@ export function Step2(props: Step2Props) {
             onClick={onNext}
             disabled={teamResourceConfig.length !== 0}
             className={
-              'grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto disabled:opacity-50 disabled:pointer-events-none'
+              'grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black disabled:pointer-events-none disabled:opacity-50 md:flex-auto'
             }
           >
             Skip for Now

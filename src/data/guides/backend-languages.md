@@ -7,7 +7,7 @@ seo:
   title: 'The 5 Best Backend Development Languages to Master (@currentYear@)'
   description: 'Discover the best backend development languages to learn right now for career development, with practical tips from an experienced developer.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-languages-2x930.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: backend
 isNew: false
 type: 'textual'

@@ -9,7 +9,11 @@ import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { getLastPath, triggerUtmRegistration, urlToId } from '../../lib/browser.ts';
+import {
+  getLastPath,
+  triggerUtmRegistration,
+  urlToId,
+} from '../../lib/browser.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -162,7 +166,7 @@ export function GitHubButton(props: GitHubButtonProps) {
         Continue with GitHub
       </button>
       {error && (
-        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{error}</p>
+        <p className="mt-1 mb-2 text-sm font-medium text-red-600">{error}</p>
       )}
     </>
   );

@@ -4,7 +4,8 @@ import {
   Plus,
   Sparkle,
   Eye,
-  EyeOff, SquareCheckBig
+  EyeOff,
+  SquareCheckBig,
 } from 'lucide-react';
 import { useState } from 'react';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';

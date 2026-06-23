@@ -23,7 +23,7 @@ export function InviteFriends(props: InviteFriendsProps) {
     <div className="-mx-4 mt-6 flex flex-col border-t border-dashed border-t-slate-600 px-4 pt-5 text-center text-sm">
       <p className="text-slate-500">Invite people to join roadmap.sh</p>
 
-      <div className="flex flex-col items-center rounded-lg bg-slate-900/40 pb-4 pt-5 my-4">
+      <div className="my-4 flex flex-col items-center rounded-lg bg-slate-900/40 pt-5 pb-4">
         <p className="text-xs text-slate-500">
           {refByUserCount === 0 && <>You haven't invited anyone yet.</>}
           {refByUserCount > 0 && refByUserCount < 10 && (
@@ -54,9 +54,10 @@ export function InviteFriends(props: InviteFriendsProps) {
               copyText(referralLink);
             }}
             className={cn(
-              'rounded-md hover:bg-slate-500/80 hover:text-slate-100 px-3 py-1 text-xs text-slate-300 bg-slate-600',
+              'rounded-md bg-slate-600 px-3 py-1 text-xs text-slate-300 hover:bg-slate-500/80 hover:text-slate-100',
               {
-                'bg-green-500 text-black hover:text-black hover:bg-green-500': isCopied,
+                'bg-green-500 text-black hover:bg-green-500 hover:text-black':
+                  isCopied,
               },
             )}
           >

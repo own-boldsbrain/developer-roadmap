@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@opensource@Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
 - [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
-- [@article@Introducing the Azure MCP Server ](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/)  
+- [@article@Introducing the Azure MCP Server ](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/)
 - [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)

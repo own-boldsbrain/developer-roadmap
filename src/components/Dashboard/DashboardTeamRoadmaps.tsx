@@ -205,7 +205,7 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
 
   const roadmapHeading = (
     <div className="mb-3 flex h-[20px] items-center justify-between gap-2 text-xs">
-      <h2 className="uppercase text-gray-400">Roadmaps</h2>
+      <h2 className="text-gray-400 uppercase">Roadmaps</h2>
       <span className="mx-3 h-[1px] grow bg-gray-200" />
       {canManageCurrentTeam && (
         <a
@@ -232,7 +232,7 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
           <RoadmapIcon className="mb-4 h-14 w-14 opacity-10" />
 
           <h2 className="text-lg font-semibold sm:text-lg">No roadmaps</h2>
-          <p className="my-1 max-w-[400px] text-balance text-sm text-gray-500 sm:my-2 sm:text-base">
+          <p className="my-1 max-w-[400px] text-sm text-balance text-gray-500 sm:my-2 sm:text-base">
             {canManageCurrentTeam
               ? 'Add a roadmap to start tracking your team'
               : 'Ask your team admin to add some roadmaps'}

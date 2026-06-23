@@ -32,7 +32,7 @@ export async function serializeSitemap(item) {
       `https://roadmap.sh/${id}/topics`,
     ]),
     ...(await getBestPracticesIds()).map(
-      (id) => `https://roadmap.sh/best-practices/${id}`
+      (id) => `https://roadmap.sh/best-practices/${id}`,
     ),
   ];
 

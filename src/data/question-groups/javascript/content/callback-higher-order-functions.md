@@ -4,7 +4,7 @@ In the example below, the sendMessage function is a callback function because it
 
 ```javascript
 function sendMessage(message) {
-  console.log("Message: " + message);
+  console.log('Message: ' + message);
 }
 
 function sendNow(callback, message) {
@@ -17,12 +17,13 @@ Just like callbacks, higher-order functions also work with other functions. It t
 
 ```javascript
 function createMessage(prefix) {
-  return function (message) { // returns a new function
-    console.log(prefix + " " + message);
+  return function (message) {
+    // returns a new function
+    console.log(prefix + ' ' + message);
   };
 }
 
-const sendMessage = createMessage("Hello"); // creates a new function
+const sendMessage = createMessage('Hello'); // creates a new function
 
-sendMessage("Cess!"); // Hello, Cess!
-``` 
+sendMessage('Cess!'); // Hello, Cess!
+```

@@ -16,7 +16,7 @@ export function ForgotPasswordForm() {
       `${import.meta.env.PUBLIC_API_URL}/v1-forgot-password`,
       {
         email,
-      }
+      },
     );
 
     setIsLoading(false);

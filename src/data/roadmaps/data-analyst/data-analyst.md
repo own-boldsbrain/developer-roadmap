@@ -2,7 +2,7 @@
 jsonUrl: '/jsons/roadmaps/data-analyst.json'
 pdfUrl: '/pdfs/roadmaps/data-analyst.pdf'
 order: 4
-renderer: "editor"
+renderer: 'editor'
 briefTitle: 'Data Analyst'
 briefDescription: 'Step by step guide to becoming an Data Analyst in 2025'
 title: 'Data Analyst Roadmap'

@@ -5,7 +5,7 @@ function findSubstring(mainString, substring) {
   return mainString.includes(substring);
 }
 
-console.log(findSubstring("Learn JavaScript", "JavaScript")); // True - It contains JavaScript
+console.log(findSubstring('Learn JavaScript', 'JavaScript')); // True - It contains JavaScript
 
-console.log(findSubstring("Learn JavaScript", "Python")); // False - It doesn't contain Python
-``` 
+console.log(findSubstring('Learn JavaScript', 'Python')); // False - It doesn't contain Python
+```

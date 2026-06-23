@@ -8,7 +8,7 @@ To begin using WinDbg, you first need to install it. You can download the [Windo
 
 ## Loading Symbols
 
-WinDbg relies on symbol files (*.pdb) to provide more useful information about a program's internal structures, functions, and variables. To load symbols properly, you may need to configure the symbol path:
+WinDbg relies on symbol files (\*.pdb) to provide more useful information about a program's internal structures, functions, and variables. To load symbols properly, you may need to configure the symbol path:
 
 ```
 !sym noisy

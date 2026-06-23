@@ -7,7 +7,7 @@ export function EmptyRoadmaps() {
       <h2 className="mb-1 text-lg font-semibold sm:text-xl">
         No Roadmaps Found
       </h2>
-      <p className="mb-3 text-balance text-center text-xs text-gray-800 sm:text-sm">
+      <p className="mb-3 text-center text-xs text-balance text-gray-800 sm:text-sm">
         Try searching for something else or create a new roadmap with AI.
       </p>
       <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-1.5">

@@ -2,7 +2,7 @@
 
 Loops in shell programming are a fundamental concept that allows a certain block of code to be executed over and over again based on a given condition. They are crucial for automating repetitive tasks, thus making the coding process more efficient and less error-prone.
 
-In Linux, shell scripts commonly use three types of loops - for, while, and until. 
+In Linux, shell scripts commonly use three types of loops - for, while, and until.
 
 - `for` loop iterates over a list of items and performs actions on each of them.
 - `while` loop executes commands as long as the control condition remains true.
@@ -16,7 +16,9 @@ do
    echo "$i"
 done
 ```
+
 This will output:
+
 ```
 1
 2

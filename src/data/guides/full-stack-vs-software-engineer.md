@@ -39,9 +39,9 @@ This guide provides a detailed explanation of the following:
 
 The table below summarizes a full stack developer vs software engineer roles.
 
-| **Full Stack Developer**                                                                                                                                   | **Software Engineer**                                                                                                                                                        |
+| **Full Stack Developer**                                                                                                                                           | **Software Engineer**                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Full stack web developer also known as a full stack engineer work on end-to-end web development side of applications (both front-end and back-end web programming) | A software engineer specializes in new technologies and practices in one domain  or a particular project and has a deep knowledge of it.                                     |
+| Full stack web developer also known as a full stack engineer work on end-to-end web development side of applications (both front-end and back-end web programming) | A software engineer specializes in new technologies and practices in one domain or a particular project and has a deep knowledge of it.                                      |
 | A full stack developer role is mostly limited to just front-end(web design elements) and back-end                                                                  | A software engineer has a broader range of domain options to choose from. e.g front-end, back-end, web apps, mobile, desktop, embedded systems, native apps, web development |
 
 ![Full stack developer vs Software engineer](https://assets.roadmap.sh/guest/full-stack-vs-software-engineer-e3ozc.jpg)
@@ -52,7 +52,7 @@ Let me take you through each role so you see what they’re like and I’ll help
 
 A [full stack developer](https://roadmap.sh/full-stack) also known as a full stack programmer possesses the knowledge and technical skill sets to work proficiently in a software application's front-end and back-end.
 
-An application's front-end encompasses everything the user can see while interacting with it, i.e., the user interface. The back-end of a web application consists of the server-side programming, the database, and the server.  Full stack developers typically are responsible for building the front-end and back-end of software applications.
+An application's front-end encompasses everything the user can see while interacting with it, i.e., the user interface. The back-end of a web application consists of the server-side programming, the database, and the server. Full stack developers typically are responsible for building the front-end and back-end of software applications.
 
 Let's take a look at both the front-end and back-end in greater detail.
 
@@ -66,7 +66,7 @@ There are quite a few front-end web development frameworks out there used by ful
 
 ### Back-end development
 
-It includes everything the user *cannot* see. It is sometimes referred to as the server side of an application. It focuses on the application's functionality and *business logic*. Examples of back-end components include data storage, security, and handling of business logic.
+It includes everything the user _cannot_ see. It is sometimes referred to as the server side of an application. It focuses on the application's functionality and _business logic_. Examples of back-end components include data storage, security, and handling of business logic.
 
 Back end development mainly involves creating API endpoints consumed by the application's front-end. Backend developers usually work with languages such as Python , Java , or Ruby , along with frameworks like Node.js , Django , or Ruby on Rails. Check out the [back-end developer](https://roadmap.sh/backend) roadmap.
 
@@ -96,9 +96,9 @@ There are two primary types of software engineers: applications and systems soft
 
 ### Application software engineers
 
-An application software engineer is also known as s client-focused software engineer. These software engineers design and develop software applications users interact with. 
+An application software engineer is also known as s client-focused software engineer. These software engineers design and develop software applications users interact with.
 
-An application software engineer could be a front-end engineer, a back-end engineer, or full-stack software engineer. They also develop applications for operating systems such as iOS, Android, Windows, Linux, and many more. 
+An application software engineer could be a front-end engineer, a back-end engineer, or full-stack software engineer. They also develop applications for operating systems such as iOS, Android, Windows, Linux, and many more.
 
 ### Systems software engineers
 
@@ -107,7 +107,7 @@ These software engineers develop systems and networks that drive the user-facing
 System software engineers can also integrate different software products into a single platform; for example, [DevOps](https://roadmap.sh/devops) engineers can use tools like [Docker](https://roadmap.sh/docker) and [Kubernetes](https://roadmap.sh/kubernetes) to deploy and orchestrate applications.
 
 System software engineers often serve as IT or system architects or backend software developers who design, test software and enforce industry tech standards. A system software engineer is an expert in software design and mostly design back-end systems and operating system that users do not directly interact with.
- 
+
 Software systems are complex, and much thought goes into building them. Software engineers use their broad knowledge of coding languages and engineering principles to break down these complex systems and build software.
 
 The usual software project development and management life cycle looks like the following:

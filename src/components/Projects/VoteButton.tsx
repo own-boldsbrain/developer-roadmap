@@ -22,9 +22,11 @@ export function VoteButton(props: VoteButtonProps) {
       disabled={isActive}
       onClick={onClick}
     >
-      <VoteIcon className={cn('size-3.5 stroke-[2.5px]', {
-          'top-[1.5px] relative mr-0.5': hideCount
-      })} />
+      <VoteIcon
+        className={cn('size-3.5 stroke-[2.5px]', {
+          'relative top-[1.5px] mr-0.5': hideCount,
+        })}
+      />
       {!hideCount && (
         <span className="relative -top-[0.5px] text-xs font-medium tabular-nums">
           {count}

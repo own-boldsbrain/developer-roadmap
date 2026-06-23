@@ -22,7 +22,6 @@ seo:
     - 'multi-lane client'
 roadmapIds:
   - 'frontend'
-
 ---
 
 You are required to create a browser-based Reddit client that displays multiple subreddits in separate, customizable lanes. You'll work with the Reddit JSON feed to fetch posts from different subreddits and display them in a dynamic, responsive layout.

@@ -1,4 +1,4 @@
-# Process Management 
+# Process Management
 
 Process management is integral part of any operating system and Linux is no different. Every program running on Linux, be it an application or a system operation, is treated as a process. These processes perform different tasks but work together to provide a seamless operating experience.
 
@@ -24,4 +24,5 @@ Yet another powerful tool is `kill`, which can send specific signals to processe
 kill -SIGTERM pid
 kill -SIGKILL pid
 ```
+
 (note: you replace `pid` with the process ID you want to stop)

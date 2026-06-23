@@ -10,4 +10,3 @@ Here are some common reasons for unnecessary re-renders in functional components
 - **Misusing Context**: If you use Context API to pass data to child components, and the data changes, all the child components will re-render. You can optimize this by using `useContext` hook to select only the data that you need in a component.
 
 You can also use `React.StrictMode` to detect potential problems in your code that could cause unnecessary re-renders.
-

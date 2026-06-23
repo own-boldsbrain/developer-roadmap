@@ -7,18 +7,16 @@ function myDetails(name, visits) {
   this.name = name; // Set the name parameter to the object
   this.visits = visits; // Set the visits parameter to the object
 
-
-
   this.newDetails = function () {
     console.log(
-      `Hi, I'm ${this.name} and I have visited ${this.visits} countries.`
+      `Hi, I'm ${this.name} and I have visited ${this.visits} countries.`,
     );
   };
 }
 
-// Create objects using the constructor 
+// Create objects using the constructor
 
-let runDetails = new myDetails("Cess", 2);;
+let runDetails = new myDetails('Cess', 2);
 
 runDetails.newDetails(); // Hi, I'm Cess and I have visited 2 countries.
-``` 
+```

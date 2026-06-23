@@ -1,6 +1,6 @@
 # Model Inputs
 
-Model inputs are a special type of input that enable a component to propagate new values back to another component.  Use model inputs in components that exist to modify a value based on user interaction.
+Model inputs are a special type of input that enable a component to propagate new values back to another component. Use model inputs in components that exist to modify a value based on user interaction.
 
 Visit the following resources to learn more:
 

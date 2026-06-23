@@ -12,7 +12,7 @@ export function RoadmapHint(props: RoadmapHintProps) {
   return (
     <div
       className={cn(
-        'mb-0 mt-4 rounded-md border-0 sm:-mb-[65px] sm:mt-7 sm:border',
+        'mt-4 mb-0 rounded-md border-0 sm:mt-7 sm:-mb-[65px] sm:border',
       )}
     >
       <ResourceProgressStats

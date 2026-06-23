@@ -1,13 +1,13 @@
 ---
-title: "Backend Developer Job Description [@currentYear@ Template]"
+title: 'Backend Developer Job Description [@currentYear@ Template]'
 description: 'Learn how to write the perfect backend developer job description and get my best tips on how to recruit backend dev talent effectively.'
 authorId: ekene
 excludedBySlug: '/backend/job-description'
 seo:
-  title: "Backend Developer Job Description [@currentYear@ Template]"
+  title: 'Backend Developer Job Description [@currentYear@ Template]'
   description: ''
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: backend
 isNew: false
 type: 'textual'
@@ -45,7 +45,7 @@ The job description of a backend developer differs depending on the team, projec
 
 **Company:** [Company Name]
 
-**Location:** [Location, region, hybrid,  or remote]
+**Location:** [Location, region, hybrid, or remote]
 
 **Job Type:** [Full-time, Part-time, or Contract].
 
@@ -130,7 +130,7 @@ Some applications integrate with third-party web services or APIs to perform spe
 
 ### Testing and bug fixing
 
-Backend engineers write unit, integration, and end-to-end tests to ensure system reliability. These tests help to keep the system *up* and bug-free during continuous development. Troubleshooting and fixing are also part of a backend engineer’s primary responsibility.
+Backend engineers write unit, integration, and end-to-end tests to ensure system reliability. These tests help to keep the system _up_ and bug-free during continuous development. Troubleshooting and fixing are also part of a backend engineer’s primary responsibility.
 
 ### Documentation
 
@@ -231,23 +231,23 @@ Here, the candidate should be able to explain the different HTTP methods, which 
 **Describe what you understand** **about continuous integration and continuous delivery**
 The candidate is expected to explain what CI/CD means in clear terms.
 
-**What are databases****,** **and what are the different types of databases?**
+**What are databases\*\***,\*\* **and what are the different types of databases?**
 The candidate should know what a database is and what relational and document databases are, along with examples.
 
-**What is object****-****oriented programming?**
+**What is object\*\***-\***\*oriented programming?**
 The candidate should be able to explain OOP, a process of designing software around objects.
 
 **Explain the difference between synchronous and asynchronous programming**
 Here, you should look for the candidate’s understanding of sync and async processes. Synchronous programming executes tasks sequentially, and each task must be completed before the next start. Asynchronous programming allows tasks to run independently without waiting for each other to complete. It uses promises or async/await to handle task completion.
 
-**What is the purpose of caching in a backend system****,** **and what caching strategies have you used?**
+**What is the purpose of caching in a backend system\*\***,\*\* **and what caching strategies have you used?**
 The candidate should be able to explain what caching means and also the different caching strategies, which include:
 
 - Full-page caching
 - Data caching
 - Result caching
 
-**What are some common security vulnerabilities in web applications****,** **and how will you mitigate them?**
+**What are some common security vulnerabilities in web applications\*\***,\*\* **and how will you mitigate them?**
 The candidate should be able to explain common security vulnerabilities, such as cross-site scripting, SQL injection, cross-site request forgery (CSRF), and so on. You can mitigate them by performing proper input validation and secure session management.
 
 ## Effective interview strategies and assessments

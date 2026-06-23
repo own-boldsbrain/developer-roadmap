@@ -1,9 +1,9 @@
 # Deployment
 
-Deploying Terraform-defined infrastructure involves several key steps: 
+Deploying Terraform-defined infrastructure involves several key steps:
 
-- Initialize the working directory with `terraform init` 
-- Review changes with `terraform plan` 
+- Initialize the working directory with `terraform init`
+- Review changes with `terraform plan`
 - Apply the configuration using `terraform apply`.
 
 You can learn more from the following resources:

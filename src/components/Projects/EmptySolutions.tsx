@@ -8,12 +8,12 @@ export function EmptySolutions(props: EmptySolutionsProps) {
   const { projectId } = props;
 
   return (
-    <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl px-5 py-3 sm:px-0 sm:py-20 bg-white border mb-5">
-      <Blocks className="mb-4 opacity-10 h-14 w-14" />
+    <div className="mb-5 flex min-h-[250px] flex-col items-center justify-center rounded-xl border bg-white px-5 py-3 sm:px-0 sm:py-20">
+      <Blocks className="mb-4 h-14 w-14 opacity-10" />
       <h2 className="mb-1 text-lg font-semibold sm:text-xl">
         No solutions submitted yet
       </h2>
-      <p className="mb-3 text-balance text-center text-xs text-gray-400 sm:text-sm">
+      <p className="mb-3 text-center text-xs text-balance text-gray-400 sm:text-sm">
         Be the first to submit a solution for this project
       </p>
       <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-1.5">

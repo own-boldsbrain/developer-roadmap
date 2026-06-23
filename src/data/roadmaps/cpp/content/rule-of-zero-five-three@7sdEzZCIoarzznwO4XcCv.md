@@ -8,7 +8,7 @@ The Rule of Zero, Three, and Five is a set of guidelines for managing object res
 
 The Rule of Zero states that if a class or structure does not explicitly manage resources, it should not define any of the special member functions, i.e., destructor, copy constructor, copy assignment operator, move constructor, and move assignment operator. The compiler will automatically generate these functions, and the behavior will be correct for managing resources like memory and file handles.
 
-*Example:*
+_Example:_
 
 ```cpp
 struct MyResource {
@@ -29,14 +29,14 @@ The Rule of Three states that a class or structure that manages resources should
 
 These functions are necessary for proper resource management, such as releasing memory or correctly handling deep copies.
 
-*Example:*
+_Example:_
 
 ```cpp
 class MyResource {
 public:
     // Constructor and destructor
-    MyResource() : data(new int[100]) {} 
-    ~MyResource() { delete[] data; } 
+    MyResource() : data(new int[100]) {}
+    ~MyResource() { delete[] data; }
 
     // Copy constructor
     MyResource(const MyResource& other) : data(new int[100]) {
@@ -66,7 +66,7 @@ The Rule of Five extends the Rule of Three to include two additional special mem
 
 Modern C++ introduces move semantics, which allows for more efficient handling of resources by transferring ownership without necessarily copying all the data.
 
-*Example:*
+_Example:_
 
 ```cpp
 class MyResource {

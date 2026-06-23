@@ -37,9 +37,9 @@ Automation is one of the key methodologies that help you ensure that these proce
 
 The following key DevOps processes are the core of what automation in the DevOps space is:
 
-* **Continuous Integration/Continuous Deployment (CI/CD):** Automates the process of integrating code changes and deploying them to production.
-* **Infrastructure Management:** Uses code to manage and provision infrastructure, ensuring consistency across environments.
-* **Monitoring:** Automatically tracks system performance and alerts DevOps teams to any issues.
+- **Continuous Integration/Continuous Deployment (CI/CD):** Automates the process of integrating code changes and deploying them to production.
+- **Infrastructure Management:** Uses code to manage and provision infrastructure, ensuring consistency across environments.
+- **Monitoring:** Automatically tracks system performance and alerts DevOps teams to any issues.
 
 ## Components of DevOps Automation
 
@@ -51,11 +51,11 @@ DevOps Automation isn't just a single tool or process—it's a collection of var
 
 Continuous Integration (CI) is all about integrating code changes into a shared repository frequently, often multiple times a day. This practice helps detect issues early in the development cycle, making it easier to address them before they become bigger problems.
 
-* **How It Works:** Developers commit their code changes to a central repository. Automated tools then build the application and run a suite of tests (like unit tests and integration tests) to ensure that the new code doesn't break existing functionality.
-* **Benefits:**
-  * **Early Detection of Bugs:** By integrating and testing code regularly, teams can identify and fix bugs quickly.
-  * **Reduced Integration Problems:** Frequent integrations minimize the complexity and effort required to merge changes from different developers.
-  * **Improved Code Quality:** Automated testing ensures that code meets quality standards before it's merged.
+- **How It Works:** Developers commit their code changes to a central repository. Automated tools then build the application and run a suite of tests (like unit tests and integration tests) to ensure that the new code doesn't break existing functionality.
+- **Benefits:**
+  - **Early Detection of Bugs:** By integrating and testing code regularly, teams can identify and fix bugs quickly.
+  - **Reduced Integration Problems:** Frequent integrations minimize the complexity and effort required to merge changes from different developers.
+  - **Improved Code Quality:** Automated testing ensures that code meets quality standards before it's merged.
 
 ### 2. Continuous Deployment (CD)
 
@@ -63,11 +63,11 @@ Continuous Integration (CI) is all about integrating code changes into a shared 
 
 Continuous Deployment (CD) takes CI a step further by automatically deploying code changes to production once they pass all the necessary tests.
 
-* **How It Works:** After the CI process successfully builds and tests the code, the CD pipeline automatically deploys the changes to the live environment without manual intervention.
-* **Benefits:**
-  * **Faster Time-to-Market:** With the automation in place, you significantly reduce the time it takes to deploy changes into production, thus keeping your product competitive.
-  * **Reduced Risk of Deployments:** Automated deployments minimize human errors, ensuring that deployments are consistent and reliable.
-  * **Continuous Feedback:** Rapid deployments allow for quicker feedback from users, enabling faster iterations and improvements.
+- **How It Works:** After the CI process successfully builds and tests the code, the CD pipeline automatically deploys the changes to the live environment without manual intervention.
+- **Benefits:**
+  - **Faster Time-to-Market:** With the automation in place, you significantly reduce the time it takes to deploy changes into production, thus keeping your product competitive.
+  - **Reduced Risk of Deployments:** Automated deployments minimize human errors, ensuring that deployments are consistent and reliable.
+  - **Continuous Feedback:** Rapid deployments allow for quicker feedback from users, enabling faster iterations and improvements.
 
 ### 3. Infrastructure as Code (IaC)
 
@@ -75,11 +75,11 @@ Continuous Deployment (CD) takes CI a step further by automatically deploying co
 
 Infrastructure as Code (IaC) is the practice of managing and provisioning your IT infrastructure through machine-readable code rather than manual processes.
 
-* **How It Works:** Automation tools like Terraform, Ansible, or AWS CloudFormation allow you to define your infrastructure (servers, databases, networks, etc.) in code. This code can be stored in version control systems, reviewed, and reused across different environments.
-* **Benefits:**
-  * **Consistency Across Environments:** Ensures that development, testing, and production environments are identical, reducing the so-called "it works on my machine" syndrome.
-  * **Versioning your infrastructure:** Changes to infrastructure can be tracked, reviewed, and rolled back if necessary, just like application code.
-  * **Scalability:** Easily scale your infrastructure up or down by modifying the code, making it adaptable to changing needs.
+- **How It Works:** Automation tools like Terraform, Ansible, or AWS CloudFormation allow you to define your infrastructure (servers, databases, networks, etc.) in code. This code can be stored in version control systems, reviewed, and reused across different environments.
+- **Benefits:**
+  - **Consistency Across Environments:** Ensures that development, testing, and production environments are identical, reducing the so-called "it works on my machine" syndrome.
+  - **Versioning your infrastructure:** Changes to infrastructure can be tracked, reviewed, and rolled back if necessary, just like application code.
+  - **Scalability:** Easily scale your infrastructure up or down by modifying the code, making it adaptable to changing needs.
 
 ### 4. Automated Testing
 
@@ -87,11 +87,11 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning your I
 
 Automated testing involves using software tools to run tests on your code automatically. This ensures that your application behaves as expected and maintains high quality as it evolves.
 
-* **How It Works:** Automated tests (such as unit tests, integration tests, and end-to-end tests) are written alongside your code. These tests are executed automatically during the CI/CD pipeline to verify that new changes don't introduce bugs or regressions.
-* **Benefits:**
-  * **Enhanced Code Quality:** Regular automated testing catches bugs early, ensuring that only reliable code reaches production.
-  * **Faster Feedback:** Developers receive immediate feedback on their code changes, allowing for quicker iterations and improvements.
-  * **Efficiency:** Automating repetitive testing tasks saves time and allows teams to focus on more complex testing scenarios and feature development.
+- **How It Works:** Automated tests (such as unit tests, integration tests, and end-to-end tests) are written alongside your code. These tests are executed automatically during the CI/CD pipeline to verify that new changes don't introduce bugs or regressions.
+- **Benefits:**
+  - **Enhanced Code Quality:** Regular automated testing catches bugs early, ensuring that only reliable code reaches production.
+  - **Faster Feedback:** Developers receive immediate feedback on their code changes, allowing for quicker iterations and improvements.
+  - **Efficiency:** Automating repetitive testing tasks saves time and allows teams to focus on more complex testing scenarios and feature development.
 
 ### 5. Monitoring and Logging
 
@@ -99,10 +99,10 @@ Automated testing involves using software tools to run tests on your code automa
 
 Monitoring and logging are essential for maintaining the health and performance of your applications and infrastructure. They provide real-time insights and historical data that help you troubleshoot issues and optimize performance.
 
-* **How It Works:** Monitoring tools continuously track various metrics (like CPU usage, memory consumption, and response times) and logs from your applications and infrastructure. These tools can alert teams to potential issues and even trigger automated responses to certain conditions.
-* **Benefits:**
-  * **Proactive Issue Detection:** Real-time monitoring helps identify and address problems before they impact users.
-  * **Automated Responses:** Triggering automated actions (like scaling resources during traffic spikes or restarting services after a crash) ensures that your systems remain resilient and performant without manual intervention.
+- **How It Works:** Monitoring tools continuously track various metrics (like CPU usage, memory consumption, and response times) and logs from your applications and infrastructure. These tools can alert teams to potential issues and even trigger automated responses to certain conditions.
+- **Benefits:**
+  - **Proactive Issue Detection:** Real-time monitoring helps identify and address problems before they impact users.
+  - **Automated Responses:** Triggering automated actions (like scaling resources during traffic spikes or restarting services after a crash) ensures that your systems remain resilient and performant without manual intervention.
 
 ### Benefits of DevOps Automation
 
@@ -110,9 +110,9 @@ DevOps automation provides many benefits, including as already mentioned, the si
 
 However, there are more benefits than just reduced chance of errors. In fact, the following list covers some of the most relevant ones:
 
-* **Increased Speed and Efficiency:** Automated processes run faster and on time, every time, allowing for faster development and deployment cycles.
-* **Enhanced Collaboration Between Teams:** Streamlines workflows, making it easier for development and operations teams to work together. This is, in fact, one of the core [principles of the DevOps practice](https://roadmap.sh/devops/principles).
-* **Faster Time-to-Market:** Everything covered so far helps accelerate the delivery of features and updates, keeping your products competitive.
+- **Increased Speed and Efficiency:** Automated processes run faster and on time, every time, allowing for faster development and deployment cycles.
+- **Enhanced Collaboration Between Teams:** Streamlines workflows, making it easier for development and operations teams to work together. This is, in fact, one of the core [principles of the DevOps practice](https://roadmap.sh/devops/principles).
+- **Faster Time-to-Market:** Everything covered so far helps accelerate the delivery of features and updates, keeping your products competitive.
 
 ## Best Practices for DevOps Automation
 
@@ -181,16 +181,16 @@ Try to identify sources of toil in your workflows and continuously work to reduc
 Once you’ve incorporated these best practices into your DevOps activities, the next immediate action is to decide what your top [DevOps automation tools](https://roadmap.sh/devops/automation-tools) will be.
 These tools should allow you to:
 
-* Comply with the best practices already covered.
-* Empower your team to accomplish their tasks without getting in their way.
-* Actually provide the automation level you require.
+- Comply with the best practices already covered.
+- Empower your team to accomplish their tasks without getting in their way.
+- Actually provide the automation level you require.
 
 Regardless of the automation tools you decide to go with, some of the recommended categories that you should tackle are:
 
-* **Continuous Integration/Continuous Deployment** (CI/CD): these will help you reduce your time-to-market and increase the confidence on every new deployment.
-* **Configuration Management tools**: incredibly useful when you have to manage large infrastructures.
-* **Infrastructure as Code** (IaC): they allow you to version your infrastructure and collaborate on it through simple text files, speeding up resource deployment & environment setups.
-* **Test automation tools**: they will help you ensure quality by automating the testing of many aspects of your application (i.e automatically running UI tests as part of your deployment process).
+- **Continuous Integration/Continuous Deployment** (CI/CD): these will help you reduce your time-to-market and increase the confidence on every new deployment.
+- **Configuration Management tools**: incredibly useful when you have to manage large infrastructures.
+- **Infrastructure as Code** (IaC): they allow you to version your infrastructure and collaborate on it through simple text files, speeding up resource deployment & environment setups.
+- **Test automation tools**: they will help you ensure quality by automating the testing of many aspects of your application (i.e automatically running UI tests as part of your deployment process).
 
 ## Conclusion
 

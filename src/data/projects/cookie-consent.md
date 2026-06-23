@@ -1,26 +1,25 @@
 ---
-title: 'Cookie Consent'  
-description: 'Create a simple cookie consent banner using JavaScript.'  
-isNew: false  
-sort: 12  
-difficulty: 'beginner'  
-nature: 'JavaScript'  
-skills:  
-  - 'HTML'  
-  - 'CSS'  
-  - 'JavaScript'  
-  - 'DOM Manipulation'  
-seo:  
-  title: 'Create a Cookie Consent Popup Using HTML, CSS, and JavaScript'  
-  description: 'Learn how to build a cookie consent popup with basic JavaScript for managing user consent.'  
-  keywords:  
+title: 'Cookie Consent'
+description: 'Create a simple cookie consent banner using JavaScript.'
+isNew: false
+sort: 12
+difficulty: 'beginner'
+nature: 'JavaScript'
+skills:
+  - 'HTML'
+  - 'CSS'
+  - 'JavaScript'
+  - 'DOM Manipulation'
+seo:
+  title: 'Create a Cookie Consent Popup Using HTML, CSS, and JavaScript'
+  description: 'Learn how to build a cookie consent popup with basic JavaScript for managing user consent.'
+  keywords:
     - 'cookie consent'
     - 'javascript popup'
     - 'html and css'
-    - 'javascript project'  
-roadmapIds:  
-  - 'frontend'  
-
+    - 'javascript project'
+roadmapIds:
+  - 'frontend'
 ---
 
 This project is designed to introduce you to basic DOM manipulation and event handling in JavaScript.

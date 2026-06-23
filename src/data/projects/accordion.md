@@ -1,23 +1,23 @@
 ---
-title: 'Accordion'  
-description: 'Create an accordion component using HTML, CSS, and JavaScript.'  
-isNew: false  
+title: 'Accordion'
+description: 'Create an accordion component using HTML, CSS, and JavaScript.'
+isNew: false
 sort: 18
-difficulty: 'beginner'  
-nature: 'JavaScript'  
-skills:  
-  - 'HTML'  
-  - 'CSS'  
-  - 'JavaScript'  
-  - 'DOM Manipulation'  
-seo:  
-  title: 'Build an Accordion Component with JavaScript'  
-  description: 'Learn how to create a responsive accordion component that allows users to toggle between different sections of content.'  
-  keywords:  
+difficulty: 'beginner'
+nature: 'JavaScript'
+skills:
+  - 'HTML'
+  - 'CSS'
+  - 'JavaScript'
+  - 'DOM Manipulation'
+seo:
+  title: 'Build an Accordion Component with JavaScript'
+  description: 'Learn how to create a responsive accordion component that allows users to toggle between different sections of content.'
+  keywords:
     - 'accordion'
     - 'javascript accordion'
-    - 'html and css'  
-roadmapIds:  
+    - 'html and css'
+roadmapIds:
   - 'frontend'
 ---
 

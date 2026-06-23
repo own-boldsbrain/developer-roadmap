@@ -7,6 +7,7 @@ The C++ Standard Template Library (STL) is a collection of header files that pro
 Containers are the data structures used for data storage and manipulation in C++. They are classified into four types: sequence containers, associative containers, unordered associative containers, and container adaptors.
 
 - **Sequence Containers**: These are linear data structures that store elements in a sequential manner. Examples include:
+
   - `std::vector`: A dynamic array that grows and shrinks at runtime.
     ```cpp
     std::vector<int> my_vector;
@@ -21,6 +22,7 @@ Containers are the data structures used for data storage and manipulation in C++
     ```
 
 - **Associative Containers**: These containers store data in a sorted manner with unique keys. Examples include:
+
   - `std::set`: A collection of unique elements sorted by keys.
     ```cpp
     std::set<int> my_set;
@@ -31,6 +33,7 @@ Containers are the data structures used for data storage and manipulation in C++
     ```
 
 - **Unordered Associative Containers**: These containers store data in an unordered manner using hash tables. Examples include:
+
   - `std::unordered_set`: A collection of unique elements in no specific order.
     ```cpp
     std::unordered_set<int> my_unordered_set;

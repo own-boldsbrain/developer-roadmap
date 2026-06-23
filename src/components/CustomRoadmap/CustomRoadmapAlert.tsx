@@ -34,7 +34,7 @@ export function CustomRoadmapAlert() {
           </>
         }
         floatingIcon={MessageCircleHeart}
-        className="mb-5 mt-0 sm:-mt-6 sm:mb-7"
+        className="mt-0 mb-5 sm:-mt-6 sm:mb-7"
       />
     </>
   );

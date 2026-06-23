@@ -168,7 +168,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         <div className="mt-4">
           <label
             htmlFor="title"
-            className="block text-xs uppercase text-gray-400"
+            className="block text-xs text-gray-400 uppercase"
           >
             Roadmap Title
           </label>
@@ -189,7 +189,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         <div className="mt-4">
           <label
             htmlFor="description"
-            className="block text-xs uppercase text-gray-400"
+            className="block text-xs text-gray-400 uppercase"
           >
             Description
           </label>
@@ -206,7 +206,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-            <div className="absolute bottom-2 right-2 text-xs text-gray-400">
+            <div className="absolute right-2 bottom-2 text-xs text-gray-400">
               {description.length}/80
             </div>
           </div>

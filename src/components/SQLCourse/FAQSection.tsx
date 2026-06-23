@@ -14,9 +14,11 @@ function FAQRow({ question, answer }: FAQItem) {
     <div className="rounded-lg border border-zinc-800 bg-zinc-900">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="flex w-full items-center justify-between p-4 md:p-6 text-left gap-2"
+        className="flex w-full items-center justify-between gap-2 p-4 text-left md:p-6"
       >
-        <h3 className="text-lg md:text-xl text-balance font-normal text-white">{question}</h3>
+        <h3 className="text-lg font-normal text-balance text-white md:text-xl">
+          {question}
+        </h3>
         <ChevronDownIcon
           className={`h-5 w-5 text-zinc-400 transition-transform duration-200 ${
             isExpanded ? 'rotate-180' : ''
@@ -24,7 +26,7 @@ function FAQRow({ question, answer }: FAQItem) {
         />
       </button>
       {isExpanded && (
-        <div className="border-t border-zinc-800 p-6 pt-4 text-base md:text-lg leading-relaxed">
+        <div className="border-t border-zinc-800 p-6 pt-4 text-base leading-relaxed md:text-lg">
           <p>{answer}</p>
         </div>
       )}
@@ -72,7 +74,7 @@ export function FAQSection() {
     {
       question: "What if I don't like the course?",
       answer:
-        'You can request a refund within 30 days of purchase by emailing info@roadmap.sh. The refund amount will be prorated based on when you request it. For example, if you request a refund 15 days after purchase, you\'ll receive 50% back. I\'d also love to hear your feedback to improve the course.',
+        "You can request a refund within 30 days of purchase by emailing info@roadmap.sh. The refund amount will be prorated based on when you request it. For example, if you request a refund 15 days after purchase, you'll receive 50% back. I'd also love to hear your feedback to improve the course.",
     },
     {
       question: 'I already know SQL, can I still take this course?',
@@ -103,7 +105,7 @@ export function FAQSection() {
         className="mt-10 md:mt-24"
       />
 
-      <div className="mt-6 md:mt-8 w-full max-w-3xl space-y-2 md:space-y-6">
+      <div className="mt-6 w-full max-w-3xl space-y-2 md:mt-8 md:space-y-6">
         {faqs.map((faq, index) => (
           <FAQRow key={index} {...faq} />
         ))}

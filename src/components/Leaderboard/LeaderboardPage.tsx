@@ -19,7 +19,7 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="container pb-5 sm:pb-8">
-        <h1 className="my-5 flex items-center text-lg font-medium text-black sm:mb-4 sm:mt-8">
+        <h1 className="my-5 flex items-center text-lg font-medium text-black sm:mt-8 sm:mb-4">
           <Users2 className="mr-2 size-5 text-black" />
           Leaderboard
         </h1>
@@ -133,9 +133,9 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   key={tab.title}
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'text-xs transition-colors py-0.5 px-2 rounded-full',
+                    'rounded-full px-2 py-0.5 text-xs transition-colors',
                     {
-                      'text-white bg-black': isActive,
+                      'bg-black text-white': isActive,
                       'hover:bg-gray-200': !isActive,
                     },
                   )}
@@ -170,7 +170,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
             return (
               <li
                 key={user.id}
-                className="flex items-center justify-between gap-1 py-2.5 pl-2 pr-5"
+                className="flex items-center justify-between gap-1 py-2.5 pr-5 pl-2"
               >
                 <div className="flex min-w-0 items-center gap-2">
                   <span

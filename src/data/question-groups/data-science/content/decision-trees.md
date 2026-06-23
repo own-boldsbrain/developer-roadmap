@@ -17,4 +17,4 @@ Decision trees are versatile and are used for many machine learning tasks.
   - Leaf Node 2: Approve the loan (if credit score > 700 and income > $50,000).
   - Leaf Node 3: Do not approve the loan (if credit score > 700 and income ≤ $50,000).
 
-**Common pitfall:** Trees tend to overfit the data if you allow it to go too deep and include too many branches. 
+**Common pitfall:** Trees tend to overfit the data if you allow it to go too deep and include too many branches.

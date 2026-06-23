@@ -7,4 +7,4 @@ Once that's clear, measure success using a mix of quantitative and qualitative K
 - **Market impact metrics:** Measure business impact through revenue, market share, and win rates against competitors.
 - **Qualitative feedback:** Talk to sales reps, product teams, and customers. Internal and external feedback helps you understand the "why" behind the numbers. Blending data with direct feedback gives you a more transparent, more nuanced view of what's working and what to improve.
 
-**Common pitfall:** Focusing only on quantitative metrics without applying nuance to them. An example is tracking metrics like downloads without tracking engagement. Or tracking views without knowing who is viewing them. 
+**Common pitfall:** Focusing only on quantitative metrics without applying nuance to them. An example is tracking metrics like downloads without tracking engagement. Or tracking views without knowing who is viewing them.

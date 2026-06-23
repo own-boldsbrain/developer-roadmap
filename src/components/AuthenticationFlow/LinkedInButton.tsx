@@ -9,7 +9,11 @@ import { httpGet } from '../../lib/http';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { getLastPath, triggerUtmRegistration, urlToId } from '../../lib/browser.ts';
+import {
+  getLastPath,
+  triggerUtmRegistration,
+  urlToId,
+} from '../../lib/browser.ts';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -166,7 +170,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         Continue with LinkedIn
       </button>
       {error && (
-        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{error}</p>
+        <p className="mt-1 mb-2 text-sm font-medium text-red-600">{error}</p>
       )}
     </>
   );

@@ -168,7 +168,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         </div>
       </div>
       {!isAuthenticatedUser && (
-        <div className="mt-8 flex max-w-[500px] flex-col items-center gap-3 rounded-xl border border-gray-400 px-4 pb-4 pt-3">
+        <div className="mt-8 flex max-w-[500px] flex-col items-center gap-3 rounded-xl border border-gray-400 px-4 pt-3 pb-4">
           <p className={'text-center text-gray-500'}>
             <button
               onClick={showLoginPopup}
@@ -230,7 +230,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             You have generated{' '}
             <span
               className={
-                'inline-block min-w-[50px] rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800'
+                'inline-block min-w-[50px] rounded-xl border px-1.5 text-center text-sm text-gray-800 tabular-nums'
               }
             >
               {limitUsed} of {limit}

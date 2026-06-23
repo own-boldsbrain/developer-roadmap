@@ -8,12 +8,12 @@ Numeric Literals: They represent a sequence of digits. For example, 25, 100, or 
 
 Boolean Literals: In most of the Linux shell scripts, 1 represents true, and 0 represents false.
 
-Be mindful of the type of literal you're using as it can significantly influence your scripting, your code's readability, and its overall functionality. 
+Be mindful of the type of literal you're using as it can significantly influence your scripting, your code's readability, and its overall functionality.
 
 ```bash
 #!/bin/bash
 # Example of literals in shell script
- 
+
 StringLiteral="This is a string literal"
 NumericLiteral=125
 echo $StringLiteral

@@ -1,13 +1,13 @@
 ---
-title: "Frontend Developer Job Description [@currentYear@ Template]"
+title: 'Frontend Developer Job Description [@currentYear@ Template]'
 description: 'Learn how to write the perfect frontend developer job description and get my best tips on how to recruit frontend dev talent effectively.'
 authorId: william
 excludedBySlug: '/frontend/job-description'
 seo:
-  title: "Frontend Developer Job Description [@currentYear@ Template]"
+  title: 'Frontend Developer Job Description [@currentYear@ Template]'
   description: 'Learn how to write the perfect frontend developer job description and get my best tips on how to recruit frontend dev talent effectively.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-job-description-5fwzy.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -82,7 +82,7 @@ If this role excites you, please submit your resume and cover letter to **[conta
 
 ## Key frontend developer responsibilities
 
-Frontend developers are essential in the development process of web applications and websites. They ensure that the final product meets the users' and business needs from start to finish. 
+Frontend developers are essential in the development process of web applications and websites. They ensure that the final product meets the users' and business needs from start to finish.
 
 ![Key responsibilities of a frontend developer](https://images.surferseo.art/641302d8-76f9-49b1-94c8-685fa873fc06.jpeg)
 
@@ -113,6 +113,7 @@ This process involves the frontend developer:
 Hiring frontend developers who can easily understand project requirements is very important. They help increase a development team's performance and guarantee your project's success.
 
 ### Develop a responsive and seamless user experience.
+
 A website thrives on a responsive and seamless user experience. Are users finding what they are searching for fast enough? Is moving around the website accessible for them? Hiring a frontend developer who understands and can answer these questions is essential.
 
 ![Develop a responsive and smooth user experience.](https://assets.roadmap.sh/guest/develop-a-responsive-and-seamless-user-experience-hbiki.png)
@@ -189,7 +190,7 @@ It is essential to hire a frontend web developer who has an understanding of the
 
 Front-end developers must have a foundational knowledge of UI and UX design principles. This ability allows them to create easy-to-use designs, websites, and applications. Some essential elements of UI/UX design principles are:
 
-- **Visual design principles:**  Understanding this principle is vital for frontend developers. It involves understanding basic design principles like color theory and typography. These principles provide visual consistency and help developers create functional code.
+- **Visual design principles:** Understanding this principle is vital for frontend developers. It involves understanding basic design principles like color theory and typography. These principles provide visual consistency and help developers create functional code.
 
 - **User-centered design:** User-centred design **(UCD)** is a more thorough approach to design. This approach prioritizes the user's needs in all design and development decisions. It involves many stages, including user research and testing, design iterations, and more.
 
@@ -219,7 +220,7 @@ Hiring Frontend developers who know optimization techniques is important for the
 
 ## Tools used in frontend development
 
-Frontend web developers need tools to implement new features and build interactive websites. These tools help them bring their creative vision to life and ensure a good user experience. 
+Frontend web developers need tools to implement new features and build interactive websites. These tools help them bring their creative vision to life and ensure a good user experience.
 
 ![Tools used by frontend developers](https://assets.roadmap.sh/guest/tools-used-in-front-end-development-qcocc.png)
 
@@ -322,7 +323,7 @@ The following is a typical career path for a frontend developer:
 
 - **Mid-level frontend developer**: At this stage, you have a strong understanding of how the development process of web applications works. You have the skillset to take on complex projects and mentor junior developers.
 
-- **Senior-level frontend developer:** Senior-level frontend developers are experts in the frontend field. At this stage, you are responsible for mentoring junior developers, leading development teams, and much more. 
+- **Senior-level frontend developer:** Senior-level frontend developers are experts in the frontend field. At this stage, you are responsible for mentoring junior developers, leading development teams, and much more.
 
 - **Lead frontend developer**: As a senior-level frontend developer, you can switch to either a lead frontend engineer or a product designer role. Lead frontend engineer role requires you to provide technical vision, manage teams, and collaborate with product and design teams. Also, as a product designer, you focus on user experience, interaction design, visual design, and design systems. Both paths need sound technical, leadership, communication, and strategic thinking skills.
 
@@ -399,7 +400,7 @@ Frontend developers often use a combination of [programming languages](https://r
 
 ## What next?
 
-Hiring a frontend developer requires a grasp of the skills and duties that come with the job. By adhering to the tips in this article, you can pick the perfect candidate for your team. Now that you know what it takes to succeed in this role, it's time to take the next step. 
+Hiring a frontend developer requires a grasp of the skills and duties that come with the job. By adhering to the tips in this article, you can pick the perfect candidate for your team. Now that you know what it takes to succeed in this role, it's time to take the next step.
 
 Follow the [frontend developer roadmap](https://roadmap.sh/frontend) to learn and adapt to new technologies nonstop. Roadmap has resources to help newbies and pros improve and keep up with frontend trends. It also allows you to:
 

@@ -51,13 +51,13 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
           onChange={(e) => setTerm(e.target.value)}
         />
         {isLoading && (
-          <span className="absolute right-3 top-0 flex h-full items-center text-gray-500">
+          <span className="absolute top-0 right-3 flex h-full items-center text-gray-500">
             <Spinner isDualRing={false} className={`h-3 w-3`} />
           </span>
         )}
       </div>
       {total > 0 && (
-        <p className="shrink-0 text-sm text-gray-500 hidden sm:block">
+        <p className="hidden shrink-0 text-sm text-gray-500 sm:block">
           {Intl.NumberFormat('en-US', {
             notation: 'compact',
           }).format(total)}{' '}

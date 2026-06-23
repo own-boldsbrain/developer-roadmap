@@ -15,13 +15,13 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
   const { roadmaps: sharedRoadmaps } = props;
 
   const allUniqueCreatorIds = new Set(
-    sharedRoadmaps.map((roadmap) => roadmap.creator.id)
+    sharedRoadmaps.map((roadmap) => roadmap.creator.id),
   );
 
   const groupByCreator: GroupByCreator[] = [];
   for (const creatorId of allUniqueCreatorIds) {
     const creator = sharedRoadmaps.find(
-      (roadmap) => roadmap.creator.id === creatorId
+      (roadmap) => roadmap.creator.id === creatorId,
     )?.creator;
     if (!creator) {
       continue;
@@ -30,7 +30,7 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
     groupByCreator.push({
       creator,
       roadmaps: sharedRoadmaps.filter(
-        (roadmap) => roadmap.creator.id === creatorId
+        (roadmap) => roadmap.creator.id === creatorId,
       ),
     });
   }

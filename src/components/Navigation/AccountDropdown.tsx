@@ -105,7 +105,7 @@ export function AccountDropdown() {
         />
       )}
 
-      <div className="relative z-90 animate-fade-in">
+      <div className="animate-fade-in relative z-90">
         {isOnboardingModalOpen && onboardingConfig && (
           <OnboardingModal
             onboardingConfig={onboardingConfig}

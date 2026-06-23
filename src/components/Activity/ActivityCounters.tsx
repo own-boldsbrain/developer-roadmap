@@ -21,11 +21,9 @@ function ActivityCounter(props: ActivityCounterType) {
   const { text, count } = props;
 
   return (
-    <div className="relative flex flex-1 flex-row-reverse sm:flex-col px-0 sm:px-4 py-2 sm:py-4 text-center sm:pt-[1.62rem] items-center gap-2 sm:gap-0 justify-end">
-      <h2 className="text-base sm:text-5xl font-bold">
-        {count}
-      </h2>
-      <p className="mt-0 sm:mt-2 text-sm text-gray-400">{text}</p>
+    <div className="relative flex flex-1 flex-row-reverse items-center justify-end gap-2 px-0 py-2 text-center sm:flex-col sm:gap-0 sm:px-4 sm:py-4 sm:pt-[1.62rem]">
+      <h2 className="text-base font-bold sm:text-5xl">{count}</h2>
+      <p className="mt-0 text-sm text-gray-400 sm:mt-2">{text}</p>
     </div>
   );
 }
@@ -35,7 +33,7 @@ export function ActivityCounters(props: ActivityCountersType) {
 
   return (
     <div className="mx-0 -mt-5 sm:-mx-10 md:-mt-10">
-      <div className="flex flex-col sm:flex-row gap-0 sm:gap-2 divide-y sm:divide-y-0 divide-x-0 sm:divide-x border-b">
+      <div className="flex flex-col gap-0 divide-x-0 divide-y border-b sm:flex-row sm:gap-2 sm:divide-x sm:divide-y-0">
         <ActivityCounter
           text={'Topics Completed'}
           count={`${done?.total || 0}`}

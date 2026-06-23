@@ -8,4 +8,3 @@ Learn more from the following resources:
 - [@article@Symbol type](https://javascript.info/symbol)
 - [@article@Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 - [@video@Symbols in Javascript](https://www.youtube.com/watch?v=E5Bblr-SFbA)
-

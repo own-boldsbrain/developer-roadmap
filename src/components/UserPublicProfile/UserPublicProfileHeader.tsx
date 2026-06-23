@@ -21,7 +21,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
   const { headline, isAvailableForHire, isEmailVisible } = publicConfig!;
 
   return (
-    <div className="container relative flex items-center gap-6 rounded-xl border bg-white p-8">
+    <div className="relative container flex items-center gap-6 rounded-xl border bg-white p-8">
       <img
         src={
           avatar
@@ -57,7 +57,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
       {isOwnProfile && (
         <a
           href="/account/update-profile"
-          className="absolute right-4 top-4 flex items-center gap-1.5 text-sm text-gray-500 hover:text-black"
+          className="absolute top-4 right-4 flex items-center gap-1.5 text-sm text-gray-500 hover:text-black"
         >
           <Pencil className="h-3 w-3 stroke-2" />
           Edit Profile

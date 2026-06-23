@@ -44,7 +44,7 @@ export function ProjectProgress(props: ProjectProgressType) {
       </a>
 
       {shouldShowActions && (
-        <div className="absolute right-2 top-0 flex h-full items-center">
+        <div className="absolute top-0 right-2 flex h-full items-center">
           <ProjectProgressActions
             userId={defaultUserId!}
             projectId={projectStatus.projectId}

@@ -13,4 +13,4 @@ def merge_intervals(intervals):
     return merged
 ```
 
-Sorting takes O(n log n), and the merge step is linear, making this efficient for large datasets. 
+Sorting takes O(n log n), and the merge step is linear, making this efficient for large datasets.

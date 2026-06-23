@@ -1,7 +1,5 @@
 import { DashboardCardLink } from './DashboardCardLink';
-import {
-  BrainCircuit
-} from 'lucide-react';
+import { BrainCircuit } from 'lucide-react';
 
 type DashboardAiRoadmapsProps = {
   roadmaps: {
@@ -17,8 +15,8 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
 
   return (
     <>
-      <div className="mb-2 mt-6 flex items-center justify-between gap-2">
-        <h2 className="text-xs uppercase text-gray-400">My AI Roadmaps</h2>
+      <div className="mt-6 mb-2 flex items-center justify-between gap-2">
+        <h2 className="text-xs text-gray-400 uppercase">My AI Roadmaps</h2>
 
         <a
           href="/ai-roadmaps/explore"

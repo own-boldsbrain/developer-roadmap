@@ -56,7 +56,7 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+    <div className="popup fixed top-0 right-0 left-0 z-50 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50">
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}

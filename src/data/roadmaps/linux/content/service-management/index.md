@@ -1,4 +1,4 @@
-# Service Management 
+# Service Management
 
 Service Management in Linux refers to the system of controlling the services (or "daemons") that Linux starts and stops during the process of booting up and shutting down your computer. These services perform various functions and provide processes that aren't attached to the user interface.
 

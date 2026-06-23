@@ -23,7 +23,7 @@ export function StepperAction(props: StepperActionProps) {
     return (
       <button
         onClick={onClick}
-        className="flex items-center gap-1.5 rounded-full bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700"
+        className="flex items-center gap-1.5 rounded-full bg-purple-600 py-1 pr-2.5 pl-2 text-sm text-white hover:bg-purple-700"
       >
         <DisplayIcon size={13} />
         <span>{text}</span>

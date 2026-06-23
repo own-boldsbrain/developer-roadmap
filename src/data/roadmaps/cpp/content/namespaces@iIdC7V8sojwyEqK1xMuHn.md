@@ -73,7 +73,7 @@ namespace animals {
 
 int main() {
     using animals::dog;
-    
+
     std::cout << "Dog's name: " << dog << '\n';
 
     return 0;
@@ -92,7 +92,7 @@ namespace animals {
 
 int main() {
     using namespace animals;
-    
+
     std::cout << "Dog's name: " << dog << '\n';
     std::cout << "Cat's name: " << cat << '\n';
 

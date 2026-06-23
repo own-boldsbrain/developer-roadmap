@@ -40,7 +40,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
         <>
           {!canManage && (
             <button
-              className="flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
+              className="flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pr-3 pl-2 text-sm font-medium hover:border-black"
               onClick={() => {
                 if (!isLoggedIn()) {
                   showLoginPopup();
@@ -56,7 +56,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
             </button>
           )}
           {canManage && (
-            <span className="flex h-[34px] cursor-default items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium opacity-50">
+            <span className="flex h-[34px] cursor-default items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pr-3 pl-2 text-sm font-medium opacity-50">
               <Star className="size-4 fill-yellow-400 text-yellow-400" />
               <span className="hidden md:block">No ratings yet</span>
               <span className="block md:hidden">Rate</span>
@@ -67,7 +67,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
 
       {average > 0 && (
         <button
-          className="relative flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
+          className="relative flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pr-3 pl-2 text-sm font-medium hover:border-black"
           onClick={() => {
             setIsDetailsOpen(true);
           }}
@@ -86,7 +86,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
           </span>
           ({totalPeopleWhoRated})
           {canManage && unseenRatingCount > 0 && (
-            <span className="absolute right-0 top-0 flex size-4 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full bg-red-500 text-[10px] font-medium leading-none text-white">
+            <span className="absolute top-0 right-0 flex size-4 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-red-500 text-[10px] leading-none font-medium text-white">
               {unseenRatingCount}
             </span>
           )}

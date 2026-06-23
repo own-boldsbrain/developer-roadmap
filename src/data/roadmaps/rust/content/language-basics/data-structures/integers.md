@@ -7,25 +7,25 @@ In Rust, integers are a primitive data type that hold whole number values, both 
 
 Each denotation is followed by a number which represents the number of bits they occupy in memory. The available integer types are:
 
-|Type|Minimum|Maximum|
-|---|---|---|
-|i8|-(2^7)|(2^7)-1|
-|i16|-(2^15)|(2^15)-1|
-|i32|-(2^31)|(2^31)-1|
-|i64|-(2^63)|(2^63)-1|
-|i128|-(2^127)|(2^127)-1)
-|isize|-(2^31) or -(2^63)|(2^31)-1 or (2^63)-1|
+| Type  | Minimum            | Maximum              |
+| ----- | ------------------ | -------------------- |
+| i8    | -(2^7)             | (2^7)-1              |
+| i16   | -(2^15)            | (2^15)-1             |
+| i32   | -(2^31)            | (2^31)-1             |
+| i64   | -(2^63)            | (2^63)-1             |
+| i128  | -(2^127)           | (2^127)-1)           |
+| isize | -(2^31) or -(2^63) | (2^31)-1 or (2^63)-1 |
 
 The unsigned integer types consist of:
 
-|Type|Minimum|Maximum|
-|---|---|---|
-|u8|0|(2^8)-1|
-|u16|0|(2^16)-1|
-|u32|0|(2^32)-1|
-|u64|0|(2^64)-1|
-|u128|0|(2^128)-1|
-|usize|0|(2^32)-1 or (2^64)-1|
+| Type  | Minimum | Maximum              |
+| ----- | ------- | -------------------- |
+| u8    | 0       | (2^8)-1              |
+| u16   | 0       | (2^16)-1             |
+| u32   | 0       | (2^32)-1             |
+| u64   | 0       | (2^64)-1             |
+| u128  | 0       | (2^128)-1            |
+| usize | 0       | (2^32)-1 or (2^64)-1 |
 
 In these types, the number after "i" or "u" denotes the size of the integer type in bits.
 

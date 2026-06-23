@@ -22,8 +22,9 @@ export function LoginToView(props: LoginToViewProps) {
 
       <div className="mt-5 mb-4 flex flex-col items-center gap-0.5 text-center">
         <h3 className="text-xl font-semibold text-gray-700">Login Required</h3>
-        <p className="text-sm text-balance leading-relaxed text-gray-500">
-          Please login to access the content and all the features of the AI Tutor.
+        <p className="text-sm leading-relaxed text-balance text-gray-500">
+          Please login to access the content and all the features of the AI
+          Tutor.
         </p>
       </div>
 

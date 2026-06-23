@@ -1,13 +1,15 @@
 export function urlToId(url: string) {
-  return url
-    .replace(/^https?:\/\//, '')
-    .replace('roadmap.sh', '')
-    .replace(/localhost:[\d]*?/, '')
-    .replace(/\?.*$/, '')
-    .replace(/\/$/, '')
-    .replace(/^\//, '')
-    .replace(/[^a-zA-Z0-9]/g, '-')
-    .toLowerCase() || 'home';
+  return (
+    url
+      .replace(/^https?:\/\//, '')
+      .replace('roadmap.sh', '')
+      .replace(/localhost:[\d]*?/, '')
+      .replace(/\?.*$/, '')
+      .replace(/\/$/, '')
+      .replace(/^\//, '')
+      .replace(/[^a-zA-Z0-9]/g, '-')
+      .toLowerCase() || 'home'
+  );
 }
 
 const LAST_PATH_KEY = 'lastPage';

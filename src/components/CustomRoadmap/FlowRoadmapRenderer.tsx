@@ -18,7 +18,7 @@ import { totalRoadmapNodes } from '../../stores/roadmap.ts';
 type FlowRoadmapRendererProps = {
   isEmbed?: boolean;
   roadmap: RoadmapDocument & {
-    canManage?: boolean
+    canManage?: boolean;
   };
 };
 

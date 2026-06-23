@@ -5,4 +5,3 @@ Community Support in the context of Developer Relations (DevRel) involves active
 - [@article@Community and DevRel](https://developerrelations.com/podcast/community-and-devrel)
 - [@article@New to DevRel? Talk to your community!](https://dev.to/amandamartindev/new-to-devrel-talk-to-your-community-hmf)
 - [@video@DevRel & Community](https://www.youtube.com/watch?v=CfXkY2m_0dU)
-

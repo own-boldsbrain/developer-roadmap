@@ -44,7 +44,7 @@ export function UserPublicProjects(props: UserPublicProjectsProps) {
 
   return (
     <div className="mt-5">
-      <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+      <h2 className="mb-2 text-xs tracking-wide text-gray-400 uppercase">
         Projects I have worked on
       </h2>
       <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">

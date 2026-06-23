@@ -217,7 +217,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
   }, []);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed top-0 right-0 left-0 z-100 h-full items-center justify-center overflow-x-hidden overflow-y-auto overscroll-contain bg-black/50">
       <div
         id="original-roadmap"
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
@@ -275,14 +275,14 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
             <div className="flex w-full justify-center">
               <Spinner
                 isDualRing={false}
-                className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
+                className="mt-2 mb-4 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
               />
             </div>
           )}
 
           <button
             type="button"
-            className={`absolute right-2.5 top-3 z-50 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${
+            className={`absolute top-3 right-2.5 z-50 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${
               isCurrentUser ? 'hover:bg-gray-800' : 'hover:bg-gray-100'
             }`}
             onClick={onClose}

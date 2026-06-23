@@ -1,6 +1,6 @@
 # Private Key vs Public Key
 
-**Public keys** and **private keys** are cryptographic components used in asymmetric encryption. 
+**Public keys** and **private keys** are cryptographic components used in asymmetric encryption.
 
 - **Public Key:** This key is shared openly and used to encrypt data or verify a digital signature. It can be distributed widely and is used by anyone to send encrypted messages to the key owner or to verify their digital signatures.
 

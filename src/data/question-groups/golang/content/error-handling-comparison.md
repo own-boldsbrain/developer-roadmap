@@ -1,4 +1,4 @@
-Go uses explicit error handling by returning an error value alongside other results. 
+Go uses explicit error handling by returning an error value alongside other results.
 
 This contrasts with the exception handling mechanisms found in other languages, leading to clearer code documentation and predictable error management paths.
 
@@ -21,4 +21,4 @@ func Divide(a, b float64) (float64, error) {
     // Return the result and nil for error if division is successful.
     return a / b, nil
 }
-``` 
+```

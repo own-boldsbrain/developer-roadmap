@@ -1,6 +1,6 @@
 # MVP
 
-The Model-View-Presenter (MVP) architectural pattern is a derivative of the Model-View-Controller (MVC) pattern, designed to improve separation of concerns and testability in iOS applications. 
+The Model-View-Presenter (MVP) architectural pattern is a derivative of the Model-View-Controller (MVC) pattern, designed to improve separation of concerns and testability in iOS applications.
 
 In MVP:
 

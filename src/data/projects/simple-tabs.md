@@ -1,26 +1,25 @@
 ---
-title: 'Tabs'  
-description: 'Create a simple tabs component using HTML, CSS, and JavaScript.'  
-isNew: false  
-sort: 10  
-difficulty: 'beginner'  
+title: 'Tabs'
+description: 'Create a simple tabs component using HTML, CSS, and JavaScript.'
+isNew: false
+sort: 10
+difficulty: 'beginner'
 nature: 'JavaScript'
-skills:  
-  - 'HTML'  
-  - 'CSS'  
+skills:
+  - 'HTML'
+  - 'CSS'
   - 'JavaScript'
   - 'DOM Manipulation'
-seo:  
-  title: 'Create a Tabs Functionality Using HTML, CSS, and JavaScript'  
-  description: 'Learn how to build a tabs component with basic JavaScript for switching between content sections.'  
-  keywords:  
+seo:
+  title: 'Create a Tabs Functionality Using HTML, CSS, and JavaScript'
+  description: 'Learn how to build a tabs component with basic JavaScript for switching between content sections.'
+  keywords:
     - 'javascript tabs'
     - 'dynamic content'
     - 'html and css'
-    - 'javascript project'  
-roadmapIds:  
-  - 'frontend'  
-
+    - 'javascript project'
+roadmapIds:
+  - 'frontend'
 ---
 
 This project is designed to introduce you to basic DOM manipulation and event handling in JavaScript.

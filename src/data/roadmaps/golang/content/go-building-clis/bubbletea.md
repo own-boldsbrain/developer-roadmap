@@ -1,6 +1,6 @@
 # Bubbletea
 
-Bubbletea is a powerful and flexible framework for building terminal user interfaces (TUIs) in Go, based on The Elm Architecture. 
+Bubbletea is a powerful and flexible framework for building terminal user interfaces (TUIs) in Go, based on The Elm Architecture.
 
 Visit the following resources to learn more:
 

@@ -28,9 +28,9 @@ db.events.updateOne(
   {
     $set: {
       title: 'Sample Event',
-      eventDate: { $currentDate: { $type: 'date' } }
-    }
-  }
+      eventDate: { $currentDate: { $type: 'date' } },
+    },
+  },
 );
 ```
 

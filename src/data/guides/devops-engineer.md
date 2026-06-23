@@ -279,7 +279,7 @@ Release engineers are responsible for planning, scheduling, and coordinating the
 - Project management and organization skills.
 - Strong communication and coordination skills
 
-### Security engineers 
+### Security engineers
 
 Security engineers are responsible for integrating security and best practices into the DevOps pipeline. Additionally, they collaborate with development and operations teams to conduct security assessments, vulnerability scans, and compliance checks.
 

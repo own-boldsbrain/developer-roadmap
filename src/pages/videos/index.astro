@@ -12,9 +12,12 @@ const videos = await getAllVideos();
   description={'Graphical video demonstrations on software engineering topics.'}
   permalink={`/videos`}
 >
-  <SimplePageHeader title='Videos' description='Graphical video demonstrations on software engineering topics.' />
+  <SimplePageHeader
+    title='Videos'
+    description='Graphical video demonstrations on software engineering topics.'
+  />
 
-  <div class='pb-20 pt-2 bg-gray-50'>
+  <div class='bg-gray-50 pt-2 pb-20'>
     <div class='container'>
       <div class='mt-3 sm:my-5'>
         {videos.map((video) => <VideoListItem video={video} />)}

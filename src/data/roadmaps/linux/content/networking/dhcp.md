@@ -1,4 +1,4 @@
-# DHCP 
+# DHCP
 
 The Dynamic Host Configuration Protocol (DHCP) is a critical component of any network. In Linux networking, it is used for allocating IP addresses dynamically within a network.
 

@@ -29,7 +29,7 @@ export function ForkCourseAlert(props: ForkCourseAlertProps) {
       </p>
 
       <button
-        className="flex shrink-0 items-center gap-2 rounded-md hover:bg-yellow-500 bg-yellow-400 px-3 py-1.5 text-sm text-black"
+        className="flex shrink-0 items-center gap-2 rounded-md bg-yellow-400 px-3 py-1.5 text-sm text-black hover:bg-yellow-500"
         onClick={onForkCourse}
       >
         <GitForkIcon className="size-3.5" />

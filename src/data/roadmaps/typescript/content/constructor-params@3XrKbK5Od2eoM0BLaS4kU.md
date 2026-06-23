@@ -4,7 +4,10 @@ In TypeScript, constructor parameters can be declared with access modifiers (e.g
 
 ```typescript
 class Example {
-  constructor(private name: string, public age: number) {}
+  constructor(
+    private name: string,
+    public age: number,
+  ) {}
 }
 ```
 

@@ -102,7 +102,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm bg-white"
+        className="flex flex-wrap items-center gap-1 rounded-md border bg-white px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
@@ -158,7 +158,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const activityLimit = showAll ? activities.length : 5;
 
   return (
-    <li key={user._id} className="overflow-hidden bg-white rounded-md border">
+    <li key={user._id} className="overflow-hidden rounded-md border bg-white">
       <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
         {username} has {activities.length} updates in {uniqueResourcesCount}
         &nbsp;resource(s)
@@ -218,7 +218,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
 
         {activities.length > 5 && (
           <button
-            className="ml-2 mt-3 flex items-center gap-2 rounded-md border border-gray-300 p-1 text-xs uppercase tracking-wide text-gray-600 transition-colors hover:border-black hover:bg-black hover:text-white sm:ml-[36px]"
+            className="mt-3 ml-2 flex items-center gap-2 rounded-md border border-gray-300 p-1 text-xs tracking-wide text-gray-600 uppercase transition-colors hover:border-black hover:bg-black hover:text-white sm:ml-[36px]"
             onClick={() => setShowAll(!showAll)}
           >
             {showAll ? (

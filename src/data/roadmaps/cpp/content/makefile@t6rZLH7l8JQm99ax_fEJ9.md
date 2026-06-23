@@ -9,7 +9,7 @@ Makefiles help developers save time, reduce errors, and ensure consistency in th
 A typical Makefile has the following structure:
 
 - **Variables**: Define variables to store commonly used values, such as compiler flags, directories, or target names.
-- **Rules**: Define how to generate output files from input files using a set of commands. Each rule has a *target*, a set of *prerequisites*, and a *recipe*.
+- **Rules**: Define how to generate output files from input files using a set of commands. Each rule has a _target_, a set of _prerequisites_, and a _recipe_.
 - **Phony targets**: Targets that do not represent actual files in the project but serve as a way to group related rules and invoke them using a single command.
 
 ## Example

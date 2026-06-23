@@ -7,7 +7,7 @@ import {
   NotebookPenIcon,
   PencilLine,
   Star,
-  type LucideIcon
+  type LucideIcon,
 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { PredefinedActionGroup } from './PredefinedActionGroup';

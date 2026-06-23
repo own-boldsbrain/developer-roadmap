@@ -3,7 +3,9 @@
 C++17, also known as C++1z, is the version of the C++ programming language published in December 2017. It builds upon the previous standard, C++14, and adds various new features and enhancements to improve the language's expressiveness, performance, and usability.
 
 ## Key Features:
+
 - If-init-statement: Introduces a new syntax for writing conditions with scope inside if and switch statements.
+
 ```cpp
 if (auto it = map.find(key); it != map.end())
 {
@@ -12,17 +14,20 @@ if (auto it = map.find(key); it != map.end())
 ```
 
 - Structured Binding Declarations: Simplify the process of unpacking a tuple, pair, or other aggregate types.
+
 ```cpp
 map<string, int> data;
 auto [iter, success] = data.emplace("example", 42);
 ```
 
 - Inline variables: Enables `inline` keyword for variables and allows single definition of global and class static variables in header files.
+
 ```cpp
 inline int globalVar = 0;
 ```
 
 - Folds expressions: Introduce fold expressions for variadic templates.
+
 ```cpp
 template <typename... Ts>
 auto sum(Ts... ts)
@@ -32,6 +37,7 @@ auto sum(Ts... ts)
 ```
 
 - constexpr if statement: Allows conditional compilation during compile time.
+
 ```cpp
 template <typename T>
 auto get_value(T t)
@@ -48,6 +54,7 @@ auto get_value(T t)
 ```
 
 - Improved lambda expression: Allows lambda to capture a single object without changing its type or constness.
+
 ```cpp
 auto func = [x = std::move(obj)] { /* use x */ };
 ```

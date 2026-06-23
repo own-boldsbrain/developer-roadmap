@@ -19,9 +19,9 @@ export function studyJs(course) {
   return `Read the JavaScript guide on, ${course}`;
 }
 
-
 // In file 2 the "js import" statement brings the "studyJs" function from "app.js" to "function.js"
 
 import { studyJs } from './app.js';
 
-console.log(studyJs("roadmap.sh")); // Read the JavaScript guide on, roadmap.sh 
+console.log(studyJs('roadmap.sh')); // Read the JavaScript guide on, roadmap.sh
+```

@@ -1,4 +1,4 @@
-# Container Runtime 
+# Container Runtime
 
 Container runtime in Linux refers to the software that is responsible for running containers. Each container runtime provides specific features and benefits, with common capabilities including image transport and storage, container execution and supervision, low-level network and volume interactions, and more.
 

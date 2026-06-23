@@ -8,7 +8,7 @@ Here's an example of how you might use a decorator in TypeScript:
 function log(
   target: Object,
   propertyKey: string | symbol,
-  descriptor: PropertyDescriptor
+  descriptor: PropertyDescriptor,
 ) {
   const originalMethod = descriptor.value;
 

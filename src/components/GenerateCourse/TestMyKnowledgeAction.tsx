@@ -356,7 +356,7 @@ export function QuizItem(props: QuizItemProps) {
       </div>
 
       <div className="p-6">
-        <h3 className="mx-2 text-balance text-xl font-medium">
+        <h3 className="mx-2 text-xl font-medium text-balance">
           {title} {canMultiSelect ? '(Select Multiple)' : ''}
         </h3>
 
@@ -393,7 +393,7 @@ export function QuizItem(props: QuizItemProps) {
               <span className="flex items-center gap-2">
                 You got {correctAnswerCount} out of {totalQuestions} correct.
                 <button
-                  className="relative rounded-md bg-black px-3 py-1 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-black/80"
+                  className="relative rounded-md bg-black px-3 py-1 text-xs font-medium tracking-wider text-white uppercase transition-colors hover:bg-black/80"
                   onClick={onTryAgain}
                 >
                   Try again
@@ -424,7 +424,7 @@ export function QuizItem(props: QuizItemProps) {
       </div>
 
       {isLoading && (
-        <div className="absolute bg-white right-3 top-3 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-hidden">
+        <div className="absolute top-3 right-3 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 bg-white p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-hidden">
           <Loader2Icon className="size-5 animate-spin text-gray-400" />
         </div>
       )}

@@ -1,4 +1,4 @@
-# Listing and Finding Processes (proc) 
+# Listing and Finding Processes (proc)
 
 In Linux, processes form the backbone of any functioning system - running various tasks and executing different operations. In order to effectively manage your Linux system, it's crucial to be able to list and find the currently running processes. This aids in monitoring system performance, tracking down any issues, and in controlling resource allocation.
 
@@ -8,20 +8,22 @@ With commands like `ps`, `top`, and `htop`, we can quickly list out the running 
 
 ```bash
 # list all running processes
-ps -ef 
+ps -ef
 
-# display ongoing list of running processes 
+# display ongoing list of running processes
 top
 
 # alternatively, for a more user-friendly interface
 htop
 ```
+
 Exploring the proc directory (`/proc`), we dive even deeper, enabling us to view the system's kernel parameters and each process's specific system details.
 
 ```bash
 # view specifics of a particular PID
 cat /proc/{PID}/status
 ```
+
 In short, 'Finding and Listing Processes (proc)' in Linux is not just a core aspect of process management, but also a necessary skill for enhancing system performance and resolution of issues.
 
 Visit the following resources to learn more:

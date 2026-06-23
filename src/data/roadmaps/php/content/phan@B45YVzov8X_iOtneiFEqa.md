@@ -15,6 +15,7 @@ $code = "<?php function add(int $a, int $b): int { return $a + $b; } echo add('h
 
 Phan::analyzeFile('test.php', $code);
 ```
+
 Above is a basic sample of using Phan. It checks for a type error in a PHP function.
 
 Visit the following resources to learn more:

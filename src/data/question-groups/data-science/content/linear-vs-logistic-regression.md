@@ -6,4 +6,4 @@ A logistic regression algorithm predicts a binary outcome for an event based on 
 
 You use linear regression when the outcome is a continuous value, such as price or temperature. You should use logistic regression when the outcome is a categorical value like spam/not spam, yes/no, etc.
 
-![Linear vs. logistic regression](https://assets.roadmap.sh/guest/linear-vs-logistic-regression-a7cc3.png) 
+![Linear vs. logistic regression](https://assets.roadmap.sh/guest/linear-vs-logistic-regression-a7cc3.png)

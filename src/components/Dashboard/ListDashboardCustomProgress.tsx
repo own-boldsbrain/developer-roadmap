@@ -3,9 +3,7 @@ import { DashboardCustomProgressCard } from './DashboardCustomProgressCard';
 import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import {
-  BrainCircuit, PencilRuler
-} from 'lucide-react';
+import { BrainCircuit, PencilRuler } from 'lucide-react';
 
 type ListDashboardCustomProgressProps = {
   progresses: UserProgress[];
@@ -41,8 +39,8 @@ export function ListDashboardCustomProgress(
     <>
       {customRoadmapModal}
 
-      <div className="mb-2 mt-6 flex items-center justify-between gap-2">
-        <h2 className="text-xs uppercase text-gray-400">
+      <div className="mt-6 mb-2 flex items-center justify-between gap-2">
+        <h2 className="text-xs text-gray-400 uppercase">
           {isAIGeneratedRoadmaps ? 'My AI Roadmaps' : 'My Custom Roadmaps'}
         </h2>
 

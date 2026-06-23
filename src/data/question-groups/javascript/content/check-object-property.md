@@ -2,12 +2,12 @@ There are different ways to check if an object has a specific property. The meth
 
 ```javascript
 var obj = {
-        name: "Cess",
-        work: "developer",
-        countryVisits: 3,
+  name: 'Cess',
+  work: 'developer',
+  countryVisits: 3,
 };
 
-console.log(Object.hasOwn(obj, "name")); // true
+console.log(Object.hasOwn(obj, 'name')); // true
 
-console.log(Object.hasOwn(obj, "developer")); // false
-``` 
+console.log(Object.hasOwn(obj, 'developer')); // false
+```

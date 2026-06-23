@@ -26,7 +26,7 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
 
     setIsLoading(true);
     const { response, error } = await httpGet<TeamListResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');

@@ -1,6 +1,6 @@
 # @case
 
-If no `@case` matches the `@switch` condition and there is no `@default` block, nothing is shown.  Otherwise, the content inside the `@case` that matches the condition will be displayed.
+If no `@case` matches the `@switch` condition and there is no `@default` block, nothing is shown. Otherwise, the content inside the `@case` that matches the condition will be displayed.
 
 Visit the following resources to learn more:
 

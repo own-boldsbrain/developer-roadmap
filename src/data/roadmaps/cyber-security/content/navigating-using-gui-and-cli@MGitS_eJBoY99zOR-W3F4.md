@@ -31,4 +31,3 @@ A Command Line Interface (CLI) is a text-based interface that allows users to in
 - Requires memorization or reference material for commands and syntax
 
 By understanding how to navigate and use both GUI and CLI, you will be better equipped to manage and secure your computer systems and network devices, as well as perform various cyber security tasks that may require a combination of these interfaces. It is essential to be familiar with both methods, as some tasks may require the precision and control offered by CLI, while others may be more efficiently performed using a GUI.
-

@@ -1,4 +1,4 @@
-# MVVM 
+# MVVM
 
 The `Model-View-ViewModel` (MVVM) pattern is a software architectural pattern commonly used in UI development. It is designed to separate the concerns of an application, making the code more modular, testable, and maintainable.
 

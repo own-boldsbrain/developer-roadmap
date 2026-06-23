@@ -10,14 +10,14 @@ export function VideoListItem(props: VideoListItemProps) {
 
   return (
     <a
-      className="block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between border-b"
+      className="group text-md block flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600"
       href={`/videos/${id}`}
     >
-      <span className="group-hover:translate-x-2 transition-transform">
+      <span className="transition-transform group-hover:translate-x-2">
         {frontmatter.title}
 
         {frontmatter.isNew && (
-          <span className="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-xs uppercase ml-1.5">
+          <span className="ml-1.5 rounded-xs bg-green-300 px-1.5 py-0.5 text-xs font-medium text-green-900 uppercase">
             New
             <span className="hidden sm:inline">
               &middot;
@@ -28,11 +28,11 @@ export function VideoListItem(props: VideoListItemProps) {
           </span>
         )}
       </span>
-      <span className="capitalize text-gray-500 text-xs hidden sm:block">
+      <span className="hidden text-xs text-gray-500 capitalize sm:block">
         {frontmatter.duration}
       </span>
 
-      <span className="text-gray-400 text-xs block sm:hidden"> &raquo;</span>
+      <span className="block text-xs text-gray-400 sm:hidden"> &raquo;</span>
     </a>
   );
-} 
+}

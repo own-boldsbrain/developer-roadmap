@@ -76,6 +76,7 @@ POST /register
   "password": "password123"
 }
 ```
+
 Response should be the user object with a JWT.
 
 Log in an existing user:
@@ -87,6 +88,7 @@ POST /login
   "password": "password123"
 }
 ```
+
 Response should be the user object with a JWT.
 
 ### Image Management Endpoints
@@ -124,6 +126,7 @@ POST /images/:id/transform
   }
 }
 ```
+
 User can apply one or more transformations to the image. Response should be the transformed image details (URL, metadata).
 
 #### Retrieve an image:
@@ -131,6 +134,7 @@ User can apply one or more transformations to the image. Response should be the 
 ```
 GET /images/:id
 ```
+
 Response should be the image actual image detail.
 
 #### Get a paginated list of images:

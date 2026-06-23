@@ -71,12 +71,9 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
       )}
 
       <div
-        className={cn(
-          'z-10 border-b -mb-4',
-          showcaseStatusDetails.className,
-        )}
+        className={cn('z-10 -mb-4 border-b', showcaseStatusDetails.className)}
       >
-        <div className="container relative flex items-center justify-center py-2 text-sm">
+        <div className="relative container flex items-center justify-center py-2 text-sm">
           <div className={cn('flex items-center gap-2', className)}>
             <Icon className="h-4 w-4 shrink-0 stroke-[2.5]" />
             <div>{label}</div>

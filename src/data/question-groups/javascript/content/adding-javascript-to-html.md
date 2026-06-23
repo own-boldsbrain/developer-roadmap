@@ -7,33 +7,28 @@ Internal JavaScript is great for small amounts of code and keeps everything in o
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
 
-<!-- JavaScript -->
+    <!-- JavaScript -->
 
-<script>
-  console.log("Study Javascript");
-</script>
+    <script>
+      console.log('Study Javascript');
+    </script>
 
-<!-- End  -->
+    <!-- End  -->
+  </head>
+  <body>
+    <!-- JavaSCript -->
 
+    <script>
+      console.log("Hi, I'm Cess");
+    </script>
 
-</head>
-<body>
-
-
-<!-- JavaSCript -->
-
-<script>
-    console.log("Hi, I'm Cess");
-</script>
-
-<!-- End -->
-
-</body>
+    <!-- End -->
+  </body>
 </html>
 ```
 
@@ -46,29 +41,25 @@ For example, when you create a file called `app.js`, you'll include it like this
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
 
-<!-- JavaScript -->
+    <!-- JavaScript -->
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 
-<!-- End -->
+    <!-- End -->
+  </head>
 
-</head>
+  <body>
+    <!-- JavaSCript -->
 
-<body>
+    <script src="app.js"></script>
 
-<!-- JavaSCript -->
-
-<script src="app.js"></script>
-
-<!-- End -->
-
-</body>
-
+    <!-- End -->
+  </body>
 </html>
 ```
 
@@ -77,7 +68,5 @@ Inline JavaScript lets you place your JavaScript code into an HTML element's att
 Using inline JavaScript is suitable for fast and easy tasks. But it can make your HTML code difficult to read, especially if you have a lot of JavaScript code.
 
 ```html
-<button onclick="console.log('A click occured')">
-      Sign up on roadmap.sh
-</button>
-``` 
+<button onclick="console.log('A click occured')">Sign up on roadmap.sh</button>
+```

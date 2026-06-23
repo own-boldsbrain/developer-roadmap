@@ -1,23 +1,23 @@
 ---
-title: '24hr Story Feature'  
-description: 'Create a client-side instagram stories feature clone.'  
-isNew: false  
+title: '24hr Story Feature'
+description: 'Create a client-side instagram stories feature clone.'
+isNew: false
 sort: 32
-difficulty: 'advanced'  
-nature: 'Frameworks'  
-skills:  
-  - 'JavaScript'  
-  - 'Storage'  
-  - 'Timeouts'  
-seo:  
-  title: 'Build an Instagram Story Clone'  
-  description: 'Create a client-side instagram stories feature clone.'  
-  keywords:  
+difficulty: 'advanced'
+nature: 'Frameworks'
+skills:
+  - 'JavaScript'
+  - 'Storage'
+  - 'Timeouts'
+seo:
+  title: 'Build an Instagram Story Clone'
+  description: 'Create a client-side instagram stories feature clone.'
+  keywords:
     - 'html'
     - 'css'
     - 'javascript'
-    - 'instagram story'  
-roadmapIds:  
+    - 'instagram story'
+roadmapIds:
   - 'frontend'
 ---
 

@@ -29,4 +29,4 @@ Traditional ML uses simpler, more interpretable algorithms like decision trees, 
 - Struggles with complex/non-linear data
 - Needs manual feature engineering
 - Doesn't scale well with large datasets
-- Can overfit if not tuned properly 
+- Can overfit if not tuned properly

@@ -1,6 +1,6 @@
 # Poem
 
-Poem is a backend web application framework for Rust. 
+Poem is a backend web application framework for Rust.
 
 It supports OpenAPIv3-compliant back-end Application Programming Interfaces (APIs) which make it easy to create APIs and document them automatically with SwaggerUI.
 

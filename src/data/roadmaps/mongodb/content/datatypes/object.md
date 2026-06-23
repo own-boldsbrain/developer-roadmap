@@ -40,7 +40,7 @@ When updating documents with objects, it's important to use appropriate update o
 ```javascript
 db.collection.updateOne(
   { name: 'Alice' },
-  { $set: { 'address.city': 'Los Angeles' } }
+  { $set: { 'address.city': 'Los Angeles' } },
 );
 ```
 

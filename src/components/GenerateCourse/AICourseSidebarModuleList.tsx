@@ -119,7 +119,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                     </span>
                   </CircularProgress>
                 </div>
-                <span className="flex flex-1 items-center break-words text-left text-sm leading-relaxed">
+                <span className="flex flex-1 items-center text-left text-sm leading-relaxed break-words">
                   {courseModule.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
                 </span>
               </div>
@@ -157,7 +157,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                         setViewMode('module');
                       }}
                       className={cn(
-                        'flex w-full cursor-pointer items-center gap-2.5 py-3 pl-3.5 pr-2 text-left text-sm leading-normal',
+                        'flex w-full cursor-pointer items-center gap-2.5 py-3 pr-2 pl-3.5 text-left text-sm leading-normal',
                         activeModuleIndex === moduleIdx &&
                           activeLessonIndex === lessonIdx
                           ? 'bg-gray-200 text-black'

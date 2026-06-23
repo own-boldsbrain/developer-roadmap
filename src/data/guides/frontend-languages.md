@@ -7,7 +7,7 @@ seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-gzngm.png'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -59,7 +59,7 @@ The major differences are that languages are used to write code, libraries provi
 
 ![frontend languages](https://assets.roadmap.sh/guest/top-frontend-languages-to-learn-pofrf.JPG)
 
-These are the best front-end languages you should learn in 2025: 
+These are the best front-end languages you should learn in 2025:
 
 **For web front-end development**:
 
@@ -84,7 +84,7 @@ HTML depends on languages like CSS and JavaScript to achieve full functionality,
 
 **Why is it important**
 
-- HTML is the foundational language for creating web pages. 
+- HTML is the foundational language for creating web pages.
 - It defines the structure and content of the web pages.
 - It is widely accepted and quick to grasp.
 
@@ -147,7 +147,7 @@ TypeScript is a robust and widely used front end language developed by Microsoft
 
 Web developers love TypeScript because it enhances their experience by identifying runtime errors during development and providing fixes, speeding up the development process.
 
-TypeScript has a steeper learning curve than JavaScript, and it reduces development speed because an additional compilation step is required. 
+TypeScript has a steeper learning curve than JavaScript, and it reduces development speed because an additional compilation step is required.
 
 **Why is it important**
 
@@ -255,7 +255,7 @@ You can learn more details by exploring the [React roadmap](https://roadmap.sh/r
 
 ### Vue
 
-Vue is a progressive JavaScript framework designed for developing interactive web applications, leveraging the model-view-view model (MVVM) architecture to separate the user interface from the application's business logic. Vue extends HTML elements to facilitate the creation of reusable code components. It provides several built-in features, including templating, reactivity, and transitions. Additionally, Vue offers support for various libraries, making it suitable for developing applications like Single-Page Applications (SPAs), desktop and mobile applications of various scales, from small projects to large enterprise applications. 
+Vue is a progressive JavaScript framework designed for developing interactive web applications, leveraging the model-view-view model (MVVM) architecture to separate the user interface from the application's business logic. Vue extends HTML elements to facilitate the creation of reusable code components. It provides several built-in features, including templating, reactivity, and transitions. Additionally, Vue offers support for various libraries, making it suitable for developing applications like Single-Page Applications (SPAs), desktop and mobile applications of various scales, from small projects to large enterprise applications.
 
 Vue has also become the foundation of frameworks like Nuxt.js, VuePress, and Vuetify, offering pre-built components, server-side rendering, themes, and much more for building complex websites and applications. Its gentle learning curve makes it a popular choice for beginners starting front-end development.
 

@@ -31,9 +31,10 @@ Include guards are a tool for preventing multiple inclusions of a header file in
 
 ## Header and Source Files
 
-Separating your implementation and declarations into header (*.h) and source (*.cpp) files is a key aspect of structuring your codebase in C++. Header files usually contain class and function declarations, while source files contain their definitions.
+Separating your implementation and declarations into header (_.h) and source (_.cpp) files is a key aspect of structuring your codebase in C++. Header files usually contain class and function declarations, while source files contain their definitions.
 
 // MyClass.h
+
 ```cpp
 #ifndef MY_CLASS_H
 #define MY_CLASS_H
@@ -44,11 +45,12 @@ public:
     MyClass();
     int myMethod();
 };
- 
+
 #endif // MY_CLASS_H
 ```
 
 // MyClass.cpp
+
 ```cpp
 #include "MyClass.h"
 

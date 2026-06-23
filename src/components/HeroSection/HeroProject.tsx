@@ -21,7 +21,7 @@ export function HeroProject({ project }: HeroProjectProps) {
         </h3>
         <span
           className={cn(
-            'absolute -right-2 -top-2 flex shrink-0 items-center gap-1 rounded-full text-xs uppercase tracking-wide',
+            'absolute -top-2 -right-2 flex shrink-0 items-center gap-1 rounded-full text-xs tracking-wide uppercase',
             {
               'text-green-600/50': project.submittedAt && project.repositoryUrl,
               'text-yellow-600': !project.submittedAt || !project.repositoryUrl,
@@ -49,4 +49,4 @@ export function HeroProject({ project }: HeroProjectProps) {
       )}
     </a>
   );
-} 
+}

@@ -84,7 +84,6 @@ The complexity of a project, the technology adopted, and the domain knowledge ar
 
 **How to apply**: [Mode of application (email or job portal), resumes, cover letters, and any other required information].
 
-
 ## What skills should I look for in a full stack engineer?
 
 A full stack engineer requires a diverse set of skills spanning across technical knowledge and other complementary skills. These are some required skills I look out for when hiring:

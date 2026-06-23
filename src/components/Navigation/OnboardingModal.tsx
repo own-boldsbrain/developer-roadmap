@@ -151,9 +151,9 @@ export function OnboardingModal(props: OnboardingModalProps) {
 
   return (
     <Modal onClose={onClose} bodyClassName="text-black h-auto">
-      <div className="px-4 pb-2 pl-11 pt-4">
+      <div className="px-4 pt-4 pb-2 pl-11">
         <h2 className="mb-0.5 text-xl font-semibold">Welcome to roadmap.sh</h2>
-        <p className="text-balance text-sm text-gray-500">
+        <p className="text-sm text-balance text-gray-500">
           Complete the tasks below to get started!
         </p>
       </div>
@@ -205,7 +205,7 @@ export function OnboardingModal(props: OnboardingModalProps) {
                       href={task.url}
                       target="_blank"
                       className={cn(
-                        'ml-1 inline-block rounded-xl border border-black bg-white pl-1.5 pr-1 text-xs font-normal text-black hover:bg-black hover:text-white',
+                        'ml-1 inline-block rounded-xl border border-black bg-white pr-1 pl-1.5 text-xs font-normal text-black hover:bg-black hover:text-white',
                       )}
                       aria-label="Open task in new tab"
                       onClick={() => {

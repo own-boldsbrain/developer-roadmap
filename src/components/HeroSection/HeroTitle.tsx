@@ -31,7 +31,7 @@ export function HeroTitle(props: HeroTitleProps) {
       <div className="flex items-center gap-3">
         <p
           onClick={onToggleCollapse}
-          className="flex items-center cursor-default gap-0.5 text-sm text-gray-400"
+          className="flex cursor-default items-center gap-0.5 text-sm text-gray-400"
         >
           {!isLoading && icon}
           {isLoading && (
@@ -49,7 +49,7 @@ export function HeroTitle(props: HeroTitleProps) {
           <button
             onClick={onToggleCollapse}
             className={cn(
-              'ml-2 inline-flex items-center gap-1 rounded-md bg-slate-800 py-0.5 pl-1 pr-1.5 text-xs uppercase tracking-wider text-slate-400 hover:bg-slate-700',
+              'ml-2 inline-flex items-center gap-1 rounded-md bg-slate-800 py-0.5 pr-1.5 pl-1 text-xs tracking-wider text-slate-400 uppercase hover:bg-slate-700',
               {
                 'bg-slate-800 text-slate-500 hover:bg-slate-800 hover:text-slate-400':
                   !isCollapsed,

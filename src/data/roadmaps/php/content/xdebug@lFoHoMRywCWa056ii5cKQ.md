@@ -12,6 +12,7 @@ xdebug_start_trace();
 xdebug_stop_trace();
 ?>
 ```
+
 Xdebug can significantly speed up bug-tracking and testing, making it an essential tool in any PHP developer's toolkit.
 
 Visit the following resources to learn more:

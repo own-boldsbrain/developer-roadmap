@@ -9,9 +9,9 @@ description: 'Step by step guide to learning Kubernetes in 2025'
 isNew: false
 hasTopics: true
 partner:
-  description: "Get the latest Kubernetes news from our sister site"
-  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
-  linkText: "TheNewStack.io"
+  description: 'Get the latest Kubernetes news from our sister site'
+  link: 'https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+  linkText: 'TheNewStack.io'
 dimensions:
   width: 968
   height: 1785.73

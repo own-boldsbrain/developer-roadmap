@@ -55,7 +55,7 @@ export function LeavingRoadmapWarningModal(
       </a>
 
       <button
-        className="absolute right-2.5 top-2.5 text-gray-600 hover:text-black"
+        className="absolute top-2.5 right-2.5 text-gray-600 hover:text-black"
         onClick={onClose}
       >
         <X className="h-5 w-5" />

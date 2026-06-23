@@ -7,4 +7,4 @@ There could be multiple reasons why a business could be unsatisfied with a model
 **To handle this problem, I'll:**
 
 - **Reevaluate the business goals:** Sometimes, the business goals need to be defined so that there is a specific metric or group of metrics for the model to be trained towards.
-- **Improve the model performance:** You should do a deep dive into the model and fix any issues that you might notice, including overfitting, data issues or feature selection. 
+- **Improve the model performance:** You should do a deep dive into the model and fix any issues that you might notice, including overfitting, data issues or feature selection.

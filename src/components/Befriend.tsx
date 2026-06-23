@@ -42,7 +42,7 @@ export function Befriend() {
 
   async function loadUser(userId: string) {
     const { response, error } = await httpGet<UserResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-friend/${userId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-friend/${userId}`,
     );
     if (error || !response) {
       setError(error?.message || 'Something went wrong');
@@ -75,7 +75,7 @@ export function Befriend() {
     setError('');
     const { response, error } = await httpPost<UserResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-add-friend/${userId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -96,7 +96,7 @@ export function Befriend() {
     setError('');
     const { response, error } = await httpDelete<UserResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-friend/${userId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -145,7 +145,7 @@ export function Befriend() {
       <img
         alt={'join team'}
         src={userAvatar}
-        className="mx-auto mb-4 mt-24 w-28 rounded-full"
+        className="mx-auto mt-24 mb-4 w-28 rounded-full"
       />
 
       <h2 className={'mb-1 text-3xl font-bold'}>{user.name}</h2>
@@ -177,7 +177,7 @@ export function Befriend() {
 
           {user.status === 'sent' && (
             <>
-              <span className="flex w-full grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
+              <span className="flex w-full grow cursor-default items-center justify-center rounded-lg border border-gray-300 px-3 py-2 text-center text-black">
                 <CheckIcon additionalClasses="mr-2 h-4 w-4" />
                 Request Sent
               </span>
@@ -204,7 +204,7 @@ export function Befriend() {
                       deleteFriend(user.id, 'Friend request withdrawn').finally(
                         () => {
                           pageProgressMessage.set('');
-                        }
+                        },
                       );
                     }}
                   >
@@ -225,7 +225,7 @@ export function Befriend() {
 
           {user.status === 'accepted' && (
             <>
-              <span className="flex w-full grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
+              <span className="flex w-full grow cursor-default items-center justify-center rounded-lg border border-gray-300 px-3 py-2 text-center text-black">
                 <AddedUserIcon additionalClasses="mr-2 h-5 w-5" />
                 You are friends
               </span>
@@ -284,7 +284,7 @@ export function Befriend() {
                     addFriend(user.id, 'Friend request accepted').finally(
                       () => {
                         pageProgressMessage.set('');
-                      }
+                      },
                     );
                   }}
                 >
@@ -311,7 +311,7 @@ export function Befriend() {
                     pageProgressMessage.set('');
                   });
                 }}
-                className="flex w-full grow cursor-pointer items-center justify-center rounded-lg border  border-gray-800 bg-gray-800 px-3 py-2 text-center text-white hover:bg-black"
+                className="flex w-full grow cursor-pointer items-center justify-center rounded-lg border border-gray-800 bg-gray-800 px-3 py-2 text-center text-white hover:bg-black"
               >
                 <CheckIcon additionalClasses="mr-2 h-4 w-4" />
                 Accept Request
@@ -339,7 +339,7 @@ export function Befriend() {
                       deleteFriend(user.id, 'Friend request rejected').finally(
                         () => {
                           pageProgressMessage.set('');
-                        }
+                        },
                       );
                     }}
                   >

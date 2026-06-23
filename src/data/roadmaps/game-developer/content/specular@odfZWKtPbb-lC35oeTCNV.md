@@ -5,5 +5,4 @@
 Visit the following resources to learn more:
 
 - [@article@Specular Reflections - Wiki](https://en.wikipedia.org/wiki/Specular_reflection)
-- [@article@Specular Reflection - Regular Reflection, Mirrors, Diffuse Reflection](https://www.rp-photonics.com/specular_reflection.html)
--[@video@Specular Reflection](https://www.youtube.com/watch?v=2cFvJkc4pQk)
+- [@article@Specular Reflection - Regular Reflection, Mirrors, Diffuse Reflection](https://www.rp-photonics.com/specular_reflection.html) -[@video@Specular Reflection](https://www.youtube.com/watch?v=2cFvJkc4pQk)

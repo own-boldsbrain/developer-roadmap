@@ -33,7 +33,7 @@ Create a simple unauthenticated Node.js API service for creating a simple todo l
 - `PUT /todos/:id` — update a single todo by id
 - `DELETE /todos/:id` — delete a single todo by id
 
-The API should connect to MongoDB to store the todo items. You can use [Express](https://expressjs.com/) for the API and [Mongoose](https://mongoosejs.com/) to connect to MongoDB. You can use `nodemon` to automatically restart the server when the source code changes. 
+The API should connect to MongoDB to store the todo items. You can use [Express](https://expressjs.com/) for the API and [Mongoose](https://mongoosejs.com/) to connect to MongoDB. You can use `nodemon` to automatically restart the server when the source code changes.
 
 ### Requirement #1 - Dockerize the API
 

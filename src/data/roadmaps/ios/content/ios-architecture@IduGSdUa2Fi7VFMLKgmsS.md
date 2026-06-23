@@ -8,4 +8,3 @@ Learn more from the following resources:
 - [@video@MVC Design Pattern Explained with Example](https://youtu.be/sbYaWJEAYIY?t=2)
 - [@article@MVVM in iOS Swift](https://medium.com/@zebayasmeen76/mvvm-in-ios-swift-6afb150458fd)
 - [@video@MVVM Design Pattern Explained with Example](https://www.youtube.com/watch?v=sLHVxnRS75w)
-

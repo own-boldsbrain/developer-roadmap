@@ -6,6 +6,9 @@ export interface Props {
 const { bestPracticeId } = Astro.props;
 ---
 
-<div class='mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 sm:-mb-[65px]'>
-  <ResourceProgressStats resourceId={bestPracticeId} resourceType='best-practice' />
+<div class='mt-4 mb-0 rounded-md border-0 sm:mt-7 sm:-mb-[65px] sm:border'>
+  <ResourceProgressStats
+    resourceId={bestPracticeId}
+    resourceType='best-practice'
+  />
 </div>

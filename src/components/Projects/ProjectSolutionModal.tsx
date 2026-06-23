@@ -132,10 +132,10 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
       bodyClassName={'h-auto'}
     >
       <div className="relative p-6">
-        <h1 className="mb-1 text-balance text-2xl font-bold text-gray-900">
+        <h1 className="mb-1 text-2xl font-bold text-balance text-gray-900">
           {projectTitle}
         </h1>
-        <p className="text-balance text-sm text-gray-600">
+        <p className="text-sm text-balance text-gray-600">
           {projectDescription}
         </p>
 

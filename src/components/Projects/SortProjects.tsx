@@ -34,7 +34,7 @@ export function SortProjects(props: SortProjectsProps) {
   return (
     <div className="relative shrink-0" ref={dropdownRef}>
       <button
-        className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pl-3 pr-2 text-xs font-medium text-gray-900"
+        className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pr-2 pl-3 text-xs font-medium text-gray-900"
         onClick={() => setIsOpen(!isOpen)}
       >
         {selectedOption.label}
@@ -42,7 +42,7 @@ export function SortProjects(props: SortProjectsProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full z-10 mt-1.5 min-w-[150px] overflow-hidden rounded-md border border-gray-300 bg-white shadow-lg">
+        <div className="absolute top-full right-0 z-10 mt-1.5 min-w-[150px] overflow-hidden rounded-md border border-gray-300 bg-white shadow-lg">
           <div className="py-1">
             {sortOptions.map((option) => (
               <button

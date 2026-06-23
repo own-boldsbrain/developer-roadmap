@@ -202,7 +202,7 @@ export function CreateTeamForm() {
           Complete the steps below to create your team
         </p>
       </div>
-      <div className="mb-8 mt-8 hidden w-full sm:flex">
+      <div className="mt-8 mb-8 hidden w-full sm:flex">
         <Stepper
           activeIndex={stepIndex}
           completeSteps={completedSteps}

@@ -9,7 +9,7 @@ export function AICourseFooter(props: AICourseFooterProps) {
   return (
     <div
       className={cn(
-        'mx-auto mb-10 mt-5 text-center text-sm text-gray-400',
+        'mx-auto mt-5 mb-10 text-center text-sm text-gray-400',
         className,
       )}
     >

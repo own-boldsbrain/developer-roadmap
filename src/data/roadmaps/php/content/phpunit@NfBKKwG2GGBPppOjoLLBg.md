@@ -23,6 +23,7 @@ class StackTest extends TestCase
 }
 ?>
 ```
+
 In this example, we’re testing the 'push' and 'pop' functionality of an array.
 
 Visit the following resources to learn more:

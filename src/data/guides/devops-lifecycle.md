@@ -241,16 +241,17 @@ An essential part of DevOps culture is the lifecycle phases. While the lifecycle
 
 2. **Show empathy and support**: Implementing DevOps lifecycle into your development process may take time and require some adjustment for you and your team members. You need to support the team with resources and any helpful training material to help facilitate the process. Most importantly, allow time for everyone to adapt to the new process.
 
-3. **Set metrics or milestones**: As the popular saying goes, **“You can’t manage what you can’t measure****.****”** You must set clear objectives and define performance metrics at the beginning or during the adoption of a new process. This will help you and your team know what success looks like.
+3. **Set metrics or milestones**: As the popular saying goes, **“You can’t manage what you can’t measure\*\***.\***\*”** You must set clear objectives and define performance metrics at the beginning or during the adoption of a new process. This will help you and your team know what success looks like.
 
 4. **Invest in tools**: At the heart of DevOps are the toolchains that automate toils and enable easy collaboration between development and operations teams. You should invest in DevOps tools that your team needs to automate their DevOps workflow. Below are some DevOps tools that can help you automate processes:
-    - **CI/CD tools**: Tools like Jenkins, GitLab CI/CD, CircleCI, Azure Pipeline, and GitHub Actions help automate the integration and deployment of code changes.
-    - **Infrastructure as Code (IaC) tools**: Tools like Terraform, Ansible, Pulumi, Chef, AWS CloudFormation, and Vagrant help automate the provisioning and management of infrastructure.
-    - **Containerization and orchestration tools**: Tools like Docker, Kubernetes, OpenShift, Docker Swarm, and Amazon ECS (Elastic Container Service) help manage and orchestrate containers at scale.
-    - **Monitoring and logging tools**: Tools like Prometheus, ELK Stack (Elasticsearch, Logstash, and Kibana), Datadog, Splunk, and Grafana help track system performance, logging, and alerting.
-    - **Configuration management tools**: Tools like Chef, Puppet, CFEngine, SaltStack, and Ansible help ensure that system configurations remain consistent across environments.
-    - **Security and compliance tools**: Tools like HashiCorp Vault, OWASP ZAP, Snyk, SonarQube, and Aqua Security help enforce security policies, scanning, and compliance checks.
-    - **Collaboration and communication tools**: Tools like Slack, Microsoft Teams, Trello, Jira, and Confluence help facilitate communication and collaboration between teams.
+
+   - **CI/CD tools**: Tools like Jenkins, GitLab CI/CD, CircleCI, Azure Pipeline, and GitHub Actions help automate the integration and deployment of code changes.
+   - **Infrastructure as Code (IaC) tools**: Tools like Terraform, Ansible, Pulumi, Chef, AWS CloudFormation, and Vagrant help automate the provisioning and management of infrastructure.
+   - **Containerization and orchestration tools**: Tools like Docker, Kubernetes, OpenShift, Docker Swarm, and Amazon ECS (Elastic Container Service) help manage and orchestrate containers at scale.
+   - **Monitoring and logging tools**: Tools like Prometheus, ELK Stack (Elasticsearch, Logstash, and Kibana), Datadog, Splunk, and Grafana help track system performance, logging, and alerting.
+   - **Configuration management tools**: Tools like Chef, Puppet, CFEngine, SaltStack, and Ansible help ensure that system configurations remain consistent across environments.
+   - **Security and compliance tools**: Tools like HashiCorp Vault, OWASP ZAP, Snyk, SonarQube, and Aqua Security help enforce security policies, scanning, and compliance checks.
+   - **Collaboration and communication tools**: Tools like Slack, Microsoft Teams, Trello, Jira, and Confluence help facilitate communication and collaboration between teams.
 
 5. **Continuous improvement**: Encourage your teams to share knowledge across teams, conduct service failure postmortem, and experiment with new ideas and potential solutions.
 

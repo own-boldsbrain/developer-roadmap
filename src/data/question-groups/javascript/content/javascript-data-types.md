@@ -13,4 +13,4 @@ Non-primitive data types, also called reference data types, store groups of data
 
 - Object (collection of key-value pairs, e.g., { name: 'cess', age: 26 };).
 - Array (e.g., [10, 12, 13]).
-- Function (e.g., function add(a = 10, b = 5) { return a + b; }). 
+- Function (e.g., function add(a = 10, b = 5) { return a + b; }).

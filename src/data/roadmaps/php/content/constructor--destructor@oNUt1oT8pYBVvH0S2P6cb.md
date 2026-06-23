@@ -18,7 +18,7 @@ class TestClass {
 }
 
 $obj = new TestClass("Hello World");
-echo $obj->value; 
+echo $obj->value;
 // Displays: Hello World
 // And when the script ends, "Object is being destroyed."
 ```

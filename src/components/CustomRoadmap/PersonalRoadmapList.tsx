@@ -145,7 +145,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
       key={roadmap._id!}
     >
       <div className="mb-3 grid grid-cols-1 sm:mb-0">
-        <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
+        <p className="mb-1.5 truncate text-base leading-tight font-medium text-black">
           {roadmap.title}
         </p>
         <span className="flex items-center text-xs leading-none text-gray-400">
@@ -235,7 +235,7 @@ function VisibilityBadge(props: VisibilityLabelProps) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-normal`}
+      className={`inline-flex items-center gap-1.5 text-xs font-normal whitespace-nowrap`}
     >
       <Icon className="inline-block h-3 w-3" />
       <div className="flex items-center">

@@ -61,7 +61,7 @@ int main()
     // Calling members from both base classes
     myDog.eat();
     myDog.breath();
-    
+
     // Calling a member from the derived class
     myDog.bark();
 

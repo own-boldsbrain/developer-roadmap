@@ -109,9 +109,9 @@ export function TeamDashboard(props: TeamDashboardProps) {
         builtInSkillRoadmaps={builtInSkillRoadmaps}
       />
 
-      <h2 className="mb-3 mt-6 flex h-[20px] items-center justify-between text-xs uppercase text-gray-400">
+      <h2 className="mt-6 mb-3 flex h-[20px] items-center justify-between text-xs text-gray-400 uppercase">
         Team Members
-        <span className="grow h-[1px] bg-gray-200 mx-3" />
+        <span className="mx-3 h-[1px] grow bg-gray-200" />
         {canManageCurrentTeam && (
           <a
             href={`/team/members?t=${teamId}`}

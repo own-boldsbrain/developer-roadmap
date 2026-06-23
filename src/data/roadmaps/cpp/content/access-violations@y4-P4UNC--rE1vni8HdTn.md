@@ -36,8 +36,8 @@ p2[3] = 42;  // Access violation: writing to memory that has been freed
 
 Tools like _debuggers_, _static analyzers_, and _profilers_ can help identify access violations in your code. For example:
 
-* **Microsoft Visual Studio**: Use the built-in debugger to identify the line of code responsible for the access violation error.
+- **Microsoft Visual Studio**: Use the built-in debugger to identify the line of code responsible for the access violation error.
 
-* **Valgrind**: A popular Linux tool that detects memory leaks and access violations in your C++ programs.
+- **Valgrind**: A popular Linux tool that detects memory leaks and access violations in your C++ programs.
 
-* **AddressSanitizer**: A runtime memory error detector for C++ that can detect out-of-bounds accesses, memory leaks, and use-after-free errors.
+- **AddressSanitizer**: A runtime memory error detector for C++ that can detect out-of-bounds accesses, memory leaks, and use-after-free errors.

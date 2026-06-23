@@ -12,4 +12,4 @@ This pulls all orders where a matching customer exists. If you need **every orde
 SELECT o.*, c.name, c.email
 FROM orders o
 LEFT JOIN customers c ON o.customer_id = c.id;
-``` 
+```

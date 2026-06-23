@@ -58,7 +58,7 @@ export function SearchRoadmap(props: SearchRoadmapProps) {
           onChange={(e) => setTerm(e.target.value)}
         />
         {isLoading && (
-          <span className="absolute right-3 top-0 flex h-full items-center text-gray-500">
+          <span className="absolute top-0 right-3 flex h-full items-center text-gray-500">
             <Spinner isDualRing={false} className={`h-3 w-3`} />
           </span>
         )}

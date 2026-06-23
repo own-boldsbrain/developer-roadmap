@@ -41,7 +41,7 @@ export function ChapterRow(props: ChapterRowProps) {
 
   return (
     <div
-      className={cn('group relative select-none overflow-hidden', className)}
+      className={cn('group relative overflow-hidden select-none', className)}
     >
       <div
         role="button"
@@ -98,7 +98,7 @@ export function ChapterRow(props: ChapterRowProps) {
           <div className="grid grid-cols-1 divide-zinc-800 md:grid-cols-2 md:divide-x">
             {regularLessons.length > 0 && (
               <div className="p-6 pb-0 md:pb-6">
-                <h4 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">
+                <h4 className="mb-4 text-sm font-medium tracking-wider text-zinc-500 uppercase">
                   Lessons
                 </h4>
                 <div className="space-y-3">
@@ -117,7 +117,7 @@ export function ChapterRow(props: ChapterRowProps) {
 
             {challenges.length > 0 && (
               <div className="p-6">
-                <h4 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">
+                <h4 className="mb-4 text-sm font-medium tracking-wider text-zinc-500 uppercase">
                   Exercises
                 </h4>
                 <div className="space-y-3">

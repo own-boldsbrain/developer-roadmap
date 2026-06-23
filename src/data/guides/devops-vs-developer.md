@@ -133,7 +133,7 @@ If you're looking to dive deeper into the specifics between full stack developme
 **Software engineer**
 Software engineering is another popular job profile that involves a wide range of domain options, such as mobile apps, frontend, backend, native apps, web development, etc. Software engineering professionals use engineering principles, new technologies, and programming languages to develop software applications and operating systems for end users.
 
-Have a look at our guide that compares [full stack developers vs software engineers](https://roadmap.sh/full-stack/vs-software-engineer),  which will help you understand their roles and determine which aligns best with your skills and aspirations.
+Have a look at our guide that compares [full stack developers vs software engineers](https://roadmap.sh/full-stack/vs-software-engineer), which will help you understand their roles and determine which aligns best with your skills and aspirations.
 
 The salary of a software engineering job profile ranges between $65K-$325K ([source](https://builtin.com/salaries/dev-engineer/software-engineer)). A junior software engineering job position can make up to **$89,247**, while a senior software engineer's average salary may come to around **$152,400.**
 
@@ -193,7 +193,6 @@ Applying for software development job titles is no longer as simple as it used t
 
 **Top skills required for DevOps engineers**
 The demand for DevOps engineers is constantly rising. Many organizations are looking to hire DevOps engineers with the right skills and talent. The applicant must have expertise in soft and technical skills in their roles. Hiring DevOps Engineers requires the following skills:
-
 
 - **Coding and scripting**
   DevOps engineers must have the two most important skills: coding and scripting. The DevOps professional must also have a good command of different programming languages for writing code.

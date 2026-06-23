@@ -32,7 +32,7 @@ int main()
   int (*funcptr) (int, int) = add; // Pointer 'funcptr' now points to the functions 'add'
   funcptr(4, 5); // Return 9
 }
-``` 
+```
 
 ## References
 

@@ -27,7 +27,7 @@ If you truly want to understand what makes DevOps so effective, it’s essential
 
 DevOps is more than just a collaboration between development and operations teams; it's built on fundamental principles that simplify software delivery.
 
-In this guide, I’m going to dive deep into the core principles and practices that make the DevOps practice “tick.”	If you’re a DevOps engineer or you want to become one, these are the DevOps principles you should master.
+In this guide, I’m going to dive deep into the core principles and practices that make the DevOps practice “tick.” If you’re a DevOps engineer or you want to become one, these are the DevOps principles you should master.
 
 I’ll explain the following principles in detail:
 
@@ -169,7 +169,7 @@ Understanding programming concepts also enables you to better manage the softwar
 
 [Automation](https://roadmap.sh/devops/automation) is at the heart of DevOps principles. It's about automating repetitive and manual tasks to accelerate processes, reduce errors, and free up time for more strategic work. We partially covered this concept before as part of the toil reduction principle.
 
-However, it’s important to explain that automation not only involves code builds and tests, it also includes infrastructure provisioning and application deployment. In other words,  automation plays a key role in every stage of the DevOps lifecycle.
+However, it’s important to explain that automation not only involves code builds and tests, it also includes infrastructure provisioning and application deployment. In other words, automation plays a key role in every stage of the DevOps lifecycle.
 
 The whole point of automation is to accelerate processes. It enables faster, more consistent, and more reliable software delivery. By automating tasks like code integration, testing, and deployment, you can reduce the time it takes to get new features into production and minimize the risk of human error.
 

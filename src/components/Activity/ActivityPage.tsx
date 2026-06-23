@@ -157,7 +157,7 @@ export function ActivityPage() {
         {(learningRoadmapsToShow.length > 0 ||
           learningBestPracticesToShow.length > 0) && (
           <>
-            <h2 className="mb-3 text-xs uppercase text-gray-400">
+            <h2 className="mb-3 text-xs text-gray-400 uppercase">
               Continue Following
             </h2>
             <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
@@ -239,7 +239,7 @@ export function ActivityPage() {
 
       {enrichedProjects && enrichedProjects?.length > 0 && (
         <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
-          <h2 className="mb-3 text-xs uppercase text-gray-400">
+          <h2 className="mb-3 text-xs text-gray-400 uppercase">
             Your Projects
           </h2>
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">

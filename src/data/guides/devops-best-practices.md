@@ -7,7 +7,7 @@ seo:
   title: '14 DevOps Best Practices and Methods You Should Know'
   description: 'Learn DevOps best practices for building efficient workflows, from code integration to monitoring, and avoid common DevOps anti-patterns.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-best-practices-4yhmb.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: devops
 isNew: false
 type: 'textual'
@@ -58,7 +58,7 @@ View mistakes and failures as learning opportunities rather than assigning blame
 
 ### 2. Continuously seek feedback
 
-Continuously engage your users, stakeholders, and team members to get feedback on their overall experience of the application. This feedback helps resolve issues, shape your application release cycle, and guarantee you’re building with users in mind. As noted in the latest [State of DevOps Report](https://cloud.google.com/resources/devops/state-of-devops), “*Teams that focus on the user* *experience* *have 40% higher organizational performance than t**hose* *that don’t*.”
+Continuously engage your users, stakeholders, and team members to get feedback on their overall experience of the application. This feedback helps resolve issues, shape your application release cycle, and guarantee you’re building with users in mind. As noted in the latest [State of DevOps Report](https://cloud.google.com/resources/devops/state-of-devops), “_Teams that focus on the user_ _experience_ _have 40% higher organizational performance than t\*\*hose_ _that don’t_.”
 
 Internally, your team can also benefit from continuous feedback during code reviews. By involving stakeholders in analyzing code quality, identifying issues, and suggesting improvements, you can create a culture of constant improvement.
 
@@ -262,4 +262,3 @@ DevOps best practices are essential for improving your software development and 
 Additionally, you need to be aware of anti-patterns and pitfalls that can hinder the success of your DevOps implementation by avoiding common patterns like creating silos or overcomplicating your pipelines.
 
 Stay up-to-date with the latest developments in the DevOps ecosystem by following the [DevOps roadmap](https://roadmap.sh/devops).
-

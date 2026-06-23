@@ -1,6 +1,6 @@
-Go's built in testing package simplifies writing unit tests for your Go code. 
+Go's built in testing package simplifies writing unit tests for your Go code.
 
-By creating test functions with the prefix Test and using several values for expected results, you can verify that your code behaves as expected. 
+By creating test functions with the prefix Test and using several values for expected results, you can verify that your code behaves as expected.
 
 Generally speaking, writing unit tests is crucial for code documentation and for ensuring that changes in one function don't affect the rest of the code.
 
@@ -31,4 +31,4 @@ func TestAdd(t *testing.T) {
 }
 ```
 
-Simple, straightforward, and now the tests run through the go test command. 
+Simple, straightforward, and now the tests run through the go test command.

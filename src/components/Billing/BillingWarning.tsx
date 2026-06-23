@@ -28,7 +28,7 @@ export function BillingWarning(props: BillingWarningProps) {
             onClick={() => {
               onButtonClick?.();
             }}
-            className="font-semibold underline underline-offset-4 disabled:cursor-not-allowed disabled:opacity-50 ml-0.5"
+            className="ml-0.5 font-semibold underline underline-offset-4 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {buttonText}
           </button>

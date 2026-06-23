@@ -13,7 +13,7 @@ public:
     MyString(const std::string &str) : data(std::make_shared<std::string>(str)) {}
 
     // Use the same shared data for copying.
-    MyString(const MyString &other) : data(other.data) { 
+    MyString(const MyString &other) : data(other.data) {
         std::cout << "Copied using the Copy-Write idiom.\n";
     }
 

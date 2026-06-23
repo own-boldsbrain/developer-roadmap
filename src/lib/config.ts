@@ -54,7 +54,7 @@ export const siteConfig = {
       'cyber security specialist',
       'ai developer',
       'ai engineer',
-      'ai data scientist'
+      'ai data scientist',
     ].flatMap((roadmapKeyword) => [
       `${roadmapKeyword} roadmap`,
       `${roadmapKeyword} roadmap 2024`,

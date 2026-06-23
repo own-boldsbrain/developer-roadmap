@@ -4,4 +4,4 @@ Achieving balance in architecture requires managing trade-offs between quality, 
 
 Visit the following resources to learn more:
 
-- [@article@Wikipedia](https://en.wikipedia.org/wiki/Balance_(architecture))
+- [@article@Wikipedia](<https://en.wikipedia.org/wiki/Balance_(architecture)>)

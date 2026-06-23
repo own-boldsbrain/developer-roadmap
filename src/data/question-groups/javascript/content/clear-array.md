@@ -19,9 +19,9 @@ console.log(num); // []
 
 // Assigning an empty array:
 
-let num = [20, 30, 40, 50]; 
+let num = [20, 30, 40, 50];
 
-num = []; 
+num = [];
 
 console.log(num); // []
-``` 
+```

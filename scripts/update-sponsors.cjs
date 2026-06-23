@@ -68,7 +68,7 @@ function addPageSponsor({
   const pageFilePath = path.join(
     __dirname,
     `../src/data/${parentDir}`,
-    `${pageId}/${pageId}.md`
+    `${pageId}/${pageId}.md`,
   );
 
   if (!fs.existsSync(pageFilePath)) {

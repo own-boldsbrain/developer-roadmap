@@ -4,11 +4,12 @@ C++ is known as a statically-typed language, which means the data types of its v
 
 Here is a brief overview of two ways to achieve dynamic typing in C++:
 
-##  `void*` Pointers
+## `void*` Pointers
 
 A `void*` pointer is a generic pointer that can point to objects of any data type. They can be used to store a reference to any type of object without knowing the specific type of the object.
 
 Example:
+
 ```cpp
 #include <iostream>
 
@@ -32,11 +33,12 @@ int main() {
 }
 ```
 
-##  `std::any` (C++17)
+## `std::any` (C++17)
 
 C++17 introduced the `std::any` class which represents a generalized type-safe container for single values of any type.
 
 Example:
+
 ```cpp
 #include <iostream>
 #include <any>

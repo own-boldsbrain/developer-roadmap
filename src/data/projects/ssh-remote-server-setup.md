@@ -33,7 +33,7 @@ You should be able to use the following command to connect to your server using 
 
 ```bash
 ssh -i <path-to-private-key> user@server-ip
-``` 
+```
 
 Also, look into setting up the configuration in `~/.ssh/config` to allow you to connect to your server using the following command.
 

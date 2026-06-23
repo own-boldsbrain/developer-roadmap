@@ -2,11 +2,13 @@
 
 To help ensure this, you can use flexible grids (either `CSS Grid` or `Flexbox`).
 
-You will also have to apply media queries which help set breakpoints where the different styles need to be applied based on the width of the window:  
+You will also have to apply media queries which help set breakpoints where the different styles need to be applied based on the width of the window:
 
 ```css
 @media (max-width: 768px) {
-  .container { flex-direction: column; }
+  .container {
+    flex-direction: column;
+  }
 }
 ```
 

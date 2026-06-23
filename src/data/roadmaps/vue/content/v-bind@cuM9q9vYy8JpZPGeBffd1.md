@@ -7,7 +7,7 @@ The `v-bind` directive dynamically binds an HTML attribute to data. The shorthan
 ```html
 <script setup>
   import { ref } from 'vue';
-  const image_url = ref("path/to/image.png")
+  const image_url = ref('path/to/image.png');
 </script>
 
 <template>

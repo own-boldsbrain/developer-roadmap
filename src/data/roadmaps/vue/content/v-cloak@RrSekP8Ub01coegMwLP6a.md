@@ -3,9 +3,7 @@
 The v-cloak directive is used to prevent the uncompiled Vue template from being visible while the Vue instance is still loading. It temporarily hides the content until Vue has finished compiling the template. The v-cloak directive remains until the component instance is mounted.
 
 ```html
-<div v-cloak>
-  {{ message }}
-</div>
+<div v-cloak>{{ message }}</div>
 ```
 
 Combined with CSS, you can hide elements with v-cloak until they are ready.

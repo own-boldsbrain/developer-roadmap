@@ -61,7 +61,7 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
               >
                 {showcaseRejectedReason}
               </span>
-              <span className="block mt-3">
+              <span className="mt-3 block">
                 Feel free to make changes to your roadmap and resubmit.
               </span>
             </>

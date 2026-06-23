@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export function useParams<T = Record<string, any>>(): T {
   const [params, setParams] = useState<T>({} as T);
@@ -12,5 +12,5 @@ export function useParams<T = Record<string, any>>(): T {
     setParams(paramsObj as T);
   }, []);
 
-  return params
+  return params;
 }

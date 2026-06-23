@@ -28,7 +28,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
     <div>
       {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (
         <div className="mb-5">
-          <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+          <h2 className="mb-2 text-xs tracking-wide text-gray-400 uppercase">
             Roadmaps made by me
           </h2>
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
@@ -57,7 +57,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
 
       {roadmapVisibility !== 'none' && roadmaps.length > 0 && (
         <>
-          <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+          <h2 className="mb-2 text-xs tracking-wide text-gray-400 uppercase">
             Skills I have mastered
           </h2>
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
@@ -80,7 +80,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                   </span>
 
                   <span
-                    className="absolute left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
+                    className="absolute top-0 left-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
                     style={{
                       width: `${percentageDone}%`,
                     }}

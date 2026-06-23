@@ -1,9 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
-import {
-  courseProgressOptions
-} from '../../queries/course-progress';
+import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 import { BuyButton, SQL_COURSE_SLUG } from './BuyButton';

@@ -15,7 +15,7 @@ class String {
     // ... rest of the class ...
 
     String(const String& other);
-    
+
     friend void swap(String& first, String& second) {
         using std::swap; // for arguments-dependent lookup (ADL)
         swap(first.size_, second.size_);
@@ -30,6 +30,7 @@ class String {
 ```
 
 Using the copy-swap idiom:
+
 - The right-hand side object is copied when passed by value to the assignment operator.
 - The left-hand side object's contents are swapped with the temporary copy.
 - The temporary copy is destroyed, releasing any resources that were previously held by the left-hand side object.

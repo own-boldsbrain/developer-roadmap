@@ -6,4 +6,4 @@ The "===" comparison operator, on the other hand, checks if both the value and t
 console.log(50 == "50"); True: string "50" is converted to number 50
 
 console.log(50 === "50"); False: false, no type coercion due to different data types
-``` 
+```

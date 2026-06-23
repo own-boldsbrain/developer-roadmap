@@ -5,4 +5,3 @@ Cryptography is the practice and study of techniques for secure communication in
 Visit the following resources to learn more:
 
 - [@article@Java Cryptography Tutorial](https://jenkov.com/tutorials/java-cryptography/index.html)
-

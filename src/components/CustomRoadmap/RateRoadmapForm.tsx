@@ -127,7 +127,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
                     ></div>
 
                     {percentage > 0 && (
-                      <span className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center justify-center text-xs text-black">
+                      <span className="absolute top-1/2 right-3 flex -translate-y-1/2 items-center justify-center text-xs text-black">
                         {formatCommaNumber(breakdown?.[rating] || 0)}
                       </span>
                     )}

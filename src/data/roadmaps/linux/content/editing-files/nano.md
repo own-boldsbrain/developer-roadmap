@@ -11,7 +11,7 @@ sudo apt install nano
 ```
 
 ```bash
-# Arch Linux 
+# Arch Linux
 sudo pacman -S nano
 ```
 

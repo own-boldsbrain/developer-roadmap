@@ -63,7 +63,7 @@ function ContributionInput(props: ContributionInputProps) {
         onChange={(e) => setTitle((e.target as any).value)}
       />
       <p
-        className={`mb-1 mt-3 text-xs uppercase ${
+        className={`mt-3 mb-1 text-xs uppercase ${
           focused === 'link' ? 'text-black' : 'text-gray-400'
         }`}
       >
@@ -79,7 +79,7 @@ function ContributionInput(props: ContributionInputProps) {
         onChange={(e) => setLink((e.target as any).value)}
       />
 
-      <div className="mb-0 mt-3 flex gap-3">
+      <div className="mt-3 mb-0 flex gap-3">
         {totalCount !== 1 && (
           <button
             onClick={(e) => {
@@ -140,7 +140,7 @@ export function ContributionForm(props: ContributionFormProps) {
         resourceId,
         topicId,
         links,
-      }
+      },
     );
 
     setIsSubmitting(false);
@@ -155,7 +155,7 @@ export function ContributionForm(props: ContributionFormProps) {
 
   return (
     <div>
-      <div className="mb-2 mt-2 rounded-md border bg-gray-100 p-3">
+      <div className="mt-2 mb-2 rounded-md border bg-gray-100 p-3">
         <h1 className="mb-2 text-2xl font-bold">Guidelines</h1>
         <ul className="flex flex-col gap-1 text-sm text-gray-700">
           <li>Content should only be in English.</li>
@@ -185,7 +185,7 @@ export function ContributionForm(props: ContributionFormProps) {
                   }
 
                   return l;
-                })
+                }),
               );
             }}
             onRemove={() => {

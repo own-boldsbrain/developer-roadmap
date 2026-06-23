@@ -163,7 +163,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
             </p>
           )}
           {isAddingFriend && (
-            <div className="-mx-4 -mb-4 mt-6 border-t bg-gray-50 px-4 py-4">
+            <div className="-mx-4 mt-6 -mb-4 border-t bg-gray-50 px-4 py-4">
               <p className="mb-1.5 flex items-center gap-1 text-sm text-gray-800">
                 <UserPlus2 className="text-gray-500" size="20px" />
                 Share the link below with your friends to invite them
@@ -187,7 +187,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
                 />
                 <button
                   onClick={() => copyText(befriendUrl)}
-                  className="absolute bottom-0 right-0 top-0 flex items-center px-2.5"
+                  className="absolute top-0 right-0 bottom-0 flex items-center px-2.5"
                 >
                   {isCopied ? (
                     <span className="flex items-center gap-1 text-sm font-medium text-green-600">
@@ -210,7 +210,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
             You do not have any friends yet. <br />{' '}
             <a
               target="_blank"
-              className="underline underline-offset-2 text-sm"
+              className="text-sm underline underline-offset-2"
               href={`/account/friends`}
             >
               Invite your friends to share roadmaps with.

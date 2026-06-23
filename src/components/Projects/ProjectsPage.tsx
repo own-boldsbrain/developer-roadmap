@@ -111,7 +111,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
         {isFilterOpen && <X size={13} className="mr-1" />}
         Categories
       </button>
-      <div className="container relative flex flex-col gap-4 sm:flex-row">
+      <div className="relative container flex flex-col gap-4 sm:flex-row">
         <div
           className={cn(
             'hidden w-full flex-col from-gray-100 sm:w-[160px] sm:shrink-0 sm:border-r sm:bg-linear-to-l sm:pt-6',
@@ -171,7 +171,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
             </div>
           </div>
         </div>
-        <div className="flex grow flex-col pb-20 pt-2 sm:pt-6">
+        <div className="flex grow flex-col pt-2 pb-20 sm:pt-6">
           <div className="mb-4 flex items-center justify-between text-sm text-gray-500">
             <h3 className={'flex items-center'}>
               <Box size={15} className="mr-1" strokeWidth={2} />

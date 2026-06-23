@@ -85,10 +85,7 @@ export function RoleDropdown(props: RoleDropdownProps) {
           isMenuOpen ? 'border-gray-300 bg-gray-100' : ''
         }`}
       >
-        <span
-          className={`capitalize`}>
-          {selectedRole || 'Select Role'}
-        </span>
+        <span className={`capitalize`}>{selectedRole || 'Select Role'}</span>
         <ChevronDownIcon
           className={'relative top-0.5 ml-2 h-4 w-4 text-gray-400'}
         />

@@ -42,7 +42,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
 
   return (
     <div className="relative flex grow flex-col items-center justify-center px-4 sm:px-0">
-      <PartyPopper className="mb-4 mt-10 h-14 w-14 text-gray-300 sm:mt-0 sm:h-24 sm:w-24" />
+      <PartyPopper className="mt-10 mb-4 h-14 w-14 text-gray-300 sm:mt-0 sm:h-24 sm:w-24" />
       <h1 className="text-lg font-semibold text-gray-700 sm:text-2xl">
         Questions Finished
       </h1>
@@ -52,7 +52,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
         <span className="inline sm:hidden">questions</span>
       </p>
 
-      <div className="mb-5 mt-5 flex w-full flex-col gap-1.5 px-2 sm:flex-row sm:gap-3 sm:px-16">
+      <div className="mt-5 mb-5 flex w-full flex-col gap-1.5 px-2 sm:flex-row sm:gap-3 sm:px-16">
         <ProgressStatLabel
           icon={<ThumbsUp className="mr-1 h-4" />}
           label="Knew"
@@ -69,7 +69,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
           count={skippedCount}
         />
       </div>
-      <div className="mb-4 mt-2 text-sm sm:mb-0">
+      <div className="mt-2 mb-4 text-sm sm:mb-0">
         <button
           onClick={() => onReset()}
           className="flex items-center gap-0.5 text-sm text-red-700 hover:text-black sm:text-base"

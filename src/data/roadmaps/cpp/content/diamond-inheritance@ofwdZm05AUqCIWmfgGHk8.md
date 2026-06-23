@@ -4,7 +4,7 @@ Diamond inheritance is a specific scenario in multiple inheritance where a class
 
 To resolve this ambiguity, you can use virtual inheritance. A virtual base class is a class that is shared by multiple classes using `virtual` keyword in C++. This ensures that only one copy of the base class is inherited in the final derived class, and thus, resolves the diamond inheritance problem.
 
-*Example:*
+_Example:_
 
 ```cpp
 #include <iostream>

@@ -22,7 +22,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
   {
     (showTableOfContent || showRelatedGuides) && (
-      <div class='sticky top-0 lg:relative bg-linear-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+      <div class='sticky top-0 bg-linear-to-r from-gray-50 py-0 lg:relative lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
           relatedTitle={guideFrontmatter?.relatedTitle}
           relatedGuides={guide?.relatedGuides || {}}
@@ -42,7 +42,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
     ]}
   >
     <MarkdownFile>
-      <h1 class='mb-3 text-balance text-4xl font-bold'>
+      <h1 class='mb-3 text-4xl font-bold text-balance'>
         {guideFrontmatter.title}
       </h1>
       <p class='my-0 flex items-center justify-start text-sm text-gray-400'>
@@ -53,7 +53,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
           <img
             alt={author.frontmatter.name}
             src={author.frontmatter.imageUrl}
-            class='mb-0 mr-2 inline h-5 w-5 rounded-full'
+            class='mr-2 mb-0 inline h-5 w-5 rounded-full'
           />
           {author.frontmatter.name}
         </a>

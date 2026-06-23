@@ -1,11 +1,11 @@
 ---
-title: "Data Science vs Statistics: How do they compare?"
-description: "Not sure whether to pursue data science or statistics? This guide breaks down the key differences, career paths, and skills you need to make an informed choice."
+title: 'Data Science vs Statistics: How do they compare?'
+description: 'Not sure whether to pursue data science or statistics? This guide breaks down the key differences, career paths, and skills you need to make an informed choice.'
 authorId: ekene
 excludedBySlug: '/ai-data-scientist/vs-statistics'
 seo:
-  title: "Data Science vs Statistics: How do they compare?"
-  description: "Not sure whether to pursue data science or statistics? This guide breaks down the key differences, career paths, and skills you need to make an informed choice."
+  title: 'Data Science vs Statistics: How do they compare?'
+  description: 'Not sure whether to pursue data science or statistics? This guide breaks down the key differences, career paths, and skills you need to make an informed choice.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-statistics-e3rtw.jpg'
 isNew: false
 type: 'textual'
@@ -44,9 +44,7 @@ Data science vs. statistics: What sets them apart?
 
 Data science and statistics are two different areas of analytics, each with its role and methodology. Both use statistical methods, but the key difference lies in their application and purpose.
 
-
 ![Data science vs. statistics](https://assets.roadmap.sh/guest/data-science-vs-statistics-uxnkp.png)
-
 
 Data science is a blend of statistics, computer science, and domain expertise. It focuses on analyzing large, complex datasets to uncover trends, predict outcomes, and drive business decisions. As a data scientist, you'll use machine learning, programming, and big data tools to solve real-world problems.
 
@@ -68,11 +66,11 @@ As a data scientist, you'll extract actionable insights from raw data to solve c
 
 The following are some of your day-to-day responsibilities as a data scientist:
 
-* Discovery: Understanding patient demographics, health conditions, and genetic factors to segment target groups.
-* Data collection: Gathering patient records, clinical trial results, and external medical research data for analysis.
-* Generate insights: Finding trends in treatment responses using advanced analytics and predictive modeling.
-* Model large data sets: Using machine learning to forecast drug effectiveness across different conditions.
-* Design algorithms: Building AI-driven models to personalize medication plans and optimize trial outcomes.
+- Discovery: Understanding patient demographics, health conditions, and genetic factors to segment target groups.
+- Data collection: Gathering patient records, clinical trial results, and external medical research data for analysis.
+- Generate insights: Finding trends in treatment responses using advanced analytics and predictive modeling.
+- Model large data sets: Using machine learning to forecast drug effectiveness across different conditions.
+- Design algorithms: Building AI-driven models to personalize medication plans and optimize trial outcomes.
 
 ### Key responsibilities of a statistician
 
@@ -82,11 +80,11 @@ Using the same pharmaceutical company case, as a statistician, you might be resp
 
 Your day-to-day responsibilities might include:
 
-* Designing surveys and experiments: Design a clinical trial or questionnaires for the new drug to verify it is statistically sound
-* Testing hypotheses: Choosing the right statistical test based on the data type.
-* Analyzing structured datasets: Summarizing data, analyzing, and modeling relationships between variables to predict outcomes.
-* Data reporting: Using charts, graphs, and other visual aids to report complex information effectively.
-* Business recommendations: Provide valuable insight and production strategies based on trial results.
+- Designing surveys and experiments: Design a clinical trial or questionnaires for the new drug to verify it is statistically sound
+- Testing hypotheses: Choosing the right statistical test based on the data type.
+- Analyzing structured datasets: Summarizing data, analyzing, and modeling relationships between variables to predict outcomes.
+- Data reporting: Using charts, graphs, and other visual aids to report complex information effectively.
+- Business recommendations: Provide valuable insight and production strategies based on trial results.
 
 Let's dig into a few tools and skills you must be proficient in for your selected job role.
 
@@ -102,11 +100,11 @@ Both data science and statistics require a strong foundation in mathematics and 
 
 Handling complex datasets, including both unstructured and structured data, requires a data scientist to possess strong technical and problem-solving skills. You should have the following skills for a data scientist job profile:
 
-* **Programming Skills:** To perform data science tasks smoothly, you must be proficient in [Python](https://roadmap.sh/python), [SQL](https://roadmap.sh/sql), [Java](https://roadmap.sh/java), and R programming languages. Additionally, you must be good at statistical analysis and mathematics.
-* **Machine learning knowledge:** You should be able to choose and implement appropriate algorithms, such as linear regression, logistic regression, decision trees, random forests, and neural networks, based on the specific problem and dataset.
-* **Data mining:** Knowledge of techniques like data cleaning, preprocessing, feature engineering, and pattern recognition are essential to extracting meaningful insights from big data.
-* **Data visualization:** Tools like Tableau and Power BI can help create compelling charts and graphs for your big data. You must know how to use these tools effectively to communicate data insights.
-* **Business intelligence:** Understanding business contexts and translating data insights into actionable business decisions is key. You must have strong communication skills and domain knowledge.
+- **Programming Skills:** To perform data science tasks smoothly, you must be proficient in [Python](https://roadmap.sh/python), [SQL](https://roadmap.sh/sql), [Java](https://roadmap.sh/java), and R programming languages. Additionally, you must be good at statistical analysis and mathematics.
+- **Machine learning knowledge:** You should be able to choose and implement appropriate algorithms, such as linear regression, logistic regression, decision trees, random forests, and neural networks, based on the specific problem and dataset.
+- **Data mining:** Knowledge of techniques like data cleaning, preprocessing, feature engineering, and pattern recognition are essential to extracting meaningful insights from big data.
+- **Data visualization:** Tools like Tableau and Power BI can help create compelling charts and graphs for your big data. You must know how to use these tools effectively to communicate data insights.
+- **Business intelligence:** Understanding business contexts and translating data insights into actionable business decisions is key. You must have strong communication skills and domain knowledge.
 
 Hadoop, Docker, TensorFlow, GitHub/Git, SQL, and Tableau are important for a data science job profile. Interviewers often prioritize candidates with educational qualifications in computer science, programming, and practical applications of data analysis techniques.
 
@@ -114,10 +112,10 @@ Hadoop, Docker, TensorFlow, GitHub/Git, SQL, and Tableau are important for a dat
 
 A statistician's main responsibility is to analyze data to predict future events or trends. To achieve this goal, you must excel in the following skills and tools:
 
-* Mathematical theory: A strong understanding of mathematical concepts like linear algebra, calculus, etc., is essential to measure quantitative data.
-* Probability: Proficiency in probability theory is essential for understanding and modeling uncertainty in data.
-* Statistical modeling: Experience with various statistical models, such as time series analysis and linear regression, is also valuable.
-* Survey design: Knowledge of designing questionnaires or sampling techniques is necessary to collect information from a group of people.
+- Mathematical theory: A strong understanding of mathematical concepts like linear algebra, calculus, etc., is essential to measure quantitative data.
+- Probability: Proficiency in probability theory is essential for understanding and modeling uncertainty in data.
+- Statistical modeling: Experience with various statistical models, such as time series analysis and linear regression, is also valuable.
+- Survey design: Knowledge of designing questionnaires or sampling techniques is necessary to collect information from a group of people.
 
 R, SAS, SPSS, and Excel are a few popular tools you should master to perform statistical analysis and generate graphics. Also, candidates with qualifications in advanced statistical modeling, mathematical and statistical theory, and research methodologies have a better chance of getting selected.
 
@@ -128,11 +126,12 @@ Let's move forward to different career options available under data science and 
 Data science is experiencing explosive growth across numerous industries, whereas the demand for statisticians remains strong and consistent. Let's explore the various job roles available in both fields and their salary ranges.
 
 ### Data science career paths and salary insights
+
 You can choose from the following careers if you are planning to proceed with data science:
 
-* Data scientist
-* Machine learning engineer
-* Data analyst
+- Data scientist
+- Machine learning engineer
+- Data analyst
 
 **Data scientist:** A career in data science offers opportunities in various industries, including finance, healthcare, and technology. As a data scientist, you'll tackle unique problems, using statistical modeling and machine learning to drive business decisions and outcomes. You need to have a deep understanding of data manipulation and how data relates to the real world.
 
@@ -140,13 +139,13 @@ Many data scientists use machine learning algorithms to build predictive models,
 
 In the United States, the [average salary](https://www.datacamp.com/blog/data-science-salaries) of a data scientist is $123,069 per year.
 
-**Machine learning engineer:** A career as a machine learning engineer involves designing, building, and optimizing machine learning models used in various applications, from recommendation systems to fraud detection. Professionals in this field work on improving machine learning frameworks, monitoring model performance, and solving complex computational problems. To succeed, you need expertise in advanced machine learning, cloud computing, and the software development lifecycle (SDLC). 
+**Machine learning engineer:** A career as a machine learning engineer involves designing, building, and optimizing machine learning models used in various applications, from recommendation systems to fraud detection. Professionals in this field work on improving machine learning frameworks, monitoring model performance, and solving complex computational problems. To succeed, you need expertise in advanced machine learning, cloud computing, and the software development lifecycle (SDLC).
 
 Machine learning engineers are in high demand across finance, healthcare, e-commerce, and technology industries. You can start by working on implementing basic machine learning models; as you improve your skills and gain more knowledge, you can work towards a role overseeing ML infrastructure, defining best practices, and leading technical teams.
 
 In the United States, the [average salary](https://www.indeed.com/career/machine-learning-engineer/salaries) for a machine learning engineer is $161,715 per year.
 
-**Data analyst:** [Data analysts](https://roadmap.sh/ai-data-scientist/vs-data-analytics) play a crucial role in helping businesses make informed decisions by collecting, filtering, and analyzing data to answer specific business questions. You can use data visualization tools to present insights clearly to stakeholders. 
+**Data analyst:** [Data analysts](https://roadmap.sh/ai-data-scientist/vs-data-analytics) play a crucial role in helping businesses make informed decisions by collecting, filtering, and analyzing data to answer specific business questions. You can use data visualization tools to present insights clearly to stakeholders.
 
 A career as a data analyst offers opportunities across various industries, including marketing, finance, and healthcare, making it a versatile and in-demand profession. The data analyst job profile includes various positions and levels, from basic reporting and performing deeper data analysis to making data-driven decisions for an organization.
 
@@ -156,11 +155,11 @@ According to [Indeed](https://www.indeed.com/career/data-analyst/salaries), the 
 
 If you're interested in statistics, here are a few job positions you can choose from:
 
-* Statistician
-* Biostatistician
-* Research Analyst
+- Statistician
+- Biostatistician
+- Research Analyst
 
-**Statistician:** As a statistician, you will design and conduct statistical analysis, interpret data, and communicate findings to researchers and other stakeholders. Many statisticians work on research projects, clinical trials, and large-scale surveys, helping organizations make data-driven decisions. 
+**Statistician:** As a statistician, you will design and conduct statistical analysis, interpret data, and communicate findings to researchers and other stakeholders. Many statisticians work on research projects, clinical trials, and large-scale surveys, helping organizations make data-driven decisions.
 
 There are different levels in the statistician job profile, from applying statistical techniques for data interpretation to leading statistical research and influencing policy decisions. Strong analytical skills and a solid understanding of statistical methods are essential for this career path.
 

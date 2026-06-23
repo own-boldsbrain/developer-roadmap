@@ -17,5 +17,3 @@ We have launched a new Cloudflare roadmap, revised ASP.NET Core roadmap and intr
 - [ASP.NET Core roadmap](https://roadmap.sh/aspnet-core) has been revised with new content
 - Fresh new dashboard design with improved navigation and performance
 - Bug fixes and performance improvements
-
-

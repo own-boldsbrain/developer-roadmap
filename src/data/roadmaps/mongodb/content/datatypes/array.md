@@ -57,7 +57,7 @@ You can update documents containing arrays by using operators like `$push`, `$ad
 ```javascript
 db.collection.updateOne(
   { _id: ObjectId('123xyz') },
-  { $push: { hobbies: 'painting' } }
+  { $push: { hobbies: 'painting' } },
 );
 ```
 
@@ -66,7 +66,7 @@ db.collection.updateOne(
 ```javascript
 db.collection.updateOne(
   { _id: ObjectId('123xyz') },
-  { $addToSet: { hobbies: 'painting' } }
+  { $addToSet: { hobbies: 'painting' } },
 );
 ```
 
@@ -75,7 +75,7 @@ db.collection.updateOne(
 ```javascript
 db.collection.updateOne(
   { _id: ObjectId('123xyz') },
-  { $pull: { hobbies: 'reading' } }
+  { $pull: { hobbies: 'reading' } },
 );
 ```
 

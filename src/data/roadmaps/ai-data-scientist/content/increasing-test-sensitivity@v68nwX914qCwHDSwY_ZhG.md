@@ -6,4 +6,3 @@
 - [@article@How Booking.com increases the power of online experiments with CUPED](https://booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d)
 - [@article@Improving Experimental Power through Control Using Predictions as Covariate — CUPAC](https://doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/)
 - [@article@Improving the Sensitivity of Online Controlled Experiments: Case Studies at Netflix](https://www.researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix)
-

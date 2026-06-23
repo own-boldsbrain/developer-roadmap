@@ -17,7 +17,7 @@ export function UserItem(props: UserItemProps) {
     <button
       className={cn(
         'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5',
-        isSelected && 'border-gray-500 bg-gray-300 text-black'
+        isSelected && 'border-gray-500 bg-gray-300 text-black',
       )}
       onClick={onClick}
     >
@@ -35,7 +35,7 @@ export function UserItem(props: UserItemProps) {
         <p
           className={cn(
             'truncate text-left text-sm text-gray-500',
-            isSelected && 'text-gray-700'
+            isSelected && 'text-gray-700',
           )}
         >
           {user.email}

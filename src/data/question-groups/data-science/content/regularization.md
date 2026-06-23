@@ -5,4 +5,4 @@ L1 and L2 regularization are methods used to mitigate overfitting in machine lea
 A regression model that uses the L1 regularization technique is called lasso regression, and a model that uses the L2 is called ridge regression.
 
 - **L1 Regularization:** Also called a lasso regression, this adds the absolute value of the sum ("absolute value of magnitude") of coefficients as a penalty term to the loss function.
-- **L2 Regularization:** Also called a ridge regression, this adds the squared sum ("squared magnitude") of coefficients as the penalty term to the loss function. 
+- **L2 Regularization:** Also called a ridge regression, this adds the squared sum ("squared magnitude") of coefficients as the penalty term to the loss function.

@@ -8,4 +8,4 @@ For example, if you want to predict someone's salary, you use various factors su
 - **Independence of errors:** The observations should be independent from each other, that is, the errors from one observation should not influence another.
 - **Homoscedasticity (equal variance):** Linear regression assumes the variance of the errors is constant across all levels of the independent variable(s). This indicates that the amount of the independent variable(s) has no impact on the variance of the errors.
 - **Normality of residuals:** This means that the residuals should follow a bell-shaped curve. If the residuals are not normally distributed, then linear regression will not be an accurate model.
-- **No multicollinearity:** Linear regression assumes there is no correlation between the independent variables chosen for the model. 
+- **No multicollinearity:** Linear regression assumes there is no correlation between the independent variables chosen for the model.

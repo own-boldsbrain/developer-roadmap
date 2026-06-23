@@ -1,10 +1,10 @@
 ---
-title: "Data Science vs. AI: How I Would Choose My Path"
+title: 'Data Science vs. AI: How I Would Choose My Path'
 description: "If you love working with data, should you become a data scientist or an AI engineer? Here's how I made my choice."
 authorId: william
 excludedBySlug: '/ai-data-scientist/vs-ai'
 seo:
-  title: "Data Science vs. AI: How I Would Choose My Path"
+  title: 'Data Science vs. AI: How I Would Choose My Path'
   description: "If you love working with data, should you become a data scientist or an AI engineer? Here's how I made my choice."
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-artificial-intelligence-w7gl5.jpg'
 isNew: true
@@ -54,7 +54,7 @@ If you choose data science, you'll work on extracting valuable insights from dat
 
 In contrast, if you choose artificial intelligence, you'll focus on building systems that mimic human intelligence, like learning, reasoning, and solving problems. It uses structured and unstructured data to enable machines to perform tasks like pattern recognition in images and speech and natural language processing. For example, AI virtual assistants like Siri can listen and reply to what you're saying. They use natural language processing models to recognize and understand your voice (human language). It makes it easy for you to ask and get answers to questions just by talking.
 
-## Daily responsibilities 
+## Daily responsibilities
 
 Data scientists and AI engineers have different responsibilities that show their focus areas. As a data scientist, your daily duties will include:
 
@@ -75,13 +75,13 @@ On the flip side, AI involves various responsibilities like designing, training,
 
 ## The tools you'll use
 
-One important thing to consider when choosing between data science and AI is the tools you'll use. In data science, you'll work with programming languages like [Python](https://roadmap.sh/python), R, and [SQL](https://roadmap.sh/sql) to extract insights and analyze data. You'll use Python libraries like Pandas to manipulate data and NumPy to make math calculations. 
+One important thing to consider when choosing between data science and AI is the tools you'll use. In data science, you'll work with programming languages like [Python](https://roadmap.sh/python), R, and [SQL](https://roadmap.sh/sql) to extract insights and analyze data. You'll use Python libraries like Pandas to manipulate data and NumPy to make math calculations.
 
 As a data scientist, you'll also use big data technologies like Hadoop to work with large volumes of data. Machine learning libraries like TensorFlow will help you develop advanced machine learning models. Also, you'll use data visualization tools like Tableau and Power BI when sharing your results.
 
 ![Data science vs. artificial intelligence: tools](https://assets.roadmap.sh/guest/tools-for-data-science-and-artificial-intelligence-q6i4v.png)
 
-On the flip side, artificial intelligence needs more advanced tools to work its magic. You'll use programming languages like [Java](https://roadmap.sh/java) and [Python](https://roadmap.sh/python), like in data science, but you'll focus on AI frameworks like PyTorch to train deep learning models, especially neural networks. These frameworks can do various machine learning tasks, such as supervised learning (e.g., image classification), unsupervised learning (e.g., anomaly detection), and reinforcement learning (e.g., game playing) when needed. 
+On the flip side, artificial intelligence needs more advanced tools to work its magic. You'll use programming languages like [Java](https://roadmap.sh/java) and [Python](https://roadmap.sh/python), like in data science, but you'll focus on AI frameworks like PyTorch to train deep learning models, especially neural networks. These frameworks can do various machine learning tasks, such as supervised learning (e.g., image classification), unsupervised learning (e.g., anomaly detection), and reinforcement learning (e.g., game playing) when needed.
 
 Tools like OpenCV will help with computer vision tasks, and libraries like NLTK and spaCy will help with natural language processing. As an AI engineer, you'll also work with specialized hardware like graphics processing units (GPUs) and tensor processing units (TPUs). These tools provide the computational power to train large neural networks well. Finally, you'll work with cloud platforms like [AWS](https://roadmap.sh/aws) and Google Cloud AI Platform to deploy and manage your AI models.
 
@@ -95,7 +95,7 @@ Now that you know the differences between data science and artificial intelligen
 - Proficient in data mining to extract useful patterns and insights from large datasets.
 - Strong data visualization techniques to present valuable insights through tools such as Matplotlib or Tableau.
 - Basic understanding of machine learning principles and algorithms to apply predictive analytics and solve business problems.
-- Good critical thinking skills to analyze data and provide solutions to business problems using data. 
+- Good critical thinking skills to analyze data and provide solutions to business problems using data.
 
 ![Skills for data science and artificial intelligence](https://assets.roadmap.sh/guest/important-skills-for-data-science-and-ai-sj2nh.png)
 
@@ -151,13 +151,13 @@ If you're still trying to figure out which path to take, here are a few steps to
 
 ### Know your strengths
 
-To find out which path is right for you, consider what you're good at and what excites you. Data science might be a good fit if you love analyzing data and finding out hidden stories behind numbers. 
+To find out which path is right for you, consider what you're good at and what excites you. Data science might be a good fit if you love analyzing data and finding out hidden stories behind numbers.
 
 On the other hand, artificial intelligence might be better if you're into technology, algorithms, and creating systems that imitate human intelligence.
 
 ### Connect with others
 
-Talk to some data science and artificial intelligence professionals and get their advice. Start by attending conferences or joining [online communities](https://roadmap.sh/discord) to connect with others. 
+Talk to some data science and artificial intelligence professionals and get their advice. Start by attending conferences or joining [online communities](https://roadmap.sh/discord) to connect with others.
 
 You can ask questions, share your thoughts, and learn from others as a community member. When you chat with other professionals, ask them what they enjoy about their work, what their challenges are, and if they have any tips for newcomers. Listening to their stories can give you a better idea of what each job is really like.
 

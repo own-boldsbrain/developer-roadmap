@@ -6,33 +6,33 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
 ---
 
 <BaseLayout title='About roadmap.sh' permalink={'/about'}>
-  <div class='bg-white border-b pt-7 pb-7 sm:pt-12 sm:pb-10'>
+  <div class='border-b bg-white pt-7 pb-7 sm:pt-12 sm:pb-10'>
     <div class='container'>
       <div class='flex items-center'>
         <img
           style='--aspect-ratio:170/170'
           src='/authors/kamran.jpeg'
-          class='h-[170px] w-[170px] rounded-full mr-6 hidden sm:block'
+          class='mr-6 hidden h-[170px] w-[170px] rounded-full sm:block'
           alt='Kamran Ahmed'
         />
         <div>
-          <h1 class='text-3xl sm:text-4xl mb-3 font-bold'>
+          <h1 class='mb-3 text-3xl font-bold sm:text-4xl'>
             <span class='hidden sm:inline'>Hello,</span>&nbsp;I am Kamran Ahmed
           </h1>
-          <p class='text-gray-500 text-md mb-5'>
+          <p class='text-md mb-5 text-gray-500'>
             I created roadmap.sh to help developers find their path if they are
             confused and help them learn and grow in their career.
           </p>
-          <p class='flex flex-col sm:flex-row gap-1.5'>
+          <p class='flex flex-col gap-1.5 sm:flex-row'>
             <a
-              class='bg-blue-600 hover:bg-blue-700 font-medium text-white px-2 py-1.5 rounded-md inline-flex items-center'
+              class='inline-flex items-center rounded-md bg-blue-600 px-2 py-1.5 font-medium text-white hover:bg-blue-700'
               target='_blank'
               href='https://twitter.com/kamrify'
             >
-              <span class='ml-1.5 mr-1'>@kamrify</span>
+              <span class='mr-1 ml-1.5'>@kamrify</span>
             </a>
             <a
-              class='bg-gray-500 hover:bg-gray-700 font-medium text-white px-3 py-1.5 rounded-md inline-flex items-center'
+              class='inline-flex items-center rounded-md bg-gray-500 px-3 py-1.5 font-medium text-white hover:bg-gray-700'
               target='_blank'
               href='mailto:kamranahmed.se@gmail.com'
             >
@@ -48,28 +48,29 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
     <div class='container'>
       <main id='main-content'>
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>What is roadmap.sh?</h2>
+          <h2 class='mb-2 text-2xl font-bold'>What is roadmap.sh?</h2>
           <p class='mb-3'>
             <span class='font-bold'>roadmap.sh</span> contains community-curated
             roadmaps, study plans, paths, and resources for developers. There are
-            role-based roadmaps, listing skills you should know for any given role, as
-            well as skill-based roadmaps listing items to learn for any given skill.
+            role-based roadmaps, listing skills you should know for any given role,
+            as well as skill-based roadmaps listing items to learn for any given
+            skill.
           </p>
           <p class='mb-3'>
             It started as a set of <a
               href='https://github.com/kamranahmedse/developer-roadmap'
               class='font-bold underline'
               target='_blank'>visual charts on GitHub</a
-            > to guide developers who are confused about what they should learn
-            next, but then expanded into interactive roadmaps where you can click
-            and get resources to learn any given resource, contribute by adding new
-            roadmaps, suggest changes to existing roadmaps, track your progress as
-            you follow a roadmap and so on.
+            > to guide developers who are confused about what they should learn next,
+            but then expanded into interactive roadmaps where you can click and get
+            resources to learn any given resource, contribute by adding new roadmaps,
+            suggest changes to existing roadmaps, track your progress as you follow
+            a roadmap and so on.
           </p>
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>How are roadmaps created?</h2>
+          <h2 class='mb-2 text-2xl font-bold'>How are roadmaps created?</h2>
           <p class='mb-3'>
             The project has a strong community that powers everything on the
             website. It is <a
@@ -86,23 +87,23 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>
+          <h2 class='mb-2 text-2xl font-bold'>
             What are the plans for roadmap.sh?
           </h2>
           <p class='mb-3'>
             Our long-term plan is to make roadmap.sh a go-to place for
             developers whenever they plan on learning something new. We started
             with roadmaps, guides, videos and other visual content but we plan
-            on introducing best practices, best-practices for certain tasks, quizzes
-            to test your knowledge and prepare yourself for the interviews,
-            project ideas to work on while following the roadmaps, public
-            profiles to share your progress and interact with the other learners
-            and so on.
+            on introducing best practices, best-practices for certain tasks,
+            quizzes to test your knowledge and prepare yourself for the
+            interviews, project ideas to work on while following the roadmaps,
+            public profiles to share your progress and interact with the other
+            learners and so on.
           </p>
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>How is roadmap.sh built?</h2>
+          <h2 class='mb-2 text-2xl font-bold'>How is roadmap.sh built?</h2>
           <p class='mb-3'>
             The website is built with <a
               href='https://astro.build/'
@@ -129,7 +130,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>How can I add a new roadmap?</h2>
+          <h2 class='mb-2 text-2xl font-bold'>How can I add a new roadmap?</h2>
           <p class='mb-3'>
             For new roadmaps, please open an issue with the textual description
             of the roadmap in the form of bulleted list. Here is an <a
@@ -149,7 +150,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>
+          <h2 class='mb-2 text-2xl font-bold'>
             How can I update an existing roadmap?
           </h2>
           <p class='mb-3'>
@@ -162,7 +163,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>
+          <h2 class='mb-2 text-2xl font-bold'>
             How can I add content to existing roadmaps?
           </h2>
           <p class='mb-3'>
@@ -175,7 +176,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
         </div>
 
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>
+          <h2 class='mb-2 text-2xl font-bold'>
             Can I redistribute the content?
           </h2>
           <p>
@@ -186,17 +187,17 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
           </p>
         </div>
         <div class='mb-5'>
-          <h2 class='text-2xl font-bold mb-2'>
+          <h2 class='mb-2 text-2xl font-bold'>
             What is the best way to contact you?
           </h2>
           <p>
             Tweet or send me a message <a
-              class='underline font-bold'
+              class='font-bold underline'
               href='https://twitter.com/kamrify'
               target='_blank'>@kamrify</a
             > or email me at
             <a
-              class='underline font-bold'
+              class='font-bold underline'
               href='mailto:kamranahmed.se@gmail.com'
               target='_blank'>kamranahmed.se@gmail.com</a
             >. I get lots of messages so apologies in advance if you don't hear

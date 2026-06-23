@@ -1,6 +1,6 @@
 # Polymorphism
 
-Polymorphism is a core concept in object-oriented programming that PHP supports. It provides a mechanism to use one interface for different underlying forms, enabling different objects to process differently based on their data type. In PHP, polymorphism can be achieved through inheritance and interfaces. For example, you may have a parent class 'Shape' and child classes 'Circle', 'Rectangle', etc. They all can have a method 'draw' but with different implementations. It's not limited to classes; you can also use polymorphism with interfaces by implementing different classes with the same interface where each class will have different code for the same method. 
+Polymorphism is a core concept in object-oriented programming that PHP supports. It provides a mechanism to use one interface for different underlying forms, enabling different objects to process differently based on their data type. In PHP, polymorphism can be achieved through inheritance and interfaces. For example, you may have a parent class 'Shape' and child classes 'Circle', 'Rectangle', etc. They all can have a method 'draw' but with different implementations. It's not limited to classes; you can also use polymorphism with interfaces by implementing different classes with the same interface where each class will have different code for the same method.
 
 Here's a small sample code demonstrating the concept:
 
@@ -26,8 +26,8 @@ function drawShape(Shape $shape) {
   $shape->draw();
 }
 
-drawShape(new Circle());  
-drawShape(new Rectangle()); 
+drawShape(new Circle());
+drawShape(new Rectangle());
 ?>
 ```
 

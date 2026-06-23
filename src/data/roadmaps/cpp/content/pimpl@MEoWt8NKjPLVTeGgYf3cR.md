@@ -7,6 +7,7 @@ Pimpl (Pointer-to-Implementation) idiom, also known as a private class data, com
 Here is a simple example illustrating the Pimpl idiom:
 
 **my_class.h**
+
 ```cpp
 class MyClass_Impl; // forward declaration
 
@@ -23,6 +24,7 @@ private:
 ```
 
 **my_class.cpp**
+
 ```cpp
 #include "my_class.h"
 #include <iostream>

@@ -186,7 +186,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
                   type="button"
                   onClick={handleResendVerificationCode}
                   disabled={isLoading || isResendDone}
-                  className="flex items-center gap-1 text-sm font-medium leading-none text-green-600 transition-colors hover:text-green-700"
+                  className="flex items-center gap-1 text-sm leading-none font-medium text-green-600 transition-colors hover:text-green-700"
                 >
                   <span className="hidden sm:block">
                     Resend Verification Link

@@ -7,4 +7,4 @@ HIPS operates at the host level, providing a last line of defense by securing th
 Visit the following resources to learn more:
 
 - [@article@What is an Intrusion Prevention System?](https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips)
-- [@article@What is Host intrusion prevention system (HIPS)?](https://cyberpedia.reasonlabs.com/EN/host%20intrusion%20prevention%20system%20(hips).html)
+- [@article@What is Host intrusion prevention system (HIPS)?](<https://cyberpedia.reasonlabs.com/EN/host%20intrusion%20prevention%20system%20(hips).html>)

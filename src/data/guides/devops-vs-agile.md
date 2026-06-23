@@ -109,7 +109,7 @@ In contrast, DevOps facilitates collaboration between development and operations
 
 ## Project size and change frequency
 
-Agile is well-suited for small to medium projects that want to launch their minimum viable product (MVP) or add new features to an existing platform that accounts for customers' needs along the way. 
+Agile is well-suited for small to medium projects that want to launch their minimum viable product (MVP) or add new features to an existing platform that accounts for customers' needs along the way.
 
 DevOps, in contrast, is good for large or complex projects that involve infrastructure, automation, and scalability.
 
@@ -137,13 +137,13 @@ As a rule of thumb, use the summary table below to decide when starting a new pr
 
 | **Factor**                                     | **Agile** | **DevOps** |
 | ---------------------------------------------- | --------- | ---------- |
-| **Small, cross-functional teams?**             | ✅ Yes     | ❌ No       |
-| **Large teams requiring IT operations?**       | ❌ No      | ✅ Yes      |
-| **High variability in project complexity?**    | ✅ Yes     | ❌ No       |
-| **Multi-stage delivery pipelines?**            | ❌ No      | ✅ Yes      |
-| **Rare updates (deployment frequency)?**       | ✅ Yes     | ❌ No       |
-| **Frequent releases (deployment frequency)?**  | ❌ No      | ✅ Yes      |
-| **Need for automation (CI/CD or monitoring)?** | ❌ No      | ✅ Yes      |
+| **Small, cross-functional teams?**             | ✅ Yes    | ❌ No      |
+| **Large teams requiring IT operations?**       | ❌ No     | ✅ Yes     |
+| **High variability in project complexity?**    | ✅ Yes    | ❌ No      |
+| **Multi-stage delivery pipelines?**            | ❌ No     | ✅ Yes     |
+| **Rare updates (deployment frequency)?**       | ✅ Yes    | ❌ No      |
+| **Frequent releases (deployment frequency)?**  | ❌ No     | ✅ Yes     |
+| **Need for automation (CI/CD or monitoring)?** | ❌ No     | ✅ Yes     |
 
 ## Hybrid Situations: Combining Agile and DevOps
 

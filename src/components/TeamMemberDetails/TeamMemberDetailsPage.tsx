@@ -139,7 +139,7 @@ export function TeamMemberDetailsPage() {
 
       {memberProgress?.progresses && memberProgress?.progresses?.length > 0 ? (
         <>
-          <h2 className="mb-3 text-xs uppercase text-gray-400">
+          <h2 className="mb-3 text-xs text-gray-400 uppercase">
             Progress Overview
           </h2>
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
@@ -184,7 +184,7 @@ export function TeamMemberDetailsPage() {
       {memberActivity?.data && memberActivity?.data?.length > 0 ? (
         <>
           <ActivityStream
-            className="mt-8 p-0 md:m-0 md:mb-4 md:mt-8 md:p-0"
+            className="mt-8 p-0 md:m-0 md:mt-8 md:mb-4 md:p-0"
             activities={
               memberActivity?.data?.flatMap((act) => act.activity) || []
             }

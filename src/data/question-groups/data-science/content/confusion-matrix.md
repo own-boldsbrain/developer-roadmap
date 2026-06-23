@@ -18,4 +18,4 @@ Depending on the project you're working on, you can use metrics such as Accuracy
 
 ![An example of confusion matrix](https://assets.roadmap.sh/guest/sample-confusion-matrix-l4q8i.png)
 
-**Common pitfall:** Misreading the matrix layout or assuming it works for multi-class without modification. 
+**Common pitfall:** Misreading the matrix layout or assuming it works for multi-class without modification.

@@ -1,13 +1,13 @@
 ---
-title: "Top 10 Web Developer Portfolio Templates - A Pro’s Pick"
+title: 'Top 10 Web Developer Portfolio Templates - A Pro’s Pick'
 description: 'Build an impressive online presence with these 10 handpicked web developer portfolio templates.'
 authorId: ekene
 excludedBySlug: '/frontend/web-developer-portfolio'
 seo:
-  title: "Top 10 Web Developer Portfolio Templates - A Pro’s Pick"
+  title: 'Top 10 Web Developer Portfolio Templates - A Pro’s Pick'
   description: 'Build an impressive online presence with these 10 handpicked web developer portfolio templates.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/roammap-18-xvyn0.jpg'
-relatedTitle: "Other Guides"
+relatedTitle: 'Other Guides'
 relatedGuidesId: frontend
 isNew: false
 type: 'textual'
@@ -142,7 +142,7 @@ Zyan is a template specifically suited for creative developers looking to showca
 
 Here’s why Zyan is worth considering as a template for your portfolio:
 
-- Custom cursor to enhance experience. 
+- Custom cursor to enhance experience.
 - Load on scroll animation for an enhanced experience.
 - Support for embedded video player.
 - Uses modern tools like GSAP, Slick Slider, FontAwesome, etc.

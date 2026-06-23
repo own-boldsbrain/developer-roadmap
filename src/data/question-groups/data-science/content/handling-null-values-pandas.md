@@ -1,7 +1,7 @@
 Basic null handling options:
 
 ```python
-df.fillna(0)      # Replace with 0  
+df.fillna(0)      # Replace with 0
 df.dropna()       # Drop rows with nulls
 ```
 
@@ -19,4 +19,4 @@ df.fillna(method='bfill')  # Use next value
 
 # Interpolation
 df.interpolate()
-``` 
+```

@@ -33,7 +33,7 @@ export function Modal(props: ModalProps) {
   return (
     <div
       className={cn(
-        'fixed left-0 right-0 top-0 z-99 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50',
+        'fixed top-0 right-0 left-0 z-99 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50',
         overlayClassName,
       )}
     >

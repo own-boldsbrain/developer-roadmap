@@ -103,7 +103,7 @@ export function MarkFavorite({
       onClick={toggleFavoriteHandler}
       tabIndex={-1}
       className={cn(
-        'absolute right-1.5 top-1.5 z-30 focus:outline-0',
+        'absolute top-1.5 right-1.5 z-30 focus:outline-0',
         isFavorite ? '' : 'opacity-30 hover:opacity-100',
         className,
       )}

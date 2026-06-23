@@ -52,25 +52,25 @@ export function VisibilityDropdown(props: VisibilityDropdownProps) {
           setIsVisibilityDropdownOpen(true);
         }}
         className={cn(
-          'flex items-center gap-1 rounded-lg border border-black py-1 pl-1.5 pr-2 text-sm capitalize text-black',
+          'flex items-center gap-1 rounded-lg border border-black py-1 pr-2 pl-1.5 text-sm text-black capitalize',
           {
             invisible: isVisibilityDropdownOpen,
           },
         )}
       >
-        {visibility === 'public' && <Globe className='mr-1' size={13} />}
-        {visibility === 'private' && <LockIcon className='mr-1' size={13} />}
+        {visibility === 'public' && <Globe className="mr-1" size={13} />}
+        {visibility === 'private' && <LockIcon className="mr-1" size={13} />}
         {visibility}
         <ChevronDown size={13} className="ml-1" />
       </button>
       {isVisibilityDropdownOpen && (
         <div
-          className="absolute right-0 top-0 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+          className="absolute top-0 right-0 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
           ref={dropdownRef}
         >
           <button
             className={cn(
-              'flex w-full items-center gap-2 py-2.5 pl-3 pr-3.5 text-left text-sm hover:bg-gray-100',
+              'flex w-full items-center gap-2 py-2.5 pr-3.5 pl-3 text-left text-sm hover:bg-gray-100',
               {
                 'bg-gray-200': visibility === 'public',
               },
@@ -82,7 +82,7 @@ export function VisibilityDropdown(props: VisibilityDropdownProps) {
           </button>
           <button
             className={cn(
-              'flex w-full items-center gap-2 py-2.5 pl-3 pr-3.5 text-left text-sm hover:bg-gray-100',
+              'flex w-full items-center gap-2 py-2.5 pr-3.5 pl-3 text-left text-sm hover:bg-gray-100',
               {
                 'bg-gray-200': visibility === 'private',
               },

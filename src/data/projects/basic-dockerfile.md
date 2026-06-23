@@ -30,7 +30,6 @@ In this project, you will write a basic Dockerfile to create a Docker image. Whe
 - The base image should be `alpine:latest`.
 - The Dockerfile should contain a single instruction to print "Hello, Captain!" to the console before exiting.
 
-
 You can learn more about writing a Dockerfile [here](https://docs.docker.com/engine/reference/builder/).
 
 <hr />

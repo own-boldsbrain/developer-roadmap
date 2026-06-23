@@ -24,9 +24,9 @@ courses:
       image: 'https://github.com/kamranahmedse.png'
       title: 'Founder roadmap.sh'
 partner:
-  description: "Get the latest Backend news from our sister site"
-  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
-  linkText: "TheNewStack.io"
+  description: 'Get the latest Backend news from our sister site'
+  link: 'https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+  linkText: 'TheNewStack.io'
 question:
   title: 'What is Backend Development?'
   description: |

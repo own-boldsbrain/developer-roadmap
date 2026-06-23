@@ -1,6 +1,6 @@
 # Finding and Installing Packages
 
-The ability to efficiently find and install software packages is a fundamental skill when working with Linux based systems. Linux package management tools such as `apt`, `yum`, or `dnf` are used to automate the process of installing, upgrading, configuring, and removing software packages in a consistent manner. 
+The ability to efficiently find and install software packages is a fundamental skill when working with Linux based systems. Linux package management tools such as `apt`, `yum`, or `dnf` are used to automate the process of installing, upgrading, configuring, and removing software packages in a consistent manner.
 
 It's important to understand how package management works in Linux, because it significantly simplifies the process of software management, eliminating the need to manually download, compile, and install software from source code.
 

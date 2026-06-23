@@ -32,23 +32,24 @@ A **bastion host** is a server specifically designed to act as a secure gateway 
 You will set up a bastion host in a cloud environment and configure it to securely allow access to a private server.
 
 - Choose a cloud provider (e.g., AWS, DigitalOcean, GCP, Azure) and create **two servers**:
+
   - **Bastion Host** (publicly accessible).
   - **Private Server** (accessible only from the bastion host IP address and not publicly).
 
 - Configure both the servers to allow SSH connection and configure SSH in a way that you can SSH into the private server by jumping through the bastion host
 
-   ```bash
-   Host bastion
-       HostName <bastion-ip>
-       User <bastion-user>
-       IdentityFile <path-to-bastion-private-key>
+  ```bash
+  Host bastion
+      HostName <bastion-ip>
+      User <bastion-user>
+      IdentityFile <path-to-bastion-private-key>
 
-   Host private-server
-       HostName <private-server-ip>
-       User <private-server-user>
-       ProxyJump bastion
-       IdentityFile <path-to-private-server-private-key>
-   ```
+  Host private-server
+      HostName <private-server-ip>
+      User <private-server-user>
+      ProxyJump bastion
+      IdentityFile <path-to-private-server-private-key>
+  ```
 
 - Connect to the bastion host using:
   ```bash
@@ -59,6 +60,7 @@ You will set up a bastion host in a cloud environment and configure it to secure
   ssh private-server
   ```
 - Alternatively, connect directly using your local machine:
+
   ```bash
   ssh private-server
   ```

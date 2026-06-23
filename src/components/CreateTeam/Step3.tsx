@@ -42,7 +42,7 @@ export function Step3(props: Step3Props) {
       `${import.meta.env.PUBLIC_API_URL}/v1-invite-team/${team?._id}`,
       {
         members: users,
-      }
+      },
     );
 
     if (error || !response) {
@@ -75,8 +75,10 @@ export function Step3(props: Step3Props) {
 
   return (
     <form className="mt-4 flex w-full flex-col" onSubmit={onSubmit}>
-      <div className="mb-1 mt-2">
-        <h2 className="mb-1 md:mb-2 text-lg md:text-2xl font-bold">Invite your Team</h2>
+      <div className="mt-2 mb-1">
+        <h2 className="mb-1 text-lg font-bold md:mb-2 md:text-2xl">
+          Invite your Team
+        </h2>
         <p className="text-sm text-gray-700">
           Use the form below to invite your team members to your team. You can
           also invite them later.
@@ -85,7 +87,7 @@ export function Step3(props: Step3Props) {
       <div className="mt-4 flex flex-col gap-1">
         {users.map((user, userCounter) => {
           return (
-            <div className="flex flex-col sm:flex-row gap-2" key={user.id}>
+            <div className="flex flex-col gap-2 sm:flex-row" key={user.id}>
               <input
                 ref={userCounter === users.length - 1 ? emailInputRef : null}
                 autoFocus={true}
@@ -163,7 +165,7 @@ export function Step3(props: Step3Props) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-col sm:flex-row items-stretch md:items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col items-stretch justify-between gap-2 sm:flex-row md:items-center">
         <button
           type="button"
           onClick={onBack}
@@ -180,7 +182,7 @@ export function Step3(props: Step3Props) {
             onClick={onNext}
             disabled={users.filter((u) => u.email).length !== 0}
             className={
-              'rounded-md grow md:flex-auto border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black disabled:opacity-50 disabled:pointer-events-none'
+              'grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black disabled:pointer-events-none disabled:opacity-50 md:flex-auto'
             }
           >
             Skip for Now

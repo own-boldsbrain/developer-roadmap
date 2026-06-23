@@ -31,7 +31,7 @@ export function App() {
 // Helper function to simulate a 2 seconds delay
 function delay(promise) {
   return new Promise((resolve) => setTimeout(resolve, 2000)).then(
-    () => promise
+    () => promise,
   );
 }
 ```

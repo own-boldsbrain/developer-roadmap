@@ -117,7 +117,7 @@ export function SelectLanguages(props: SelectLanguagesProps) {
     <div className="relative flex shrink-0">
       <div className="relative">
         <button
-          className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pl-3 pr-2 text-xs font-medium text-gray-900"
+          className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pr-2 pl-3 text-xs font-medium text-gray-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           {selectedLanguage || 'Select Language'}
@@ -125,7 +125,7 @@ export function SelectLanguages(props: SelectLanguagesProps) {
         </button>
         {selectedLanguage && (
           <button
-            className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-white hover:bg-red-600"
+            className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-white hover:bg-red-600"
             onClick={(e) => {
               e.stopPropagation();
               onSelectLanguage('');
@@ -139,16 +139,16 @@ export function SelectLanguages(props: SelectLanguagesProps) {
 
       {isOpen && (
         <div
-          className="absolute right-0 top-full z-10 w-full min-w-[200px] max-w-[200px] translate-y-1.5 overflow-hidden rounded-md border border-gray-300 bg-white p-1 shadow-lg"
+          className="absolute top-full right-0 z-10 w-full max-w-[200px] min-w-[200px] translate-y-1.5 overflow-hidden rounded-md border border-gray-300 bg-white p-1 shadow-lg"
           ref={dropdownRef}
           onKeyDown={handleKeyDown}
         >
           <div className="relative mb-1 px-1">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+            <Search className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-gray-400" />
             <input
               ref={searchInputRef}
               type="text"
-              className="w-full rounded-md border border-gray-200 py-1.5 pl-9 pr-3 text-sm focus:border-gray-300 focus:outline-hidden"
+              className="w-full rounded-md border border-gray-200 py-1.5 pr-3 pl-9 text-sm focus:border-gray-300 focus:outline-hidden"
               placeholder="Search languages..."
               value={searchQuery}
               onChange={(e) => {

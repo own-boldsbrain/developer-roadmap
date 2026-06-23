@@ -47,7 +47,6 @@ You can use any existing pomodoro apps for the UI inspiration e.g.
 - Use a modular and reusable code structure.
 - Maintain proper accessibility standards (e.g., keyboard navigation, ARIA labels).
 
-Feel free to deploy the application on [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/) or [Cloudflare pages](https://pages.cloudflare.com/)
----
+## Feel free to deploy the application on [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/) or [Cloudflare pages](https://pages.cloudflare.com/)
 
 By completing this project, you will enhance your frontend development skills while building a functional and customizable Pomodoro Timer application. This knowledge will prepare you for more advanced projects and improve your ability to create interactive and user-friendly web applications.

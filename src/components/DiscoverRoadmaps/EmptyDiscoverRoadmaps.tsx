@@ -20,12 +20,12 @@ export function EmptyDiscoverRoadmaps() {
     <>
       {creatingRoadmapModal}
 
-      <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl border px-5 py-3 sm:px-0 sm:py-20 bg-white">
+      <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl border bg-white px-5 py-3 sm:px-0 sm:py-20">
         <Map className="mb-4 h-8 w-8 opacity-10 sm:h-14 sm:w-14" />
         <h2 className="mb-1 text-lg font-semibold sm:text-xl">
           No Roadmaps Found
         </h2>
-        <p className="mb-3 text-balance text-center text-xs text-gray-800 sm:text-sm">
+        <p className="mb-3 text-center text-xs text-balance text-gray-800 sm:text-sm">
           Try searching for something else or create a new roadmap.
         </p>
         <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-1.5">

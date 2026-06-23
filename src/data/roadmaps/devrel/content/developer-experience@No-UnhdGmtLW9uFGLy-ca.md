@@ -1,6 +1,6 @@
 # Developer Experience
 
-Developer Experience (DX) refers to the overall experience developers have while using a software product, tool, or platform. A positive DX is characterized by intuitive and well-documented APIs, robust and clear documentation, seamless integration processes, and responsive support. Good DX ensures that developers can efficiently build, deploy, and manage applications, reducing frustration and increasing productivity. 
+Developer Experience (DX) refers to the overall experience developers have while using a software product, tool, or platform. A positive DX is characterized by intuitive and well-documented APIs, robust and clear documentation, seamless integration processes, and responsive support. Good DX ensures that developers can efficiently build, deploy, and manage applications, reducing frustration and increasing productivity.
 
 Learn more from the following resources:
 

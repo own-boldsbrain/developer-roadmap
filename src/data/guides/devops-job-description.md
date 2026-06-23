@@ -1,11 +1,11 @@
 ---
 title: 'DevOps Engineer Job Description [@currentYear@ Template]'
-description: 'Create the perfect DevOps Engineer job description with our @currentYear@ template, tailored to attract top talent in today''s tech landscape.'
+description: "Create the perfect DevOps Engineer job description with our @currentYear@ template, tailored to attract top talent in today's tech landscape."
 authorId: william
 excludedBySlug: '/devops/job-description'
 seo:
   title: 'DevOps Engineer Job Description [@currentYear@ Template]'
-  description: 'Create the perfect DevOps Engineer job description with our @currentYear@ template, tailored to attract top talent in today''s tech landscape.'
+  description: "Create the perfect DevOps Engineer job description with our @currentYear@ template, tailored to attract top talent in today's tech landscape."
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-job-description-0xjml.jpg'
 relatedTitle: 'Other Guides'
 relatedGuidesId: 'devops'
@@ -189,7 +189,7 @@ Equipped with knowledge about essential tools, it's time to explore career growt
 
 ## Growth opportunities and the importance of continuous learning
 
-By continuously building skills and staying ahead of industry trends, DevOps engineers can advance their careers and take on more strategic roles within an organization. 
+By continuously building skills and staying ahead of industry trends, DevOps engineers can advance their careers and take on more strategic roles within an organization.
 
 For hiring managers, understanding how these roles contribute to business outcomes is key to aligning talent acquisition strategies with organizational goals. By fostering career growth, organizations not only enhance employee satisfaction but also build a workforce capable of driving innovation and operational efficiency.
 

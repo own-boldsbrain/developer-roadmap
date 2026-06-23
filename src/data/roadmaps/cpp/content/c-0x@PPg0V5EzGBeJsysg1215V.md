@@ -59,11 +59,11 @@ Some of the notable features in C++11 include:
 
   ```cpp
   #include <thread>
-  
+
   void my_function() {
       // thread function body
   }
-  
+
   int main() {
       std::thread t(my_function);
       t.join();

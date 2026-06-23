@@ -198,7 +198,7 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
     >
       <div className="rounded-xl bg-white px-3">
         <button
-          className="absolute right-4 top-4 text-gray-400 hover:text-black"
+          className="absolute top-4 right-4 text-gray-400 hover:text-black"
           onClick={onClose}
         >
           <X className="h-4 w-4 stroke-[2.5]" />
@@ -220,7 +220,7 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
           {!selectedCalendar && (
             <>
               <h2 className="text-3xl font-semibold">Schedule Learning Time</h2>
-              <p className="mt-1.5 text-balance text-base text-gray-600">
+              <p className="mt-1.5 text-base text-balance text-gray-600">
                 Block some time on your calendar to stay consistent
               </p>
 

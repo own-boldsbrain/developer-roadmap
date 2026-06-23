@@ -26,7 +26,7 @@ Alternatively, with the help of the JavaScript BSON library, you can use the `De
 const { Decimal128 } = require('bson');
 
 const decimalValue = Decimal128.fromString(
-  '1234.567890123456789012345678901234'
+  '1234.567890123456789012345678901234',
 );
 db.example.insertOne({ amount: decimalValue });
 ```

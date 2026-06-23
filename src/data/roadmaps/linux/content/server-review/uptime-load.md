@@ -4,7 +4,7 @@ When managing a Linux server, one critical metric deserving close scrutiny is th
 
 The system load average is an important indicator that illustrates the amount of computational work that a computer system performs. It's a reflection of how many processes are waiting in line to get CPU time. The system load average is typically shown for 1, 5, and 15 minutes durations.
 
-By consistently analyzing the uptime and load on a Linux server, administrators can identify system usage patterns, diagnose possible performance issues, and determine an efficient capacity planning strategy. If a server has a high load average, it may suggest that the system resources are not sufficient or are misconfigured, leading to possible slow performance or system unresponsiveness. 
+By consistently analyzing the uptime and load on a Linux server, administrators can identify system usage patterns, diagnose possible performance issues, and determine an efficient capacity planning strategy. If a server has a high load average, it may suggest that the system resources are not sufficient or are misconfigured, leading to possible slow performance or system unresponsiveness.
 
 Here is an example of the `uptime` command and its output:
 

@@ -66,6 +66,7 @@ bool b;
 C++ provides control structures for conditional execution and iteration, such as `if`, `else`, `while`, `for`, and `switch` statements.
 
 ### If-Else Statement
+
 ```cpp
 if (condition) {
     // Code to execute if the condition is true
@@ -75,6 +76,7 @@ if (condition) {
 ```
 
 ### While Loop
+
 ```cpp
 while (condition) {
     // Code to execute while the condition is true
@@ -82,6 +84,7 @@ while (condition) {
 ```
 
 ### For Loop
+
 ```cpp
 for (initialization; condition; update) {
     // Code to execute while the condition is true
@@ -89,6 +92,7 @@ for (initialization; condition; update) {
 ```
 
 ### Switch Statement
+
 ```cpp
 switch (variable) {
     case value1:

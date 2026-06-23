@@ -33,4 +33,4 @@ int main() {
 
 In this example, we first create a `const` variable, `original_value`. Then we use `const_cast` to remove the constness of the variable and assign it to a non-const pointer, `non_const_value_ptr`. The `modifyVariable` function takes an `int*` as an argument and modifies the value pointed to by the pointer, which would not have been possible if we passed the original `const int` directly. Finally, we print the `original_value` and the `*non_const_value_ptr`, which shows that the value has been modified using `const_cast`.
 
-Please note that this example comes with some risks, as it touches undefined behavior. */
+Please note that this example comes with some risks, as it touches undefined behavior. \*/

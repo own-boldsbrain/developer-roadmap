@@ -10,4 +10,4 @@ import { Zap } from 'lucide-react';
       Upgrade to Pro to unlock unlimited AI tutoring sessions
     </p>
   </div>
-</li> 
+</li>;

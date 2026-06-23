@@ -17,6 +17,6 @@ lsblk                     # list all disks and partitions
 sudo fdisk /dev/sdb       # let's suppose new disk is /dev/sdb
 sudo mkfs.ext4 /dev/sdb1  # make filesystem(e.g., ext4) on partition 1
 sudo mount /dev/sdb1 /mnt # mount new filesystem to /mnt directory
-``` 
+```
 
 Remember to replace `/dev/sdb` and `/dev/sdb1` with your actual disk and partition identifiers. The mount point `/mnt` may also be replaced with any other directory as per your system's structure and preference.

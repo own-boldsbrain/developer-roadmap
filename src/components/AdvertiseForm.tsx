@@ -104,7 +104,7 @@ export function AdvertiseForm() {
     return (
       <div className="flex flex-col items-center justify-center rounded-md border bg-gray-50 p-12 text-center">
         <CheckIcon additionalClasses="h-12 w-12 text-green-500 mb-5" />
-        <h2 className="text-balance text-xl font-semibold text-gray-900">
+        <h2 className="text-xl font-semibold text-balance text-gray-900">
           Thank you for your interest in advertising with roadmap.sh
         </h2>
         <p className="mt-2 text-sm text-gray-500">
@@ -116,7 +116,7 @@ export function AdvertiseForm() {
 
   return (
     <>
-      <h2 className="mb-5 text-balance text-2xl font-bold">
+      <h2 className="mb-5 text-2xl font-bold text-balance">
         Ready to learn more? Fill out the form below to get started!
       </h2>
       {error && (
@@ -213,7 +213,7 @@ export function AdvertiseForm() {
         <div>
           <button
             type="submit"
-            className="flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-xs hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-xs hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
           >
             Send
           </button>

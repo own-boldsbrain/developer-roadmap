@@ -45,7 +45,7 @@ function TopicDetailsTab(props: TopicDetailsTabProps) {
 
   return (
     <button
-      className="flex select-none disabled:pointer-events-none items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm text-gray-500 hover:border-gray-400 data-[state=active]:border-black data-[state=active]:bg-black data-[state=active]:text-white"
+      className="flex items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm text-gray-500 select-none hover:border-gray-400 disabled:pointer-events-none data-[state=active]:border-black data-[state=active]:bg-black data-[state=active]:text-white"
       data-state={isActive ? 'active' : 'inactive'}
       onClick={onClick}
       disabled={isDisabled}

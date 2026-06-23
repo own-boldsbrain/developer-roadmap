@@ -46,7 +46,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
         className={cn(
           'striped-loader relative z-50 hidden items-center justify-between bg-white px-2 py-1.5 sm:flex',
           {
-            'rounded-bl-md rounded-br-md': isSecondaryBanner,
+            'rounded-br-md rounded-bl-md': isSecondaryBanner,
             'rounded-md': !isSecondaryBanner,
           },
         )}
@@ -55,7 +55,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex text-sm opacity-0 transition-opacity duration-300"
           data-progress-nums=""
         >
-          <span className="mr-2.5 rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium text-yellow-900 uppercase">
             <span data-progress-percentage="">0</span>% Done
           </span>
 

@@ -68,7 +68,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
   );
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed top-0 right-0 left-0 z-100 h-full items-center justify-center overflow-x-hidden overflow-y-auto overscroll-contain bg-black/50">
       <div className="relative mx-auto h-full w-full max-w-2xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
@@ -76,7 +76,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
         >
           <button
             type="button"
-            className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-100 hover:text-gray-900"
+            className="popup-close absolute top-3 right-2.5 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-100 hover:text-gray-900"
             onClick={onClose}
           >
             <XIcon className="h-4 w-4" />
@@ -86,16 +86,16 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             ref={searchInputEl}
             type="text"
             placeholder="Search roadmaps"
-            className="block w-full border-b px-5 pb-3.5 pt-4 outline-hidden placeholder:text-gray-400"
+            className="block w-full border-b px-5 pt-4 pb-3.5 outline-hidden placeholder:text-gray-400"
             value={searchText}
             onInput={(e) => setSearchText((e.target as HTMLInputElement).value)}
           />
           <div className="min-h-[200px] p-4">
-            <span className="block pb-3 text-xs uppercase text-gray-400">
+            <span className="block pb-3 text-xs text-gray-400 uppercase">
               Role Based Roadmaps
             </span>
             {roleBasedRoadmaps.length === 0 && (
-              <p className="mb-1 flex h-full items-start text-sm italic text-gray-400"></p>
+              <p className="mb-1 flex h-full items-start text-sm text-gray-400 italic"></p>
             )}
             {roleBasedRoadmaps.length > 0 && (
               <div className="mb-5 flex flex-wrap items-center gap-2">
@@ -119,7 +119,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
                 })}
               </div>
             )}
-            <span className="block pb-3 text-xs uppercase text-gray-400">
+            <span className="block pb-3 text-xs text-gray-400 uppercase">
               Skill Based Roadmaps
             </span>
             <div className="flex flex-wrap items-center gap-2">

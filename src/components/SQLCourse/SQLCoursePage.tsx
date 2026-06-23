@@ -245,7 +245,7 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
+    <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
       <div className="flex w-full items-center justify-between">
         <a
           href="https://roadmap.sh"
@@ -257,7 +257,7 @@ export function SQLCoursePage() {
         <AccountButton />
       </div>
       <div className="relative mt-7 max-w-4xl text-left md:mt-20 md:text-center">
-        <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
+        <Spotlight className="top-[-200px] left-[-170px]" fill="#EAB308" />
 
         <div className="inline-block rounded-full bg-yellow-500/10 px-4 py-1.5 text-base text-yellow-500 md:px-6 md:py-2 md:text-lg">
           <span className="hidden sm:block">
@@ -421,7 +421,7 @@ export function SQLCoursePage() {
       <FloatingPurchase />
 
       <div className="mt-12 w-full max-w-3xl text-left md:mt-9">
-        <p className="flex flex-col gap-2 items-center justify-center text-sm md:flex-row md:gap-0">
+        <p className="flex flex-col items-center justify-center gap-2 text-sm md:flex-row md:gap-0">
           <a href="/terms" target="_blank" className="text-zinc-500">
             Terms of Use
           </a>

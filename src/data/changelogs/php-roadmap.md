@@ -2,10 +2,10 @@
 title: 'PHP and System Design Roadmaps, Get Featured'
 description: 'New PHP Roadmap, System Design Roadmap Revamped, and more'
 images:
-  "PHP Roadmap": "https://assets.roadmap.sh/guest/php-roadmap.png"
-  "Engineering Manager Roadmap": "https://assets.roadmap.sh/guest/engineering-manager-roadmap.png"
-  "System Design Roadmap": "https://assets.roadmap.sh/guest/system-design.png"
-  "Feature Custom Roadmaps": "https://assets.roadmap.sh/guest/apply-for-feature.png"
+  'PHP Roadmap': 'https://assets.roadmap.sh/guest/php-roadmap.png'
+  'Engineering Manager Roadmap': 'https://assets.roadmap.sh/guest/engineering-manager-roadmap.png'
+  'System Design Roadmap': 'https://assets.roadmap.sh/guest/system-design.png'
+  'Feature Custom Roadmaps': 'https://assets.roadmap.sh/guest/apply-for-feature.png'
 seo:
   title: 'PHP and System Design Roadmaps, Get Featured'
   description: ''

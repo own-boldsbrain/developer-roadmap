@@ -8,23 +8,23 @@ To install `vcpkg`, follow these steps:
 
 - Clone the repository:
 
-   ```
-   git clone https://github.com/Microsoft/vcpkg.git
-   ```
+  ```
+  git clone https://github.com/Microsoft/vcpkg.git
+  ```
 
 - Change to the `vcpkg` directory and run the bootstrap script:
 
-   - On Windows:
-     
-     ```
-     .\bootstrap-vcpkg.bat
-     ```
+  - On Windows:
 
-   - On Linux/macOS:
+    ```
+    .\bootstrap-vcpkg.bat
+    ```
 
-     ```
-     ./bootstrap-vcpkg.sh
-     ```
+  - On Linux/macOS:
+
+    ```
+    ./bootstrap-vcpkg.sh
+    ```
 
 - (Optional) Add the `vcpkg` executable to your `PATH` environment variable for easy access.
 

@@ -1,5 +1,11 @@
 import Cookies from 'js-cookie';
-import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
+import {
+  type ChangeEvent,
+  type FormEvent,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 
 interface PreviewFile extends File {
@@ -77,7 +83,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
     setFile(
       Object.assign(file, {
         preview: URL.createObjectURL(file),
-      })
+      }),
     );
   };
 
@@ -103,7 +109,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
           method: 'POST',
           body: formData,
           credentials: 'include',
-        }
+        },
       );
     } else {
       res = await fetch(
@@ -112,7 +118,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
           method: 'POST',
           body: formData,
           credentials: 'include',
-        }
+        },
       );
     }
 
@@ -153,7 +159,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
           {props.label}
         </label>
       )}
-      <div className="mb-2 mt-2 flex items-center gap-2">
+      <div className="mt-2 mb-2 flex items-center gap-2">
         <label
           htmlFor="avatar"
           title="Change profile picture"
@@ -174,7 +180,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
             <button
               disabled={isDisabled}
               type="button"
-              className="absolute bottom-1 right-0 rounded-sm bg-gray-600 px-2 py-1 text-xs leading-none text-gray-50 ring-2 ring-white"
+              className="absolute right-0 bottom-1 rounded-sm bg-gray-600 px-2 py-1 text-xs leading-none text-gray-50 ring-2 ring-white"
               onClick={() => {
                 if (isLoading) return;
                 inputRef.current?.click();

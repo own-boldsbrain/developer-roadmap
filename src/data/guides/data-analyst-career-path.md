@@ -23,7 +23,7 @@ tags:
 
 # Data Analyst Career Path: My Pro Advice
 
-Data analysts sit at the heart of decision‑making in virtually every industry today. From uncovering customer behavior patterns in retail to optimizing operations in healthcare, the ability to collect, clean, and interpret data has become a critical superpower. 
+Data analysts sit at the heart of decision‑making in virtually every industry today. From uncovering customer behavior patterns in retail to optimizing operations in healthcare, the ability to collect, clean, and interpret data has become a critical superpower.
 
 To help you map out your future data analyst career path, in this guide I'll mix in two cornerstone resources from roadmap.sh: the very detailed [Data Analyst Roadmap](https://roadmap.sh/data-analyst), which lays out the skills and milestones you'll need from beginner to pro, and the hands‑on [SQL Course](https://roadmap.sh/courses/sql), designed to build your foundation in one of the most common languages when it comes to data operations. Together, these tools will serve as your compass and toolkit, ensuring you have a clear path forward and the practical know‑how to tackle real‑world challenges.
 
@@ -37,36 +37,36 @@ To narrow the list of options, we can think of three core trajectories, each wit
 
 ### Junior Data Analyst → Senior Data Analyst → Analytics Manager
 
-| Level | Focus | Key skills | Goal |
-| :---- | :---- | :---- | :---- |
-| **Entry-level (i.e junior analyst)**  | Clean & transform data using SQL or MS Excel | Basic data modeling, reporting, req. gathering. | Provide actionable insights. |
-| **Mid-level**  | Complex analysis, advanced statistical analysis, and project ownership. | Python/R, creating ETLs, mentoring | Shaping data strategy, collaborating with business or operations, and influencing decision-making |
-| **Leadership** | Defining implementation roadmaps | Leadership, stakeholder management, expectation management with clients. | Lead key meetings with clients, become VP of analytics, or similar role. |
+| Level                                | Focus                                                                   | Key skills                                                               | Goal                                                                                              |
+| :----------------------------------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| **Entry-level (i.e junior analyst)** | Clean & transform data using SQL or MS Excel                            | Basic data modeling, reporting, req. gathering.                          | Provide actionable insights.                                                                      |
+| **Mid-level**                        | Complex analysis, advanced statistical analysis, and project ownership. | Python/R, creating ETLs, mentoring                                       | Shaping data strategy, collaborating with business or operations, and influencing decision-making |
+| **Leadership**                       | Defining implementation roadmaps                                        | Leadership, stakeholder management, expectation management with clients. | Lead key meetings with clients, become VP of analytics, or similar role.                          |
 
 ### Data Analytics Consultant / BI Analyst
 
-| Level | Focus | Key Skills | Goal |
-| :---- | :---- | :---- | :---- |
+| Level                         | Focus                                                                                                                 | Key Skills                                               | Goal                                                                                                    |
+| :---------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
 | **Data Analytics Consultant** | Acting as a strategic advisor, you help organizations define their data strategy and translate business requirements. | Data Strategy & Governance, Client Engagement, deep SQL. | Delivering a scalable analytics roadmap, implementing dashboards, and earning trust as a go‑to advisor. |
-| **BI Analyst** | Embedding within a single organization or business unit to build and maintain self‑service reporting environments. | ETL, dashboard development.  | Influence data strategy, mentor JR Data Scientists. |
+| **BI Analyst**                | Embedding within a single organization or business unit to build and maintain self‑service reporting environments.    | ETL, dashboard development.                              | Influence data strategy, mentor JR Data Scientists.                                                     |
 
 ### Specialized Data Scientist Tracks → Chief Data Officer
 
-| Level | Focus | Key Skills | Goal |
-| :---- | :---- | :---- | :---- |
-| **Data science option** | Go from descriptive analytics to machine learning algorithms. | Advanced Python, Statistical Analysis, Data modeling. | Deliver a working predictive solution |
-| **Advanced Statistics** | Tackle large‑scale analytical problems  | Expertise in advanced statistical programming, big Data, and a bit of storytelling | Influence data strategy, mentor JR Data Scientists |
-| **CDO** | Oversee data governance, compliance, and ensure that analytics and machine learning initiatives align with strategic objectives. | Strategic leadership, understanding of data privacy, data governance. | Implement robust data governance & privacy frameworks,  deliver analytics roadmap. |
+| Level                   | Focus                                                                                                                            | Key Skills                                                                         | Goal                                                                              |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| **Data science option** | Go from descriptive analytics to machine learning algorithms.                                                                    | Advanced Python, Statistical Analysis, Data modeling.                              | Deliver a working predictive solution                                             |
+| **Advanced Statistics** | Tackle large‑scale analytical problems                                                                                           | Expertise in advanced statistical programming, big Data, and a bit of storytelling | Influence data strategy, mentor JR Data Scientists                                |
+| **CDO**                 | Oversee data governance, compliance, and ensure that analytics and machine learning initiatives align with strategic objectives. | Strategic leadership, understanding of data privacy, data governance.              | Implement robust data governance & privacy frameworks, deliver analytics roadmap. |
 
 ### What should you pick?
 
 In the end, either through any of these variations of the data analyst career path, there isn't a single option that is clearly better than the others.
 
-* If you love turning raw numbers into charts and dashboards, the **junior→senior analyst** route offers steady, skill‑based progression.
+- If you love turning raw numbers into charts and dashboards, the **junior→senior analyst** route offers steady, skill‑based progression.
 
-* If you thrive on variety and advising multiple teams, consider the **analytics consultant/BI analyst** track.
+- If you thrive on variety and advising multiple teams, consider the **analytics consultant/BI analyst** track.
 
-* If you're drawn to algorithms and predictive work, the **data science** trajectory can propel you toward senior data scientist roles and, ultimately, a chief data officer position.
+- If you're drawn to algorithms and predictive work, the **data science** trajectory can propel you toward senior data scientist roles and, ultimately, a chief data officer position.
 
 ## Is Data Analysis Right for You?
 
@@ -76,7 +76,7 @@ But to give you a basic guide and help you understand whether you'd enjoy the po
 
 ## Learning Path & Essential Skills
 
-Charting your learning path starts with a clear learning roadmap, and there's no better place to begin than the [Data Analyst Roadmap](https://roadmap.sh/data-analyst). 
+Charting your learning path starts with a clear learning roadmap, and there's no better place to begin than the [Data Analyst Roadmap](https://roadmap.sh/data-analyst).
 
 ![Learning Path & Essential Skills](https://assets.roadmap.sh/guest/learning-path-essential-skills-k9zy3.png)
 
@@ -84,9 +84,9 @@ Following its structured progression ensures you're building the right technical
 
 As part of the roadmap, you'll have to tackle different languages such as SQL, R, Python, and others. To learn more about it, you can try this hands-on [SQL Course](https://roadmap.sh/courses/sql) that walks you through writing efficient queries, designing relational schemas, and performing complex joins and aggregations.
 
-You'll also need **data visualization tools** and the storytelling mindset that makes your analyses resonate. 
+You'll also need **data visualization tools** and the storytelling mindset that makes your analyses resonate.
 
-Finally, you'll start noticing that soft skills are particularly needed as a data analyst. For example, clear communication, problem solving, and a collaborative spirit are non‑negotiable when gathering requirements, iterating on dashboards, or presenting to senior management. 
+Finally, you'll start noticing that soft skills are particularly needed as a data analyst. For example, clear communication, problem solving, and a collaborative spirit are non‑negotiable when gathering requirements, iterating on dashboards, or presenting to senior management.
 
 ## 3 Portfolio Project Ideas
 
@@ -104,7 +104,7 @@ Below are three end‑to‑end projects designed to showcase the abilities that 
 
 **Objective:** For this one, you'll show how statistical analysis and basic machine learning can predict which customers are most likely to churn, enabling proactive retention strategies.
 
-**Data & Tools:** For this one, you can find some sort of telecom dataset (like IBM Telco Customer Churn), use Python and SQL again to do some exploratory analysis, and finally train a classification model using scikit-learn. 
+**Data & Tools:** For this one, you can find some sort of telecom dataset (like IBM Telco Customer Churn), use Python and SQL again to do some exploratory analysis, and finally train a classification model using scikit-learn.
 
 **Key skills demonstrated:** During this project, you'll work on statistical analysis, data mining, and, as usual, some actionable insights turned into storytelling.
 
@@ -122,10 +122,10 @@ Below are three end‑to‑end projects designed to showcase the abilities that 
 
 With all of this out of the way, let me quickly run you through some of my personal tips when it comes to growing and moving forward as a data analyst.
 
-1. **Build a strong network and find mentors:** Connect with other data analysts, data scientists, and analytics managers through LinkedIn groups, local meetups, or virtual conferences. Ask others who have gone through the same about their journey, about the problems they found along the way. Learn from them.  
-2. **Showcase your work with purpose:** Your first data analyst job will depend on having a solid portfolio (since you don't have any actual experience). Try to host your projects on GitHub or a personal blog, and include clear READMEs that explain your data strategy, the tech stack you used, and the business impact (showing you understand the value of your work), whether it's "increased conversion rate by X%" or "optimized inventory planning".  
-3. **Stay ahead with the latest tools and techniques:** Data visualization tools and programming languages are constantly evolving. One key language you'll be using quite regularly is SQL, and if you ignore it, your progress will slow down. Find yourself a [SQL Course](https://roadmap.sh/courses/sql) that works for you and ensure you master it as soon as possible.  
-4. **Embrace feedback and cultivate a growth mindset:** Whether you're presenting to marketing teams or senior management, feedback is your friend. After each project or presentation, or even on a regular basis try to get constructive feedback on your data modeling, storytelling, and communication style. Use this input to refine your processes, improving both your essential skills and your ability to communicate insights.  
+1. **Build a strong network and find mentors:** Connect with other data analysts, data scientists, and analytics managers through LinkedIn groups, local meetups, or virtual conferences. Ask others who have gone through the same about their journey, about the problems they found along the way. Learn from them.
+2. **Showcase your work with purpose:** Your first data analyst job will depend on having a solid portfolio (since you don't have any actual experience). Try to host your projects on GitHub or a personal blog, and include clear READMEs that explain your data strategy, the tech stack you used, and the business impact (showing you understand the value of your work), whether it's "increased conversion rate by X%" or "optimized inventory planning".
+3. **Stay ahead with the latest tools and techniques:** Data visualization tools and programming languages are constantly evolving. One key language you'll be using quite regularly is SQL, and if you ignore it, your progress will slow down. Find yourself a [SQL Course](https://roadmap.sh/courses/sql) that works for you and ensure you master it as soon as possible.
+4. **Embrace feedback and cultivate a growth mindset:** Whether you're presenting to marketing teams or senior management, feedback is your friend. After each project or presentation, or even on a regular basis try to get constructive feedback on your data modeling, storytelling, and communication style. Use this input to refine your processes, improving both your essential skills and your ability to communicate insights.
 5. **Plan for credentials that matter:** Getting credentials that validate your expertise with a certain tool or a type of analysis is going to help you stand out in the sea of analysts fighting for the same position. So, consider pursuing data analytics certifications (e.g., Google Data Analytics or Microsoft Power BI). They will not ensure you get the job, but they'll help you demonstrate a certain level of expertise at first glance.
 
 ## Conclusion
@@ -140,8 +140,8 @@ Congrats, you now have a clear playbook for launching and advancing your data an
 
 4. **Practice with real projects**. Even if it's with fake, test or even raw data, tackle real-world problems to show you're able to transmit insights in the right way.
 
-5. **Finally,**  remember to network with other analysts, seek feedback, stay current on tools and techniques, and earn targeted certifications when you're ready to stand out.
+5. **Finally,** remember to network with other analysts, seek feedback, stay current on tools and techniques, and earn targeted certifications when you're ready to stand out.
 
-Your journey into becoming a successful data analyst begins today: pick one section of the roadmap, schedule time to complete the SQL course module, and start your first portfolio project. 
+Your journey into becoming a successful data analyst begins today: pick one section of the roadmap, schedule time to complete the SQL course module, and start your first portfolio project.
 
 Go!

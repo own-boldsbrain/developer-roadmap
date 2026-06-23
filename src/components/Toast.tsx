@@ -51,10 +51,10 @@ export function Toaster(props: Props) {
       onClick={() => {
         $toastMessage.set(undefined);
       }}
-      className={`fixed bottom-5 left-1/2 z-9999 min-w-[375px] max-w-[375px] animate-fade-slide-up sm:min-w-[auto]`}
+      className={`animate-fade-slide-up fixed bottom-5 left-1/2 z-9999 max-w-[375px] min-w-[375px] sm:min-w-[auto]`}
     >
       <div
-        className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pl-4 pr-5 text-black shadow-md hover:bg-gray-50`}
+        className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pr-5 pl-4 text-black shadow-md hover:bg-gray-50`}
       >
         {toastMessage.type === 'success' && (
           <CheckIcon additionalClasses="h-5 w-5 shrink-0 relative top-[0.5px] text-green-500" />

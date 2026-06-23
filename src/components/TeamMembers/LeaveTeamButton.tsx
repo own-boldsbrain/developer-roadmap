@@ -21,7 +21,7 @@ export function LeaveTeamButton(props: LeaveTeamButtonProps) {
         onClick={() => {
           setShowLeaveTeamPopup(true);
         }}
-        className="flex h-7 min-w-[95px] items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-medium leading-none text-red-600"
+        className="flex h-7 min-w-[95px] items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-2 py-1.5 text-sm leading-none font-medium text-red-600"
       >
         Leave team
       </button>

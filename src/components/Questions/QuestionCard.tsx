@@ -69,7 +69,7 @@ export function QuestionCard(props: QuestionCardProps) {
         </div>
 
         <div className="mx-auto flex max-w-[550px] flex-1 items-center justify-center py-3 sm:py-8">
-          <p className="px-4 text-xl font-semibold leading-snug! text-black sm:text-3xl">
+          <p className="px-4 text-xl leading-snug! font-semibold text-black sm:text-3xl">
             {question.question}
           </p>
         </div>
@@ -88,13 +88,13 @@ export function QuestionCard(props: QuestionCardProps) {
 
       <div
         ref={answerRef}
-        className={`absolute left-0 right-0 flex flex-col items-center justify-center rounded-[7px] bg-neutral-100 py-4 text-sm leading-normal text-black transition-all duration-300 sm:py-8 sm:text-xl ${
+        className={`absolute right-0 left-0 flex flex-col items-center justify-center rounded-[7px] bg-neutral-100 py-4 text-sm leading-normal text-black transition-all duration-300 sm:py-8 sm:text-xl ${
           isAnswerVisible ? 'top-0 min-h-[248px] sm:min-h-[398px]' : 'top-full'
         }`}
       >
         {!question.isLongAnswer && (
           <div
-            className={`mx-auto flex max-w-[600px] grow flex-col items-center justify-center py-0 px-5 text-center text-base [&>p]:leading-relaxed sm:text-xl`}
+            className={`mx-auto flex max-w-[600px] grow flex-col items-center justify-center px-5 py-0 text-center text-base sm:text-xl [&>p]:leading-relaxed`}
             dangerouslySetInnerHTML={{
               __html: markdownToHtml(question.answer, false),
             }}
@@ -103,7 +103,7 @@ export function QuestionCard(props: QuestionCardProps) {
 
         {question.isLongAnswer && (
           <div
-            className={`qa-answer prose prose-h5:font-semibold prose-h5:mb-2 prose-h5:text-black prose-sm prose-quoteless mx-auto flex w-full max-w-[600px] grow flex-col items-start justify-center py-0 px-4 text-left text-sm prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-pre:mb-6! prose-pre:w-full prose-ul:my-2 prose-li:m-0 prose-li:mb-0.5 sm:px-5 sm:text-lg sm:prose-p:mb-4`}
+            className={`qa-answer prose prose-h5:font-semibold prose-h5:mb-2 prose-h5:text-black prose-sm prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-pre:mb-6! prose-pre:w-full prose-ul:my-2 prose-li:m-0 prose-li:mb-0.5 sm:prose-p:mb-4 mx-auto flex w-full max-w-[600px] grow flex-col items-start justify-center px-4 py-0 text-left text-sm sm:px-5 sm:text-lg`}
             dangerouslySetInnerHTML={{
               __html: markdownToHtml(question.answer, false),
             }}

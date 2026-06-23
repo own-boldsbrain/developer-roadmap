@@ -12,9 +12,6 @@ export interface Props {
 const { roadmapId } = Astro.props;
 ---
 
-<div class:list={['mb-0 rounded-md border mt-2 bg-white']}>
-  <ResourceProgressStats
-    resourceId={roadmapId}
-    resourceType='roadmap'
-  />
+<div class:list={['mt-2 mb-0 rounded-md border bg-white']}>
+  <ResourceProgressStats resourceId={roadmapId} resourceType='roadmap' />
 </div>

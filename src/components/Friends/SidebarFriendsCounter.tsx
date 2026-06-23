@@ -13,7 +13,7 @@ export function SidebarFriendsCounter() {
   const [friendCounts, setFriendCounts] = useState<GetFriendCountsResponse>();
   async function getFriendCounts() {
     const { response, error } = await httpGet<GetFriendCountsResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-friend-counts`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-friend-counts`,
     );
 
     if (error || !response) {

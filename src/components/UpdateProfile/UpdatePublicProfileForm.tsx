@@ -208,7 +208,7 @@ export function UpdatePublicProfileForm() {
               <a
                 href={publicProfileUrl}
                 target="_blank"
-                className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
+                className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pr-2.5 pl-1.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
               >
                 <ArrowUpRight className="h-3 w-3 stroke-3" />
                 Visit
@@ -218,7 +218,7 @@ export function UpdatePublicProfileForm() {
                   copyText(`${window.location.origin}${publicProfileUrl}`);
                 }}
                 className={cn(
-                  'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white',
+                  'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pr-2.5 pl-1.5 text-xs uppercase transition-colors hover:bg-black hover:text-white',
                   {
                     'bg-black text-white': isCopied,
                   },
@@ -236,7 +236,7 @@ export function UpdatePublicProfileForm() {
           setVisibility={setProfileVisibility}
         />
       </div>
-      <p className="mb-8 mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
+      <p className="mt-2 mb-8 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
         Create your skill profile to showcase your skills.
       </p>
 
@@ -296,7 +296,7 @@ export function UpdatePublicProfileForm() {
             value={email}
           />
           <div className="flex items-center justify-end gap-2 rounded-md text-xs text-gray-400">
-            <div className="flex select-none items-center justify-end gap-2 rounded-md text-xs text-gray-400">
+            <div className="flex items-center justify-end gap-2 rounded-md text-xs text-gray-400 select-none">
               <input
                 type="checkbox"
                 name="isEmailVisible"
@@ -573,7 +573,7 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="flex select-none items-center gap-2 rounded-md border px-3 hover:bg-gray-100">
+          <div className="flex items-center gap-2 rounded-md border px-3 select-none hover:bg-gray-100">
             <input
               type="checkbox"
               name="isAvailableForHire"
@@ -602,7 +602,7 @@ export function UpdatePublicProfileForm() {
             <button
               type="button"
               className={cn(
-                'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white',
+                'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pr-3.5 pl-2.5 text-xs text-black uppercase transition-colors hover:bg-black hover:text-white',
                 isCopied
                   ? 'border-green-600 bg-green-600 text-white hover:bg-green-600 hover:text-white'
                   : '',
@@ -624,7 +624,7 @@ export function UpdatePublicProfileForm() {
               )}
             </button>
             <a
-              className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white"
+              className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pr-3.5 pl-2.5 text-xs text-black uppercase transition-colors hover:bg-black hover:text-white"
               href={publicProfileUrl}
               target="_blank"
             >

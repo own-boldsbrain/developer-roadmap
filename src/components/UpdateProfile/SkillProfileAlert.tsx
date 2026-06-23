@@ -11,7 +11,7 @@ const ideas = [
 export function SkillProfileAlert() {
   return (
     <div className="relative mb-5 rounded-lg bg-yellow-200 px-3 py-3 text-sm text-yellow-800">
-      <FileBadge className="absolute hidden sm:block bottom-3 right-3 h-20 w-20 stroke-2 text-yellow-500 opacity-50" />
+      <FileBadge className="absolute right-3 bottom-3 hidden h-20 w-20 stroke-2 text-yellow-500 opacity-50 sm:block" />
 
       <h2 className="mb-1 text-base font-semibold">
         Announcing Skill Profiles!{' '}

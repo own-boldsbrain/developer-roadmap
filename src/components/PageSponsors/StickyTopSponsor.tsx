@@ -55,7 +55,7 @@ export function StickyTopSponsor(props: StickyTopSponsorProps) {
       href={sponsor.url}
       onClick={onSponsorClick}
       className={cn(
-        'fixed left-0 right-0 top-0 z-91 flex min-h-[45px] w-full flex-row items-center justify-center px-14 pb-2 pt-1.5 text-base font-medium text-yellow-950',
+        'fixed top-0 right-0 left-0 z-91 flex min-h-[45px] w-full flex-row items-center justify-center px-14 pt-1.5 pb-2 text-base font-medium text-yellow-950',
       )}
       style={{
         backgroundImage: `linear-gradient(to bottom, ${sponsor.style?.fromColor}, ${sponsor.style?.toColor})`,
@@ -75,7 +75,7 @@ export function StickyTopSponsor(props: StickyTopSponsorProps) {
       </button>
       <button
         type="button"
-        className="absolute right-5 top-1/2 ml-1 -translate-y-1/2 px-1 py-1 opacity-70 hover:opacity-100"
+        className="absolute top-1/2 right-5 ml-1 -translate-y-1/2 px-1 py-1 opacity-70 hover:opacity-100"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();

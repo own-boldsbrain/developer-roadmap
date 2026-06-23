@@ -286,8 +286,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   className="relative flex flex-col items-start overflow-hidden rounded-md border border-gray-300"
                   key={resourceId}
                 >
-                  <div className={'w-full grow px-3 pb-2 pt-4'}>
-                    <span className="mb-0.5 block text-base font-medium leading-snug text-black">
+                  <div className={'w-full grow px-3 pt-4 pb-2'}>
+                    <span className="mb-0.5 block text-base leading-snug font-medium text-black">
                       {roadmapTitle}
                     </span>
                     {removedTopics.length > 0 || (topics && topics > 0) ? (
@@ -305,7 +305,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                         )}
                       </span>
                     ) : (
-                      <span className="text-xs italic leading-none text-gray-400/60">
+                      <span className="text-xs leading-none text-gray-400/60 italic">
                         {isCustomResource
                           ? 'Placeholder roadmap.'
                           : 'No changes made ..'}

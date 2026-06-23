@@ -30,7 +30,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
             <h3 className="truncate font-medium">{resourceTitle}</h3>
             <a
               href={roadmapLink}
-              className="group mb-0.5 flex shrink-0 items-center justify-between text-base font-medium leading-none text-black"
+              className="group mb-0.5 flex shrink-0 items-center justify-between text-base leading-none font-medium text-black"
               target={'_blank'}
             >
               <LucideExternalLink className="h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100" />

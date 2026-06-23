@@ -16,4 +16,3 @@ Visit the following resources to learn more:
 
 - [@official@Style scoping](https://angular.dev/guide/components/styling#style-scoping)
 - [@official@Component - API](https://angular.dev/api/core/Component#encapsulation)
-

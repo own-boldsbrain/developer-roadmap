@@ -5,7 +5,7 @@ import {
   FolderGit2,
   SquarePen,
   Zap,
-  type LucideIcon
+  type LucideIcon,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
@@ -28,7 +28,7 @@ import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 
-const projectGroups =  [
+const projectGroups = [
   {
     title: 'Frontend',
     id: 'frontend',
@@ -91,7 +91,7 @@ function DashboardStatItem(props: DashboardStatItemProps) {
   return (
     <div
       className={cn(
-        'flex items-center gap-1.5 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3',
+        'flex items-center gap-1.5 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3',
         {
           'striped-loader-slate striped-loader-slate-fast text-transparent':
             isLoading,
@@ -124,7 +124,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
       <a
         href="/account/update-profile"
         className={cn(
-          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
+          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
           {
             'striped-loader-slate striped-loader-slate-fast text-transparent':
               isLoading,
@@ -142,7 +142,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
     <div className="flex gap-1.5">
       <a
         href={`/u/${username}`}
-        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-300 transition-colors hover:bg-slate-800/70"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 text-slate-300 transition-colors hover:bg-slate-800/70"
       >
         <img
           src={avatar}
@@ -153,7 +153,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
       </a>
       <a
         href="/account/update-profile"
-        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
         title="Edit Profile"
       >
         <SquarePen className="h-4 w-4" />
@@ -180,7 +180,7 @@ function DashboardStats(props: DashboardStatsProps) {
   } = props;
 
   return (
-    <div className="container mb-3 flex flex-col gap-4 pb-2 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+    <div className="container mb-3 flex flex-col gap-4 pt-6 pb-2 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <PersonalProfileButton
           isLoading={isLoading}

@@ -95,7 +95,7 @@ export function SearchSelector({
           } else if (e.key === 'ArrowUp') {
             const canGoPrev = activeCounter > 0;
             setActiveCounter(
-              canGoPrev ? activeCounter - 1 : searchResults.length - 1
+              canGoPrev ? activeCounter - 1 : searchResults.length - 1,
             );
           } else if (e.key === 'Tab') {
             if (isActive) {

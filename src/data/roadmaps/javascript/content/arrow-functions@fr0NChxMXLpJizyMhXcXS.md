@@ -6,8 +6,8 @@ Arrow Function is a new way of creating functions with the '=>' operator with a 
 
 ```js
 const sayHello = () => {
-    console.log(`Hello from Arrow Function !`);
-}
+  console.log(`Hello from Arrow Function !`);
+};
 ```
 
 Visit the following resources to learn more:

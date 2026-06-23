@@ -43,7 +43,7 @@ export function DashboardProgressCard(props: DashboardProgressCardProps) {
       </span>
 
       <span
-        className="absolute left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
+        className="absolute top-0 left-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
         style={{
           width: `${progressPercentage}%`,
         }}

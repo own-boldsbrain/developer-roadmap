@@ -4,13 +4,13 @@ Linux Navigation Basics is about using simple commands to move around and manage
 
 ```bash
 # Change directory
-cd /path/to/directory  
+cd /path/to/directory
 
 # Lists files and directories in the current directory.
-ls  
+ls
 
 # View current working directory
-pwd  
+pwd
 
 # Displays the mannual page for a command
 man ls

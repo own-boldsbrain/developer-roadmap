@@ -138,7 +138,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
           />
 
           {username && (
-            <span className="absolute bottom-0 right-0 top-0 flex items-center px-2">
+            <span className="absolute top-0 right-0 bottom-0 flex items-center px-2">
               {isLoading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : isUnique === false ? (

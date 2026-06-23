@@ -1,4 +1,4 @@
-# Understanding Ulimits 
+# Understanding Ulimits
 
 Linux-based containerization technology such as Docker utilizes 'ulimits' as one of the security features to control the resource consumption for each running container. Ulimits (user limits) are a feature of the Linux kernel that restricts the resources that any single user can consume. These resources include open file handles, locked-in physical memory, and others.
 

@@ -1,6 +1,6 @@
 # Spectrum of Thinking Interventions
 
-The _Spectrum of Thinking Interventions_ provides a structure for understanding the different types of decision-making processes by illustrating how our minds would respond in a _default, lowest energy way_, if we didn't consciously do something different. This spectrum ranges from situations requiring minimal thought to those demanding intensive thinking, and includes  the mechanisms ("interventions") that our minds will likely use.
+The _Spectrum of Thinking Interventions_ provides a structure for understanding the different types of decision-making processes by illustrating how our minds would respond in a _default, lowest energy way_, if we didn't consciously do something different. This spectrum ranges from situations requiring minimal thought to those demanding intensive thinking, and includes the mechanisms ("interventions") that our minds will likely use.
 
 - **Habits:** Triggering a learned routine based on familiar cues
 - **Other intuitive responses:** Used in familiar or semi-familiar situations, with responses based on past experiences

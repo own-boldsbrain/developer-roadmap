@@ -1,4 +1,4 @@
-Undefined variables are variables that the developer has declared but not yet assigned a value. 
+Undefined variables are variables that the developer has declared but not yet assigned a value.
 
 ```javascript
 // Example 1
@@ -26,10 +26,10 @@ console.log(study); // null
 // Example 2
 
 let obj = {
-    name: "cess",
+  name: 'cess',
 };
 
 obj.name = null;
 
 console.log(obj.name); // null
-``` 
+```

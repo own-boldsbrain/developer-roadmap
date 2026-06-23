@@ -13,46 +13,46 @@
 
 - To install Spack, clone its Git repository and set up your environment:
 
-   ```bash
-   git clone https://github.com/spack/spack.git
-   cd spack
-   . share/spack/setup-env.sh
-   ```
+  ```bash
+  git clone https://github.com/spack/spack.git
+  cd spack
+  . share/spack/setup-env.sh
+  ```
 
 - Install a package using Spack:
 
-   ```bash
-   spack install <package-name>
-   ```
+  ```bash
+  spack install <package-name>
+  ```
 
-   For example, to install `hdf5`:
+  For example, to install `hdf5`:
 
-   ```bash
-   spack install hdf5
-   ```
+  ```bash
+  spack install hdf5
+  ```
 
 - Load a package in your environment:
 
-   ```bash
-   spack load <package-name>
-   ```
+  ```bash
+  spack load <package-name>
+  ```
 
-   For example, to load `hdf5`:
+  For example, to load `hdf5`:
 
-   ```bash
-   spack load hdf5
-   ```
+  ```bash
+  spack load hdf5
+  ```
 
 - List installed packages:
 
-   ```bash
-   spack find
-   ```
+  ```bash
+  spack find
+  ```
 
 - Uninstall a package:
 
-   ```bash
-   spack uninstall <package-name>
-   ```
+  ```bash
+  spack uninstall <package-name>
+  ```
 
 For more advanced usage, like installing specific versions or using different compilers, consult the [Spack documentation](https://spack.readthedocs.io/).

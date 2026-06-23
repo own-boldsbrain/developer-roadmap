@@ -2,11 +2,11 @@
 title: 'AI Engineer Roadmap, Leaderboards, Editor AI, and more'
 description: 'New AI Engineer Roadmap, New Leaderboards, AI Integration in Editor, and more'
 images:
-  "AI Engineer Roadmap": "https://assets.roadmap.sh/guest/ai-engineer-roadmap.png"
-  "Refer Others": "https://assets.roadmap.sh/guest/invite-users.png"
-  "Editor AI Integration": "https://assets.roadmap.sh/guest/editor-ai-integration.png"
-  "Project Status": "https://assets.roadmap.sh/guest/project-status.png"
-  "Leaderboards": "https://assets.roadmap.sh/guest/new-leaderboards.png"
+  'AI Engineer Roadmap': 'https://assets.roadmap.sh/guest/ai-engineer-roadmap.png'
+  'Refer Others': 'https://assets.roadmap.sh/guest/invite-users.png'
+  'Editor AI Integration': 'https://assets.roadmap.sh/guest/editor-ai-integration.png'
+  'Project Status': 'https://assets.roadmap.sh/guest/project-status.png'
+  'Leaderboards': 'https://assets.roadmap.sh/guest/new-leaderboards.png'
 seo:
   title: 'AI Engineer Roadmap, Leaderboards, Editor AI, and more'
   description: ''

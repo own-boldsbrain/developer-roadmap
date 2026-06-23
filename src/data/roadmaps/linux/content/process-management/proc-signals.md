@@ -9,6 +9,7 @@ For instance, to send a SIGSTOP signal to a process with a PID of 12345 you woul
 ```bash
 kill -SIGSTOP 12345
 ```
+
 This will suspend the execution of the process until a SIGCONT signal is received.
 
 Understanding proc signals is essential for comprehensive process management and resource allocation in Linux.

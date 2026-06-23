@@ -155,7 +155,7 @@ export function FriendsPage() {
                 key={grouping.value}
                 className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
                   selectedGrouping === grouping.value
-                    ? ' border-gray-400 bg-gray-200 '
+                    ? 'border-gray-400 bg-gray-200'
                     : ''
                 } w-full sm:w-auto`}
                 onClick={() => setSelectedGrouping(grouping.value)}

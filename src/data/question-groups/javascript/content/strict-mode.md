@@ -5,29 +5,27 @@ JavaScript's strict mode makes you follow strict rules **(best practices)** when
 ```javascript
 // Without strict mode
 
-courseNo = "200";
+courseNo = '200';
 
 console.log(courseNo); // 200
 
 // With strict mode
 
-"use strict";  // top of your JS file
+('use strict'); // top of your JS file
 
-courseNo= "200";
+courseNo = '200';
 
-console.log(courseNo); // courseNo is not defined i.e, you didn't create it using the var, const, or let keywords. 
-
+console.log(courseNo); // courseNo is not defined i.e, you didn't create it using the var, const, or let keywords.
 
 // Strict mode: Functions
 
-function strictExample() { 
+function strictExample() {
+  'use strict';
 
-"use strict"; 
+  courseNumber = '200'; //  Error: courseNumber is not defined
 
-courseNumber = "200"; //  Error: courseNumber is not defined
+  console.log(courseNumber); // code won't run
+}
 
-console.log(courseNumber ); // code won't run
-
-} 
-
-strictExample(); // ReferenceError 
+strictExample(); // ReferenceError
+```

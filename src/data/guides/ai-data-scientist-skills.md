@@ -25,33 +25,33 @@ Data science is becoming more relevant as a field and profession by the day. Par
 
 Data scientists sit at the core of that progress, but what does it take to master the profession?
 
-Mastering the essential data scientist skills goes beyond just solving complex problems. It includes the ability to handle data workflows, build machine learning models, and interpret data trends effectively. 
+Mastering the essential data scientist skills goes beyond just solving complex problems. It includes the ability to handle data workflows, build machine learning models, and interpret data trends effectively.
 
 In this guide, we'll explore the top 10 skills that future data scientists must work on to shine brighter than the rest in 2025, setting a foundation for long-term success.
 
 These are the data scientist skills covered in the article:
 
-* Programming proficiency with **Python, R, and SQL**  
-* Data manipulation and analysis, including **data wrangling** and **exploratory data analysis**  
-* Mastery of **machine learning** and **AI techniques**  
-* Strong statistical and **mathematical** **foundations**  
-* Familiarity with **big data technologies**  
-* Data engineering for infrastructure and **ETL pipelines**  
-* Expertise in **data visualization** with tools like **Plotly** and **D3.js**  
-* **Domain knowledge** for aligning data science projects with business goals  
-* **Soft skills** for communication, collaboration, and creativity  
-* **Feature engineering** and selection for **model optimization**.  
-* Staying current with trends like **MLOps** and **Generative AI.**
+- Programming proficiency with **Python, R, and SQL**
+- Data manipulation and analysis, including **data wrangling** and **exploratory data analysis**
+- Mastery of **machine learning** and **AI techniques**
+- Strong statistical and **mathematical** **foundations**
+- Familiarity with **big data technologies**
+- Data engineering for infrastructure and **ETL pipelines**
+- Expertise in **data visualization** with tools like **Plotly** and **D3.js**
+- **Domain knowledge** for aligning data science projects with business goals
+- **Soft skills** for communication, collaboration, and creativity
+- **Feature engineering** and selection for **model optimization**.
+- Staying current with trends like **MLOps** and **Generative AI.**
 
 ## **Understanding Data Science**
 
 [Data science](https://roadmap.sh/ai-data-scientist) is an interdisciplinary field that combines multiple disciplines to make sense of data and drive actionable insights. It integrates programming, statistical analysis, and domain knowledge to uncover patterns and trends in both structured and unstructured data. This powerful combination enables data professionals to solve a variety of challenges, such as:
 
-* Building predictive models to forecast sales or identify customer churn.  
-* Developing optimization techniques to streamline supply chains or allocate resources more effectively.  
-* Leveraging automation and artificial intelligence to create personalized recommendations or detect fraudulent activity in massive datasets.
+- Building predictive models to forecast sales or identify customer churn.
+- Developing optimization techniques to streamline supply chains or allocate resources more effectively.
+- Leveraging automation and artificial intelligence to create personalized recommendations or detect fraudulent activity in massive datasets.
 
-At its core, data science empowers organizations to turn raw data into actionable insights. By interpreting data effectively and applying statistical models, data scientists support data-driven decision-making, ensuring businesses maintain a competitive edge. 
+At its core, data science empowers organizations to turn raw data into actionable insights. By interpreting data effectively and applying statistical models, data scientists support data-driven decision-making, ensuring businesses maintain a competitive edge.
 
 The data science field requires a unique mix of technical skills, analytical prowess, and creativity to handle the vast array of complex data sets encountered in real-world scenarios. In other words, being a data scientist is not for everyone.
 
@@ -119,7 +119,7 @@ Designing ETL (Extract, Transform, Load) pipelines is a critical part of data en
 
 Using tools like Apache Airflow, those workflows can be streamlined, while managing real-time data streaming using Kafka ensures that real-time data—such as social media feeds or IoT sensor data—is processed without delay. For example, a Kafka pipeline could ingest weather data to update forecasts in real-time.
 
-Finally, storing and querying complex data sets in cloud computing with tools like Snowflake or BigQuery allows data scientists to interact with massive datasets effortlessly. 
+Finally, storing and querying complex data sets in cloud computing with tools like Snowflake or BigQuery allows data scientists to interact with massive datasets effortlessly.
 
 These platforms support scalable storage and high-performance queries, enabling faster analysis and actionable insights.
 
@@ -171,7 +171,7 @@ For example, imagine building a model to predict house prices. Raw data might in
 
 Feature selection, on the other hand, focuses on optimizing the use and dependency on features by identifying the most relevant ones and removing the redundant or irrelevant features. For example, let's consider a retail scenario where a model is predicting customer churn, here it might benefit from focusing on features like "purchase frequency" and "customer feedback sentiment", while ignoring less impactful ones like "the time of day purchases are made". This helps to avoid the model getting overwhelmed by noise, improving both its efficiency and accuracy.
 
-If you're looking to improve your data science game, then focusing on feature engineering and selection can definitely have that effect. 
+If you're looking to improve your data science game, then focusing on feature engineering and selection can definitely have that effect.
 
 ## 11\. Staying Current
 
@@ -194,4 +194,3 @@ Mastering these essential data scientist skills—from programming languages and
 In addition, while big data technologies and data engineering skills are not the central focus of a data scientist's role, they serve as valuable, data science-adjacent competencies. Familiarity with big data tools like Apache Spark and cloud computing platforms can enhance scalability and efficiency in handling massive datasets, while data engineering knowledge helps create robust pipelines to support analysis. By building expertise in these areas and maintaining adaptability, you can excel in this dynamic, data-driven industry.
 
 Check out our [data science roadmap](https://roadmap.sh/ai-data-scientist) next to discover what your potential learning path could look like in this role.
-

@@ -63,7 +63,7 @@ export function RoadCardPage() {
 
   return (
     <>
-      <div className="mx-0 flex items-start gap-4 border-b px-0 pb-4 pt-2 sm:-mx-10 sm:px-10">
+      <div className="mx-0 flex items-start gap-4 border-b px-0 pt-2 pb-4 sm:-mx-10 sm:px-10">
         <StepCounter step={1} />
         <div>
           <StepLabel label="Pick progress to show (Max. 4)" />
@@ -140,7 +140,7 @@ export function RoadCardPage() {
               target="_blank"
               rel="noopener noreferrer"
               className={`relative block hover:cursor-pointer ${
-                version === 'tall' ? ' max-w-[270px] ' : ' w-full '
+                version === 'tall' ? 'max-w-[270px]' : 'w-full'
               }`}
             >
               <img src={badgeUrl.toString()} alt="RoadCard" />

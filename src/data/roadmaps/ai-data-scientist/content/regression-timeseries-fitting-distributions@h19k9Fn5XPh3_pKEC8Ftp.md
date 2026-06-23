@@ -9,4 +9,3 @@
 - [@article@11 Classical Time Series Forecasting Methods in Python](https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/)
 - [@opensource@Blockchain.com Data Scientist TakeHome Test](https://github.com/stalkermustang/bcdc_ds_takehome)
 - [@article@Linear Regression for Business Statistics](https://imp.i384100.net/9g97Ke)
-

@@ -6,35 +6,39 @@ Debugger messages are notifications or alerts provided by a debugger to help you
 
 - **Error Messages:** Notify you about issues in the code that prevent the program from running or compiling correctly. These messages typically include information about the file and the line number where the error is detected, followed by a description of the issue.
 
-   Example:
-   ```
-   test.cpp: In function 'int main()':
-   test.cpp:6:5: error: 'cout' was not declared in this scope
-        cout << "Hello World!";
-        ^~~~
-   ```
+  Example:
+
+  ```
+  test.cpp: In function 'int main()':
+  test.cpp:6:5: error: 'cout' was not declared in this scope
+       cout << "Hello World!";
+       ^~~~
+  ```
 
 - **Warning Messages:** Inform you about potential issues or risky programming practices that may not necessarily cause errors but could lead to problems later on. Like error messages, warning messages usually include information about the file and line number where the issue is found, along with a description of the problem.
 
-   Example:
-   ```
-   test.cpp: In function 'int main()':
-   test.cpp:6:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-        if (a < size)
-                 ^
-   ```
+  Example:
+
+  ```
+  test.cpp: In function 'int main()':
+  test.cpp:6:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (a < size)
+                ^
+  ```
 
 - **Informational Messages:** Provide general information about the execution of the program, such as breakpoints, watchpoints, and variable values. These messages can also reveal the current state of the program, including the call stack and the list of active threads.
 
-   Example (*assuming you are using GDB as debugger*):
-   ```
-   (gdb) break main
-   Breakpoint 1 at 0x40055f: file test.cpp, line 5.
-   (gdb) run
-   Starting program: /path/to/test
-   Breakpoint 1, main () at test.cpp:5
-   5       int a = 5;
-   ```
+  Example (_assuming you are using GDB as debugger_):
+
+  ```
+  (gdb) break main
+  Breakpoint 1 at 0x40055f: file test.cpp, line 5.
+  (gdb) run
+  Starting program: /path/to/test
+  Breakpoint 1, main () at test.cpp:5
+  5       int a = 5;
+  ```
+
 ## Code Examples
 
 To make use of debugger messages, you need to employ a debugger, such as GDB or Visual Studio Debugger, and include specific flags during the compilation process.

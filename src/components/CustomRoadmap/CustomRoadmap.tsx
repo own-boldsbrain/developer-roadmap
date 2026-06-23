@@ -118,7 +118,7 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
         resourceId={roadmap!._id}
         resourceTitle={roadmap!.title}
         resourceType="roadmap"
-        renderer='editor'
+        renderer="editor"
         isEmbed={isEmbed}
         canSubmitContribution={false}
       />

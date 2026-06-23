@@ -36,7 +36,7 @@ export function LeaveTeamPopup(props: LeaveTeamPopupProps) {
 
     const { response, error } = await httpDelete(
       `${import.meta.env.PUBLIC_API_URL}/v1-leave-team/${teamId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -59,19 +59,18 @@ export function LeaveTeamPopup(props: LeaveTeamPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+    <div className="popup fixed top-0 right-0 left-0 z-50 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50">
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
           className="popup-body relative rounded-lg bg-white p-4 shadow-sm"
         >
-          <h2 className="text-2xl font-semibold text-black">
-            Leave Team
-          </h2>
+          <h2 className="text-2xl font-semibold text-black">Leave Team</h2>
           <p className="text-gray-500">
-            You will lose access to the team, the roadmaps and progress of other team members.
+            You will lose access to the team, the roadmaps and progress of other
+            team members.
           </p>
-          <p className="-mb-2 mt-3 text-base font-medium text-black">
+          <p className="mt-3 -mb-2 text-base font-medium text-black">
             Please type "leave" to confirm.
           </p>
           <form onSubmit={handleSubmit}>

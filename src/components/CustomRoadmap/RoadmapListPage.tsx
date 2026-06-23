@@ -52,7 +52,7 @@ export function RoadmapListPage() {
   async function loadRoadmapList() {
     setIsLoading(true);
     const { response, error } = await httpGet<GetRoadmapListResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-roadmap-list`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-roadmap-list`,
     );
 
     if (error || !response) {
@@ -65,7 +65,7 @@ export function RoadmapListPage() {
       response! || {
         personalRoadmaps: [],
         sharedRoadmaps: [],
-      }
+      },
     );
   }
 
@@ -92,8 +92,8 @@ export function RoadmapListPage() {
             return (
               <button
                 key={tab.value}
-                className={`relative flex w-full items-center justify-center whitespace-nowrap rounded-md border p-1 px-3 text-sm sm:w-auto ${
-                  activeTab === tab.value ? ' border-gray-400 bg-gray-200 ' : ''
+                className={`relative flex w-full items-center justify-center rounded-md border p-1 px-3 text-sm whitespace-nowrap sm:w-auto ${
+                  activeTab === tab.value ? 'border-gray-400 bg-gray-200' : ''
                 } w-full sm:w-auto`}
                 onClick={() => setActiveTab(tab.value)}
               >
@@ -119,7 +119,7 @@ export function RoadmapListPage() {
               setAllRoadmaps({
                 ...allRoadmaps,
                 personalRoadmaps: allRoadmaps.personalRoadmaps.filter(
-                  (r) => r._id !== roadmapId
+                  (r) => r._id !== roadmapId,
                 ),
               });
             }}

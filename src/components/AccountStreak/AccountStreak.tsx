@@ -83,7 +83,7 @@ export function AccountStreak(props: AccountStreakProps) {
   const totalCircles = leftCircleCount + currentCircleCount + remainingCount;
 
   return (
-    <div className="relative z-90 animate-fade-in">
+    <div className="animate-fade-in relative z-90">
       <button
         className={cn(
           'flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-hidden',
@@ -102,9 +102,9 @@ export function AccountStreak(props: AccountStreakProps) {
       {showDropdown && (
         <div
           ref={dropdownRef}
-          className="absolute right-0 top-full z-50 w-[335px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
+          className="absolute top-full right-0 z-50 w-[335px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
-          <div className="py-5 pl-4 pr-5">
+          <div className="py-5 pr-5 pl-4">
             <div className="flex items-center justify-between gap-2 text-sm text-slate-500">
               <p>
                 Current Streak
@@ -120,7 +120,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </p>
             </div>
 
-            <div className="mb-6 mt-9">
+            <div className="mt-9 mb-6">
               <div className="grid grid-cols-10 gap-1">
                 {Array.from({ length: totalCircles }).map((_, index) => {
                   let dayCount,

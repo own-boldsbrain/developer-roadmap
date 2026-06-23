@@ -1,4 +1,4 @@
-# Editing Files 
+# Editing Files
 
 Linux, like other operating systems, allows file editing for numerous purposes, whether you need to configure some system functionality or writing scripts. There's a variety of text editors available in Linux by default, these include: `nano`, `vi/vim`, `emacs`, and `gedit`. Each of these has its own learning curve and set of commands.
 
@@ -17,6 +17,7 @@ vi [filename] or vim [filename]
 ```bash
 gedit [filename]
 ```
-Visit the following resources to learn more: 
+
+Visit the following resources to learn more:
 
 - [@article@How to edit a file](https://www.scaler.com/topics/how-to-edit-a-file-in-linux/)

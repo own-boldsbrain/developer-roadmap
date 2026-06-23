@@ -82,7 +82,7 @@ export function TeamDropdown() {
   return (
     <>
       <div className="relative mr-2">
-        <span className="mb-2 flex items-center justify-between text-xs uppercase text-gray-400">
+        <span className="mb-2 flex items-center justify-between text-xs text-gray-400 uppercase">
           <span>Choose Team</span>
         </span>
         <button
@@ -90,7 +90,7 @@ export function TeamDropdown() {
           onClick={() => setShowDropdown(!showDropdown)}
         >
           {pendingTeamIds.length > 0 && (
-            <span className="absolute -left-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-medium text-white">
+            <span className="absolute -top-1.5 -left-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-medium text-white">
               {pendingTeamIds.length}
             </span>
           )}
@@ -145,9 +145,7 @@ export function TeamDropdown() {
                       className="flex w-full cursor-pointer items-center gap-2 rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                       href={`${pageLink}`}
                     >
-                      <span className="min-w-0 grow truncate">
-                        {team.name}
-                      </span>
+                      <span className="min-w-0 grow truncate">{team.name}</span>
                       {pendingTeamIds.includes(team._id) && (
                         <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
                           Invite

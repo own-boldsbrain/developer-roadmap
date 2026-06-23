@@ -1,27 +1,26 @@
 ---
-title: 'Testimonial Cards'  
-description: 'Create testimonial cards for a website using HTML and CSS.'  
-isNew: false  
-sort: 5  
-difficulty: 'beginner'  
+title: 'Testimonial Cards'
+description: 'Create testimonial cards for a website using HTML and CSS.'
+isNew: false
+sort: 5
+difficulty: 'beginner'
 nature: 'CSS'
-skills:  
-  - 'HTML'  
-  - 'CSS'  
-  - 'Layouts'  
+skills:
+  - 'HTML'
+  - 'CSS'
+  - 'Layouts'
   - 'Flexbox'
   - 'Positioning'
-seo:  
-  title: 'Create Testimonial Cards for a Website Using HTML and CSS'  
-  description: 'Learn how to create testimonial components using HTML and CSS.'  
-  keywords:  
-    - 'basic css'  
-    - 'css project idea'  
-    - 'responsive design'  
-    - 'html and css'  
-roadmapIds:  
-  - 'frontend'  
-
+seo:
+  title: 'Create Testimonial Cards for a Website Using HTML and CSS'
+  description: 'Learn how to create testimonial components using HTML and CSS.'
+  keywords:
+    - 'basic css'
+    - 'css project idea'
+    - 'responsive design'
+    - 'html and css'
+roadmapIds:
+  - 'frontend'
 ---
 
 In this project, you are required to create a bunch of testimonial cards. Testimonials are quotes or statements from satisfied customers or users, often used on websites to build credibility and trust.

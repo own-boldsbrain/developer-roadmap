@@ -39,7 +39,7 @@ export function PredefinedActionGroup(props: PredefinedActionGroupProps) {
               <PredefinedActionButton
                 key={action.label}
                 {...action}
-                className="py-2 pl-2.5 pr-5 w-full rounded-none bg-transparent hover:bg-gray-200"
+                className="w-full rounded-none bg-transparent py-2 pr-5 pl-2.5 hover:bg-gray-200"
                 onClick={() => {
                   onSelect(action);
                   setIsOpen(false);

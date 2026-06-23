@@ -12,4 +12,4 @@ This table shows the difference between KNN and K-means depending on the use cas
 | **Purpose**          | Classifies new data points on labeled training data                        | Groups unlabeled data points into clusters                          |
 | **Data Usage**       | Uses the entire dataset for predictions                                    | Splits the data into clusters iteratively                           |
 | **Scalability**      | Slow for large datasets because all data points are needed for predictions | Faster for large datasets because initial centroids are already set |
-| **Example Use Case** | Image Classification, Recommendation Systems                               | Customer Grouping                                                   | 
+| **Example Use Case** | Image Classification, Recommendation Systems                               | Customer Grouping                                                   |

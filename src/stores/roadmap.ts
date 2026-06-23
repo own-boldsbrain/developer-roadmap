@@ -15,4 +15,3 @@ export const roadmapProgress = atom<
   { done: string[]; learning: string[]; skipped: string[] } | undefined
 >();
 export const totalRoadmapNodes = atom<number | undefined>();
-

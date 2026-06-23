@@ -38,14 +38,14 @@ export function StreakDay(props: StreakDayProps) {
       <div
         className={cn('flex size-6 items-center justify-center rounded-full', {
           'bg-slate-700': isRemainingStreakDay,
-          'border border-dashed border-slate-500 striped-bg': isToday,
+          'striped-bg border border-dashed border-slate-500': isToday,
         })}
       >
         {isToday ? null : icon}
       </div>
       <span className={cn('text-xs')}>{dayCount}</span>
       {isToday && (
-        <ChevronDown className="absolute bottom-full left-1/2 h-3.5 w-3.5 -translate-y-[0.75px] -translate-x-1/2 transform stroke-[2.5px] text-slate-400" />
+        <ChevronDown className="absolute bottom-full left-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-[0.75px] transform stroke-[2.5px] text-slate-400" />
       )}
     </div>
   );

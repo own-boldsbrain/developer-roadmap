@@ -1,0 +1,7 @@
+{"timestamp":"2026-07-17T23:18:22.398Z","provider":"ollama","status":"FUNCTIONAL_TEST_FAILED","metrics":{"httpStatus":404,"ttfbMs":4.7879999999999825}}
+{"timestamp":"2026-07-17T23:18:23.509Z","provider":"deeplx","status":"RATE_LIMITED","metrics":{"httpStatus":429,"ttfbMs":1107.4879}}
+{"timestamp":"2026-07-17T23:18:23.509Z","provider":"azure_openai","status":"NOT_READY","metrics":{}}
+{"timestamp":"2026-07-17T23:18:23.510Z","provider":"nvidia","status":"NOT_READY","metrics":{}}
+{"timestamp":"2026-07-17T23:18:23.510Z","provider":"openai","status":"NOT_READY","metrics":{}}
+{"timestamp":"2026-07-17T23:18:23.510Z","provider":"litellm","status":"NOT_READY","metrics":{}}
+{"timestamp":"2026-07-17T23:18:23.510Z","provider":"mistral","status":"SKIPPED","metrics":{}}

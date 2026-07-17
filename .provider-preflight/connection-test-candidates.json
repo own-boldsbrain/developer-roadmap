@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-17T23:15:00-03:00",
+  "providers": [
+    {
+      "providerId": "ollama",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "DEFAULT",
+        "value": "http://localhost:11434"
+      },
+      "credential": {
+        "required": false
+      },
+      "capabilityProbe": {
+        "method": "GET",
+        "path": "/api/tags"
+      },
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/api/generate",
+        "expected": "PROVIDER_READY"
+      },
+      "timeoutMs": 120000
+    },
+    {
+      "providerId": "deeplx",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "DEFAULT",
+        "value": "http://localhost:1188"
+      },
+      "credential": {
+        "required": false
+      },
+      "capabilityProbe": {
+        "method": "GET",
+        "path": "/"
+      },
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/translate",
+        "expected": "teste de prontidão do provedor"
+      },
+      "timeoutMs": 15000
+    },
+    {
+      "providerId": "azure_openai",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "ENV",
+        "variable": "AZURE_OPENAI_ENDPOINT"
+      },
+      "credential": {
+        "required": true,
+        "source": "ENV",
+        "variable": "AZURE_OPENAI_API_KEY"
+      },
+      "capabilityProbe": null,
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/chat/completions?api-version=2024-02-15-preview",
+        "expected": "PROVIDER_READY"
+      },
+      "timeoutMs": 15000
+    },
+    {
+      "providerId": "nvidia",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "DEFAULT",
+        "value": "https://integrate.api.nvidia.com/v1"
+      },
+      "credential": {
+        "required": true,
+        "source": "ENV",
+        "variable": "NVIDIA_API_KEY"
+      },
+      "capabilityProbe": {
+        "method": "GET",
+        "path": "/models"
+      },
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/chat/completions",
+        "expected": "PROVIDER_READY"
+      },
+      "timeoutMs": 15000
+    },
+    {
+      "providerId": "openai",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "DEFAULT",
+        "value": "https://api.openai.com/v1"
+      },
+      "credential": {
+        "required": true,
+        "source": "ENV",
+        "variable": "OPENAI_API_KEY"
+      },
+      "capabilityProbe": {
+        "method": "GET",
+        "path": "/models"
+      },
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/chat/completions",
+        "expected": "PROVIDER_READY"
+      },
+      "timeoutMs": 15000
+    },
+    {
+      "providerId": "litellm",
+      "enabled": true,
+      "implementationStatus": "IMPLEMENTED",
+      "endpoint": {
+        "source": "ENV",
+        "variable": "LITELLM_URL"
+      },
+      "credential": {
+        "required": true,
+        "source": "ENV",
+        "variable": "LITELLM_API_KEY"
+      },
+      "capabilityProbe": {
+        "method": "GET",
+        "path": "/v1/models"
+      },
+      "functionalProbe": {
+        "method": "POST",
+        "path": "/chat/completions",
+        "expected": "PROVIDER_READY"
+      },
+      "timeoutMs": 15000
+    },
+    {
+      "providerId": "mistral",
+      "enabled": false,
+      "implementationStatus": "CONFIGURED_ONLY",
+      "skipReason": "NO_CONFIRMED_IMPLEMENTATION"
+    }
+  ]
+}

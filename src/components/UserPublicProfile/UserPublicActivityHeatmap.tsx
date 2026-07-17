@@ -64,17 +64,19 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
             return 'fill-gray-200 rounded-md [rx:2px] focus:outline-hidden';
           }
         }}
-        tooltipDataAttrs={((value: any) => {
-          if (!value || !value.date) {
-            return null;
-          }
+        tooltipDataAttrs={
+          ((value: any) => {
+            if (!value || !value.date) {
+              return null;
+            }
 
-          const formattedDate = formatActivityDate(value.date);
-          return {
-            'data-tooltip-id': 'user-activity-tip',
-            'data-tooltip-content': `${value.count} Updates - ${formattedDate}`,
-          };
-        }) as any}
+            const formattedDate = formatActivityDate(value.date);
+            return {
+              'data-tooltip-id': 'user-activity-tip',
+              'data-tooltip-content': `${value.count} Updates - ${formattedDate}`,
+            };
+          }) as any
+        }
       />
 
       <ReactTooltip

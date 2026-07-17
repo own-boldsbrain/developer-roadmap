@@ -3,12 +3,18 @@ import * as path from 'path';
 import * as crypto from 'crypto';
 
 const args = process.argv.slice(2);
-const manifestArg = args.find(a => a.startsWith('--manifest='))?.split('=')[1];
-const inventoryArg = args.find(a => a.startsWith('--inventory='))?.split('=')[1];
+const manifestArg = args
+  .find((a) => a.startsWith('--manifest='))
+  ?.split('=')[1];
+const inventoryArg = args
+  .find((a) => a.startsWith('--inventory='))
+  ?.split('=')[1];
 const failOnMismatch = args.includes('--fail-on-mismatch');
 
 if (!manifestArg || !inventoryArg) {
-  console.error('Usage: npx tsx forensic-verify.ts --manifest=<path> --inventory=<path> [--fail-on-mismatch]');
+  console.error(
+    'Usage: npx tsx forensic-verify.ts --manifest=<path> --inventory=<path> [--fail-on-mismatch]',
+  );
   process.exit(1);
 }
 
@@ -17,7 +23,10 @@ function hashFile(filePath: string): string {
     throw new Error(`FILE_MISSING`);
   }
   const content = fs.readFileSync(filePath);
-  return 'sha256:' + crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex');
+  return (
+    'sha256:' +
+    crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex')
+  );
 }
 
 function verify() {
@@ -25,14 +34,18 @@ function verify() {
     console.error(`Manifest not found at ${manifestArg}`);
     process.exit(1);
   }
-  
+
   if (!fs.existsSync(inventoryArg as string)) {
     console.error(`Inventory not found at ${inventoryArg}`);
     process.exit(1);
   }
 
   // Read inventory to map fileId -> sourcePath
-  const inventory = fs.readFileSync(inventoryArg as string, 'utf-8').split('\n').filter(Boolean).map(l => JSON.parse(l));
+  const inventory = fs
+    .readFileSync(inventoryArg as string, 'utf-8')
+    .split('\n')
+    .filter(Boolean)
+    .map((l) => JSON.parse(l));
   const idToPath = new Map<string, string>();
   for (const entry of inventory) {
     idToPath.set(entry.fileId, entry.targetPath);
@@ -40,8 +53,12 @@ function verify() {
 
   // Read manifest to get finalHashes
   // Select latest terminal entry by fileId for PUBLISHED entries
-  const manifests = fs.readFileSync(manifestArg as string, 'utf-8').split('\n').filter(Boolean).map(l => JSON.parse(l));
-  
+  const manifests = fs
+    .readFileSync(manifestArg as string, 'utf-8')
+    .split('\n')
+    .filter(Boolean)
+    .map((l) => JSON.parse(l));
+
   const latestPublished = new Map<string, any>();
   for (const entry of manifests) {
     if (entry.status === 'PUBLISHED') {
@@ -58,13 +75,17 @@ function verify() {
   for (const [fileId, entry] of latestPublished.entries()) {
     const sourcePath = idToPath.get(fileId);
     if (!sourcePath) {
-      console.error(`[MANIFEST_AMBIGUOUS] Cannot resolve target path for fileId ${fileId}`);
+      console.error(
+        `[MANIFEST_AMBIGUOUS] Cannot resolve target path for fileId ${fileId}`,
+      );
       unverifiable++;
       continue;
     }
 
     if (!entry.finalHash) {
-      console.error(`[MANIFEST_MISSING_FINAL_HASH] fileId ${fileId} lacks finalHash in manifest`);
+      console.error(
+        `[MANIFEST_MISSING_FINAL_HASH] fileId ${fileId} lacks finalHash in manifest`,
+      );
       unverifiable++;
       continue;
     }
@@ -95,7 +116,8 @@ function verify() {
     missing,
     mismatched,
     unverifiable,
-    status: (missing > 0 || mismatched > 0 || unverifiable > 0) ? 'FAILED' : 'PASSED'
+    status:
+      missing > 0 || mismatched > 0 || unverifiable > 0 ? 'FAILED' : 'PASSED',
   };
 
   console.log(JSON.stringify(results, null, 2));

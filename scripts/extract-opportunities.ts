@@ -240,13 +240,15 @@ async function run() {
 
       // Check root unknown fields
       const rootKeys = Object.keys(parsed);
-      const unknownRootKeys = rootKeys.filter(k => !['roadmap', 'findings'].includes(k));
+      const unknownRootKeys = rootKeys.filter(
+        (k) => !['roadmap', 'findings'].includes(k),
+      );
       if (unknownRootKeys.length > 0) {
         unknownFields += unknownRootKeys.length;
         appendLog(REJECTED_PATH, {
           fileId,
           error: 'UNKNOWN_FIELDS',
-          keys: unknownRootKeys
+          keys: unknownRootKeys,
         });
         continue;
       }
@@ -291,11 +293,24 @@ async function run() {
       for (const f of parsed.findings) {
         // Check allowed properties in finding
         const keys = Object.keys(f);
-        const unknownFindingKeys = keys.filter(k => !['category', 'severity', 'title', 'evidence', 'recommendation', 'confidence', 'timeHorizon'].includes(k));
-        
+        const unknownFindingKeys = keys.filter(
+          (k) =>
+            ![
+              'category',
+              'severity',
+              'title',
+              'evidence',
+              'recommendation',
+              'confidence',
+              'timeHorizon',
+            ].includes(k),
+        );
+
         let unknownEvKeys: string[] = [];
         if (f.evidence && typeof f.evidence === 'object') {
-          unknownEvKeys = Object.keys(f.evidence).filter(k => !['file', 'heading', 'excerpt'].includes(k));
+          unknownEvKeys = Object.keys(f.evidence).filter(
+            (k) => !['file', 'heading', 'excerpt'].includes(k),
+          );
         }
 
         if (unknownFindingKeys.length > 0 || unknownEvKeys.length > 0) {
@@ -303,7 +318,7 @@ async function run() {
           appendLog(REJECTED_PATH, {
             fileId,
             error: 'UNKNOWN_FIELDS',
-            keys: [...unknownFindingKeys, ...unknownEvKeys]
+            keys: [...unknownFindingKeys, ...unknownEvKeys],
           });
           rejectedAny = true;
           continue;
@@ -339,7 +354,11 @@ async function run() {
         }
 
         // excerpt inexistente ou heading inexistente (already covered by missing fields above, but we also enforce it has heading here)
-        if (!f.evidence || f.evidence.file !== sourcePath || !f.evidence.heading) {
+        if (
+          !f.evidence ||
+          f.evidence.file !== sourcePath ||
+          !f.evidence.heading
+        ) {
           appendLog(REJECTED_PATH, {
             fileId,
             finding: f,
@@ -408,7 +427,10 @@ async function run() {
   // Cross Run Contamination check
   let contaminationFound = false;
   if (fs.existsSync(FINDINGS_PATH)) {
-    const records = fs.readFileSync(FINDINGS_PATH, 'utf-8').split('\n').filter(Boolean);
+    const records = fs
+      .readFileSync(FINDINGS_PATH, 'utf-8')
+      .split('\n')
+      .filter(Boolean);
     for (const r of records) {
       const obj = JSON.parse(r);
       if (obj.runId !== runId) {
@@ -446,11 +468,26 @@ async function run() {
         findingsAccepted,
         evidenceChecksAttempted,
         evidenceVerified: verifiedEvidence,
-        responseParseRate: responsesAttempted > 0 ? (responsesParsed / responsesAttempted) * 100 : 0,
-        responseSchemaPassRate: responsesParsed > 0 ? (responsesSchemaPassed / responsesParsed) * 100 : 0,
-        findingSchemaPassRate: findingsReceived > 0 ? (findingsSchemaPassed / findingsReceived) * 100 : 0,
-        findingAcceptanceRate: findingsSchemaPassed > 0 ? (findingsAccepted / findingsSchemaPassed) * 100 : 0,
-        evidenceVerifiedRate: evidenceChecksAttempted > 0 ? (verifiedEvidence / evidenceChecksAttempted) * 100 : 0,
+        responseParseRate:
+          responsesAttempted > 0
+            ? (responsesParsed / responsesAttempted) * 100
+            : 0,
+        responseSchemaPassRate:
+          responsesParsed > 0
+            ? (responsesSchemaPassed / responsesParsed) * 100
+            : 0,
+        findingSchemaPassRate:
+          findingsReceived > 0
+            ? (findingsSchemaPassed / findingsReceived) * 100
+            : 0,
+        findingAcceptanceRate:
+          findingsSchemaPassed > 0
+            ? (findingsAccepted / findingsSchemaPassed) * 100
+            : 0,
+        evidenceVerifiedRate:
+          evidenceChecksAttempted > 0
+            ? (verifiedEvidence / evidenceChecksAttempted) * 100
+            : 0,
         unknownFields,
         duplicateFindingIds,
         crossRunContamination,

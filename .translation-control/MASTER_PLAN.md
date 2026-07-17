@@ -25,6 +25,11 @@ As seguintes evidências constituem o baseline inicial do projeto:
 * As traduções existentes estavam concentradas em arquivos JSON na pasta de conteúdo público.
 * O universo estimado contém 6.517 arquivos Markdown inventariados.
 * Os arquivos estão distribuídos entre aproximadamente 59 roadmaps.
+* Quando o inventário mudar, registre:
+  - `inventoryVersion`
+  - `inventoryGeneratedAt`
+  - `inventoryHash`
+  - `eligibleFileCount`
 * O Ollama local está operacional.
 * O modelo `translategemma:latest` está disponível localmente.
 * O modelo `qwen3.6:latest` também está disponível e poderá atuar como fallback.
@@ -286,8 +291,15 @@ O manifesto da execução deverá registrar:
   "startedAt": "2026-07-17T16:30:15-03:00",
   "gitBranch": "dev",
   "gitCommit": "abc123",
-  "engine": "ollama",
+  "inventoryHash": "sha256:...",
+  "promptHash": "sha256:...",
+  "configHash": "sha256:...",
+  "modelDigest": "sha256:...",
+  "gateway": "direct",
+  "provider": "ollama",
   "model": "translategemma:latest",
+  "endpoint": "http://localhost:11434",
+  "fallbackLevel": 0,
   "promptVersion": "translation-v1.0.0",
   "validatorVersion": "validator-v1.0.0",
   "parallelism": 1,
@@ -334,9 +346,9 @@ Definições essenciais:
 
 ## 9. Scripts de Orquestração de Tradução
 
-### [NEW] `scripts/batch-translate.ps1`
+### [IMPLEMENTED] `scripts/forensic-runner.ts`
 
-O script será responsável por:
+O script substituirá o `batch-translate.ps1` legado e será responsável por:
 
 * localizar arquivos `.md` elegíveis;
 * ignorar traduções existentes;
@@ -354,24 +366,24 @@ O script será responsável por:
 Comando base:
 
 ```powershell
-python C:\Users\fjuni\.gemini\config\skills\translation\scripts\translate_doc.py `
-  -f <arquivo> `
-  -e ollama
+npx tsx scripts/forensic-runner.ts translate \
+  --roadmap devops \
+  --limit 25 \
+  --parallelism 1 \
+  --selection-strategy stratified \
+  --selection-seed devops-canary-v1
 ```
 
 Parâmetros esperados:
 
 ```text
--Roadmap frontend
--Limit 20
--Resume
--Force
--DryRun
--Parallelism 1
--Model translategemma:latest
--FallbackModel qwen3.6:latest
--MaxRetries 3
--TimeoutSeconds 600
+translate
+--roadmap
+--limit
+--parallelism
+--selection-strategy
+--selection-seed
+--dry-run
 ```
 
 ### Regras de elegibilidade
@@ -501,6 +513,15 @@ opportunity.extraction_completed
 
 Antes da execução:
 
+* **Lock Operacional**: `.translation-control/locks/translation.lock` criado atomicamente com heartbeat periódico.
+* **Segurança e Egress**:
+  - [ ] política de egress identificada
+  - [ ] provedor final identificado
+  - [ ] nenhum segredo presente no documento
+  - [ ] redaction executada
+  - [ ] processamento externo autorizado
+
+
 * diretório do projeto encontrado;
 * Git status capturado;
 * espaço em disco validado;
@@ -533,7 +554,7 @@ Antes da execução:
 
 ### Gate G3 — Preservação estrutural
 
-* mesma quantidade de code blocks;
+* hash idêntico dos code blocks originais e restaurados (`sourceHash === restoredHash`);
 * mesmas URLs;
 * mesmo frontmatter estrutural;
 * componentes MDX preservados;
@@ -543,9 +564,9 @@ Antes da execução:
 * Mermaid preservado;
 * links internos válidos.
 
-### Gate G4 — Publicação
+### Gate G4 — Publicação Técnica
 
-Somente arquivos aprovados poderão ser publicados.
+Somente arquivos aprovados poderão ser publicados no file system.
 
 Fluxo:
 
@@ -556,6 +577,10 @@ Fluxo:
   → rename atômico
   → manifesto
 ```
+
+### Gate G4H — Human Quality Acceptance
+
+Revisão manual estratificada da qualidade.
 
 ### Gate G5 — Conclusão do roadmap
 
@@ -656,7 +681,9 @@ A inspeção deverá verificar:
 
 ## 15. Scripts de Extração de Oportunidades
 
-### [NEW] `scripts/extract-opportunities.ts`
+### [IMPLEMENTED] `scripts/extract-opportunities.ts`
+### [IMPLEMENTED] `scripts/forensic-consolidator.ts`
+### [IMPLEMENTED] `schemas/opportunity-finding.schema.json`
 
 O script será executado via `tsx` e deverá:
 
@@ -1006,7 +1033,7 @@ Deverá conter:
 
 ## 25. Ordem de Implementação
 
-### Fase 0 — Baseline
+### Fase 0 — COMPLETED
 
 1. Capturar Git status e commit.
 2. Criar inventário.
@@ -1015,7 +1042,7 @@ Deverá conter:
 5. Registrar disponibilidade dos serviços.
 6. Criar diretórios de controle.
 
-### Fase 1 — Fundação de observabilidade
+### Fase 1 — COMPLETED
 
 1. Implementar `runId`.
 2. Implementar `fileId`.
@@ -1024,16 +1051,16 @@ Deverá conter:
 5. Implementar hashes.
 6. Implementar estados canônicos.
 
-### Fase 2 — Piloto de tradução
+### Fase 2 — TECHNICALLY_COMPLETED / HUMAN_ACCEPTANCE_PENDING
 
-1. Implementar `batch-translate.ps1`.
+1. Implementar `forensic-runner.ts`.
 2. Executar dry-run.
 3. Processar 20 arquivos.
 4. Validar estrutura.
 5. Revisar amostra humana.
 6. Corrigir o pipeline.
 
-### Fase 3 — Auditoria de oportunidades
+### Fase 3 — IMPLEMENTED_AND_TESTED
 
 1. Implementar `extract-opportunities.ts`.
 2. Definir JSON Schema.
@@ -1042,7 +1069,7 @@ Deverá conter:
 5. Auditar os primeiros roadmaps.
 6. Consolidar findings.
 
-### Fase 4 — Escala controlada
+### Fase 4 — READY_FOR_CANARY
 
 1. Traduzir por roadmap.
 2. Monitorar hardware.
@@ -1051,7 +1078,7 @@ Deverá conter:
 5. Retomar automaticamente.
 6. Atualizar relatórios.
 
-### Fase 5 — Renderização e publicação
+### Fase 5 — NOT_STARTED
 
 1. Executar testes.
 2. Validar páginas pt-BR.
@@ -1116,7 +1143,41 @@ Ao final, deverá ser possível responder rapidamente:
 * qual evidência sustenta a recomendação;
 * quem ou qual regra autorizou a mudança de estado.
 
-## 29. Critérios de Interrupção
+## 29. Política de Retenção
+
+```text
+Versionado no Git:
+- MASTER_PLAN.md
+- schemas
+- ADRs
+- baseline resumido
+- manifestos finais
+- relatórios consolidados
+
+Retido localmente:
+- eventos granulares
+- métricas de hardware
+- respostas brutas dos modelos
+- arquivos temporários
+- traces por chunk
+
+Comprimido após conclusão:
+- events.jsonl.gz
+- completed.jsonl.gz
+- failed.jsonl.gz
+```
+
+Definições:
+```text
+retentionDays: 90
+compressionAfterDays: 7
+preserveFailedRuns: true
+preserveFinalManifests: permanently
+```
+
+---
+
+## 30. Critérios de Interrupção
 
 A execução deverá parar automaticamente quando qualquer uma destas condições ocorrer:
 
@@ -1137,7 +1198,7 @@ Para elementos estruturais protegidos, a tolerância deve continuar sendo zero.
 
 ---
 
-## 30. Métricas do Canário
+## 31. Métricas do Canário
 
 Ao fim de cada estágio, o relatório precisa apresentar:
 
@@ -1169,7 +1230,7 @@ findings rejeitados pelo schema
 
 ---
 
-## 31. Registro de decisão
+## 32. Registro de decisão
 
 ADR-004 — Primeiro roadmap da escala controlada
 

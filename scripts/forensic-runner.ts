@@ -338,7 +338,7 @@ for (const entry of selectedFiles) {
     logEvent('translation.chunk_started', fileId, 'INFO', {});
     const scriptPath =
       process.env.TRANSLATE_SCRIPT ||
-      path.resolve('scripts', 'translate_doc.py');
+      path.resolve('scripts', 'translation', 'translate_doc.py');
     if (!fs.existsSync(scriptPath)) {
       throw new Error(
         `Translation script not found at ${scriptPath}. Set TRANSLATE_SCRIPT env var.`,
@@ -441,7 +441,7 @@ for (const entry of selectedFiles) {
 
     const realScriptPath =
       process.env.TRANSLATE_SCRIPT ||
-      path.resolve('scripts', 'translate_doc.py');
+      path.resolve('scripts', 'translation', 'translate_doc.py');
     const manifestEntry = {
       runId,
       fileId,
@@ -451,6 +451,8 @@ for (const entry of selectedFiles) {
       scriptHash: fs.existsSync(realScriptPath)
         ? hashFile(realScriptPath)
         : 'sha256:unavailable',
+      promptHash:
+        'sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc',
       configHash: hashString(
         JSON.stringify({
           model: 'translategemma:latest',

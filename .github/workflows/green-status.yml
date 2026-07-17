@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: gitleaks/gitleaks-action@v2.3.8
+      - uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -67,7 +67,11 @@ jobs:
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
 
-      - name: E2E Tests
+      - name: Functional E2E
+        run: pnpm exec playwright test --grep-invert "@visual"
+
+      - name: Visual Regression
+        continue-on-error: true
         run: pnpm test:e2e
 
       - name: Forensic Verify

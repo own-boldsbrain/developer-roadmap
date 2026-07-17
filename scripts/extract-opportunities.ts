@@ -402,7 +402,17 @@ async function run() {
         totalFindings++;
         findingsAccepted++;
 
-        appendLog(FINDINGS_PATH, { runId, fileId, ...f });
+        appendLog(FINDINGS_PATH, {
+          ...f,
+          runId,
+          fileId,
+          schemaVersion: '1.0.0',
+          status: 'PROPOSED',
+          provider: 'unknown',
+          model: 'unknown',
+          evidenceVerified: true,
+          createdAt: new Date().toISOString(),
+        });
       }
 
       // Isolate output

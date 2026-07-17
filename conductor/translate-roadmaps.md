@@ -6,9 +6,9 @@ Traduzir integralmente os 59 roadmaps do projeto (JSON, Markdown) e atualizar as
 
 ## Estratégia de Tradução
 
-1.  **JSON**: Identificar campos translatáveis em `public/roadmap-content/`, traduzir mantendo a estrutura original e gerar arquivos `.pt-br.json`.
-2.  **Markdown**: Traduzir todo o conteúdo de `src/data/roadmaps/*/content/*.md` usando a skill `translate-en-pt-br`, criando arquivos `.pt-br.md`.
-3.  **PDFs**: Após a tradução, executar o script de geração (`scripts/generate-renderer.sh`) para atualizar os PDFs para a versão em pt-BR.
+1. **JSON**: Identificar campos translatáveis em `public/roadmap-content/`, traduzir mantendo a estrutura original e gerar arquivos `.pt-br.json`.
+2. **Markdown**: Traduzir todo o conteúdo de `src/data/roadmaps/*/content/*.md` usando a skill `translate-en-pt-br`, criando arquivos `.pt-br.md`.
+3. **PDFs**: Após a tradução, executar o script de geração (`scripts/generate-renderer.sh`) para atualizar os PDFs para a versão em pt-BR.
 
 ## Inventário & Escopo
 

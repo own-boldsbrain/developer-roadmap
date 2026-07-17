@@ -13,7 +13,10 @@ function hashString(str: string): string {
 
 function hashFile(filePath: string): string {
   const content = fs.readFileSync(filePath);
-  return 'sha256:' + crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex');
+  return (
+    'sha256:' +
+    crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex')
+  );
 }
 
 function countOccurrences(str: string, regex: RegExp): number {

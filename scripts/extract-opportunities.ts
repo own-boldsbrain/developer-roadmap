@@ -174,8 +174,12 @@ async function queryModel(content: string, sourcePath: string) {
 }
 
 // Metrics
-let schemaPassRate = 0;
-let evidenceVerified = 0;
+let responseParseRate = 0;
+let responseSchemaPassRate = 0;
+let findingSchemaPassRate = 0;
+let findingAcceptanceRate = 0;
+let evidenceChecksAttempted = 0;
+let verifiedEvidence = 0;
 let unknownFields = 0;
 let duplicateFindingIds = 0;
 let crossRunContamination = 0;
@@ -186,6 +190,8 @@ const runFindings = new Set<string>();
 
 async function run() {
   let successCount = 0;
+  let partialRejections = 0;
+  const startedAt = new Date().getTime();
 
   for (const entry of selectedFiles) {
     const sourcePath = entry.sourcePath;
@@ -218,9 +224,23 @@ async function run() {
           .replace(/```$/, '')
           .trim();
         parsed = JSON.parse(jsonStr);
+        responseParseRate++;
       } catch (e) {
         logEvent('opportunity.parse_failed', fileId, 'ERROR', {
           raw: rawResponse,
+        });
+        continue;
+      }
+
+      // Check root unknown fields
+      const rootKeys = Object.keys(parsed);
+      const unknownRootKeys = rootKeys.filter(k => !['roadmap', 'findings'].includes(k));
+      if (unknownRootKeys.length > 0) {
+        unknownFields += unknownRootKeys.length;
+        appendLog(REJECTED_PATH, {
+          fileId,
+          error: 'UNKNOWN_FIELDS',
+          keys: unknownRootKeys
         });
         continue;
       }
@@ -258,25 +278,28 @@ async function run() {
         continue;
       }
 
-      schemaPassRate++;
+      responseSchemaPassRate++;
+      let rejectedAny = false;
 
       for (const f of parsed.findings) {
-        // Check allowed properties
+        // Check allowed properties in finding
         const keys = Object.keys(f);
-        for (const k of keys) {
-          if (
-            ![
-              'category',
-              'severity',
-              'title',
-              'evidence',
-              'recommendation',
-              'confidence',
-              'timeHorizon',
-            ].includes(k)
-          ) {
-            unknownFields++;
-          }
+        const unknownFindingKeys = keys.filter(k => !['category', 'severity', 'title', 'evidence', 'recommendation', 'confidence', 'timeHorizon'].includes(k));
+        
+        let unknownEvKeys: string[] = [];
+        if (f.evidence && typeof f.evidence === 'object') {
+          unknownEvKeys = Object.keys(f.evidence).filter(k => !['file', 'heading', 'excerpt'].includes(k));
+        }
+
+        if (unknownFindingKeys.length > 0 || unknownEvKeys.length > 0) {
+          unknownFields += unknownFindingKeys.length + unknownEvKeys.length;
+          appendLog(REJECTED_PATH, {
+            fileId,
+            error: 'UNKNOWN_FIELDS',
+            keys: [...unknownFindingKeys, ...unknownEvKeys]
+          });
+          rejectedAny = true;
+          continue;
         }
 
         // Strict validations
@@ -290,6 +313,7 @@ async function run() {
             finding: f,
             error: 'Enum validation failed',
           });
+          rejectedAny = true;
           continue;
         }
 
@@ -303,6 +327,7 @@ async function run() {
             finding: f,
             error: 'Confidence out of bounds',
           });
+          rejectedAny = true;
           continue;
         }
 
@@ -312,8 +337,12 @@ async function run() {
             finding: f,
             error: 'Evidence file mismatch',
           });
+          rejectedAny = true;
           continue;
         }
+
+        findingSchemaPassRate++;
+        evidenceChecksAttempted++;
 
         // Evidence excerpt literal check
         if (!content.includes(f.evidence.excerpt)) {
@@ -322,9 +351,10 @@ async function run() {
             finding: f,
             error: 'Excerpt not literally in file',
           });
+          rejectedAny = true;
           continue;
         }
-        evidenceVerified++;
+        verifiedEvidence++;
 
         // Deterministic findingId
         const findingId = `opp-${hashStringTruncated(fileId + f.category + f.evidence.heading)}`;
@@ -337,11 +367,13 @@ async function run() {
             finding: f,
             error: 'Duplicate finding ID',
           });
+          rejectedAny = true;
           continue;
         }
 
         runFindings.add(findingId);
         totalFindings++;
+        findingAcceptanceRate++;
 
         appendLog(FINDINGS_PATH, { runId, fileId, ...f });
       }
@@ -356,6 +388,7 @@ async function run() {
       logEvent('opportunity.extraction_completed', fileId, 'INFO', {
         findings: parsed.findings.length,
       });
+      if (rejectedAny) partialRejections++;
       successCount++;
     } catch (error: any) {
       logEvent('opportunity.network_failed', fileId, 'ERROR', {
@@ -364,14 +397,44 @@ async function run() {
     }
   }
 
+  // Cross Run Contamination check
+  let contaminationFound = false;
+  if (fs.existsSync(FINDINGS_PATH)) {
+    const records = fs.readFileSync(FINDINGS_PATH, 'utf-8').split('\n').filter(Boolean);
+    for (const r of records) {
+      const obj = JSON.parse(r);
+      if (obj.runId !== runId) {
+        contaminationFound = true;
+        crossRunContamination++;
+      }
+    }
+  }
+
+  // Validate file creation dates
+  if (fs.existsSync(FILES_DIR)) {
+    const createdFiles = fs.readdirSync(FILES_DIR);
+    for (const file of createdFiles) {
+      const stat = fs.statSync(path.join(FILES_DIR, file));
+      if (stat.birthtimeMs < startedAt) {
+        crossRunContamination++;
+      }
+    }
+  }
+
+  let finalStatus = 'COMPLETED';
+  if (successCount === 0 && selectedFiles.length > 0) finalStatus = 'FAILED';
+  else if (successCount < selectedFiles.length) finalStatus = 'PARTIAL';
+  else if (partialRejections > 0) finalStatus = 'COMPLETED_WITH_REJECTIONS';
+
   fs.writeFileSync(
     METRICS_PATH,
     JSON.stringify(
       {
-        schemaPassRate:
-          successCount > 0 ? (schemaPassRate / successCount) * 100 : 0,
-        evidenceVerified:
-          totalFindings > 0 ? (evidenceVerified / totalFindings) * 100 : 0,
+        responseParseRate: successCount + partialRejections > 0 ? (responseParseRate / selectedFiles.length) * 100 : 0,
+        responseSchemaPassRate: successCount + partialRejections > 0 ? (responseSchemaPassRate / responseParseRate) * 100 : 0,
+        findingSchemaPassRate: (totalFindings + partialRejections) > 0 ? (findingSchemaPassRate / (findingSchemaPassRate + partialRejections)) * 100 : 0, // Approx base
+        findingAcceptanceRate: findingSchemaPassRate > 0 ? (findingAcceptanceRate / findingSchemaPassRate) * 100 : 0,
+        evidenceVerifiedRate: evidenceChecksAttempted > 0 ? (verifiedEvidence / evidenceChecksAttempted) * 100 : 0,
         unknownFields,
         duplicateFindingIds,
         crossRunContamination,
@@ -392,7 +455,7 @@ async function run() {
         provider,
         model,
         selectionSeed,
-        status: 'COMPLETED',
+        status: finalStatus,
       },
       null,
       2,

@@ -6,6 +6,7 @@ import { execSync } from 'child_process';
 const args = process.argv.slice(2);
 const limitStr = args.find(a => a.startsWith('--limit='))?.split('=')[1] || '20';
 const engineStr = args.find(a => a.startsWith('--engine='))?.split('=')[1] || 'ollama';
+const roadmapStr = args.find(a => a.startsWith('--roadmap='))?.split('=')[1] || '';
 const limit = parseInt(limitStr, 10);
 
 const runId = `translation-${new Date().toISOString().replace(/[:.T-]/g, '').slice(0, 14)}-${crypto.randomBytes(3).toString('hex')}`;
@@ -62,6 +63,10 @@ for (const line of inventoryLines) {
     if (processedCount >= limit) break;
 
     const entry = JSON.parse(line);
+    
+    if (roadmapStr && entry.roadmap !== roadmapStr) {
+        continue;
+    }
     const fileId = entry.fileId;
     const sourcePath = entry.sourcePath;
     const targetPath = entry.targetPath;

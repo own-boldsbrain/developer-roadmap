@@ -23,7 +23,7 @@ As seguintes evidências constituem o baseline inicial do projeto:
 
 * Na inspeção inicial, não foram encontrados arquivos Markdown `.pt-br.md` dentro dos diretórios de conteúdo.
 * As traduções existentes estavam concentradas em arquivos JSON na pasta de conteúdo público.
-* O universo estimado contém mais de 6.400 arquivos Markdown.
+* O universo estimado contém 6.517 arquivos Markdown inventariados.
 * Os arquivos estão distribuídos entre aproximadamente 59 roadmaps.
 * O Ollama local está operacional.
 * O modelo `translategemma:latest` está disponível localmente.
@@ -1116,4 +1116,77 @@ Ao final, deverá ser possível responder rapidamente:
 * qual evidência sustenta a recomendação;
 * quem ou qual regra autorizou a mudança de estado.
 
-O objetivo não é apenas traduzir 6.400 arquivos. É construir uma operação confiável, verificável e administrável, capaz de evoluir os roadmaps sem transformar o repositório em um labirinto de arquivos sem origem comprovável.
+## 29. Critérios de Interrupção
+
+A execução deverá parar automaticamente quando qualquer uma destas condições ocorrer:
+
+| Condição                                  | Ação                                       |
+| ----------------------------------------- | ------------------------------------------ |
+| Falha em frontmatter, URLs ou code blocks | Interromper o lote                         |
+| Token protegido não restaurado            | Quarentena e interrupção                   |
+| Arquivo truncado                          | Interrupção imediata                       |
+| Uso de memória acima de 85% por 5 minutos | Pausar                                     |
+| Espaço livre em disco abaixo de 15%       | Interromper                                |
+| Retries acima de 10% do lote              | Revisar modelo ou timeout                  |
+| Fallback acima de 20%                     | Classificar motor principal como degradado |
+| Tempo p95 acima de 3× o piloto            | Pausar e investigar                        |
+| Publicação sem `APPROVED`                 | Rollback e incidente P0                    |
+| Divergência de hash                       | Marcar `CONFLICT`                          |
+
+Para elementos estruturais protegidos, a tolerância deve continuar sendo zero.
+
+---
+
+## 30. Métricas do Canário
+
+Ao fim de cada estágio, o relatório precisa apresentar:
+
+```text
+runId
+roadmap
+arquivos descobertos
+arquivos elegíveis
+arquivos processados
+arquivos aprovados
+arquivos publicados
+arquivos em quarentena
+tempo total
+tempo médio
+p50, p95 e p99
+retries
+fallbacks
+CPU média e pico
+memória média e pico
+disco consumido
+caracteres de entrada e saída
+falhas por categoria
+segundos por 1.000 caracteres
+arquivos por hora
+MB de memória por arquivo
+findings por arquivo
+findings rejeitados pelo schema
+```
+
+---
+
+## 31. Registro de decisão
+
+ADR-004 — Primeiro roadmap da escala controlada
+
+**Decisão:**
+O roadmap `devops` será utilizado como primeiro canário da Fase 4.
+
+**Motivação:**
+O roadmap possui alta diversidade estrutural e técnica, incluindo code blocks,
+comandos, YAML, URLs, nomes de ferramentas e elementos sensíveis à tradução.
+
+**Estratégia:**
+A tradução e a extração serão executadas em runs independentes.
+O escalonamento ocorrerá em lotes de 25, 100 e, posteriormente, no roadmap completo.
+
+**Condição de avanço:**
+Zero falhas estruturais críticas, aceite humano do Gate G4 e estabilidade dos
+indicadores de hardware e vazão.
+
+**Status:**
+APPROVED

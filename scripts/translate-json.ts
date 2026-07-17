@@ -3,7 +3,7 @@ import path from 'path';
 
 const inputDir = './public/roadmap-content';
 
-function translateFile(filePath) {
+function translateFile(filePath: string) {
   console.log(`Traduzindo arquivo: ${filePath}`);
   // A lógica de tradução real seria feita chamando a skill ou API de tradução.
   // Para efeito deste script, simularemos a criação do arquivo traduzido.

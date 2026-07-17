@@ -39,6 +39,9 @@ const FILES_DIR = path.join(RUN_DIR, 'files');
 if (!fs.existsSync(RUN_DIR)) fs.mkdirSync(RUN_DIR, { recursive: true });
 if (!fs.existsSync(FILES_DIR)) fs.mkdirSync(FILES_DIR, { recursive: true });
 
+// Ensure rejected.jsonl is created even if empty
+fs.writeFileSync(REJECTED_PATH, '');
+
 function appendLog(file: string, obj: any) {
   fs.appendFileSync(file, JSON.stringify(obj) + '\n');
 }
@@ -174,10 +177,12 @@ async function queryModel(content: string, sourcePath: string) {
 }
 
 // Metrics
-let responseParseRate = 0;
-let responseSchemaPassRate = 0;
-let findingSchemaPassRate = 0;
-let findingAcceptanceRate = 0;
+let responsesAttempted = 0;
+let responsesParsed = 0;
+let responsesSchemaPassed = 0;
+let findingsReceived = 0;
+let findingsSchemaPassed = 0;
+let findingsAccepted = 0;
 let evidenceChecksAttempted = 0;
 let verifiedEvidence = 0;
 let unknownFields = 0;
@@ -215,6 +220,7 @@ async function run() {
     logEvent('opportunity.extraction_started', fileId, 'INFO');
 
     try {
+      responsesAttempted++;
       const rawResponse = await queryModel(content, sourcePath);
       let parsed: any;
       try {
@@ -224,7 +230,7 @@ async function run() {
           .replace(/```$/, '')
           .trim();
         parsed = JSON.parse(jsonStr);
-        responseParseRate++;
+        responsesParsed++;
       } catch (e) {
         logEvent('opportunity.parse_failed', fileId, 'ERROR', {
           raw: rawResponse,
@@ -278,8 +284,9 @@ async function run() {
         continue;
       }
 
-      responseSchemaPassRate++;
+      responsesSchemaPassed++;
       let rejectedAny = false;
+      findingsReceived += parsed.findings.length;
 
       for (const f of parsed.findings) {
         // Check allowed properties in finding
@@ -331,17 +338,18 @@ async function run() {
           continue;
         }
 
-        if (!f.evidence || f.evidence.file !== sourcePath) {
+        // excerpt inexistente ou heading inexistente (already covered by missing fields above, but we also enforce it has heading here)
+        if (!f.evidence || f.evidence.file !== sourcePath || !f.evidence.heading) {
           appendLog(REJECTED_PATH, {
             fileId,
             finding: f,
-            error: 'Evidence file mismatch',
+            error: 'Evidence file/heading missing or mismatch',
           });
           rejectedAny = true;
           continue;
         }
 
-        findingSchemaPassRate++;
+        findingsSchemaPassed++;
         evidenceChecksAttempted++;
 
         // Evidence excerpt literal check
@@ -373,7 +381,7 @@ async function run() {
 
         runFindings.add(findingId);
         totalFindings++;
-        findingAcceptanceRate++;
+        findingsAccepted++;
 
         appendLog(FINDINGS_PATH, { runId, fileId, ...f });
       }
@@ -430,10 +438,18 @@ async function run() {
     METRICS_PATH,
     JSON.stringify(
       {
-        responseParseRate: successCount + partialRejections > 0 ? (responseParseRate / selectedFiles.length) * 100 : 0,
-        responseSchemaPassRate: successCount + partialRejections > 0 ? (responseSchemaPassRate / responseParseRate) * 100 : 0,
-        findingSchemaPassRate: (totalFindings + partialRejections) > 0 ? (findingSchemaPassRate / (findingSchemaPassRate + partialRejections)) * 100 : 0, // Approx base
-        findingAcceptanceRate: findingSchemaPassRate > 0 ? (findingAcceptanceRate / findingSchemaPassRate) * 100 : 0,
+        responsesAttempted,
+        responsesParsed,
+        responsesSchemaPassed,
+        findingsReceived,
+        findingsSchemaPassed,
+        findingsAccepted,
+        evidenceChecksAttempted,
+        evidenceVerified: verifiedEvidence,
+        responseParseRate: responsesAttempted > 0 ? (responsesParsed / responsesAttempted) * 100 : 0,
+        responseSchemaPassRate: responsesParsed > 0 ? (responsesSchemaPassed / responsesParsed) * 100 : 0,
+        findingSchemaPassRate: findingsReceived > 0 ? (findingsSchemaPassed / findingsReceived) * 100 : 0,
+        findingAcceptanceRate: findingsSchemaPassed > 0 ? (findingsAccepted / findingsSchemaPassed) * 100 : 0,
         evidenceVerifiedRate: evidenceChecksAttempted > 0 ? (verifiedEvidence / evidenceChecksAttempted) * 100 : 0,
         unknownFields,
         duplicateFindingIds,

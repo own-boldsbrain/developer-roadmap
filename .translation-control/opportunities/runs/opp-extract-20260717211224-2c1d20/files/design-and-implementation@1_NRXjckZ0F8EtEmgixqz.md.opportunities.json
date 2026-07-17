@@ -1,0 +1,19 @@
+{
+  "roadmap": "devops",
+  "findings": [
+    {
+      "category": "outdated-version",
+      "severity": "medium",
+      "title": "Outdated Microsoft Documentation Link Domain",
+      "evidence": {
+        "file": "src/data/roadmaps/devops/content/design-and-implementation@1_NRXjckZ0F8EtEmgixqz.md",
+        "heading": "# Design and Implementation",
+        "excerpt": "- [@article@Design and Implementation Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)"
+      },
+      "recommendation": "Update the link to use the learn.microsoft.com domain, which is Microsoft's current documentation standard. Consider supplementing with modern cloud-native design principles like Infrastructure as Code (IaC), GitOps, and Platform Engineering patterns.",
+      "confidence": 0.9,
+      "timeHorizon": "30-days",
+      "findingId": "opp-c89363f4393e"
+    }
+  ]
+}

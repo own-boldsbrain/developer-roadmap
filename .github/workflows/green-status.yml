@@ -7,7 +7,22 @@ on:
   pull_request:
 
 jobs:
+  secret-scan:
+    name: Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          fail: true
+
   green-status:
+    needs: secret-scan
     runs-on: ubuntu-latest
     name: "Green Status"
     env:
@@ -62,14 +77,11 @@ jobs:
         run: pnpm test:e2e
 
       - name: Forensic Verify
-        run: npx tsx scripts/forensic-verify.ts
-
-      - name: Secret Scan (Gitleaks)
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          fail: true
+        run: >
+          pnpm exec tsx scripts/forensic-verify.ts
+          --manifest=.translation-control/manifests/manifest.jsonl
+          --inventory=.translation-control/inventory.jsonl
+          --fail-on-mismatch
 
       - name: Upload evidence bundle
         uses: actions/upload-artifact@v4
@@ -79,5 +91,4 @@ jobs:
           path: |
             playwright-report/
             test-results/
-            .git/gh-reconcile/
           retention-days: 7

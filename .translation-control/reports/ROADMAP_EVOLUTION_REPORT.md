@@ -6,6 +6,7 @@ Total Findings: **1**
 ## Category: conceptual-gap
 
 ### [MEDIUM] Lacks modern tool-calling implementation standards and control flow patterns
+
 - **ID:** `undefined`
 - **Status:** `proposed`
 - **Horizon:** 60-90-days
@@ -17,4 +18,3 @@ Total Findings: **1**
 > *Excerpt:* "The agent looks at its current goal and the plan it just made. It then picks the best tool, such as a web search, a database query, or a calculator. The agent fills in the needed inputs and sends the call. The external system does the heavy work and returns a result."
 
 ---
-

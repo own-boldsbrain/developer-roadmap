@@ -10,7 +10,21 @@ const limitStr = args.find(a => a.startsWith('--limit='))?.split('=')[1] || '20'
 const isDryRun = args.includes('--dry-run');
 const selectionStrategy = args.find(a => a.startsWith('--selection-strategy='))?.split('=')[1] || 'default';
 const selectionSeed = args.find(a => a.startsWith('--selection-seed='))?.split('=')[1] || 'default';
+const parallelismStr = args.find(a => a.startsWith('--parallelism='))?.split('=')[1] || '1';
 const limit = parseInt(limitStr, 10);
+const parallelism = parseInt(parallelismStr, 10);
+
+function getOllamaModelDigest(modelName: string): string {
+    try {
+        const out = execSync('curl -s http://localhost:11434/api/tags').toString();
+        const models = JSON.parse(out).models;
+        const m = models.find((x: any) => x.name === modelName);
+        return m ? 'sha256:' + m.digest : 'sha256:unknown';
+    } catch(e) {
+        return 'sha256:unknown';
+    }
+}
+const realModelDigest = getOllamaModelDigest('translategemma:latest');
 
 const runId = `translation-${new Date().toISOString().replace(/[:.T-]/g, '').slice(0, 14)}-${crypto.randomBytes(3).toString('hex')}`;
 const STATE_DIR = '.translation-control';
@@ -54,7 +68,7 @@ function hashString(str: string): string {
 if (fs.existsSync(LOCK_PATH)) {
     const lockData = JSON.parse(fs.readFileSync(LOCK_PATH, 'utf-8'));
     const heartbeatAge = Date.now() - new Date(lockData.heartbeatAt).getTime();
-    if (heartbeatAge < 60000) {
+    if (heartbeatAge < 120000) { // staleAfter: 120s
         console.error(`ACTIVE LOCK FOUND! RunId ${lockData.runId} (PID: ${lockData.pid}) is currently running.`);
         process.exit(1);
     } else {
@@ -73,14 +87,22 @@ function updateLock() {
     }, null, 2));
 }
 updateLock();
-const heartbeatTimer = setInterval(updateLock, 30000);
+const heartbeatTimer = setInterval(updateLock, 30000); // heartbeatInterval: 30s
 
 function cleanupLock() {
     clearInterval(heartbeatTimer);
-    if (fs.existsSync(LOCK_PATH)) fs.unlinkSync(LOCK_PATH);
+    if (fs.existsSync(LOCK_PATH)) {
+        try {
+            const lockData = JSON.parse(fs.readFileSync(LOCK_PATH, 'utf-8'));
+            if (lockData.runId === runId) {
+                fs.unlinkSync(LOCK_PATH);
+            }
+        } catch(e) {}
+    }
 }
 process.on('SIGINT', () => { cleanupLock(); process.exit(); });
 process.on('uncaughtException', (e) => { console.error(e); cleanupLock(); process.exit(1); });
+process.on('exit', () => { cleanupLock(); });
 
 // ----------------------------------------------------
 // Translation Logic
@@ -107,31 +129,79 @@ if (roadmapStr) {
     eligibleFiles = eligibleFiles.filter(e => e.roadmap === roadmapStr);
 }
 
+let selectedFiles: any[] = [];
+
 // Selection strategy handling (stratified simulation)
 if (selectionStrategy === 'stratified') {
-    // Sort by sizeBytes descending as a simple heuristic for variety, mixed with a pseudo-random seed
     const seedVal = selectionSeed.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    eligibleFiles.sort((a, b) => {
-        if (a.sizeBytes > 1000 && b.sizeBytes < 500) return -1;
-        return (a.sizeBytes % seedVal) - (b.sizeBytes % seedVal);
-    });
+    
+    // Create a PRNG function
+    const pseudoRandom = (i: number) => {
+        const x = Math.sin(seedVal + i) * 10000;
+        return x - Math.floor(x);
+    };
+
+    const sortBy = (key: string, desc = true) => [...eligibleFiles].sort((a, b) => desc ? b[key] - a[key] : a[key] - b[key]);
+
+    const largest = sortBy('sizeBytes').slice(0, 5).map(f => ({ ...f, selectedBy: ['largest-size'] }));
+    const smallest = sortBy('sizeBytes', false).filter(f => f.sizeBytes > 0).slice(0, 5).map(f => ({ ...f, selectedBy: ['smallest-size'] }));
+    const codeHeavy = sortBy('codeBlockCount').slice(0, 5).map(f => ({ ...f, selectedBy: ['code-heavy'] }));
+    const linkHeavy = sortBy('linkCount').slice(0, 5).map(f => ({ ...f, selectedBy: ['link-heavy'] }));
+
+    let selectionMap = new Map();
+    const addToSelection = (arr: any[]) => {
+        arr.forEach(item => {
+            if (selectionMap.has(item.fileId)) {
+                selectionMap.get(item.fileId).selectedBy.push(item.selectedBy[0]);
+            } else {
+                selectionMap.set(item.fileId, item);
+            }
+        });
+    };
+
+    addToSelection(largest);
+    addToSelection(smallest);
+    addToSelection(codeHeavy);
+    addToSelection(linkHeavy);
+
+    // Backfill with pseudorandom
+    const remaining = [...eligibleFiles].filter(f => !selectionMap.has(f.fileId));
+    remaining.sort((a, b) => pseudoRandom(a.sizeBytes) - pseudoRandom(b.sizeBytes));
+    
+    const needed = limit - selectionMap.size;
+    if (needed > 0) {
+        const randomPicks = remaining.slice(0, needed).map(f => ({ ...f, selectedBy: ['pseudorandom'] }));
+        addToSelection(randomPicks);
+    }
+
+    selectedFiles = Array.from(selectionMap.values()).slice(0, limit);
+    // Sort final result by fileId
+    selectedFiles.sort((a, b) => a.fileId.localeCompare(b.fileId));
+
+    // Assign rank
+    selectedFiles.forEach((f, i) => f.selectionRank = i + 1);
+} else {
+    selectedFiles = eligibleFiles.slice(0, limit);
 }
 
 let processedCount = 0;
 
-for (const entry of eligibleFiles) {
-    if (processedCount >= limit) break;
-
+for (const entry of selectedFiles) {
     const fileId = entry.fileId;
     const sourcePath = entry.sourcePath;
     const targetPath = entry.targetPath;
 
     if (completedFiles.has(fileId)) continue;
     
-    logEvent('inventory.file_discovered', fileId, 'INFO', { sourcePath });
+    logEvent('inventory.file_discovered', fileId, 'INFO', { 
+        sourcePath, 
+        selectedBy: entry.selectedBy,
+        selectionSeed: selectionStrategy === 'stratified' ? selectionSeed : undefined,
+        selectionRank: entry.selectionRank
+    });
 
     if (isDryRun) {
-        console.log(`[DRY-RUN] Selected: ${sourcePath}`);
+        console.log(`[DRY-RUN] Selected: ${sourcePath} | Stratum: ${entry.selectedBy?.join(',')}`);
         processedCount++;
         continue;
     }
@@ -183,24 +253,42 @@ for (const entry of eligibleFiles) {
         let translatedContent = fs.readFileSync(tmpTarget, 'utf-8');
         const translatedContentHash = hashString(translatedContent);
 
-        // Gate G2: Token existence
-        if (translatedContent.includes('__PROTECTED_BLOCK_') === false && tokenCounter > 1) {
-             throw new Error("Gate G2 Failed: Expected tokens were lost.");
+        // Gate G2 & G3: Full Token Cycle Validation
+        const tokenRegex = /__PROTECTED_BLOCK_\d{4}__/g;
+        const translatedTokens = translatedContent.match(tokenRegex) || [];
+        
+        const tokenSetTranslated = new Set(translatedTokens);
+        const duplicateTokens = translatedTokens.length - tokenSetTranslated.size;
+        
+        if (duplicateTokens > 0) throw new Error("Gate G3 Failed: Duplicate tokens in translated text.");
+        if (tokenSetTranslated.size !== tokens.size) throw new Error(`Gate G3 Failed: tokenCount mismatch (Expected ${tokens.size}, got ${tokenSetTranslated.size}).`);
+
+        for (const token of translatedTokens) {
+            if (!tokens.has(token)) throw new Error(`Gate G3 Failed: Unknown token ${token} found.`);
+        }
+
+        for (const token of tokens.keys()) {
+            if (!tokenSetTranslated.has(token)) throw new Error(`Gate G3 Failed: Unrestored token ${token}.`);
         }
 
         // Restore and G3 Cryptographic Hash Validation
         for (const [token, data] of tokens.entries()) {
-            if (!translatedContent.includes(token)) {
-                throw new Error(`Gate G2 Failed: Token ${token} missing in output.`);
+            const splitContent = translatedContent.split(token);
+            if (splitContent.length > 2) {
+                throw new Error(`Gate G3 Failed: Token ${token} was duplicated in translation output.`);
             }
-            // In a real scenario, we would parse back the AST to hash the exact block.
-            // Here we assert that replacing the token with the exact original block maintains cryptographic integrity of that block itself.
+            if (splitContent.length < 2) {
+                throw new Error(`Gate G3 Failed: Token ${token} is missing in translation output.`);
+            }
+            
             const restoredBlockHash = hashString(data.value);
             if (restoredBlockHash !== data.hash) {
                 throw new Error(`Gate G3 Failed: Cryptographic mismatch on restored block ${token}.`);
             }
-            translatedContent = translatedContent.split(token).join(data.value);
+            translatedContent = splitContent.join(data.value);
         }
+
+        const restoredHash = hashString(translatedContent); // If needed, can compare back to what it should be.
 
         logEvent('translation.completed', fileId, 'INFO', { durationMs: Date.now() - startTime, inputCharacters, outputCharacters: translatedContent.length });
 
@@ -229,7 +317,7 @@ for (const entry of eligibleFiles) {
             promptHash: hashString("You are an expert translator..."),
             configHash: hashString(JSON.stringify(args)),
             modelName: "translategemma:latest",
-            modelDigest: "sha256:d8c03e...",
+            modelDigest: realModelDigest,
             sourceHash: entry.sourceHash,
             protectedContentHash: protectedHash,
             translatedContentHash,

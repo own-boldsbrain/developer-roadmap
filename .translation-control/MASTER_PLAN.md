@@ -5,7 +5,7 @@
 Este plano descreve a abordagem técnica, operacional e de governança para:
 
 1. Inventariar os arquivos Markdown existentes.
-2. Traduzir os mais de 6.400 arquivos `.md` distribuídos entre 59 roadmaps.
+2. Traduzir os 6.517 arquivos Markdown inventariados no baseline inicial `.md` distribuídos entre 59 roadmaps.
 3. Preservar integralmente a estrutura técnica dos documentos.
 4. Registrar rastros, pegadas e fatos de cada processamento.
 5. Validar automaticamente cada tradução antes da publicação.

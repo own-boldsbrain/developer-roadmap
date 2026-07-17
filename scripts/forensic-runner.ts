@@ -3,6 +3,14 @@ import * as path from 'path';
 import * as crypto from 'crypto';
 import { execSync } from 'child_process';
 
+function hashFile(filePath: string): string {
+  const content = fs.readFileSync(filePath);
+  return (
+    'sha256:' +
+    crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex')
+  );
+}
+
 const args = process.argv.slice(2);
 const command = args[0] || 'translate';
 const roadmapStr =
@@ -329,7 +337,13 @@ for (const entry of selectedFiles) {
 
     logEvent('translation.chunk_started', fileId, 'INFO', {});
     const scriptPath =
-      'C:\\Users\\fjuni\\.gemini\\config\\skills\\translation\\scripts\\translate_doc.py';
+      process.env.TRANSLATE_SCRIPT ||
+      path.resolve('scripts', 'translate_doc.py');
+    if (!fs.existsSync(scriptPath)) {
+      throw new Error(
+        `Translation script not found at ${scriptPath}. Set TRANSLATE_SCRIPT env var.`,
+      );
+    }
     execSync(
       `python ${scriptPath} -f "${tmpSource}" -o "${tmpTarget}" -e ollama`,
     );
@@ -425,15 +439,26 @@ for (const entry of selectedFiles) {
 
     logEvent('publication.completed', fileId, 'INFO', { finalHash });
 
+    const realScriptPath =
+      process.env.TRANSLATE_SCRIPT ||
+      path.resolve('scripts', 'translate_doc.py');
     const manifestEntry = {
       runId,
       fileId,
-      schemaVersion: '1.0.0',
-      runnerVersion: '1.2.0',
-      inventoryHash:
-        'sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc',
-      promptHash: hashString('You are an expert translator...'),
-      configHash: hashString(JSON.stringify(args)),
+      schemaVersion: '1.1.0',
+      runnerVersion: '1.3.0',
+      inventoryHash: hashFile(INVENTORY_PATH),
+      scriptHash: fs.existsSync(realScriptPath)
+        ? hashFile(realScriptPath)
+        : 'sha256:unavailable',
+      configHash: hashString(
+        JSON.stringify({
+          model: 'translategemma:latest',
+          endpoint: 'http://localhost:11434',
+          parallelism,
+          selectionStrategy,
+        }),
+      ),
       modelName: 'translategemma:latest',
       modelDigest: realModelDigest,
       sourceHash: entry.sourceHash,

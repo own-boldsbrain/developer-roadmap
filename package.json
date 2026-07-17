@@ -28,7 +28,9 @@
     "compress:images": "tsx ./scripts/compress-images.ts",
     "generate:roadmap-content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
     "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@astrojs/node": "^9.2.1",
@@ -109,6 +111,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tsx": "^4.19.4"
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.0"
   }
 }

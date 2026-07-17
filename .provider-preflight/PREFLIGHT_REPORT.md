@@ -2,12 +2,12 @@
 
 Generated at: 2026-07-17T23:18:23.512Z
 
-| Provider | Overall Status | G0 | G1 | G2 | G3 | G4 | G5 | G6 | HTTP |
-|----------|----------------|----|----|----|----|----|----|----|------|
-| **ollama** | `FUNCTIONAL_TEST_FAILED` | PASSED | RESOLVED | REACHABLE | AUTH_ACCEPTED | MODEL_AVAILABLE | PASSED | NOT_READY | 404 |
-| **deeplx** | `RATE_LIMITED` | PASSED | RESOLVED | REACHABLE | RATE_LIMITED | MODEL_AVAILABLE | FUNCTIONAL_TEST_FAILED | UNKNOWN | 429 |
-| **azure_openai** | `NOT_READY` | CREDENTIAL_MISSING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | - |
-| **nvidia** | `NOT_READY` | CREDENTIAL_MISSING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | - |
-| **openai** | `NOT_READY` | CREDENTIAL_MISSING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | - |
-| **litellm** | `NOT_READY` | CREDENTIAL_MISSING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | - |
-| **mistral** | `SKIPPED` | NO_CONFIRMED_IMPLEMENTATION | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | - |
+| Provider         | Overall Status           | G0                          | G1       | G2        | G3            | G4              | G5                     | G6        | HTTP |
+| ---------------- | ------------------------ | --------------------------- | -------- | --------- | ------------- | --------------- | ---------------------- | --------- | ---- |
+| **ollama**       | `FUNCTIONAL_TEST_FAILED` | PASSED                      | RESOLVED | REACHABLE | AUTH_ACCEPTED | MODEL_AVAILABLE | PASSED                 | NOT_READY | 404  |
+| **deeplx**       | `RATE_LIMITED`           | PASSED                      | RESOLVED | REACHABLE | RATE_LIMITED  | MODEL_AVAILABLE | FUNCTIONAL_TEST_FAILED | UNKNOWN   | 429  |
+| **azure_openai** | `NOT_READY`              | CREDENTIAL_MISSING          | UNKNOWN  | UNKNOWN   | UNKNOWN       | UNKNOWN         | UNKNOWN                | UNKNOWN   | -    |
+| **nvidia**       | `NOT_READY`              | CREDENTIAL_MISSING          | UNKNOWN  | UNKNOWN   | UNKNOWN       | UNKNOWN         | UNKNOWN                | UNKNOWN   | -    |
+| **openai**       | `NOT_READY`              | CREDENTIAL_MISSING          | UNKNOWN  | UNKNOWN   | UNKNOWN       | UNKNOWN         | UNKNOWN                | UNKNOWN   | -    |
+| **litellm**      | `NOT_READY`              | CREDENTIAL_MISSING          | UNKNOWN  | UNKNOWN   | UNKNOWN       | UNKNOWN         | UNKNOWN                | UNKNOWN   | -    |
+| **mistral**      | `SKIPPED`                | NO_CONFIRMED_IMPLEMENTATION | UNKNOWN  | UNKNOWN   | UNKNOWN       | UNKNOWN         | UNKNOWN                | UNKNOWN   | -    |

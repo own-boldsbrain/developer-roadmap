@@ -53,10 +53,7 @@ function consolidate() {
   let rejected = 0;
 
   for (const file of findingsFiles) {
-    const lines = fs
-      .readFileSync(file, 'utf-8')
-      .split('\n')
-      .filter(Boolean);
+    const lines = fs.readFileSync(file, 'utf-8').split('\n').filter(Boolean);
 
     for (const line of lines) {
       try {
@@ -125,8 +122,7 @@ function consolidate() {
       if (f.evidence?.heading || f.evidence?.excerpt) {
         md += `\n> **Evidence:**\n`;
         if (f.evidence.heading) md += `> *Heading:* ${f.evidence.heading}\n`;
-        if (f.evidence.excerpt)
-          md += `> *Excerpt:* "${f.evidence.excerpt}"\n`;
+        if (f.evidence.excerpt) md += `> *Excerpt:* "${f.evidence.excerpt}"\n`;
       }
       md += `\n`;
     }

@@ -1,6 +1,6 @@
 {
-  "schemaPassRate": 0,
-  "evidenceVerified": 0,
+  "schemaPassRate": 100,
+  "evidenceVerified": 100,
   "unknownFields": 0,
   "duplicateFindingIds": 0,
   "crossRunContamination": 0,

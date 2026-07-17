@@ -1,9 +1,10 @@
-
 # Relatório Canário (Ciclo A)
+
 **runId:** `translation-20260717205604-bbaccb`
 **roadmap:** `devops`
 
 ## Funil de Processamento
+
 - arquivos descobertos: 17
 - arquivos elegíveis: 17
 - arquivos processados: 17
@@ -12,6 +13,7 @@
 - arquivos em quarentena: 0
 
 ## Performance
+
 - tempo total: 295.621s (4.93 min)
 - tempo médio por arquivo: 17.39s
 - p50: 18.545s
@@ -21,11 +23,13 @@
 - arquivos por hora: 207.02
 
 ## Confiabilidade
+
 - retries: 0
 - fallbacks: 0
 - falhas por categoria: 0
 
 ## Consumo (Estimativas)
+
 - caracteres de entrada: 20293
 - caracteres de saída: 22145
 - CPU média e pico: ~30% (Ollama thread)

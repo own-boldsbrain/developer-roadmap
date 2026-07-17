@@ -21,20 +21,20 @@ O processo será estruturado como uma esteira auditável, retomável e idempoten
 
 As seguintes evidências constituem o baseline inicial do projeto:
 
-* Na inspeção inicial, não foram encontrados arquivos Markdown `.pt-br.md` dentro dos diretórios de conteúdo.
-* As traduções existentes estavam concentradas em arquivos JSON na pasta de conteúdo público.
-* O universo estimado contém 6.517 arquivos Markdown inventariados.
-* Os arquivos estão distribuídos entre aproximadamente 59 roadmaps.
-* Quando o inventário mudar, registre:
+- Na inspeção inicial, não foram encontrados arquivos Markdown `.pt-br.md` dentro dos diretórios de conteúdo.
+- As traduções existentes estavam concentradas em arquivos JSON na pasta de conteúdo público.
+- O universo estimado contém 6.517 arquivos Markdown inventariados.
+- Os arquivos estão distribuídos entre aproximadamente 59 roadmaps.
+- Quando o inventário mudar, registre:
   - `inventoryVersion`
   - `inventoryGeneratedAt`
   - `inventoryHash`
   - `eligibleFileCount`
-* O Ollama local está operacional.
-* O modelo `translategemma:latest` está disponível localmente.
-* O modelo `qwen3.6:latest` também está disponível e poderá atuar como fallback.
-* O container do DeepLX pode ser iniciado localmente, mas o provedor retornou erro `429`, indicando bloqueio temporário por volume de requisições.
-* A infraestrutura do The Hub e o LiteLLM não devem ser considerados disponíveis sem um preflight funcional.
+- O Ollama local está operacional.
+- O modelo `translategemma:latest` está disponível localmente.
+- O modelo `qwen3.6:latest` também está disponível e poderá atuar como fallback.
+- O container do DeepLX pode ser iniciado localmente, mas o provedor retornou erro `429`, indicando bloqueio temporário por volume de requisições.
+- A infraestrutura do The Hub e o LiteLLM não devem ser considerados disponíveis sem um preflight funcional.
 
 Essas evidências determinam as seguintes premissas operacionais:
 
@@ -76,12 +76,12 @@ O processamento inicial será realizado com paralelismo igual a `1`.
 
 O valor deverá ser configurável por parâmetro, mas só poderá ser elevado após validação de:
 
-* uso de memória;
-* temperatura e utilização de CPU;
-* utilização de GPU;
-* tempo médio por arquivo;
-* estabilidade do Ollama;
-* impacto sobre outros serviços locais.
+- uso de memória;
+- temperatura e utilização de CPU;
+- utilização de GPU;
+- tempo médio por arquivo;
+- estabilidade do Ollama;
+- impacto sobre outros serviços locais.
 
 ### 3.3 Extração de oportunidades
 
@@ -105,18 +105,18 @@ Nenhum arquivo será traduzido antes da geração de um inventário completo.
 
 O inventário será imutável por execução e deverá registrar:
 
-* caminho do arquivo;
-* roadmap;
-* hash do conteúdo;
-* tamanho em bytes;
-* quantidade de linhas;
-* existência de frontmatter;
-* quantidade de headings;
-* quantidade de links;
-* quantidade de code blocks;
-* existência de MDX;
-* idioma detectado;
-* status inicial.
+- caminho do arquivo;
+- roadmap;
+- hash do conteúdo;
+- tamanho em bytes;
+- quantidade de linhas;
+- existência de frontmatter;
+- quantidade de headings;
+- quantidade de links;
+- quantidade de code blocks;
+- existência de MDX;
+- idioma detectado;
+- status inicial.
 
 ### 4.2 Cadeia de custódia
 
@@ -137,19 +137,19 @@ Origem
 
 Um arquivo não deverá ser retraduzido quando:
 
-* já possuir tradução aprovada;
-* o hash do arquivo de origem não tiver mudado;
-* a versão do prompt não exigir uma nova rodada;
-* nenhuma execução forçada tiver sido solicitada.
+- já possuir tradução aprovada;
+- o hash do arquivo de origem não tiver mudado;
+- a versão do prompt não exigir uma nova rodada;
+- nenhuma execução forçada tiver sido solicitada.
 
 ### 4.4 Não sobrescrita silenciosa
 
 Uma tradução existente não poderá ser sobrescrita quando:
 
-* tiver sido modificada manualmente;
-* possuir hash diferente do registrado no último manifesto;
-* estiver aprovada ou publicada;
-* não tiver sido utilizada a opção explícita de sobrescrita.
+- tiver sido modificada manualmente;
+- possuir hash diferente do registrado no último manifesto;
+- estiver aprovada ou publicada;
+- não tiver sido utilizada a opção explícita de sobrescrita.
 
 Nesses casos, o arquivo deverá entrar no estado `CONFLICT` ou `QUARANTINED`.
 
@@ -273,15 +273,15 @@ translation-20260717-163015-a8f31c
 
 O `runId` deverá estar presente em:
 
-* manifestos;
-* eventos;
-* logs;
-* arquivos temporários;
-* registros de validação;
-* métricas;
-* falhas;
-* oportunidades;
-* relatórios consolidados.
+- manifestos;
+- eventos;
+- logs;
+- arquivos temporários;
+- registros de validação;
+- métricas;
+- falhas;
+- oportunidades;
+- relatórios consolidados.
 
 O manifesto da execução deverá registrar:
 
@@ -334,13 +334,13 @@ QUARANTINED
 
 Definições essenciais:
 
-* `TRANSLATED`: o motor produziu uma saída.
-* `VALIDATING`: a saída está passando pelos gates.
-* `APPROVED`: a saída foi validada.
-* `PUBLISHED`: a saída foi gravada no destino final.
-* `STALE`: o arquivo original mudou depois da tradução.
-* `CONFLICT`: há divergência entre o manifesto e o arquivo existente.
-* `QUARANTINED`: é necessária revisão humana.
+- `TRANSLATED`: o motor produziu uma saída.
+- `VALIDATING`: a saída está passando pelos gates.
+- `APPROVED`: a saída foi validada.
+- `PUBLISHED`: a saída foi gravada no destino final.
+- `STALE`: o arquivo original mudou depois da tradução.
+- `CONFLICT`: há divergência entre o manifesto e o arquivo existente.
+- `QUARANTINED`: é necessária revisão humana.
 
 ---
 
@@ -350,18 +350,18 @@ Definições essenciais:
 
 O script substituirá o `batch-translate.ps1` legado e será responsável por:
 
-* localizar arquivos `.md` elegíveis;
-* ignorar traduções existentes;
-* ignorar diretórios de dependências, build e cache;
-* criar o inventário;
-* calcular hashes;
-* invocar a skill de tradução;
-* controlar tentativas e timeouts;
-* selecionar fallback;
-* registrar eventos estruturados;
-* retomar execuções interrompidas;
-* colocar falhas não recuperáveis em quarentena;
-* gerar métricas por execução.
+- localizar arquivos `.md` elegíveis;
+- ignorar traduções existentes;
+- ignorar diretórios de dependências, build e cache;
+- criar o inventário;
+- calcular hashes;
+- invocar a skill de tradução;
+- controlar tentativas e timeouts;
+- selecionar fallback;
+- registrar eventos estruturados;
+- retomar execuções interrompidas;
+- colocar falhas não recuperáveis em quarentena;
+- gerar métricas por execução.
 
 Comando base:
 
@@ -411,30 +411,31 @@ Também deverá reconhecer variações históricas de nomenclatura para evitar d
 
 Antes da tradução, deverão ser protegidos:
 
-* frontmatter YAML;
-* code blocks;
-* código inline;
-* URLs;
-* caminhos de arquivos;
-* comandos;
-* identificadores;
-* nomes de pacotes;
-* placeholders;
-* fórmulas;
-* HTML;
-* JSX;
-* MDX;
-* Mermaid;
-* diretivas especiais;
-* alertas Markdown;
-* referências internas;
-* âncoras.
+- frontmatter YAML;
+- code blocks;
+- código inline;
+- URLs;
+- caminhos de arquivos;
+- comandos;
+- identificadores;
+- nomes de pacotes;
+- placeholders;
+- fórmulas;
+- HTML;
+- JSX;
+- MDX;
+- Mermaid;
+- diretivas especiais;
+- alertas Markdown;
+- referências internas;
+- âncoras.
 
 Exemplo:
 
 ````markdown
 ```typescript
 const app = createApp();
+```
 ````
 
 ````
@@ -513,56 +514,56 @@ opportunity.extraction_completed
 
 Antes da execução:
 
-* **Lock Operacional**: `.translation-control/locks/translation.lock` criado atomicamente com heartbeat periódico.
-* **Segurança e Egress**:
+- **Lock Operacional**: `.translation-control/locks/translation.lock` criado atomicamente com heartbeat periódico.
+- **Segurança e Egress**:
+
   - [ ] política de egress identificada
   - [ ] provedor final identificado
   - [ ] nenhum segredo presente no documento
   - [ ] redaction executada
   - [ ] processamento externo autorizado
 
-
-* diretório do projeto encontrado;
-* Git status capturado;
-* espaço em disco validado;
-* Ollama acessível;
-* modelo disponível;
-* teste funcional concluído;
-* diretórios graváveis;
-* inventário criado;
-* nenhuma execução conflitante ativa.
+- diretório do projeto encontrado;
+- Git status capturado;
+- espaço em disco validado;
+- Ollama acessível;
+- modelo disponível;
+- teste funcional concluído;
+- diretórios graváveis;
+- inventário criado;
+- nenhuma execução conflitante ativa.
 
 ### Gate G1 — Integridade da entrada
 
-* arquivo legível;
-* encoding válido;
-* conteúdo não vazio;
-* frontmatter válido;
-* hash calculado;
-* arquivo elegível;
-* tradução anterior identificada corretamente.
+- arquivo legível;
+- encoding válido;
+- conteúdo não vazio;
+- frontmatter válido;
+- hash calculado;
+- arquivo elegível;
+- tradução anterior identificada corretamente.
 
 ### Gate G2 — Integridade da tradução
 
-* saída não vazia;
-* tamanho plausível;
-* ausência de truncamento;
-* idioma de destino compatível com pt-BR;
-* ausência de tokens técnicos não restaurados;
-* nenhuma exceção silenciosa;
-* quantidade de chunks consistente.
+- saída não vazia;
+- tamanho plausível;
+- ausência de truncamento;
+- idioma de destino compatível com pt-BR;
+- ausência de tokens técnicos não restaurados;
+- nenhuma exceção silenciosa;
+- quantidade de chunks consistente.
 
 ### Gate G3 — Preservação estrutural
 
-* hash idêntico dos code blocks originais e restaurados (`sourceHash === restoredHash`);
-* mesmas URLs;
-* mesmo frontmatter estrutural;
-* componentes MDX preservados;
-* tabelas válidas;
-* headings estruturalmente coerentes;
-* alertas Markdown preservados;
-* Mermaid preservado;
-* links internos válidos.
+- hash idêntico dos code blocks originais e restaurados (`sourceHash === restoredHash`);
+- mesmas URLs;
+- mesmo frontmatter estrutural;
+- componentes MDX preservados;
+- tabelas válidas;
+- headings estruturalmente coerentes;
+- alertas Markdown preservados;
+- Mermaid preservado;
+- links internos válidos.
 
 ### Gate G4 — Publicação Técnica
 
@@ -586,11 +587,11 @@ Revisão manual estratificada da qualidade.
 
 Um roadmap será considerado concluído somente quando:
 
-* todos os arquivos elegíveis tiverem estado terminal;
-* não existirem falhas P0 ou P1 abertas;
-* o relatório de cobertura estiver completo;
-* a amostragem manual estiver aprovada;
-* os testes de renderização tiverem passado.
+- todos os arquivos elegíveis tiverem estado terminal;
+- não existirem falhas P0 ou P1 abertas;
+- o relatório de cobertura estiver completo;
+- a amostragem manual estiver aprovada;
+- os testes de renderização tiverem passado.
 
 ---
 
@@ -598,22 +599,22 @@ Um roadmap será considerado concluído somente quando:
 
 Após cada tradução:
 
-* validar frontmatter;
-* validar Markdown;
-* validar MDX;
-* comparar code blocks;
-* comparar URLs;
-* comparar placeholders;
-* detectar truncamentos;
-* detectar arquivos vazios;
-* detectar saída idêntica à origem;
-* detectar caracteres corrompidos;
-* detectar tokens técnicos restantes;
-* validar hierarquia de headings;
-* validar links internos;
-* validar tabelas;
-* validar alerts;
-* validar Mermaid.
+- validar frontmatter;
+- validar Markdown;
+- validar MDX;
+- comparar code blocks;
+- comparar URLs;
+- comparar placeholders;
+- detectar truncamentos;
+- detectar arquivos vazios;
+- detectar saída idêntica à origem;
+- detectar caracteres corrompidos;
+- detectar tokens técnicos restantes;
+- validar hierarquia de headings;
+- validar links internos;
+- validar tabelas;
+- validar alerts;
+- validar Mermaid.
 
 Após cada lote:
 
@@ -640,15 +641,15 @@ Será utilizada amostragem estratificada.
 
 A amostra deverá incluir:
 
-* arquivos pequenos;
-* arquivos médios;
-* arquivos grandes;
-* arquivos com tabelas;
-* arquivos com MDX;
-* arquivos com Mermaid;
-* arquivos com muitos links;
-* arquivos com muitos code blocks;
-* pelo menos um arquivo por roadmap prioritário.
+- arquivos pequenos;
+- arquivos médios;
+- arquivos grandes;
+- arquivos com tabelas;
+- arquivos com MDX;
+- arquivos com Mermaid;
+- arquivos com muitos links;
+- arquivos com muitos code blocks;
+- pelo menos um arquivo por roadmap prioritário.
 
 Também será necessário:
 
@@ -666,38 +667,40 @@ Rotas mínimas para inspeção:
 
 A inspeção deverá verificar:
 
-* renderização SSR;
-* code blocks;
-* alertas;
-* tabelas;
-* links;
-* headings;
-* navegação;
-* caracteres especiais;
-* responsividade;
-* ausência de erros no console.
+- renderização SSR;
+- code blocks;
+- alertas;
+- tabelas;
+- links;
+- headings;
+- navegação;
+- caracteres especiais;
+- responsividade;
+- ausência de erros no console.
 
 ---
 
 ## 15. Scripts de Extração de Oportunidades
 
 ### [IMPLEMENTED] `scripts/extract-opportunities.ts`
+
 ### [IMPLEMENTED] `scripts/forensic-consolidator.ts`
+
 ### [IMPLEMENTED] `schemas/opportunity-finding.schema.json`
 
 O script será executado via `tsx` e deverá:
 
-* ler os arquivos dos roadmaps;
-* selecionar documentos por roadmap;
-* dividir conteúdos extensos em unidades semânticas;
-* consultar o LiteLLM;
-* utilizar Ollama como fallback;
-* exigir saída JSON;
-* validar a resposta com JSON Schema;
-* registrar a evidência de cada finding;
-* deduplicar recomendações;
-* calcular prioridade;
-* consolidar os resultados.
+- ler os arquivos dos roadmaps;
+- selecionar documentos por roadmap;
+- dividir conteúdos extensos em unidades semânticas;
+- consultar o LiteLLM;
+- utilizar Ollama como fallback;
+- exigir saída JSON;
+- validar a resposta com JSON Schema;
+- registrar a evidência de cada finding;
+- deduplicar recomendações;
+- calcular prioridade;
+- consolidar os resultados.
 
 A resposta do modelo deverá seguir uma estrutura semelhante a:
 
@@ -750,15 +753,15 @@ governance-opportunity
 
 Nenhuma recomendação deverá ser aceita sem:
 
-* arquivo de origem;
-* heading ou localização;
-* evidência textual;
-* categoria;
-* severidade;
-* confiança;
-* recomendação;
-* modelo utilizado;
-* versão do prompt.
+- arquivo de origem;
+- heading ou localização;
+- evidência textual;
+- categoria;
+- severidade;
+- confiança;
+- recomendação;
+- modelo utilizado;
+- versão do prompt.
 
 ---
 
@@ -807,72 +810,72 @@ Os pesos deverão ser documentados e versionados.
 
 ### Cobertura
 
-* total de arquivos elegíveis;
-* total pendente;
-* total em fila;
-* total processado;
-* total traduzido;
-* total validado;
-* total aprovado;
-* total publicado;
-* total rejeitado;
-* total em quarentena;
-* total desatualizado.
+- total de arquivos elegíveis;
+- total pendente;
+- total em fila;
+- total processado;
+- total traduzido;
+- total validado;
+- total aprovado;
+- total publicado;
+- total rejeitado;
+- total em quarentena;
+- total desatualizado.
 
 ### Performance
 
-* arquivos por hora;
-* caracteres por minuto;
-* tempo médio por arquivo;
-* tempo médio por chunk;
-* percentis de duração;
-* tempo total da execução.
+- arquivos por hora;
+- caracteres por minuto;
+- tempo médio por arquivo;
+- tempo médio por chunk;
+- percentis de duração;
+- tempo total da execução.
 
 ### Confiabilidade
 
-* taxa de sucesso;
-* taxa de retry;
-* taxa de fallback;
-* taxa de timeout;
-* taxa de rejeição;
-* taxa de rollback;
-* falhas por modelo;
-* falhas por roadmap.
+- taxa de sucesso;
+- taxa de retry;
+- taxa de fallback;
+- taxa de timeout;
+- taxa de rejeição;
+- taxa de rollback;
+- falhas por modelo;
+- falhas por roadmap.
 
 ### Qualidade
 
-* frontmatters preservados;
-* code blocks preservados;
-* URLs preservadas;
-* placeholders restaurados;
-* headings preservados;
-* arquivos truncados;
-* caracteres corrompidos;
-* arquivos idênticos à origem.
+- frontmatters preservados;
+- code blocks preservados;
+- URLs preservadas;
+- placeholders restaurados;
+- headings preservados;
+- arquivos truncados;
+- caracteres corrompidos;
+- arquivos idênticos à origem.
 
 ### Infraestrutura
 
-* estado do Ollama;
-* estado dos modelos;
-* estado do LiteLLM;
-* estado do DeepLX;
-* utilização de CPU;
-* utilização de memória;
-* utilização de GPU;
-* espaço em disco;
-* tamanho da fila.
+- estado do Ollama;
+- estado dos modelos;
+- estado do LiteLLM;
+- estado do DeepLX;
+- utilização de CPU;
+- utilização de memória;
+- utilização de GPU;
+- espaço em disco;
+- tamanho da fila.
 
 ### Gestão
 
-* roadmaps concluídos;
-* roadmaps parciais;
-* roadmaps bloqueados;
-* falhas abertas;
-* falhas reincidentes;
-* oportunidades propostas;
-* oportunidades validadas;
-* oportunidades aceitas;
-* oportunidades implementadas.
+- roadmaps concluídos;
+- roadmaps parciais;
+- roadmaps bloqueados;
+- falhas abertas;
+- falhas reincidentes;
+- oportunidades propostas;
+- oportunidades validadas;
+- oportunidades aceitas;
+- oportunidades implementadas.
 
 ---
 
@@ -923,14 +926,14 @@ Um serviço só poderá ser utilizado quando estiver em estado funcional `READY`
 
 A qualidade linguística será medida por:
 
-* amostragem humana;
-* taxa de correção necessária;
-* alteração de significado;
-* inconsistência terminológica;
-* falsos cognatos;
-* clareza;
-* naturalidade em pt-BR;
-* preservação de termos técnicos.
+- amostragem humana;
+- taxa de correção necessária;
+- alteração de significado;
+- inconsistência terminológica;
+- falsos cognatos;
+- clareza;
+- naturalidade em pt-BR;
+- preservação de termos técnicos.
 
 ---
 
@@ -951,16 +954,16 @@ Cada falha deverá possuir:
 
 As falhas deverão ser agrupadas por:
 
-* código;
-* causa;
-* modelo;
-* roadmap;
-* tamanho do arquivo;
-* etapa;
-* versão do prompt;
-* versão do script;
-* horário;
-* quantidade de tentativas.
+- código;
+- causa;
+- modelo;
+- roadmap;
+- tamanho do arquivo;
+- etapa;
+- versão do prompt;
+- versão do script;
+- horário;
+- quantidade de tentativas.
 
 Falhas não recuperáveis deverão ser enviadas para uma dead-letter queue.
 
@@ -972,13 +975,13 @@ Falhas não recuperáveis deverão ser enviadas para uma dead-letter queue.
 
 O script deverá:
 
-* reconhecer arquivos `.pt-br.md`;
-* selecionar somente traduções publicadas;
-* rejeitar documentos sem aprovação registrada;
-* montar PDFs em português;
-* registrar os arquivos utilizados;
-* registrar hashes dos PDFs;
-* publicar os PDFs em:
+- reconhecer arquivos `.pt-br.md`;
+- selecionar somente traduções publicadas;
+- rejeitar documentos sem aprovação registrada;
+- montar PDFs em português;
+- registrar os arquivos utilizados;
+- registrar hashes dos PDFs;
+- publicar os PDFs em:
 
 ```text
 public/pdfs/roadmaps/
@@ -994,40 +997,40 @@ A geração não deverá depender apenas da existência física do arquivo. O ma
 
 Deverá conter:
 
-* cobertura;
-* progresso;
-* velocidade;
-* falhas;
-* roadmaps concluídos;
-* roadmaps bloqueados;
-* previsão de conclusão baseada na vazão observada.
+- cobertura;
+- progresso;
+- velocidade;
+- falhas;
+- roadmaps concluídos;
+- roadmaps bloqueados;
+- previsão de conclusão baseada na vazão observada.
 
 ### `TRANSLATION_QUALITY_REPORT.md`
 
 Deverá conter:
 
-* preservação estrutural;
-* resultados da amostragem;
-* falhas linguísticas;
-* falhas técnicas;
-* arquivos em quarentena;
-* tendências por modelo.
+- preservação estrutural;
+- resultados da amostragem;
+- falhas linguísticas;
+- falhas técnicas;
+- arquivos em quarentena;
+- tendências por modelo.
 
 ### `ROADMAP_EVOLUTION_REPORT.md`
 
 Deverá conter:
 
-* sumário executivo;
-* oportunidades imediatas;
-* tecnologias defasadas;
-* lacunas de conteúdo;
-* inconsistências;
-* riscos;
-* recomendações por roadmap;
-* priorização;
-* esforço estimado;
-* evidências;
-* roadmap de implementação.
+- sumário executivo;
+- oportunidades imediatas;
+- tecnologias defasadas;
+- lacunas de conteúdo;
+- inconsistências;
+- riscos;
+- recomendações por roadmap;
+- priorização;
+- esforço estimado;
+- evidências;
+- roadmap de implementação.
 
 ---
 
@@ -1092,16 +1095,16 @@ Deverá conter:
 
 O projeto será considerado concluído quando:
 
-* todos os arquivos elegíveis possuírem estado terminal;
-* todas as traduções publicadas tiverem passado pelos gates;
-* não existirem falhas críticas abertas;
-* os 59 roadmaps tiverem relatório de cobertura;
-* a aplicação renderizar corretamente em pt-BR;
-* os PDFs tiverem sido gerados e validados;
-* todas as oportunidades tiverem evidência e status;
-* os manifestos permitirem reproduzir cada execução;
-* nenhuma tradução depender apenas de logs textuais;
-* a documentação operacional estiver atualizada.
+- todos os arquivos elegíveis possuírem estado terminal;
+- todas as traduções publicadas tiverem passado pelos gates;
+- não existirem falhas críticas abertas;
+- os 59 roadmaps tiverem relatório de cobertura;
+- a aplicação renderizar corretamente em pt-BR;
+- os PDFs tiverem sido gerados e validados;
+- todas as oportunidades tiverem evidência e status;
+- os manifestos permitirem reproduzir cada execução;
+- nenhuma tradução depender apenas de logs textuais;
+- a documentação operacional estiver atualizada.
 
 ---
 
@@ -1128,20 +1131,20 @@ O dashboard será uma visualização derivada e nunca substituirá os manifestos
 
 Ao final, deverá ser possível responder rapidamente:
 
-* qual arquivo foi processado;
-* qual versão da origem foi usada;
-* qual modelo realizou a tradução;
-* qual prompt foi utilizado;
-* quantas tentativas ocorreram;
-* qual fallback foi acionado;
-* quais validações passaram;
-* quais validações falharam;
-* qual arquivo foi publicado;
-* qual hash comprova a publicação;
-* qual execução produziu o resultado;
-* qual oportunidade foi identificada;
-* qual evidência sustenta a recomendação;
-* quem ou qual regra autorizou a mudança de estado.
+- qual arquivo foi processado;
+- qual versão da origem foi usada;
+- qual modelo realizou a tradução;
+- qual prompt foi utilizado;
+- quantas tentativas ocorreram;
+- qual fallback foi acionado;
+- quais validações passaram;
+- quais validações falharam;
+- qual arquivo foi publicado;
+- qual hash comprova a publicação;
+- qual execução produziu o resultado;
+- qual oportunidade foi identificada;
+- qual evidência sustenta a recomendação;
+- quem ou qual regra autorizou a mudança de estado.
 
 ## 29. Política de Retenção
 
@@ -1168,6 +1171,7 @@ Comprimido após conclusão:
 ```
 
 Definições:
+
 ```text
 retentionDays: 90
 compressionAfterDays: 7

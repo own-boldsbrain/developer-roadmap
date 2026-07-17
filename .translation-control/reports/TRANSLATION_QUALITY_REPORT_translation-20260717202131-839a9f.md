@@ -1,4 +1,3 @@
-
 # Relatório Canário (Ciclo A)
 
 **runId:** `translation-20260717202131-839a9f`

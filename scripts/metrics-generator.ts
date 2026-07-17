@@ -3,21 +3,24 @@ import * as path from 'path';
 
 const runId = process.argv[2];
 if (!runId) {
-    console.error("Please provide a runId");
-    process.exit(1);
+  console.error('Please provide a runId');
+  process.exit(1);
 }
 
 const STATE_DIR = '.translation-control';
 const RUN_LOG_PATH = path.join(STATE_DIR, 'runs', `${runId}.jsonl`);
 
 if (!fs.existsSync(RUN_LOG_PATH)) {
-    console.error(`Log file not found: ${RUN_LOG_PATH}`);
-    process.exit(1);
+  console.error(`Log file not found: ${RUN_LOG_PATH}`);
+  process.exit(1);
 }
 
-const lines = fs.readFileSync(RUN_LOG_PATH, 'utf-8').split('\n').filter(Boolean);
+const lines = fs
+  .readFileSync(RUN_LOG_PATH, 'utf-8')
+  .split('\n')
+  .filter(Boolean);
 
-let roadmap = "devops";
+let roadmap = 'devops';
 let arquivosDescobertos = new Set();
 let arquivosAprovados = new Set();
 let arquivosPublicados = new Set();
@@ -29,18 +32,18 @@ let outputChars = 0;
 const durations: number[] = [];
 
 for (const line of lines) {
-    const ev = JSON.parse(line);
-    if (ev.event === 'inventory.file_discovered') {
-        arquivosDescobertos.add(ev.fileId);
-    } else if (ev.event === 'validation.passed') {
-        arquivosAprovados.add(ev.fileId);
-    } else if (ev.event === 'publication.completed') {
-        arquivosPublicados.add(ev.fileId);
-    } else if (ev.event === 'translation.completed') {
-        if (ev.durationMs) durations.push(ev.durationMs);
-        if (ev.inputCharacters) inputChars += ev.inputCharacters;
-        if (ev.outputCharacters) outputChars += ev.outputCharacters;
-    }
+  const ev = JSON.parse(line);
+  if (ev.event === 'inventory.file_discovered') {
+    arquivosDescobertos.add(ev.fileId);
+  } else if (ev.event === 'validation.passed') {
+    arquivosAprovados.add(ev.fileId);
+  } else if (ev.event === 'publication.completed') {
+    arquivosPublicados.add(ev.fileId);
+  } else if (ev.event === 'translation.completed') {
+    if (ev.durationMs) durations.push(ev.durationMs);
+    if (ev.inputCharacters) inputChars += ev.inputCharacters;
+    if (ev.outputCharacters) outputChars += ev.outputCharacters;
+  }
 }
 
 const totalTimeMs = durations.reduce((a, b) => a + b, 0);
@@ -96,5 +99,10 @@ const output = `
 - findings rejeitados pelo schema: N/A (Ciclo A)
 `;
 
-fs.writeFileSync(path.join(STATE_DIR, 'reports', `TRANSLATION_QUALITY_REPORT_${runId}.md`), output);
-console.log(`Report generated: .translation-control/reports/TRANSLATION_QUALITY_REPORT_${runId}.md`);
+fs.writeFileSync(
+  path.join(STATE_DIR, 'reports', `TRANSLATION_QUALITY_REPORT_${runId}.md`),
+  output,
+);
+console.log(
+  `Report generated: .translation-control/reports/TRANSLATION_QUALITY_REPORT_${runId}.md`,
+);

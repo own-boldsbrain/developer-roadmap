@@ -3,10 +3,7 @@
   "totalEligibleFiles": 6517,
   "totalEligibleBytes": 5716307,
   "engine": "ollama",
-  "modelsAvailable": [
-    "translategemma:latest",
-    "qwen3.6:latest"
-  ],
+  "modelsAvailable": ["translategemma:latest", "qwen3.6:latest"],
   "liteLLMState": "OFFLINE_AT_INSPECTION",
   "deepLXState": "RATE_LIMITED"
 }

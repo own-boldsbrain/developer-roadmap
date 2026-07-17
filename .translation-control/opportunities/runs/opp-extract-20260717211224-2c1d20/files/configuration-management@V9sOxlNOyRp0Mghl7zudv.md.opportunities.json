@@ -1,0 +1,19 @@
+{
+  "roadmap": "DevOps",
+  "findings": [
+    {
+      "category": "conceptual-gap",
+      "severity": "medium",
+      "title": "Lack of modern IaC and GitOps paradigms",
+      "evidence": {
+        "file": "src/data/roadmaps/devops/content/configuration-management@V9sOxlNOyRp0Mghl7zudv.md",
+        "heading": "# Configuration Management",
+        "excerpt": "This post focuses on its modern application and use in agile CI/CD software environments."
+      },
+      "recommendation": "Expand the content to explicitly cover declarative configuration management, Infrastructure as Code (IaC) tools (Terraform, Pulumi), GitOps workflows, and cloud-native configuration patterns (e.g., Kustomize, Helm, Crossplane) to align with current industry standards.",
+      "confidence": 0.85,
+      "timeHorizon": "60-90-days",
+      "findingId": "opp-8c8e9aea7f24"
+    }
+  ]
+}

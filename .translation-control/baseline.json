@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-07-17T20:02:30.544Z",
+  "totalEligibleFiles": 6517,
+  "totalEligibleBytes": 5716307,
+  "engine": "ollama",
+  "modelsAvailable": [
+    "translategemma:latest",
+    "qwen3.6:latest"
+  ],
+  "liteLLMState": "OFFLINE_AT_INSPECTION",
+  "deepLXState": "RATE_LIMITED"
+}

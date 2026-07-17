@@ -69,7 +69,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
 
 type UserLinkProps = {
   href: string;
-  icon: ((props: React.SVGProps<SVGSVGElement>) => JSX.Element) | typeof Globe;
+  icon: ((props: React.SVGProps<SVGSVGElement>) => any) | typeof Globe;
 };
 
 export function UserLink(props: UserLinkProps) {

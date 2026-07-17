@@ -14,7 +14,7 @@ const messageCodes: Record<string, string> = {
   fa: 'Friend request accepted',
 };
 
-export function Toaster(props: Props) {
+export function Toaster(props: any) {
   const toastMessage = useStore($toastMessage);
 
   const { c } = getUrlParams();

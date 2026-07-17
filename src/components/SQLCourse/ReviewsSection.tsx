@@ -217,7 +217,7 @@ export function ReviewsSection() {
               <p
                 className="mt-4 text-zinc-300"
                 dangerouslySetInnerHTML={{
-                  __html: markdownToHtml(review.text),
+                  __html: markdownToHtml(review.text as string),
                 }}
               />
             </div>

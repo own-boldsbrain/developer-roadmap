@@ -173,7 +173,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
               variant="modal"
               roadmap={roadmap!}
               className="min-h-[400px]"
-              onRendered={(wrapperRef) => {
+              onRendered={(wrapperRef: any) => {
                 const {
                   done = [],
                   learning = [],

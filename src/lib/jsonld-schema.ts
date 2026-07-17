@@ -1,4 +1,4 @@
-import type { FAQType } from '../components/FAQs/FAQs.astro';
+type FAQType = any;
 
 type ArticleSchemaProps = {
   url: string;

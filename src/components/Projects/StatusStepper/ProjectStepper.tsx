@@ -34,7 +34,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
   const { projectId } = props;
 
   const stickyElRef = useRef<HTMLDivElement>(null);
-  const isSticky = useStickyStuck(stickyElRef, 8);
+  const isSticky = useStickyStuck(stickyElRef as any, 8);
   const currentUser = getUser();
 
   const [isStartingProject, setIsStartingProject] = useState(false);

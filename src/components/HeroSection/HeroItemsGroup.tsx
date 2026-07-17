@@ -45,8 +45,7 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
       className={cn(
         'border-b border-gray-800/50',
         {
-          'py-4': !isLoadingOrCollapsedOrEmpty,
-          'py-4': isLoadingOrCollapsedOrEmpty,
+          'py-4': true,
         },
         className,
       )}

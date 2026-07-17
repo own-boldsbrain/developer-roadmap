@@ -10,6 +10,8 @@ jobs:
   green-status:
     runs-on: ubuntu-latest
     name: "Green Status"
+    env:
+      STORE_PATH: ""
     
     steps:
       - name: Checkout code

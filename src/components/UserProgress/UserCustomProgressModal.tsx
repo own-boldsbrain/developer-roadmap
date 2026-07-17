@@ -211,7 +211,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className={`absolute top-3 right-2.5 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
+            className={`absolute top-3 right-2.5 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
             onClick={onClose}
           >
             <X className="h-4 w-4" />

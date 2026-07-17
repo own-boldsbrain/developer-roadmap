@@ -111,13 +111,42 @@ function verify() {
     }
   }
 
+  const totalPublished = latestPublished.size;
+
+  let status: string;
+  let reason: string | undefined;
+
+  if (totalPublished === 0) {
+    status = 'FAILED';
+    reason = 'EMPTY_VERIFICATION';
+    console.error(
+      '[EMPTY_VERIFICATION] No PUBLISHED records found in manifest.',
+    );
+  } else if (verified === 0) {
+    status = 'FAILED';
+    reason = 'ZERO_VERIFIED';
+    console.error(
+      '[ZERO_VERIFIED] Published records exist but none could be verified.',
+    );
+  } else if (missing > 0 || mismatched > 0 || unverifiable > 0) {
+    status = 'FAILED';
+    reason = 'INTEGRITY_ERRORS';
+  } else {
+    status = 'PASSED';
+  }
+
+  const coverageRate =
+    totalPublished > 0 ? Math.round((verified / totalPublished) * 100) : 0;
+
   const results = {
+    expected: totalPublished,
     verified,
     missing,
     mismatched,
     unverifiable,
-    status:
-      missing > 0 || mismatched > 0 || unverifiable > 0 ? 'FAILED' : 'PASSED',
+    coverageRate,
+    status,
+    ...(reason ? { reason } : {}),
   };
 
   console.log(JSON.stringify(results, null, 2));

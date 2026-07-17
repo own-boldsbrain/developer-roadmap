@@ -19,7 +19,7 @@ function getOllamaModelDigest(modelName: string): string {
         const out = execSync('curl -s http://localhost:11434/api/tags').toString();
         const models = JSON.parse(out).models;
         const m = models.find((x: any) => x.name === modelName);
-        return m ? 'sha256:' + m.digest : 'sha256:unknown';
+        return m ? (m.digest.startsWith('sha256:') ? m.digest : 'sha256:' + m.digest) : 'sha256:unknown';
     } catch(e) {
         return 'sha256:unknown';
     }
@@ -215,6 +215,11 @@ for (const entry of selectedFiles) {
     try {
         content = fs.readFileSync(sourcePath, 'utf-8');
         
+        // Gate G0: Secret Scanning
+        if (content.match(/sk-[a-zA-Z0-9-]{16,}/)) {
+            throw new Error("Gate G0 Failed: Found hardcoded secrets (sk-... pattern).");
+        }
+
         // Gate G1: Integrity of input
         if (!content || content.trim() === '') throw new Error("Gate G1 Failed: Markdown is empty.");
 
@@ -257,6 +262,9 @@ for (const entry of selectedFiles) {
         const tokenRegex = /__PROTECTED_BLOCK_\d{4}__/g;
         const translatedTokens = translatedContent.match(tokenRegex) || [];
         
+        const sourceTokenSequence = Array.from(tokens.keys());
+        const translatedTokenSequence = translatedTokens;
+        
         const tokenSetTranslated = new Set(translatedTokens);
         const duplicateTokens = translatedTokens.length - tokenSetTranslated.size;
         
@@ -269,6 +277,13 @@ for (const entry of selectedFiles) {
 
         for (const token of tokens.keys()) {
             if (!tokenSetTranslated.has(token)) throw new Error(`Gate G3 Failed: Unrestored token ${token}.`);
+        }
+        
+        // Strict Sequence Validation
+        for (let i = 0; i < sourceTokenSequence.length; i++) {
+            if (sourceTokenSequence[i] !== translatedTokenSequence[i]) {
+                throw new Error(`Gate G3 Failed: Token sequence mismatch at position ${i}. Expected ${sourceTokenSequence[i]}, got ${translatedTokenSequence[i]}.`);
+            }
         }
 
         // Restore and G3 Cryptographic Hash Validation

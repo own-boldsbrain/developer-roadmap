@@ -1,0 +1,9 @@
+{
+  "runId": "opp-extract-20260717211207-c62979",
+  "roadmap": "devops",
+  "limit": 5,
+  "provider": "ollama",
+  "model": "qwen3.6:latest",
+  "selectionSeed": "devops-opportunities-v1",
+  "status": "COMPLETED"
+}

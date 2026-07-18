@@ -17,7 +17,7 @@ function generateReport() {
     stdout = error.stdout?.toString() || '';
     stderr = error.stderr?.toString() || error.message;
   }
-  
+
   durationMs = Date.now() - startTime;
 
   // Extract metrics from stdout
@@ -53,7 +53,9 @@ function generateReport() {
   try {
     const pkgStr = fs.readFileSync('package.json', 'utf-8');
     const pkg = JSON.parse(pkgStr);
-    toolVersion = pkg.devDependencies['@colbymchenry/codegraph']?.replace(/[^0-9.]/g, '') || 'unknown';
+    toolVersion =
+      pkg.devDependencies['@colbymchenry/codegraph']?.replace(/[^0-9.]/g, '') ||
+      'unknown';
   } catch (e) {
     // Ignore
   }
@@ -63,14 +65,14 @@ function generateReport() {
   const report = {
     runId,
     gitCommit,
-    tool: "@colbymchenry/codegraph",
+    tool: '@colbymchenry/codegraph',
     toolVersion,
     filesDiscovered: filesIndexed, // Simplified, assume discovered = indexed for this tool unless parsing is deeper
     filesIndexed,
     failed: status === 'FAILED' ? 1 : 0,
     durationMs,
     databaseHash,
-    status
+    status,
   };
 
   const reportsDir = '.codegraph-reports';

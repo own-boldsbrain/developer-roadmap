@@ -32,8 +32,8 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "codegraph:init": "codegraph init",
-    "codegraph:index": "codegraph index .",
-    "codegraph:refresh": "codegraph index .",
+    "codegraph:index": "tsx scripts/codegraph-index.ts",
+    "codegraph:refresh": "tsx scripts/codegraph-index.ts",
     "codegraph:check": "codegraph --help"
   },
   "dependencies": {

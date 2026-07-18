@@ -94,9 +94,11 @@ function verify() {
       continue;
     }
 
-    if (!entry.finalHash) {
+    const expectedHash = isMirrored ? entry.sourceHash : entry.finalHash;
+
+    if (!expectedHash) {
       console.error(
-        `[MANIFEST_MISSING_FINAL_HASH] fileId ${fileId} lacks finalHash in manifest`,
+        `[MANIFEST_MISSING_HASH] fileId ${fileId} lacks expected hash in manifest`,
       );
       unverifiable++;
       continue;
@@ -104,9 +106,9 @@ function verify() {
 
     try {
       const currentHash = hashFile(sourcePath);
-      if (currentHash !== entry.finalHash) {
+      if (currentHash !== expectedHash) {
         console.error(`[POST_PUBLICATION_MODIFICATION] ${sourcePath}`);
-        console.error(`  Expected (manifest): ${entry.finalHash}`);
+        console.error(`  Expected (manifest): ${expectedHash}`);
         console.error(`  Got (disk):          ${currentHash}`);
         mismatched++;
       } else {

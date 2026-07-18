@@ -406,7 +406,7 @@ async function run() {
           ...f,
           runId,
           fileId,
-          findingId: crypto.randomUUID(),
+          findingId,
           schemaVersion: '1.0.0',
           status: 'PROPOSED',
           provider,

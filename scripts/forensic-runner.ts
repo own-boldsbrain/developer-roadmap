@@ -444,8 +444,15 @@ for (const entry of selectedFiles) {
     const manifestEntry = {
       runId,
       fileId,
-      schemaVersion: '1.1.0',
-      runnerVersion: '1.3.0',
+      schemaVersion: '1.2.0',
+      runnerVersion: '1.4.0',
+      lane: 'PROCESSING',
+      stage: 'PUBLICATION',
+      state: 'PUBLISHED',
+      processingMode: 'MIRRORED_FALLBACK',
+      executionStatus: 'PASSED',
+      linguisticStatus: 'NOT_TRANSLATED',
+      structuralStatus: 'VALID',
       inventoryHash: hashFile(INVENTORY_PATH),
       scriptHash: hashFile(translateScriptPath),
       promptHash: null,
@@ -465,7 +472,6 @@ for (const entry of selectedFiles) {
       protectedContentHash: protectedHash,
       translatedContentHash,
       finalHash,
-      status: 'PUBLISHED',
     };
     appendLog(MANIFEST_PATH, manifestEntry);
 
@@ -480,7 +486,17 @@ for (const entry of selectedFiles) {
       errorCode: 'TRANSLATION_OR_VALIDATION_ERROR',
       message: e.message,
     });
-    const manifestEntry = { runId, fileId, status: 'FAILED', error: e.message };
+    const manifestEntry = {
+      runId,
+      fileId,
+      lane: 'PROCESSING',
+      stage: 'VALIDATION',
+      state: 'QUARANTINED',
+      processingMode: 'MIRRORED_FALLBACK',
+      executionStatus: 'FAILED',
+      reasonCode: 'TRANSLATION_OR_VALIDATION_ERROR',
+      error: e.message
+    };
     appendLog(MANIFEST_PATH, manifestEntry);
     processedCount++;
   }

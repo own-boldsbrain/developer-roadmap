@@ -51,8 +51,6 @@ function verify() {
     idToPath.set(entry.fileId, entry.targetPath);
   }
 
-  // Read manifest to get finalHashes
-  // Select latest terminal entry by fileId for PUBLISHED entries
   const manifests = fs
     .readFileSync(manifestArg as string, 'utf-8')
     .split('\n')
@@ -61,18 +59,26 @@ function verify() {
 
   const latestPublished = new Map<string, any>();
   for (const entry of manifests) {
-    if (entry.status === 'PUBLISHED') {
-      // Assuming ordered chronologically in jsonl, so later overwrites earlier
+    if (entry.state === 'PUBLISHED' || entry.status === 'PUBLISHED' || entry.status === 'MIRRORED') {
       latestPublished.set(entry.fileId, entry);
     }
   }
 
-  let verified = 0;
+  let publishedExpected = 0;
+  let publishedVerified = 0;
+  let mirroredExpected = 0;
+  let mirroredVerified = 0;
+
   let missing = 0;
   let mismatched = 0;
   let unverifiable = 0;
+  let validStructural = 0;
 
   for (const [fileId, entry] of latestPublished.entries()) {
+    const isMirrored = entry.processingMode === 'MIRRORED_FALLBACK' || entry.status === 'MIRRORED';
+    if (isMirrored) mirroredExpected++;
+    else publishedExpected++;
+
     const sourcePath = idToPath.get(fileId);
     if (!sourcePath) {
       console.error(
@@ -98,7 +104,10 @@ function verify() {
         console.error(`  Got (disk):          ${currentHash}`);
         mismatched++;
       } else {
-        verified++;
+        if (isMirrored) mirroredVerified++;
+        else publishedVerified++;
+        
+        if (entry.structuralStatus !== 'INVALID') validStructural++;
       }
     } catch (e: any) {
       if (e.message === 'FILE_MISSING') {
@@ -111,18 +120,19 @@ function verify() {
     }
   }
 
-  const totalPublished = latestPublished.size;
+  const totalExpected = publishedExpected + mirroredExpected;
+  const totalVerified = publishedVerified + mirroredVerified;
 
   let status: string;
   let reason: string | undefined;
 
-  if (totalPublished === 0) {
+  if (totalExpected === 0) {
     status = 'FAILED';
     reason = 'EMPTY_VERIFICATION';
     console.error(
-      '[EMPTY_VERIFICATION] No PUBLISHED records found in manifest.',
+      '[EMPTY_VERIFICATION] No PUBLISHED or MIRRORED records found in manifest.',
     );
-  } else if (verified === 0) {
+  } else if (totalVerified === 0) {
     status = 'FAILED';
     reason = 'ZERO_VERIFIED';
     console.error(
@@ -135,16 +145,21 @@ function verify() {
     status = 'PASSED';
   }
 
-  const coverageRate =
-    totalPublished > 0 ? Math.round((verified / totalPublished) * 100) : 0;
+  const publicationCoverage = inventory.length > 0 ? Math.round((totalVerified / inventory.length) * 100) : 0;
+  const linguisticCoverage = inventory.length > 0 ? Math.round((publishedVerified / inventory.length) * 100) : 0;
+  const structuralCoverage = totalVerified > 0 ? Math.round((validStructural / totalVerified) * 100) : 0;
 
   const results = {
-    expected: totalPublished,
-    verified,
+    publishedExpected,
+    publishedVerified,
+    mirroredExpected,
+    mirroredVerified,
+    linguisticCoverage,
+    publicationCoverage,
+    structuralCoverage,
     missing,
     mismatched,
     unverifiable,
-    coverageRate,
     status,
     ...(reason ? { reason } : {}),
   };

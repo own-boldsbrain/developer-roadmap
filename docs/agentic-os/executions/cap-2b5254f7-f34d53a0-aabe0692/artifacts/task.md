@@ -1,0 +1,19 @@
+- `[ ]` **1. Refatorar script V2 (`scripts/agent-capture.ps1`)**
+  - `[ ]` Adicionar flags (`-DryRun`, `-Redact`, `-Commit`, `-Force`)
+  - `[ ]` Resolver `$RepoRoot` usando `git rev-parse --show-toplevel`
+  - `[ ]` Validar `ConversationId` via Regex
+  - `[ ]` Implementar geração de `CaptureId` determinístico
+  - `[ ]` Implementar fluxo de staging (`.agentic-state/captures/...`)
+  - `[ ]` Implementar Normalização UTF-8 sem BOM
+  - `[ ]` Implementar Regex Redaction (`[REDACTED_BRAIN_PATH]`)
+  - `[ ]` Implementar cálculo de hashes (`sourceHash`, `sanitizedHash`, `publishedHash`)
+  - `[ ]` Implementar geração do `manifest.draft.json`
+  - `[ ]` Implementar movimentação atômica para `docs/agentic-os/executions/<capture-id>`
+  - `[ ]` Atualizar indexação no `CHANGELOG.md`
+  - `[ ]` Implementar gate do Gitleaks (falhar fechado em publicação) e `-Commit` isolado
+- `[ ]` **2. Remover `docs/agentic-os/evidence/` legado**
+- `[ ]` **3. Corrigir CHANGELOG legado**
+- `[ ]` **4. Executar `-DryRun -Redact`**
+- `[ ]` **5. Executar publicação sem `-Commit`**
+- `[ ]` **6. Validar hashes publicados**
+- `[ ]` **7. Commitar as alterações**

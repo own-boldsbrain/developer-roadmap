@@ -1,29 +1,3 @@
-# Agentic OS Changelog
-
-## 2026-07-18 â€” Captura da execuÃ§Ã£o
-
-- **Capture:** $CaptureId
-- **Branch:** $(System.Collections.Hashtable.git.branch)
-- **Commit observado:** $ShortHead
-- **Status:** gent-reported
-- **VerificaÃ§Ã£o remota:** pending
-- **Resumo:** Captura automÃ¡tica de artefatos da sessÃ£o.
-- **Artefatos:** [Abrir captura](./executions/cap-2b5254f7-f34d53a0-aabe0692/)
-
-## 2026-07-18 â€” Captura da execuÃ§Ã£o
-
-- **Capture:** $CaptureId
-- **Branch:** $(System.Collections.Hashtable.git.branch)
-- **Commit observado:** $ShortHead
-- **Status:** gent-reported
-- **VerificaÃ§Ã£o remota:** pending
-- **Resumo:** Captura automÃ¡tica de artefatos da sessÃ£o.
-- **Artefatos:** [Abrir captura](./executions/cap-2b5254f7-f34d53a0-aabe0692/)
-
-## Agent Execution: [2026-07-18 00:29:10]
-**Conversation ID**: f34d53a0-ec05-48c2-9c3e-acd9da77ad91
-**Evidence**: docs/agentic-os/evidence/f34d53a0-ec05-48c2-9c3e-acd9da77ad91/
-
 # Walkthrough: Captura de Evidências e Changelog (Workflow)
 
 A infraestrutura formal para captura e versionamento do "pensamento" (evidence) gerado pelo agente foi implementada com sucesso no repositório.
@@ -52,6 +26,3 @@ A partir de agora, a qualquer momento podemos executar `.\scripts\agent-capture.
 > [!TIP]
 > A esteira do PR #2 agora tem taxonomia P0 perfeita e script de coleta de histórico. 
 > Se concordar, nossa próxima jogada finalmente recai sobre pularmos de volta para o PR #1 (`feat/nirvana-fase-0`) e resolver as engrenagens vermelhas do CI (Secret Scan e Vitest).
-
-
----

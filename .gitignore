@@ -33,3 +33,9 @@ tests-examples
 *.csveditor/
 
 packages/editor/
+
+# Local security tools and reports
+gitleaks_bin/
+gitleaks.zip
+gitleaks-report.json
+sk_leak.txt

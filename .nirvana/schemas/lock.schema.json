@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/lock.schema.json",
+  "title": "Lock",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "lockId": {
+      "type": "string"
+    },
+    "resourcePath": {
+      "type": "string"
+    },
+    "agentId": {
+      "type": "string"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "lockId",
+    "resourcePath",
+    "agentId"
+  ]
+}

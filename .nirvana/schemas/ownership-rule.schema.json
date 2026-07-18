@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/ownership-rule.schema.json",
+  "title": "Ownership Rule",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "pathPattern": {
+      "type": "string"
+    },
+    "ownerAgentId": {
+      "type": "string"
+    },
+    "accessLevel": {
+      "type": "string",
+      "enum": [
+        "read",
+        "write",
+        "admin"
+      ]
+    }
+  },
+  "required": [
+    "pathPattern",
+    "ownerAgentId",
+    "accessLevel"
+  ]
+}

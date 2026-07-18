@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/guardrail-violation.schema.json",
+  "title": "Guardrail Violation",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "violationId": {
+      "type": "string"
+    },
+    "ruleBroken": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    }
+  },
+  "required": [
+    "violationId",
+    "ruleBroken",
+    "severity"
+  ]
+}

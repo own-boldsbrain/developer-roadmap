@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "analyze-complexity",
+  "description": "Tool analyze-complexity for mcp-guardrails",
+  "inputSchema": {
+    "$ref": "../schemas/input/analyze-complexity.schema.json"
+  }
+}

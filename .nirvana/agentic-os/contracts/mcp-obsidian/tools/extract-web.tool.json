@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "extract-web",
+  "description": "Tool extract-web for mcp-obsidian",
+  "inputSchema": {
+    "$ref": "../schemas/input/extract-web.schema.json"
+  }
+}

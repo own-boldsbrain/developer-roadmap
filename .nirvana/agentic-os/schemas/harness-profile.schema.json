@@ -1,26 +1,56 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Everything Code Harness Profile",
-  "type": "object",
-  "properties": {
-    "profile_id": { "type": "string" },
-    "name": { "type": "string" },
-    "components": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "component_id": { "type": "string" },
-          "type": { "type": "string", "enum": ["agent", "skill", "hook", "rule"] },
-          "version": { "type": "string" }
-        },
-        "required": ["component_id", "type"]
-      }
-    },
-    "security_level": {
-      "type": "string",
-      "enum": ["relaxed", "standard", "strict"]
-    }
-  },
-  "required": ["profile_id", "name", "components"]
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "Everything Code Harness Profile",
+    "type":  "object",
+    "properties":  {
+                       "profile_id":  {
+                                          "type":  "string"
+                                      },
+                       "name":  {
+                                    "type":  "string"
+                                },
+                       "components":  {
+                                          "type":  "array",
+                                          "items":  {
+                                                        "type":  "object",
+                                                        "properties":  {
+                                                                           "component_id":  {
+                                                                                                "type":  "string"
+                                                                                            },
+                                                                           "type":  {
+                                                                                        "type":  "string",
+                                                                                        "enum":  [
+                                                                                                     "agent",
+                                                                                                     "skill",
+                                                                                                     "hook",
+                                                                                                     "rule"
+                                                                                                 ]
+                                                                                    },
+                                                                           "version":  {
+                                                                                           "type":  "string"
+                                                                                       }
+                                                                       },
+                                                        "required":  [
+                                                                         "component_id",
+                                                                         "type"
+                                                                     ]
+                                                    }
+                                      },
+                       "security_level":  {
+                                              "type":  "string",
+                                              "enum":  [
+                                                           "relaxed",
+                                                           "standard",
+                                                           "strict"
+                                                       ]
+                                          }
+                   },
+    "required":  [
+                     "profile_id",
+                     "name",
+                     "components"
+                 ],
+    "$id":  "https://nirvana.local/schemas/harness-profile.schema.json",
+    "schemaVersion":  "1.0.0",
+    "additionalProperties":  false
 }

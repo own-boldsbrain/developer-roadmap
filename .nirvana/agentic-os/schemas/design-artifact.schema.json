@@ -1,21 +1,47 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Open Design Artifact",
-  "type": "object",
-  "properties": {
-    "artifact_id": { "type": "string" },
-    "generation_id": { "type": "string" },
-    "format": {
-      "type": "string",
-      "enum": ["html", "pdf", "pptx", "video", "image"]
-    },
-    "design_system_ref": { "type": "string" },
-    "components_used": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "preview_url": { "type": "string" },
-    "version": { "type": "integer" }
-  },
-  "required": ["artifact_id", "generation_id", "format", "version"]
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "Open Design Artifact",
+    "type":  "object",
+    "properties":  {
+                       "artifact_id":  {
+                                           "type":  "string"
+                                       },
+                       "generation_id":  {
+                                             "type":  "string"
+                                         },
+                       "format":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "html",
+                                                   "pdf",
+                                                   "pptx",
+                                                   "video",
+                                                   "image"
+                                               ]
+                                  },
+                       "design_system_ref":  {
+                                                 "type":  "string"
+                                             },
+                       "components_used":  {
+                                               "type":  "array",
+                                               "items":  {
+                                                             "type":  "string"
+                                                         }
+                                           },
+                       "preview_url":  {
+                                           "type":  "string"
+                                       },
+                       "version":  {
+                                       "type":  "integer"
+                                   }
+                   },
+    "required":  [
+                     "artifact_id",
+                     "generation_id",
+                     "format",
+                     "version"
+                 ],
+    "$id":  "https://nirvana.local/schemas/design-artifact.schema.json",
+    "schemaVersion":  "1.0.0",
+    "additionalProperties":  false
 }

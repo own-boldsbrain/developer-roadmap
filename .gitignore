@@ -31,3 +31,11 @@ tests-examples
 *.csveditor/
 
 packages/editor
+# Gitleaks and Forensic Logs
+*.zip
+gitleaks_bin/
+gitleaks-report.json
+run_log.txt
+sk_leak.txt
+.translation-control/runs/
+.translation-control/reports/

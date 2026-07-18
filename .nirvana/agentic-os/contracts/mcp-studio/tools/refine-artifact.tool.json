@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "refine-artifact",
+  "description": "Tool refine-artifact for mcp-studio",
+  "inputSchema": {
+    "$ref": "../schemas/input/refine-artifact.schema.json"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "create-spec",
+  "description": "Tool create-spec for mcp-superpowers",
+  "inputSchema": {
+    "$ref": "../schemas/input/create-spec.schema.json"
+  }
+}

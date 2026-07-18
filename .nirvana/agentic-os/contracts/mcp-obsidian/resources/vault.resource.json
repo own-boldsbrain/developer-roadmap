@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schemas/mcp-resource.schema.json",
+  "uri": "vault://",
+  "name": "vault",
+  "mimeType": "application/json"
+}

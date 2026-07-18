@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "spawn-swarm",
+  "description": "Tool spawn-swarm for mcp-swarm",
+  "inputSchema": {
+    "$ref": "../schemas/input/spawn-swarm.schema.json"
+  }
+}

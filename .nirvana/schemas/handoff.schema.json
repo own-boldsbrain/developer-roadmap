@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/handoff.schema.json",
+  "title": "Handoff Contract",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "handoffId": {
+      "type": "string"
+    },
+    "fromAgent": {
+      "type": "string"
+    },
+    "toAgent": {
+      "type": "string"
+    },
+    "payloadContext": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "handoffId",
+    "fromAgent",
+    "toAgent"
+  ]
+}

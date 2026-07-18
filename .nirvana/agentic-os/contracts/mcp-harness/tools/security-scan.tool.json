@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "security-scan",
+  "description": "Tool security-scan for mcp-harness",
+  "inputSchema": {
+    "$ref": "../schemas/input/security-scan.schema.json"
+  }
+}

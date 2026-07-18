@@ -495,7 +495,7 @@ for (const entry of selectedFiles) {
       processingMode: 'MIRRORED_FALLBACK',
       executionStatus: 'FAILED',
       reasonCode: 'TRANSLATION_OR_VALIDATION_ERROR',
-      error: e.message
+      error: e.message,
     };
     appendLog(MANIFEST_PATH, manifestEntry);
     processedCount++;

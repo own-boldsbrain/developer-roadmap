@@ -59,7 +59,11 @@ function verify() {
 
   const latestPublished = new Map<string, any>();
   for (const entry of manifests) {
-    if (entry.state === 'PUBLISHED' || entry.status === 'PUBLISHED' || entry.status === 'MIRRORED') {
+    if (
+      entry.state === 'PUBLISHED' ||
+      entry.status === 'PUBLISHED' ||
+      entry.status === 'MIRRORED'
+    ) {
       latestPublished.set(entry.fileId, entry);
     }
   }
@@ -75,7 +79,9 @@ function verify() {
   let validStructural = 0;
 
   for (const [fileId, entry] of latestPublished.entries()) {
-    const isMirrored = entry.processingMode === 'MIRRORED_FALLBACK' || entry.status === 'MIRRORED';
+    const isMirrored =
+      entry.processingMode === 'MIRRORED_FALLBACK' ||
+      entry.status === 'MIRRORED';
     if (isMirrored) mirroredExpected++;
     else publishedExpected++;
 
@@ -106,7 +112,7 @@ function verify() {
       } else {
         if (isMirrored) mirroredVerified++;
         else publishedVerified++;
-        
+
         if (entry.structuralStatus !== 'INVALID') validStructural++;
       }
     } catch (e: any) {
@@ -145,9 +151,16 @@ function verify() {
     status = 'PASSED';
   }
 
-  const publicationCoverage = inventory.length > 0 ? Math.round((totalVerified / inventory.length) * 100) : 0;
-  const linguisticCoverage = inventory.length > 0 ? Math.round((publishedVerified / inventory.length) * 100) : 0;
-  const structuralCoverage = totalVerified > 0 ? Math.round((validStructural / totalVerified) * 100) : 0;
+  const publicationCoverage =
+    inventory.length > 0
+      ? Math.round((totalVerified / inventory.length) * 100)
+      : 0;
+  const linguisticCoverage =
+    inventory.length > 0
+      ? Math.round((publishedVerified / inventory.length) * 100)
+      : 0;
+  const structuralCoverage =
+    totalVerified > 0 ? Math.round((validStructural / totalVerified) * 100) : 0;
 
   const results = {
     publishedExpected,

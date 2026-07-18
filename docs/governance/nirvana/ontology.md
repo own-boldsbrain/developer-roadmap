@@ -2,10 +2,10 @@
 
 O desenho canônico separa quatro conceitos fundamentais para rastreabilidade e governança forense:
 
-* **Lane**: domínio de responsabilidade.
-* **Stage**: etapa ordenada do fluxo.
-* **State**: posição persistente da entidade no ciclo de vida.
-* **Status**: condição observada ou resultado de uma execução.
+- **Lane**: domínio de responsabilidade.
+- **Stage**: etapa ordenada do fluxo.
+- **State**: posição persistente da entidade no ciclo de vida.
+- **Status**: condição observada ou resultado de uma execução.
 
 ## Regra-mãe
 
@@ -19,16 +19,16 @@ O desenho canônico separa quatro conceitos fundamentais para rastreabilidade e 
 
 ## 1. Lanes Canônicas
 
-L00  Governance & Change Control
-L10  Git & Reconciliation
-L20  Security & Secrets
-L30  CI, Quality & Testing
-L40  Provider Readiness
-L50  Inventory & Selection
-L60  Processing: Translation / Mirroring
-L70  Validation & Publication
-L80  Opportunity Intelligence
-L90  Evidence & Observability
+L00 Governance & Change Control
+L10 Git & Reconciliation
+L20 Security & Secrets
+L30 CI, Quality & Testing
+L40 Provider Readiness
+L50 Inventory & Selection
+L60 Processing: Translation / Mirroring
+L70 Validation & Publication
+L80 Opportunity Intelligence
+L90 Evidence & Observability
 L100 Release & Operations
 
 ---
@@ -36,15 +36,19 @@ L100 Release & Operations
 ## 2. Status Universais
 
 ### executionStatus
+
 NOT_STARTED, QUEUED, RUNNING, PASSED, PASSED_WITH_WARNINGS, FAILED, BLOCKED, CANCELLED, SKIPPED, UNKNOWN, NOT_APPLICABLE
 
 ### healthStatus
+
 HEALTHY, DEGRADED, UNHEALTHY, UNAVAILABLE, UNKNOWN
 
 ### evidenceStatus
+
 NOT_CAPTURED, CAPTURED, PARTIALLY_VERIFIED, VERIFIED, TAMPER_EVIDENT, INVALID, EXPIRED
 
 ### completenessStatus
+
 COMPLETE, PARTIAL, INCOMPLETE, EMPTY, UNKNOWN
 
 ---
@@ -70,4 +74,4 @@ COMPLETE, PARTIAL, INCOMPLETE, EMPTY, UNKNOWN
 }
 ```
 
-*Nota: Referenciar a documentação de cada Lane específica para a máquina de estados exata.*
+_Nota: Referenciar a documentação de cada Lane específica para a máquina de estados exata._

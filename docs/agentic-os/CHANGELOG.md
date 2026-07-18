@@ -21,6 +21,7 @@
 - **Artefatos:** [Abrir captura](./executions/cap-2b5254f7-f34d53a0-aabe0692/)
 
 ## Agent Execution: [2026-07-18 00:29:10]
+
 **Conversation ID**: f34d53a0-ec05-48c2-9c3e-acd9da77ad91
 **Evidence**: docs/agentic-os/evidence/f34d53a0-ec05-48c2-9c3e-acd9da77ad91/
 
@@ -43,15 +44,14 @@ A infraestrutura formal para captura e versionamento do "pensamento" (evidence) 
 
 4. **Self-Capture Executado (Dogfooding!)**
    - Rodamos o script atrelado à **conversa atual** (`f34d53a0-ec05-48c2-9c3e-acd9da77ad91`).
-   - O plano de implantação, este walkthrough e as tarefas do "P0 - Migração Canônica" já foram copiados e _commitados_ no branch `feat/nirvana-agent-governance`.
+   - O plano de implantação, este walkthrough e as tarefas do "P0 - Migração Canônica" já foram copiados e *commitados* no branch `feat/nirvana-agent-governance`.
 
 ## Ponto de Checagem
 
 A partir de agora, a qualquer momento podemos executar `.\scripts\agent-capture.ps1 -ConversationId "f34d...91"` (ou o Conversation ID de qualquer nova sessão) para imortalizar o que eu ou outro agente planejou e entregou.
 
 > [!TIP]
-> A esteira do PR #2 agora tem taxonomia P0 perfeita e script de coleta de histórico. 
+> A esteira do PR #2 agora tem taxonomia P0 perfeita e script de coleta de histórico.
 > Se concordar, nossa próxima jogada finalmente recai sobre pularmos de volta para o PR #1 (`feat/nirvana-fase-0`) e resolver as engrenagens vermelhas do CI (Secret Scan e Vitest).
-
 
 ---

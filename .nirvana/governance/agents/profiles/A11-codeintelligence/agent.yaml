@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "../../schemas/agent-profile.schema.json",
+  "schemaVersion": "1.0.0",
+  "agentId": "A11",
+  "name": "Codeintelligence",
+  "role": "codeintelligence",
+  "status": "active",
+  "capabilities": [],
+  "readScopes": [],
+  "writeScopes": [],
+  "denyScopes": [],
+  "tools": [],
+  "eventsConsumed": [],
+  "eventsProduced": []
+}

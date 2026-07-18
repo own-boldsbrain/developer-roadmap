@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schemas/mcp-resource.schema.json",
+  "uri": "catalog://",
+  "name": "catalog",
+  "mimeType": "application/json"
+}

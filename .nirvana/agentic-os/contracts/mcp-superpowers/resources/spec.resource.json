@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schemas/mcp-resource.schema.json",
+  "uri": "spec://",
+  "name": "spec",
+  "mimeType": "application/json"
+}

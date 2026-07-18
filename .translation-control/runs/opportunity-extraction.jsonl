@@ -1,2 +1,0 @@
-{"timestamp":"2026-07-17T20:04:04.727Z","level":"INFO","event":"opportunity.extraction_started","runId":"opp-extract-20260717200404","fileId":"sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc","sourceFile":"src/data/roadmaps/ai-agents/content/acting--tool-invocation@sHYd4KsKlmw5Im3nQ19W8.md"}
-{"timestamp":"2026-07-17T20:09:12.999Z","level":"ERROR","event":"opportunity.extraction_failed","runId":"opp-extract-20260717200404","fileId":"sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc","error":"fetch failed"}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "evidenceId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "evidenceId",
+    "taskId",
+    "result"
+  ]
+}

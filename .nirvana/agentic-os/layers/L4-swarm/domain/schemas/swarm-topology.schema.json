@@ -1,0 +1,74 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "Ruflo Swarm Topology",
+    "type":  "object",
+    "properties":  {
+                       "swarm_id":  {
+                                        "type":  "string"
+                                    },
+                       "objective":  {
+                                         "type":  "string"
+                                     },
+                       "topology_type":  {
+                                             "type":  "string",
+                                             "enum":  [
+                                                          "hierarchical",
+                                                          "mesh",
+                                                          "ring",
+                                                          "pipeline"
+                                                      ]
+                                         },
+                       "agents":  {
+                                      "type":  "array",
+                                      "items":  {
+                                                    "type":  "object",
+                                                    "properties":  {
+                                                                       "agent_id":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                       "role":  {
+                                                                                    "type":  "string"
+                                                                                },
+                                                                       "capabilities":  {
+                                                                                            "type":  "array",
+                                                                                            "items":  {
+                                                                                                          "type":  "string"
+                                                                                                      }
+                                                                                        }
+                                                                   },
+                                                    "required":  [
+                                                                     "agent_id",
+                                                                     "role"
+                                                                 ]
+                                                }
+                                  },
+                       "budget":  {
+                                      "type":  "object",
+                                      "properties":  {
+                                                         "max_tokens":  {
+                                                                            "type":  "integer"
+                                                                        },
+                                                         "max_agents":  {
+                                                                            "type":  "integer"
+                                                                        }
+                                                     }
+                                  },
+                       "consensus_policy":  {
+                                                "type":  "string",
+                                                "enum":  [
+                                                             "majority",
+                                                             "unanimous",
+                                                             "coordinator"
+                                                         ]
+                                            }
+                   },
+    "required":  [
+                     "swarm_id",
+                     "objective",
+                     "topology_type",
+                     "agents"
+                 ],
+    "$id":  "https://nirvana.local/schemas/swarm-topology.schema.json",
+    "schemaVersion":  "1.0.0",
+    "additionalProperties":  false
+}

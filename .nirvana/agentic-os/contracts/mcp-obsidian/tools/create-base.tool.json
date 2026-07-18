@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "create-base",
+  "description": "Tool create-base for mcp-obsidian",
+  "inputSchema": {
+    "$ref": "../schemas/input/create-base.schema.json"
+  }
+}

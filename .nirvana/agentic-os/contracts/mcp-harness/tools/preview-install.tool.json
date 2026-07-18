@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "preview-install",
+  "description": "Tool preview-install for mcp-harness",
+  "inputSchema": {
+    "$ref": "../schemas/input/preview-install.schema.json"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/agent-profile.schema.json",
+  "title": "Agent Profile",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "agentId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "readScopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "writeScopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "denyScopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eventsConsumed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eventsProduced": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "agentId",
+    "name",
+    "role",
+    "status"
+  ]
+}

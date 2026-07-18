@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "../../schemas/agent-profile.schema.json",
+  "schemaVersion": "1.0.0",
+  "agentId": "A99",
+  "name": "Auditor",
+  "role": "auditor",
+  "status": "active",
+  "capabilities": [],
+  "readScopes": [],
+  "writeScopes": [],
+  "denyScopes": [],
+  "tools": [],
+  "eventsConsumed": [],
+  "eventsProduced": []
+}

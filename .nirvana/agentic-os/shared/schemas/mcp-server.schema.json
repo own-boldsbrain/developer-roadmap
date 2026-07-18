@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nirvana.local/schemas/mcp-server.schema.json",
+  "title": "MCP Server Manifest",
+  "schemaVersion": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "serverId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "transport": {
+      "type": "string",
+      "enum": [
+        "stdio",
+        "sse"
+      ]
+    }
+  },
+  "required": [
+    "serverId",
+    "name",
+    "version"
+  ]
+}

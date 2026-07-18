@@ -1,0 +1,53 @@
+{
+    "verification":  {
+                         "remoteVerification":  "pending",
+                         "redaction":  "passed",
+                         "humanApproval":  "pending",
+                         "encoding":  "utf-8",
+                         "secretScan":  "passed",
+                         "hashVerification":  "passed"
+                     },
+    "capturedAt":  "2026-07-18T00:33:57-03:00",
+    "git":  {
+                "branch":  "feat/nirvana-agent-governance",
+                "dirty":  true,
+                "headSha":  "2b5254f709d9e3da490c70d00f54ffcf8aa0de16"
+            },
+    "conversationId":  "f34d53a0-ec05-48c2-9c3e-acd9da77ad91",
+    "agentRuntime":  "antigravity-ide",
+    "artifacts":  [
+                      {
+                          "redactionsApplied":  1,
+                          "name":  "implementation-plan.md",
+                          "sanitizedHash":  "sha256:6d28b910df2d684e6b5a9257597e81baa56450faca60db5d0d965c9ffa73bf95",
+                          "status":  "published",
+                          "publishedHash":  "sha256:6d28b910df2d684e6b5a9257597e81baa56450faca60db5d0d965c9ffa73bf95",
+                          "sourceFileName":  "implementation_plan.md",
+                          "sizeBytes":  2601,
+                          "sourceHash":  "sha256:c3be82e1a75943c8f08136b8af7c99120d0ddbef420a6dcd14b09d414c829582"
+                      },
+                      {
+                          "redactionsApplied":  0,
+                          "name":  "walkthrough.md",
+                          "sanitizedHash":  "sha256:7323d8ec09f071fa1ceb7fd9362152e48af7f2cb8c0f1bb38fc72dcba7488087",
+                          "status":  "published",
+                          "publishedHash":  "sha256:7323d8ec09f071fa1ceb7fd9362152e48af7f2cb8c0f1bb38fc72dcba7488087",
+                          "sourceFileName":  "walkthrough.md",
+                          "sizeBytes":  2006,
+                          "sourceHash":  "sha256:7323d8ec09f071fa1ceb7fd9362152e48af7f2cb8c0f1bb38fc72dcba7488087"
+                      },
+                      {
+                          "redactionsApplied":  0,
+                          "name":  "task.md",
+                          "sanitizedHash":  "sha256:3a5418fc9cdfb4d8bcb1b93918af7b3df5adfd6107dd6fdcc75c53f1a9e68369",
+                          "status":  "published",
+                          "publishedHash":  "sha256:3a5418fc9cdfb4d8bcb1b93918af7b3df5adfd6107dd6fdcc75c53f1a9e68369",
+                          "sourceFileName":  "task.md",
+                          "sizeBytes":  1135,
+                          "sourceHash":  "sha256:3a5418fc9cdfb4d8bcb1b93918af7b3df5adfd6107dd6fdcc75c53f1a9e68369"
+                      }
+                  ],
+    "status":  "agent-reported",
+    "schemaVersion":  "1.0.0",
+    "captureId":  "cap-2b5254f7-f34d53a0-aabe0692"
+}

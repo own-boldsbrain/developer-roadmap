@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schemas/mcp-resource.schema.json",
+  "uri": "policy://",
+  "name": "policy",
+  "mimeType": "application/json"
+}

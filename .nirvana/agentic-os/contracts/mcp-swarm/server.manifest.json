@@ -1,0 +1,8 @@
+﻿{
+  "$schema": "../../../schemas/mcp-server.schema.json",
+  "schemaVersion": "1.0.0",
+  "serverId": "mcp-swarm",
+  "name": "mcp-swarm",
+  "version": "1.0.0",
+  "transport": "stdio"
+}

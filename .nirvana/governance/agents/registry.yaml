@@ -1,0 +1,46 @@
+agents:
+  - id: A00
+    name: Nirvana Orchestrator
+    lane: L00 Governance & Change Control
+  - id: A01
+    name: Governance & Scope
+    lane: L00 Governance & Change Control
+  - id: A02
+    name: Git & Reconciliation
+    lane: L10 Git & Reconciliation
+  - id: A03
+    name: Security & Secrets
+    lane: L20 Security & Secrets
+  - id: A04
+    name: CI, Quality & Testing
+    lane: L30 CI, Quality & Testing
+  - id: A05
+    name: Provider Readiness
+    lane: L40 Provider Readiness
+  - id: A06
+    name: Inventory & Selection
+    lane: L50 Asset Inventory & Selection
+  - id: A07
+    name: Translation Processing
+    lane: L60 AI Task Execution
+  - id: A08
+    name: Validation & Publication
+    lane: L70 Validation & Integrity
+  - id: A09
+    name: Opportunity Intelligence
+    lane: L70 Validation & Integrity
+  - id: A10
+    name: Evidence & Observability
+    lane: L90 Publication & Telemetry
+  - id: A11
+    name: Code Intelligence
+    lane: L80 Code Intelligence & Forensics
+  - id: A12
+    name: Release & Operations
+    lane: L90 Publication & Telemetry
+  - id: A14
+    name: Skill Optimization Engine
+    lane: L80 Code Intelligence & Forensics
+  - id: A99
+    name: Independent Nirvana Auditor
+    lane: ALL

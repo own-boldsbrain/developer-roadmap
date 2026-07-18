@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schemas/mcp-tool.schema.json",
+  "name": "register-assumption",
+  "description": "Tool register-assumption for mcp-guardrails",
+  "inputSchema": {
+    "$ref": "../schemas/input/register-assumption.schema.json"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../schemas/mcp-resource.schema.json",
+  "uri": "shared-memory://",
+  "name": "shared-memory",
+  "mimeType": "application/json"
+}

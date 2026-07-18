@@ -336,16 +336,15 @@ for (const entry of selectedFiles) {
     fs.writeFileSync(tmpSource, protectedContent);
 
     logEvent('translation.chunk_started', fileId, 'INFO', {});
-    const scriptPath =
-      process.env.TRANSLATE_SCRIPT ||
-      path.resolve('scripts', 'translation', 'translate_doc.py');
-    if (!fs.existsSync(scriptPath)) {
-      throw new Error(
-        `Translation script not found at ${scriptPath}. Set TRANSLATE_SCRIPT env var.`,
-      );
+    const translateScriptPath = process.env.TRANSLATE_SCRIPT;
+    if (!translateScriptPath) {
+      throw new Error('TRANSLATE_SCRIPT_REQUIRED');
+    }
+    if (!fs.existsSync(translateScriptPath)) {
+      throw new Error('TRANSLATE_SCRIPT_NOT_FOUND');
     }
     execSync(
-      `python ${scriptPath} -f "${tmpSource}" -o "${tmpTarget}" -e ollama`,
+      `python ${translateScriptPath} -f "${tmpSource}" -o "${tmpTarget}" -e ollama`,
     );
 
     if (!fs.existsSync(tmpTarget))
@@ -439,20 +438,19 @@ for (const entry of selectedFiles) {
 
     logEvent('publication.completed', fileId, 'INFO', { finalHash });
 
-    const realScriptPath =
-      process.env.TRANSLATE_SCRIPT ||
-      path.resolve('scripts', 'translation', 'translate_doc.py');
+    if (!translateScriptPath || !fs.existsSync(translateScriptPath)) {
+      throw new Error('TRANSLATE_SCRIPT_NOT_FOUND');
+    }
     const manifestEntry = {
       runId,
       fileId,
       schemaVersion: '1.1.0',
       runnerVersion: '1.3.0',
       inventoryHash: hashFile(INVENTORY_PATH),
-      scriptHash: fs.existsSync(realScriptPath)
-        ? hashFile(realScriptPath)
-        : 'sha256:unavailable',
-      promptHash:
-        'sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc',
+      scriptHash: hashFile(translateScriptPath),
+      promptHash: null,
+      promptSource: 'UNAVAILABLE',
+      requestSeedHash: hashString(protectedContent + ' -e ollama'),
       configHash: hashString(
         JSON.stringify({
           model: 'translategemma:latest',

@@ -1,6 +1,5 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
-// @ts-ignore
 import MarkdownItAsync from 'markdown-it-async';
 
 // replaces @variableName@ with the value of the variable
@@ -46,14 +45,13 @@ const markdownItAsync = MarkdownItAsync({
   html: true,
   linkify: true,
 
-  async highlight(code: string, lang: string, attrs: any) {
-    // @ts-ignore
+  async highlight(code, lang, attrs) {
     const { codeToHtml } = await import('shiki');
 
     const html = await codeToHtml(code, {
       lang: lang?.toLowerCase(),
       theme: 'dracula',
-    }).catch((e: any) => {
+    }).catch((e) => {
       console.warn(e);
       return code;
     });
@@ -71,16 +69,16 @@ export async function markdownToHtmlWithHighlighting(markdown: string) {
     //
     const defaultRender =
       markdownItAsync.renderer.rules.link_open ||
-      function (tokens: any, idx: any, options: any, env: any, self: any) {
+      function (tokens, idx, options, env, self) {
         return self.renderToken(tokens, idx, options);
       };
 
     markdownItAsync.renderer.rules.link_open = function (
-      tokens: any,
-      idx: any,
-      options: any,
-      env: any,
-      self: any,
+      tokens,
+      idx,
+      options,
+      env,
+      self,
     ) {
       // Add a new `target` attribute, or replace the value of the existing one.
       tokens[idx].attrSet('target', '_blank');

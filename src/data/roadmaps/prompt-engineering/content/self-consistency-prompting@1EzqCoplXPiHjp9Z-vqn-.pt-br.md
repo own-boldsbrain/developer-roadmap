@@ -1,1 +1,0 @@
-# Self-Consistency Prompting

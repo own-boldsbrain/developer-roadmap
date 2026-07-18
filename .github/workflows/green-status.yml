@@ -72,7 +72,7 @@ jobs:
 
       - name: Visual Regression
         continue-on-error: true
-        run: pnpm test:e2e
+        run: pnpm exec playwright test --grep "@visual"
 
       - name: Forensic Verify
         run: >

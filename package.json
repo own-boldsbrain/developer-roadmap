@@ -30,7 +30,11 @@
     "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
     "test:e2e": "playwright test",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "codegraph:init": "codegraph init",
+    "codegraph:index": "codegraph index .",
+    "codegraph:refresh": "codegraph index .",
+    "codegraph:check": "codegraph --help"
   },
   "dependencies": {
     "@astrojs/node": "^9.2.1",

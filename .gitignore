@@ -16,7 +16,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
+run_log.txt
+.translation-control/runs/
+.translation-control/reports/*.log
 
 # environment variables
 .env
@@ -30,4 +32,10 @@ pnpm-debug.log*
 tests-examples
 *.csveditor/
 
-packages/editor
+packages/editor/
+
+# Local security tools and reports
+gitleaks_bin/
+gitleaks.zip
+gitleaks-report.json
+sk_leak.txt

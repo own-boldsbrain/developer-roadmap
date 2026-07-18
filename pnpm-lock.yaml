@@ -174,6 +174,9 @@ importers:
       '@ai-sdk/google':
         specifier: ^1.2.18
         version: 1.2.18(zod@3.24.4)
+      '@colbymchenry/codegraph':
+        specifier: ^1.4.1
+        version: 1.4.1
       '@playwright/test':
         specifier: ^1.52.0
         version: 1.52.0
@@ -240,6 +243,9 @@ importers:
       tsx:
         specifier: ^4.19.4
         version: 4.19.4
+      typescript:
+        specifier: ^5.8.0
+        version: 5.8.3
 
 packages:
 
@@ -398,6 +404,40 @@ packages:
 
   '@capsizecss/unpack@2.4.0':
     resolution: {integrity: sha512-GrSU71meACqcmIUxPYOJvGKF0yryjN/L1aCuE9DViCTJI7bfkjgYDPD1zbNDcINJwSSP6UaBZY9GAbYDO7re0Q==}
+
+  '@colbymchenry/codegraph-darwin-arm64@1.4.1':
+    resolution: {integrity: sha512-USSpExjuxZWN0OeNexZp2V5fCfOI4ZekqE79CJiBdGdPbqGTB+857ImIqzWGyF/rAyyED94Wc0Cd82t+uWD30w==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@colbymchenry/codegraph-darwin-x64@1.4.1':
+    resolution: {integrity: sha512-syLC7QPsNui2hPrK58El0XQrjjdSYhsoKS5i26ieD8DVrb0adzFQrBRP8qId/wfGp078xdC54rdKvqgmbIL1WQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@colbymchenry/codegraph-linux-arm64@1.4.1':
+    resolution: {integrity: sha512-XC6GJ9/fTicW9CE3k2fOcUOcbtDU8mS53t+PUfzq3Py9+JiX3PtJgtBB8bmf6e45NZUF5foaLUwFXfxTTl961g==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@colbymchenry/codegraph-linux-x64@1.4.1':
+    resolution: {integrity: sha512-bjfa+0IyjbxpZz7ghznN4qMPoYVSiZafeZu/rXGdg3VI+kEPOPZrk2vmtWIU9tBPGVJbeU2Kwa/0Z2DkUGOJ9A==}
+    cpu: [x64]
+    os: [linux]
+
+  '@colbymchenry/codegraph-win32-arm64@1.4.1':
+    resolution: {integrity: sha512-mb5bFDhwcP49U0P2IBRhH1O5ZmnlgE8lIXTlg2dqpfLeL+XfxzyeJ+i4I0KU0h1hlNWP/u3d2k+1EGem2swDBw==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@colbymchenry/codegraph-win32-x64@1.4.1':
+    resolution: {integrity: sha512-ipN6WvTKa0cSXIL6DTdACq57WnNYTjVq2wtC5uPT8F22o6Ucbcu3/w3OzKkkfwP4mkXv2cDMbuvExbnYNULyuw==}
+    cpu: [x64]
+    os: [win32]
+
+  '@colbymchenry/codegraph@1.4.1':
+    resolution: {integrity: sha512-xZayboJt6T3QBzBsBsI0eJ3J/tN4vYs6LMuvrxJVdM71yQFjrFKFeV3KsbicAgkj6AHnTXxUNk26g9BYwkNMgg==}
+    hasBin: true
 
   '@emnapi/core@1.4.3':
     resolution: {integrity: sha512-4m62DuCE07lw01soJwPiBGC0nAww0Q+RY70VZ+n49yDIO13yyinhbWCeNnaob0lakDtWQzSdtNWzJeOJt2ma+g==}
@@ -3761,6 +3801,33 @@ snapshots:
       fontkit: 2.0.4
     transitivePeerDependencies:
       - encoding
+
+  '@colbymchenry/codegraph-darwin-arm64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph-darwin-x64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph-linux-arm64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph-linux-x64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph-win32-arm64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph-win32-x64@1.4.1':
+    optional: true
+
+  '@colbymchenry/codegraph@1.4.1':
+    optionalDependencies:
+      '@colbymchenry/codegraph-darwin-arm64': 1.4.1
+      '@colbymchenry/codegraph-darwin-x64': 1.4.1
+      '@colbymchenry/codegraph-linux-arm64': 1.4.1
+      '@colbymchenry/codegraph-linux-x64': 1.4.1
+      '@colbymchenry/codegraph-win32-arm64': 1.4.1
+      '@colbymchenry/codegraph-win32-x64': 1.4.1
 
   '@emnapi/core@1.4.3':
     dependencies:

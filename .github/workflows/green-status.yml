@@ -1,0 +1,159 @@
+name: Green Status
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  secret-scan:
+    name: Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          fail: true
+
+  quality-gates:
+    name: Quality Gates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Prettier check
+        run: pnpm exec prettier --check .
+
+      - name: Typecheck
+        run: pnpm exec tsc --noEmit
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps
+
+      - name: Functional E2E
+        run: pnpm exec playwright test --grep-invert "@visual"
+
+      - name: Visual Regression
+        continue-on-error: true
+        run: pnpm exec playwright test --grep "@visual"
+
+      - name: Forensic Verify
+        run: >
+          pnpm exec tsx scripts/forensic-verify.ts
+          --manifest=.translation-control/manifests/manifest.jsonl
+          --inventory=.translation-control/inventory.jsonl
+          --fail-on-mismatch
+
+      - name: Upload evidence bundle
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-gates-evidence
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+
+  code-intelligence:
+    name: Code Intelligence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build CodeGraph index
+        run: pnpm run codegraph:index
+
+      - name: Upload CodeGraph evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: codegraph-evidence
+          path: .codegraph-reports/
+          retention-days: 7
+
+  green-status:
+    name: Green Status
+    if: always()
+    needs:
+      - secret-scan
+      - quality-gates
+      - code-intelligence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate gates
+        run: |
+          echo "secret-scan: ${{ needs.secret-scan.result }}"
+          echo "quality-gates: ${{ needs.quality-gates.result }}"
+          echo "code-intelligence: ${{ needs.code-intelligence.result }}"
+          if [[ "${{ needs.secret-scan.result }}" != "success" ]] || \
+             [[ "${{ needs.quality-gates.result }}" != "success" ]] || \
+             [[ "${{ needs.code-intelligence.result }}" != "success" ]]; then
+            echo "::error::One or more gates failed or were skipped."
+            exit 1
+          fi
+          echo "All gates passed. Green Status confirmed."

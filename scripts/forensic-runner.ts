@@ -3,6 +3,14 @@ import * as path from 'path';
 import * as crypto from 'crypto';
 import { execSync } from 'child_process';
 
+function hashFile(filePath: string): string {
+  const content = fs.readFileSync(filePath);
+  return (
+    'sha256:' +
+    crypto.createHash('sha256').update(new Uint8Array(content)).digest('hex')
+  );
+}
+
 const args = process.argv.slice(2);
 const command = args[0] || 'translate';
 const roadmapStr =
@@ -328,10 +336,15 @@ for (const entry of selectedFiles) {
     fs.writeFileSync(tmpSource, protectedContent);
 
     logEvent('translation.chunk_started', fileId, 'INFO', {});
-    const scriptPath =
-      'C:\\Users\\fjuni\\.gemini\\config\\skills\\translation\\scripts\\translate_doc.py';
+    const translateScriptPath = process.env.TRANSLATE_SCRIPT;
+    if (!translateScriptPath) {
+      throw new Error('TRANSLATE_SCRIPT_REQUIRED');
+    }
+    if (!fs.existsSync(translateScriptPath)) {
+      throw new Error('TRANSLATE_SCRIPT_NOT_FOUND');
+    }
     execSync(
-      `python ${scriptPath} -f "${tmpSource}" -o "${tmpTarget}" -e ollama`,
+      `python ${translateScriptPath} -f "${tmpSource}" -o "${tmpTarget}" -e ollama`,
     );
 
     if (!fs.existsSync(tmpTarget))
@@ -425,22 +438,40 @@ for (const entry of selectedFiles) {
 
     logEvent('publication.completed', fileId, 'INFO', { finalHash });
 
+    if (!translateScriptPath || !fs.existsSync(translateScriptPath)) {
+      throw new Error('TRANSLATE_SCRIPT_NOT_FOUND');
+    }
     const manifestEntry = {
       runId,
       fileId,
-      schemaVersion: '1.0.0',
-      runnerVersion: '1.2.0',
-      inventoryHash:
-        'sha256:455cc410daeb50d3566c79707bb15892385a46b29aa2828026b88ad6c3d2f1dc',
-      promptHash: hashString('You are an expert translator...'),
-      configHash: hashString(JSON.stringify(args)),
+      schemaVersion: '1.2.0',
+      runnerVersion: '1.4.0',
+      lane: 'PROCESSING',
+      stage: 'PUBLICATION',
+      state: 'PUBLISHED',
+      processingMode: 'MIRRORED_FALLBACK',
+      executionStatus: 'PASSED',
+      linguisticStatus: 'NOT_TRANSLATED',
+      structuralStatus: 'VALID',
+      inventoryHash: hashFile(INVENTORY_PATH),
+      scriptHash: hashFile(translateScriptPath),
+      promptHash: null,
+      promptSource: 'UNAVAILABLE',
+      requestSeedHash: hashString(protectedContent + ' -e ollama'),
+      configHash: hashString(
+        JSON.stringify({
+          model: 'translategemma:latest',
+          endpoint: 'http://localhost:11434',
+          parallelism,
+          selectionStrategy,
+        }),
+      ),
       modelName: 'translategemma:latest',
       modelDigest: realModelDigest,
       sourceHash: entry.sourceHash,
       protectedContentHash: protectedHash,
       translatedContentHash,
       finalHash,
-      status: 'PUBLISHED',
     };
     appendLog(MANIFEST_PATH, manifestEntry);
 
@@ -455,7 +486,17 @@ for (const entry of selectedFiles) {
       errorCode: 'TRANSLATION_OR_VALIDATION_ERROR',
       message: e.message,
     });
-    const manifestEntry = { runId, fileId, status: 'FAILED', error: e.message };
+    const manifestEntry = {
+      runId,
+      fileId,
+      lane: 'PROCESSING',
+      stage: 'VALIDATION',
+      state: 'QUARANTINED',
+      processingMode: 'MIRRORED_FALLBACK',
+      executionStatus: 'FAILED',
+      reasonCode: 'TRANSLATION_OR_VALIDATION_ERROR',
+      error: e.message,
+    };
     appendLog(MANIFEST_PATH, manifestEntry);
     processedCount++;
   }

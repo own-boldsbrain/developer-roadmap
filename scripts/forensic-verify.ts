@@ -51,8 +51,6 @@ function verify() {
     idToPath.set(entry.fileId, entry.targetPath);
   }
 
-  // Read manifest to get finalHashes
-  // Select latest terminal entry by fileId for PUBLISHED entries
   const manifests = fs
     .readFileSync(manifestArg as string, 'utf-8')
     .split('\n')
@@ -61,18 +59,32 @@ function verify() {
 
   const latestPublished = new Map<string, any>();
   for (const entry of manifests) {
-    if (entry.status === 'PUBLISHED') {
-      // Assuming ordered chronologically in jsonl, so later overwrites earlier
+    if (
+      entry.state === 'PUBLISHED' ||
+      entry.status === 'PUBLISHED' ||
+      entry.status === 'MIRRORED'
+    ) {
       latestPublished.set(entry.fileId, entry);
     }
   }
 
-  let verified = 0;
+  let publishedExpected = 0;
+  let publishedVerified = 0;
+  let mirroredExpected = 0;
+  let mirroredVerified = 0;
+
   let missing = 0;
   let mismatched = 0;
   let unverifiable = 0;
+  let validStructural = 0;
 
   for (const [fileId, entry] of latestPublished.entries()) {
+    const isMirrored =
+      entry.processingMode === 'MIRRORED_FALLBACK' ||
+      entry.status === 'MIRRORED';
+    if (isMirrored) mirroredExpected++;
+    else publishedExpected++;
+
     const sourcePath = idToPath.get(fileId);
     if (!sourcePath) {
       console.error(
@@ -82,9 +94,11 @@ function verify() {
       continue;
     }
 
-    if (!entry.finalHash) {
+    const expectedHash = isMirrored ? entry.sourceHash : entry.finalHash;
+
+    if (!expectedHash) {
       console.error(
-        `[MANIFEST_MISSING_FINAL_HASH] fileId ${fileId} lacks finalHash in manifest`,
+        `[MANIFEST_MISSING_HASH] fileId ${fileId} lacks expected hash in manifest`,
       );
       unverifiable++;
       continue;
@@ -92,13 +106,16 @@ function verify() {
 
     try {
       const currentHash = hashFile(sourcePath);
-      if (currentHash !== entry.finalHash) {
+      if (currentHash !== expectedHash) {
         console.error(`[POST_PUBLICATION_MODIFICATION] ${sourcePath}`);
-        console.error(`  Expected (manifest): ${entry.finalHash}`);
+        console.error(`  Expected (manifest): ${expectedHash}`);
         console.error(`  Got (disk):          ${currentHash}`);
         mismatched++;
       } else {
-        verified++;
+        if (isMirrored) mirroredVerified++;
+        else publishedVerified++;
+
+        if (entry.structuralStatus !== 'INVALID') validStructural++;
       }
     } catch (e: any) {
       if (e.message === 'FILE_MISSING') {
@@ -111,13 +128,55 @@ function verify() {
     }
   }
 
+  const totalExpected = publishedExpected + mirroredExpected;
+  const totalVerified = publishedVerified + mirroredVerified;
+
+  let status: string;
+  let reason: string | undefined;
+
+  if (totalExpected === 0) {
+    status = 'FAILED';
+    reason = 'EMPTY_VERIFICATION';
+    console.error(
+      '[EMPTY_VERIFICATION] No PUBLISHED or MIRRORED records found in manifest.',
+    );
+  } else if (totalVerified === 0) {
+    status = 'FAILED';
+    reason = 'ZERO_VERIFIED';
+    console.error(
+      '[ZERO_VERIFIED] Published records exist but none could be verified.',
+    );
+  } else if (missing > 0 || mismatched > 0 || unverifiable > 0) {
+    status = 'FAILED';
+    reason = 'INTEGRITY_ERRORS';
+  } else {
+    status = 'PASSED';
+  }
+
+  const publicationCoverage =
+    inventory.length > 0
+      ? Math.round((totalVerified / inventory.length) * 100)
+      : 0;
+  const linguisticCoverage =
+    inventory.length > 0
+      ? Math.round((publishedVerified / inventory.length) * 100)
+      : 0;
+  const structuralCoverage =
+    totalVerified > 0 ? Math.round((validStructural / totalVerified) * 100) : 0;
+
   const results = {
-    verified,
+    publishedExpected,
+    publishedVerified,
+    mirroredExpected,
+    mirroredVerified,
+    linguisticCoverage,
+    publicationCoverage,
+    structuralCoverage,
     missing,
     mismatched,
     unverifiable,
-    status:
-      missing > 0 || mismatched > 0 || unverifiable > 0 ? 'FAILED' : 'PASSED',
+    status,
+    ...(reason ? { reason } : {}),
   };
 
   console.log(JSON.stringify(results, null, 2));

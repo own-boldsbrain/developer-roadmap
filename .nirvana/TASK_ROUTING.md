@@ -1,6 +1,7 @@
 # Task Routing
 
 Macro-tasks directed by Nirvana Orchestrator (A00):
+
 1. Governance Setup -> A01
 2. Git/Branch Setup -> A02
 3. Run Gitleaks/Cleanup -> A03

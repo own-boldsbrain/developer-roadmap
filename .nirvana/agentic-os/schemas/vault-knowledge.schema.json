@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Obsidian Vault Knowledge File",
+  "type": "object",
+  "properties": {
+    "file_path": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["markdown", "base", "canvas", "asset"]
+    },
+    "frontmatter": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" },
+          "resolved": { "type": "boolean" }
+        }
+      }
+    }
+  },
+  "required": ["file_path", "type"]
+}

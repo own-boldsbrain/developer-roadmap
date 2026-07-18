@@ -39,3 +39,9 @@ run_log.txt
 sk_leak.txt
 .translation-control/runs/
 .translation-control/reports/
+
+# Agentic State Runtime
+.agentic-state/
+.translation-control/runs/
+.translation-control/reports/
+

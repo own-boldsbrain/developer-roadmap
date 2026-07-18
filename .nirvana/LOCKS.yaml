@@ -1,6 +1,0 @@
-locks:
-  - id: global_manifest
-    holder: null
-    status: unlocked
-    expires_at: null
-    head_sha: null

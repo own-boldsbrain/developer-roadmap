@@ -5,7 +5,7 @@ Você quer um mecanismo formal para extrair os "pensamentos e planos" do agente 
 ## Open Questions
 
 > [!WARNING]
-> Como os meus artefatos (`implementation_plan.md`, `walkthrough.md`, `task.md`) habitam o diretório local do seu Windows (`C:\Users\fjuni\.gemini\antigravity-ide\...`), um GitHub Action rodando na nuvem **não tem acesso físico a eles**. 
+> Como os meus artefatos (`implementation_plan.md`, `walkthrough.md`, `task.md`) habitam o diretório local do seu Windows (`C:\Users\fjuni\.gemini\antigravity-ide\...`), um GitHub Action rodando na nuvem **não tem acesso físico a eles**.
 
 Para resolver isso, proponho criarmos um script de captura local ("Handoff Script") que rodará direto no seu ambiente, executado por mim ou por você ao final de cada sessão épica. Tenho as seguintes perguntas:
 

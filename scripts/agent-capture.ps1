@@ -41,7 +41,7 @@ foreach ($Artifact in $Artifacts) {
 $WalkthroughPath = Join-Path $EvidenceDir "walkthrough.md"
 if (Test-Path $WalkthroughPath) {
     $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    $WalkthroughContent = Get-Content $WalkthroughPath -Raw
+    $WalkthroughContent = Get-Content $WalkthroughPath -Raw -Encoding UTF8
 
     $ChangelogEntry = @"
 
@@ -57,7 +57,7 @@ $WalkthroughContent
     if (-not (Test-Path $ChangelogPath)) {
         Set-Content -Path $ChangelogPath -Value "# Agentic OS Changelog`n$ChangelogEntry" -Encoding UTF8
     } else {
-        $ExistingContent = Get-Content $ChangelogPath -Raw
+        $ExistingContent = Get-Content $ChangelogPath -Raw -Encoding UTF8
         $ExistingContent = $ExistingContent -replace "# Agentic OS Changelog\n?", "# Agentic OS Changelog`n$ChangelogEntry"
         Set-Content -Path $ChangelogPath -Value $ExistingContent -Encoding UTF8
     }
@@ -65,4 +65,5 @@ $WalkthroughContent
 }
 
 Write-Host "Artifact capture complete."
+
 

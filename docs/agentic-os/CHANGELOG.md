@@ -1,39 +1,37 @@
 ﻿# Agentic OS Changelog
 
-## Agent Execution: [2026-07-18 00:23:10]
-
+## Agent Execution: [2026-07-18 00:29:10]
 **Conversation ID**: f34d53a0-ec05-48c2-9c3e-acd9da77ad91
-**Evidence**: .agentic-state/evidence/f34d53a0-ec05-48c2-9c3e-acd9da77ad91/
+**Evidence**: docs/agentic-os/evidence/f34d53a0-ec05-48c2-9c3e-acd9da77ad91/
 
-# Walkthrough: MigraÃ§Ã£o para a Arquitetura TO-BE (P0)
+# Walkthrough: Captura de Evidências e Changelog (Workflow)
 
-A reformulaÃ§Ã£o geolÃ³gica completa da fundaÃ§Ã£o `.nirvana` foi concluÃ­da com sucesso no `feat/nirvana-agent-governance`. A arquitetura de software agora honra integralmente o blueprint TO-BE, separando rigorosamente a governanÃ§a declarativa do runtime das camadas.
+A infraestrutura formal para captura e versionamento do "pensamento" (evidence) gerado pelo agente foi implementada com sucesso no repositório.
 
 ## O que foi realizado
 
-1. **SeparaÃ§Ã£o Governance x Layers x Planes**
-   - Injetamos a taxonomia mestre: `.nirvana/governance/`, `.nirvana/agentic-os/layers/`, e `.nirvana/agentic-os/shared/`.
-   - Limpamos a raiz do `.nirvana/` para nÃ£o mais servir como um amontoado de arquivos soltos.
+1. **Script de Orquestração (`scripts/agent-capture.ps1`)**
+   - Criamos o utilitário nativo em Powershell que faz a ponte entre o *filesystem* temporário local (diretório `brain` dentro da `.gemini`) e o repositório.
+   - O script aceita um argumento obrigatório (`-ConversationId`).
 
-2. **MigraÃ§Ã£o para YAML ExecutÃ¡vel**
-   - O `OWNERSHIP_MATRIX.md` foi digerido para `governance/ownership/path-owners.yaml` estruturado.
-   - Os agentes (`agent.json`) foram transferidos para `governance/agents/profiles/` sob a nomenclatura `.yaml`.
-   - Documentos-chave como o `COLLISION_POLICY` e o `TASK_ROUTING` tornaram-se YAML puros nas pastas de _policies_ e _routing_.
+2. **Isolamento e Injeção de Evidências**
+   - O script localiza os artefatos vivos (`implementation_plan.md`, `walkthrough.md`, `task.md`) da conversa.
+   - Os arquivos são copiados fisicamente para `docs/agentic-os/evidence/<ConversationId>/`. *(Nota: evitei usar o `.agentic-state` pois ele consta no `.gitignore` para bloquear lixo transiente de runtime, enquanto as "evidências" devem de fato compor a base canônica de documentação da história).*
 
-3. **Desacoplamento Universal de Schemas**
-   - Schemas como _handoff_ e _event-envelope_ que sÃ£o sistÃªmicos cruzaram para `.nirvana/agentic-os/shared/schemas/`.
-   - Schemas proprietÃ¡rios de camadas especÃ­ficas mergulharam nos seus respectivos domÃ­nios: `.nirvana/agentic-os/layers/L2-method/domain/schemas/spec.schema.json`.
+3. **Geração Automática do Changelog**
+   - O conteúdo do seu `walkthrough.md` é lido e apensado automaticamente ao `docs/agentic-os/CHANGELOG.md` com o respectivo timestamp e link para as evidências completas.
 
-4. **Isolamento de Estado (Runtime)**
-   - ExtraÃ­mos o `LOCKS.yaml` declarativo da zona de governanÃ§a, injetando sua cÃ³pia mutÃ¡vel em `.agentic-state/locks/active-locks.jsonl`.
-   - O `.gitignore` foi atualizado para barrar qualquer artefato dentro de `.agentic-state/` no versionamento.
+4. **Self-Capture Executado (Dogfooding!)**
+   - Rodamos o script atrelado à **conversa atual** (`f34d53a0-ec05-48c2-9c3e-acd9da77ad91`).
+   - O plano de implantação, este walkthrough e as tarefas do "P0 - Migração Canônica" já foram copiados e _commitados_ no branch `feat/nirvana-agent-governance`.
 
-## Status do PR
+## Ponto de Checagem
 
-Com esse commit massivo, o **PR #2** materializou 100% da Fase P0 da _RevisÃ£o CanÃ´nica_ sugerida. O estado agora Ã© perfeitamente _machine-readable_ e hierÃ¡rquico.
+A partir de agora, a qualquer momento podemos executar `.\scripts\agent-capture.ps1 -ConversationId "f34d...91"` (ou o Conversation ID de qualquer nova sessão) para imortalizar o que eu ou outro agente planejou e entregou.
 
-> [!IMPORTANT]
-> A esteira P0 de normalizaÃ§Ã£o e formataÃ§Ã£o encerrou aqui.
-> Conforme acordado, a recomendaÃ§Ã£o tÃ¡tica imediata Ã© pularmos de volta para o repositÃ³rio original (PR #1, `feat/nirvana-fase-0`), resolvendo o incÃªndio do CI (Quality Gates e Secret Scan) para garantirmos o `same-head GREEN` e pavimentarmos a estabilidade antes da integraÃ§Ã£o formal dessa maravilhosa arquitetura.
+> [!TIP]
+> A esteira do PR #2 agora tem taxonomia P0 perfeita e script de coleta de histórico. 
+> Se concordar, nossa próxima jogada finalmente recai sobre pularmos de volta para o PR #1 (`feat/nirvana-fase-0`) e resolver as engrenagens vermelhas do CI (Secret Scan e Vitest).
+
 
 ---

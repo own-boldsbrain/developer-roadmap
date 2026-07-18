@@ -1,9 +1,9 @@
-- `[ ]` **1. Criar diretórios no repositório**
-  - `[ ]` Garantir `.agentic-state/evidence/`
-  - `[ ]` Garantir `docs/agentic-os/`
-- `[ ]` **2. Criar script de captura (`scripts/agent-capture.ps1`)**
-  - `[ ]` Escrever a lógica de cópia dos artefatos
-  - `[ ]` Escrever a lógica de extração do Walkthrough para o CHANGELOG.md
-- `[ ]` **3. Executar script localmente**
-  - `[ ]` Extrair evidências da conversa atual (`f34d53a0-ec05-48c2-9c3e-acd9da77ad91`)
-- `[ ]` **4. Fazer commit da infraestrutura e dos logs**
+- `[x]` **1. Criar diretórios no repositório**
+  - `[x]` Garantir `.agentic-state/evidence/` (mudado para `docs/agentic-os/evidence/` para não cair no gitignore)
+  - `[x]` Garantir `docs/agentic-os/`
+- `[x]` **2. Criar script de captura (`scripts/agent-capture.ps1`)**
+  - `[x]` Escrever a lógica de cópia dos artefatos
+  - `[x]` Escrever a lógica de extração do Walkthrough para o CHANGELOG.md
+- `[x]` **3. Executar script localmente**
+  - `[x]` Extrair evidências da conversa atual (`f34d53a0-ec05-48c2-9c3e-acd9da77ad91`)
+- `[x]` **4. Fazer commit da infraestrutura e dos logs**
